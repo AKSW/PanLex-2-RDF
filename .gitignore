@@ -7,3 +7,15 @@
 
 var
 mapping-*.tsv
+
+*.toc
+*.out
+paper.pdf
+*.aux
+*.log
+*.bbl
+*.blg
+*.lot
+*.lof
+*.eps
+
