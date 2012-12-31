@@ -1,0 +1,203 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.aksw</groupId>
+	<artifactId>panlex-link</artifactId>
+	<version>0.1-SNAPSHOT</version>
+
+	<name>AKSW's scripts for interlinking panlex entities</name>
+	<url>https://github.com/AKSW/FTS-EC-2-RDF</url>
+
+	<properties>
+		<maven.compiler.source>1.6</maven.compiler.source>
+		<maven.compiler.target>1.6</maven.compiler.target>
+
+		<gwt.version>2.0.4</gwt.version>
+
+		<aksw-commons.version>0.5-SNAPSHOT</aksw-commons.version>
+
+		<!-- project defaults -->
+		<java.version>1.6</java.version>
+		<java.version.javadoc>http://java.sun.com/javase/6/docs/api/</java.version.javadoc>
+		<file.encoding>UTF-8</file.encoding>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+
+	<repositories>
+		<repository>
+			<id>org-aksw-maven-internal</id>
+			<name>University Leipzig, AKSW Maven2 Internal Repository</name>
+			<url>http://maven.aksw.org/repository/internal/</url>
+		</repository>
+
+		<repository>
+			<id>org-aksw-maven-snapshots</id>
+			<name>University Leipzig, AKSW Maven2 Snapshot Repository</name>
+			<url>http://maven.aksw.org/repository/snapshots/</url>
+		</repository>
+
+		<repository>
+			<id>net-java-repository-maven2</id>
+			<name>Java.net Repository for Maven</name>
+			<url>http://download.java.net/maven/2/</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+
+
+	<build>
+
+		<plugins>
+
+			<plugin>
+				<!-- Any eclipse problem with the plugin should disappear with m2e 1.1 -->
+				<groupId>org.jvnet.jaxb2.maven2</groupId>
+				<artifactId>maven-jaxb2-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+					<generatePackage>org.aksw.fts.domain.xml</generatePackage>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skipTests>false</skipTests>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.14</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.aksw.commons</groupId>
+			<artifactId>util</artifactId>
+			<version>${aksw-commons.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.aksw.commons</groupId>
+			<artifactId>sparql</artifactId>
+			<version>${aksw-commons.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.10.0</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.geocoder-java</groupId>
+			<artifactId>geocoder-java</artifactId>
+			<version>0.9</version>
+		</dependency>
+
+		<!-- Gson: Java to Json conversion -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>1.7.1</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.7</version>
+			<scope>test</scope>
+		</dependency>
+
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>2.4</version>
+				<type>jar</type>
+				<scope>compile</scope>
+			</dependency>
+
+		<dependency>
+			<groupId>net.sourceforge.jexcelapi</groupId>
+			<artifactId>jxl</artifactId>
+			<version>2.6.12</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.aksw.sparqlify</groupId>
+			<artifactId>sparqlify-core</artifactId>
+			<version>0.2-SNAPSHOT</version>
+		</dependency>
+		
+					<dependency>
+				<groupId>org.apache.jena</groupId>
+				<artifactId>jena-arq</artifactId>
+				<version>2.9.0-incubating</version>
+				<scope>compile</scope>
+				<exclusions>
+					<exclusion>
+						<groupId>xerces</groupId>
+						<artifactId>xercesImpl</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.jena</groupId>
+				<artifactId>jena-core</artifactId>
+				<version>2.7.0-incubating</version>
+				<scope>compile</scope>
+				<exclusions>
+					<exclusion>
+						<groupId>xerces</groupId>
+						<artifactId>xercesImpl</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.jena</groupId>
+				<artifactId>jena-iri</artifactId>
+				<version>0.9.0-incubating</version>
+				<scope>compile</scope>
+				<exclusions>
+					<exclusion>
+						<groupId>xerces</groupId>
+						<artifactId>xercesImpl</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-compress</artifactId>
+				<version>1.4.1</version>
+			</dependency>
+	</dependencies>
+
+</project>

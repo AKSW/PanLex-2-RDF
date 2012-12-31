@@ -1,0 +1,124 @@
+Prefix spy:<http://aksw.org/sparqlify/>
+Prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+Prefix foaf:<http://xmlns.com/foaf/0.1/>
+Prefix dc:<http://purl.org/dc/elements/1.1/>
+Prefix xsd:<http://www.w3.org/2001/XMLSchema#>
+Prefix plx:<http://panlex.org/plx/>
+Prefix owl:<http://www.w3.org/2002/07/owl#>
+
+
+// (ap)
+// mappings concerning language sources stored in the ap table
+Create View ap As
+    Construct {
+        ?s a plx:source.
+        ?s plx:hasLabel ?l.
+        ?s plx:hasUri ?u.
+        ?s plx:hasIsbn ?i.
+        ?s plx:hasAuthor ?a .
+        ?s plx:hasTitle ?t.
+        ?s plx:hasYearOfPublication ?y.
+        ?s plx:hasLicense ?li.
+    }
+    With
+        ?s  = uri(concat(plx:source,'/', ?ap))
+        ?l  = uri(?tt)
+        ?u  = uri(?ur)
+        ?i  = plainLiteral(?bn)
+        ?a  = typedLiteral(?au, xsd:string)
+        ?t  = typedLiteral(?ti, xsd:string)
+        ?y  = typedLiteral(?yr, xsd:integer)
+        ?li = plainLiteral(?li)
+    From
+        ap
+
+// (df)
+// mappings concerning meaning definitions
+Create View df As
+    Construct {
+        ?mn a plx:meaning.
+        ?mt a plx:meaningText.
+        ?mn plx:hasMeaningText ?mt.
+        ?mt plx:varietyOfMeaningText ?lv.
+        ?mt plx:definitionText ?tt.
+    }
+    With
+        ?mn = uri(concat(plx:meaning,'/',?mn))
+        ?mt = uri(concat(plx:meaningText,'/',?df))
+        ?lv = uri(concat(plx:variety,'/',?lv))
+        ?tt = typedLiteral(?tt, xsd:string)
+    From
+        df
+
+// (dn)
+// mappings concerning denotations
+Create View dn As
+    Construct {
+        ?ex plx:denotes ?mn.
+    }
+    With
+        ?ex = uri(concat(plx:expression,'/',?ex))
+        ?mn = uri(concat(plx:meaning,'/',?mn))
+    From
+        dn
+
+// (ex)
+// mappings concerning expressions
+Create View ex As
+    Construct {
+        ?ex a plx:expression.
+        ?ex plx:hasVariety ?lv.
+        ?ex plx:hasText ?tt.
+    }
+    With
+        ?ex = uri(concat(plx:expression,'/',?ex))
+        ?lv = uri(concat(plx:variety,'/',?lv))
+        ?tt = typedLiteral(?tt, xsd:string)
+    From
+        ex
+
+// (i1)
+// ISO 639-3 language name links to lexvo.org
+Create View i1 As
+    Construct {
+        ?iso1 a plx:iso639-1.
+        ?iso1 owl:sameAs ?lexvo1.
+        ?iso3 owl:sameAs ?lexvo3.
+    }
+    With
+        ?iso1 = uri(concat(plx:iso639-1,'/',?iso1))
+        ?iso3 = uri(concat(plx:iso639-3,'/',?iso3))
+        ?lexvo1 = uri(concat('http://lexvo.org/id/iso639-1/',?iso1))
+        ?lexvo3 = uri(concat('http://lexvo.org/id/iso639-3/',?iso3))
+    From
+        i1
+
+// (lc)
+// mappings concerning language codes
+Create View lc As
+    Construct {
+        ?lc a plx:langCode.
+        ?lc plx:hasLangCodeType ?tp.
+    }
+    With
+        ?lc = uri(concat(plx:langCode,'/',?lc))
+        ?tp = typedLiteral(?tp, xsd:string)
+    From
+        lc
+
+// (lv)
+// mappings concerning languages and varieties
+Create View lv As
+    Construct {
+        ?lv a plx:variety.
+        ?lv plx:belongsTo ?lc.
+        ?lv plx:hasName ?tt.
+    }
+    With
+        ?lv = uri(concat(plx:variety,'/',?lv))
+        ?lc = uri(concat(plx:langCode,'/',?lc))
+        ?tt = typedLiteral(?tt, xsd:string)
+    From
+        lv
+
