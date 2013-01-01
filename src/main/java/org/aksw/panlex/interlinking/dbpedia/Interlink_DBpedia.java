@@ -122,7 +122,7 @@ public class Interlink_DBpedia {
 		
 		Map<String, String> datasetToLang = MapReader.readFile(new File("src/main/resources/datasets.tsv"));
 		List<LangDataset> fileList = new ArrayList<LangDataset>();
-		String basePath = "var/cache/Datasets/DBpedia/3.8/";
+		String basePath = "var/cache/datasets/dbpedia/3.8/";
 		for(Entry<String, String> entry : datasetToLang.entrySet()) {
 			String name = entry.getKey();
 			String lang = entry.getValue();

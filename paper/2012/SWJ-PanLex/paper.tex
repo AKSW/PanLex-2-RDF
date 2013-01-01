@@ -87,18 +87,23 @@
 
 %\pretitle{Pretitle}
 
-\title{PanLex}
-\runningtitle{PanLex}
-\todo{find a real title}
+\title{PanLex-RDF}
+\runningtitle{Countering language attrition with the Web of Data}
+%\todo{find a real title}
 
 \review{Name Surname, University, Country}{Name Surname, University, Country}{Name Surname, University, Country}
 
 \author[A]{\fnms{Patrick} \snm{Westphal}},
-\author[A]{\fnms{Claus} \snm{Stadler}},
+\author[B]{\fnms{Claus} \snm{Stadler}},
+\author[C]{\fnms{Jonathan} \snm{Pool}},
+
 %\runningauthor{M. Martin et al.}
+
 \address[A]{University of Leipzig, Institute of Computer Science, AKSW, Postfach 100920, D-04009 Leipzig, Germany\\
 E-mail: \{lastname\}@informatik.uni-leipzig.de}
-\todo{the e-mail address pattern won't work for both of us}
+\address[B]{University of Leipzig}
+\address[C]{TODO}
+%\todo{the e-mail address pattern won't work for both of us}
 
 \begin{abstract}
 At present, there are approximately 7,000 living languages in the world.
@@ -524,7 +529,7 @@ the Sparqlify-ML view in Figure~\ref{fig:ex:sparqlify-ml}.
 For DBpedia we were interested in creating \emph{valid} and
 thus \emph{dereferenceable} links.
 Therefore, we iterated the \emph{titles} datasets\footnote{\url{http://wiki.dbpedia.org/Downloads38} - Note that more languages are available in the raw download section at \url{http://downloads.dbpedia.org/3.8/}},
-which map non-localized DBpedia URIs to their page titles in the respective language.
+which map (non-localized) DBpedia URIs to their page titles in the respective language.
 For each language version we normalized the labels: 
 Unicode NFKD\footnote{\url{http://unicode.org/reports/tr15/}} normalization and
 removal of punctuation characters were applied.
@@ -552,8 +557,10 @@ Korean     & ko & kor &    24,912 \\
 Turkish    & tr & tur &    22,258 \\
 Bulgarian  & bg & bul &    19,431 \\
 Hungarian  & hu & hun &    18,203 \\
-Redo Slovene & sl & slv &  4,636 \\
-Greek      & el & ell &  1,112 \\
+Slovene    & sl & slv &    11,981 \\
+Greek      & el & ell &     1,112 \\
+\midrule
+Total      &    &     & 2,537,015 \\
 \bottomrule
 \end{tabular}
 \end{scriptsize}
@@ -594,7 +601,9 @@ API\footnote{\url{http://panlex.org/tech/doc/api/}}.
 %The usage of these interfaces is not restricted in order to make the provided lexical
 %translations as accessible as possible.
 With our RDF conversion work, we complement these interfaces with
-the Linked Data\footnote{\url{http://panlex.org/plx/TODO}} and the SPARQL
+the Linked Data
+%\footnote{\url{http://panlex.org/plx/TODO}}
+and the SPARQL
 endpoint\footnote{\url{http://panlex.org/sparql} and \url{http://panlex.org/snorql}}.
 An overview is shown in ~\autoref{fig:panlex-architecture}.
 Our code for interlinking is
@@ -696,15 +705,14 @@ Based on our URI and vocabulary design, we created appropriate view definitions
 for the virtual RDB to RDF solution \emph{Sparqlify} which carries out
 the actual RDF transformation.
 Furthermore, we interlinked the languages in PanLex with lexvo,
-and created a total of \todo {number} derefenceable
-links to DBpedia for expressions in 16 languages.
+and created about 2.5 million links to DBpedia for expressions in 16 languages.
 %We detailed the developed vocabulary and  
 
 In this work we also identified some weaknesses in
 the orginal database design,
 which we intend to overcome in the future:
 The orginal dataset currently does not cleanly model information sources and approvers
-as distinct entities.\todo{We should still map it like that with Sparqlify - resuse ap for the source}
+as distinct entities.
 Also, while it is possible to determine each meaning's and each denotation's approver, an approver can have multiple users with editorial privileges, so it is not possible to track each contributed, modified, and deleted meaning and denotation by editor.
 Retaining this information seems beneficial for translation approches,
 as this enables for example the attribution of qualities and relevances to particular editors.
