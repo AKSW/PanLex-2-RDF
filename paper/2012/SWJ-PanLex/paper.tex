@@ -29,10 +29,26 @@
 
 \newcommand{\claus}[1]{\todo[inline]{[Claus: #1]}}
 %\newcommand{\textrdf}[1]{\texttt{#1}}
-\newcommand{\textrdf}[1]{\emph{#1}}
+\newcommand{\vocab}[1]{\emph{#1}}
+
+
+\usepackage[scaled]{beramono}
+\newcommand\Small{\fontsize{9}{9.2}\selectfont}
+%\newcommand*\LSTfont{\Small\ttfamily\SetTracking{encoding=*}{-60}\lsstyle}
 
 
 \usepackage{listings}
+%\lstset{language=Python}
+%\lstset{%
+% morekeywords={Create,View,As,Construct,With,From}
+%}%
+\lstset{emph={%  
+    Create,View,As,Construct,With,From%
+    },emphstyle={\color{blue}\bfseries}%
+}%
+
+
+
 %\usepackage{verbatim}
 \lstset{%
     numberbychapter=false,
@@ -120,10 +136,10 @@ Multi-lingual Linked Open Data, PanLex, Lexcial Resource, RDF, RDB2RDF, Sparqlif
 % \end{itemize}
 At present, there are about 7,000 living languages in the world\footnote{See \url{http://www.sil.org/iso639-3/download.asp} for a list of registered languages}.
 Nonetheless, some experts claim that processes such as nation-state consolidation and globalization are producing language attrition so rapidly that up to 90\% of all languages alive today will be extinct within a century~\cite{endang_lang}.
-Theorists of biolinguistic diversity~\cite{nettle} argue that the loss of
+Theorists of biolinguistic diversity argue that the loss of
 language diversity, the loss of human biological knowledge, and the loss of
 species diversity are mutually supportive and thus that language preservation
-and revitalization are essential to the preservation of biological diversity.
+and revitalization are essential to the preservation of biological diversity~\cite{nettle}.
 The vision of the PanLex project is to save all these thousands of languages,
 especially those low-density ones that are threatened by extinction,
 by supporting their use in global communication. This requires panlingual
@@ -198,7 +214,7 @@ The most important entities and their relations are depicted in \autoref{fig:db-
 \begin{itemize}
   \item \emph{Expressions} are lemmas. For example, \emph{``go''} is a valid expression, whereas \emph{``went''} is not.
   Expressions are always given in a language variety and can only be given once per language variety.
-  They were extracted from the above mentioned mono- or bilingual dictionaries or from other sources.
+  They were extracted from the afore mentioned mono- or bilingual dictionaries or from other sources.
   \item \emph{Languages} in PanLex are identified using ISO 639-3\footnote{\url{http://www.sil.org/iso639-3/codes.asp}} individual and macrolanguage codes, ISO 639-2\footnote{\url{http://www.loc.gov/standards/iso639-2/}} collective codes and ISO 639-5\footnote{\url{http://www.loc.gov/standards/iso639-5/}} codes.
   \item \emph {Language Varieties} within a language are further distinguished by arbitrary unique integer identifiers.
   For example, ``eng'' is the ISO 639-3 code for the English language.
@@ -208,13 +224,13 @@ The most important entities and their relations are depicted in \autoref{fig:db-
   Additionally these variety identifiers and labels do not have to be registered like the IETF BCP 47 language subtags\footnote{\url{http://www.iana.org/assignments/language-subtag-registry}}.
   \item \emph{Meanings} of expressions are distinguished by editors based on their
   interpretation of an information source.
-  Information sources can be dictionaries, thesauri, etc., and also personal knowledge. 
+%  Information sources can be dictionaries, thesauri, etc., and also personal knowledge. 
   The pair comprised of the editor and the information source is referred to as a meaning's \emph{approver}.
   Editors may add informal definitions to meanings in any language variety.
   \item \emph{Definitions} are optional descriptions of a meaning.
   They are given in a certain language variety.
   A description of the verb \emph{browse} for example could be \emph{``move or surf through various files on a computer, the Internet, etc.''}, marked as a definition in the ``English'' language variety.
-  \item \emph{Denotations} relate expressions to \emph{meanings}.
+  \item \emph{Denotations} relate expressions to meanings.
   So homonyms are represented by one expression being connected to different meanings.
   Denotations may be enriched with part-of-speech tags selected from a closed list based on the
   Open Lexicon Interchange Format (OLIF) standard\footnote{\url{http://www.olif.net/}}.
@@ -296,31 +312,35 @@ Users are only associated with language variety and approver entities. However, 
 
 \subsection{The PanLex vocabulary}
 \label{sec:vocabulary}
-The schema described above was adopted to create RDF triple structures.
-Since the relational schema is a good starting point most of the relations were taken over introducing a PanLex RDF vocabulary.
-Therefore the namespace \texttt{<http://panlex.org/plx/>} is used, abbreviated by the \texttt{plx} prefix.
+%The schema described above was adopted to create RDF triple structures.
+%is a good starting point most of the relations were taken over introducing a PanLex RDF vocabulary.
+The entities and relations of the schema described in the previous section
+serve as the base for the development of the PanLex RDF vocabulary.
+In general, all PanLex RDF resources reside
+in the namespace \texttt{<http://panlex.org/plx/>}, abbreviated with \texttt{plx}.
+An example of the resulting ontology is depicted in \autoref{tbl:vocabulary} and
+summarized as follows:
+Unless otherwise noted, the URIs of instances of PanLex classes follow the pattern
+\emph{plx:\{className\}/\{id\}}, where \{className\} is spelled in lower camel case
+and the \{id\} is the primary key of the corresponding database table.
 
-The structure of \emph{approvers} is nearly the same as in the database schema.
-All approvers share the \texttt{plx:Approver} class.
-The characteristics of an approver are described using mainly triples with literal objects.
-These are for example \texttt{plx:registrationDate} pointing to an \texttt{xsd:date} literal, \texttt{dc:title} to assign the title of a source, \texttt{dc:creator} to give an \texttt{xsd:string} containing the author's name etc.
-All properties defined for \texttt{plx:Approver} instances are shown in \autoref{tbl:vocabulary}.
+%As in the original PanLex database there are also \emph{expressions} used in the RDF dataset.
+Expressions are modeled as intances of \vocab{plx:Expression}.
+Their textual representations and normalized versions thereof become the 
+values of the properties \texttt{rdfs:label} and \texttt{plx:degradedText}, respectively.
+Their corresponding language variety is stated
+using \texttt{plx:languageVariety}.
 
-Besides the approvers there are also \emph{languages} and \emph{language varieties} taken over into the RDF vocabulary.
-They are of the classes \texttt{plx:Language} and \texttt{plx:LanguageVariety} respectively.
-Language varieties have a name given by the \texttt{rdfs:label} property and belong to a certain language referred to via \texttt{plx:languageVarietyOf}.
-For those languages that have an ISO 639-3 language code, this code is referenced via the \texttt{plx:iso639-3Code} property.
-The equivalent ISO 639-1 code can be retrieved using the \texttt{plx:iso639-1Code} property.
+%These resources have an \texttt{rdfs:label} containing the textual representation of the considered expression.
+%Additionally there is a normalized version of the label, reachable via the \texttt{plx:degradedText} property.
+%Expression entities also have an assigned language variety (\texttt{plx:languageVariety}).
+%It refers to the language variety the textual representation is written in.
 
-\emph{ISO 639-1} and \emph{ISO 639-3 codes} are of the classes \texttt{plx:Iso639-1Code} and \texttt{plx:Iso639-3Code} respectively.
-These entities are mainly used for interlinking to the Lexvo dataset\footnote{\url{http://lexvo.org/ontology}}.
-See \autoref{sec:linking} for more details.
+For Language and Language Varieties the classes
+texttt{plx:Language} and \texttt{plx:LanguageVariety} are introduced.
 
-As in the original PanLex database there are also \emph{expressions} used in the RDF dataset.
-These resources have an \texttt{rdfs:label} containing the textual representation of the considered expression.
-Additionally there is a normalized version of the label, reachable via the \texttt{plx:degradedText} property.
-Expression entities also have an assigned language variety (\texttt{plx:languageVariety}).
-It refers to the language variety the textual representation is written in.
+\emph{ISO 639-1} and \emph{ISO 639-3 codes} are of the classes
+\texttt{plx:Iso639-1Code} and \texttt{plx:Iso639-3Code} respectively.
 
 The RDF analog of the PanLex \emph{meaning} is the \texttt{plx:Meaning}.
 Entities of this class may have an identifier assigned with the \texttt{plx:identifier} property pointing to an \texttt{xsd:string} literal.
@@ -332,10 +352,39 @@ These are entities of the \texttt{plx:Denotation} class pointing to meanings and
 Denotations may also have a word class assigned to them.
 This can be achieved with the denotation's \texttt{plx:wordClass} property pointing to a \texttt{plx:WordClass} entity.
 
-Since the PanLex project compiled its database by extracting data from different sources, the licenses of these sources were considered, too.
+All approvers share the \texttt{plx:Approver} class. The characteristics of an approver are described using mainly triples with literal objects.
+These are for example \texttt{plx:registrationDate} pointing to an \texttt{xsd:date} literal,
+\texttt{dc:title} to assign the title of a source,
+\texttt{dc:creator} to give an \texttt{xsd:string} containing the author's name.
+
+
+%These entities are mainly used for interlinking to the Lexvo dataset\footnote{\url{http://lexvo.org/ontology}}.
+%See \autoref{sec:linking} for more details.
+
+
+
+%Besides the approvers there are also \emph{languages} and \emph{language varieties} taken over into the RDF vocabulary.
+%They are of the classes \texttt{plx:Language} and \texttt{plx:LanguageVariety} respectively.
+%Language varieties have a name given by the \texttt{rdfs:label} property and belong to a certain language referred to via \texttt{plx:languageVarietyOf}.
+%For those languages that have an ISO 639-3 language code, this code is referenced via the \texttt{plx:iso639-3Code} property.
+%The equivalent ISO 639-1 code can be retrieved using the \texttt{plx:iso639-1Code} property.
+
+%The structure of \emph{approvers} is nearly the same as in the database schema.
+% etc.
+%All properties defined for \texttt{plx:Approver} instances are shown in \autoref{tbl:vocabulary}.
+
+%Besides the approvers there are also \emph{languages} and \emph{language varieties} taken over into the RDF vocabulary.
+%They are of the classes \texttt{plx:Language} and \texttt{plx:LanguageVariety} respectively.
+%Language varieties have a name given by the \texttt{rdfs:label} property and belong to a certain language referred to via \texttt{plx:languageVarietyOf}.
+%For those languages that have an ISO 639-3 language code, this code is referenced via the \texttt{plx:iso639-3Code} property.
+%The equivalent ISO 639-1 code can be retrieved using the \texttt{plx:iso639-1Code} property.
+
+Since the PanLex project compiled its database by extracting data from different sources, the licenses of these sources were also considered.
 At present, we support the different license categories given in the database by creating resources of the \texttt{plx:License} class.
-In the RDF dataset these have an additional \texttt{rdfs:label} property giving the names or descriptions of the licenses or license categories.
+%with appropriate descriptions in their \texttt{rdfs:label}.
+%In the RDF dataset these have an additional \texttt{rdfs:label} property giving the names or descriptions 
 \begin{table}
+\begin{scriptsize}
 \begin{tabular}{ll}
 Class & Properties \\
 \toprule
@@ -387,7 +436,8 @@ Class & Properties \\
 \texttt{plx:License}  & \texttt{rdfs:label} \\
 \bottomrule
 \end{tabular}
-\caption{Classes and properties used in the PanLex RDF vocabulary}
+\end{scriptsize}
+\caption{Classes and properties used in the PanLex RDF vocabulary. Note that all \texttt{rdf:type} and \texttt{rdfs:label} properties have been omitted for brevity.}
 \label{tbl:vocabulary}
 \end{table}
 
@@ -397,7 +447,7 @@ An overview of the PanLex vocabulary is shown in \autoref{fig:vocabulary}.%
 \caption{Overview of the PanLex RDF vocabulary}
 \label{fig:vocabulary}
 \end{figure}
-There, any \texttt{rdf:type} triples as well as facts assigning ISO 639-1 and ISO 639-3 labels are omitted for clarity.
+
 
 \subsection{Transformation workflow}
 \label{sec:conversion}
@@ -414,9 +464,9 @@ RDB 2 RDF mapping solution is a natural choice. The \emph{Sparqlify Mapping Lang
 offers a very easy-to-use mapping language.
 Essentially, these mappings consist of three clauses:
 \begin{itemize}
-  \item \emph{From} Specifies the logical SQL table (i.e. table, view or query) underlying the Sparqlify-ML view.
-  \item \emph{With} Defines SPARQL variables by means of expressions over relational columns that yield RDF terms.
-  \item \emph{Construct} The template (i.e. the set of triple patterns) to be generated in this view, based on the SPARQL variable definitions.
+  \item \emph{From:} Specifies the logical SQL table (i.e. table, view or query) underlying the Sparqlify-ML view.
+  \item \emph{With:} Defines SPARQL variables by means of expressions over relational columns that yield RDF terms.
+  \item \emph{Construct:} The template (i.e. the set of triple patterns) to be generated in this view, based on the SPARQL variable definitions.
 \end{itemize}
 ~\autoref{fig:ex:sparqlify-ml} shows an example of a Sparqlify-ML view for the
 languages in PanLex: From each row of the \emph{i1} table three resources are
@@ -440,7 +490,7 @@ adding support for new ones does not require an ETL process, and can therefore b
 
 \begin{figure}
 \centering
-\begin{lstlisting}
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily]
 Create View i1 As
   Construct {
     ?lang a plx:Language ;
