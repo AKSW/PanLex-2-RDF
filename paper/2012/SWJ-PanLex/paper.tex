@@ -96,6 +96,7 @@
 
 \review{Name Surname, University, Country}{Name Surname, University, Country}{Name Surname, University, Country}
 
+%patrick.westphal@studserv.uni-leipzig.de
 %\author[1]{\fnms{Patrick} \snm{Westphal}},
 %\author[1]{\fnms{Claus} \snm{Stadler}},
 %\author[2]{\fnms{Jonathan} \snm{Pool}}
@@ -130,7 +131,7 @@ For this reason, PanLex gathers and integrates information from thousands of
 linguistic resources, such as monolingual dictionaries, bilingual dictionaries, multilingual dictionaries,
 glossaries, standards and thesauri.
 In this paper we describe how we transformed this data to RDF, interlinked it with
-lexvo and DBpedia and published it as Linked Data and SPARQL.
+Lexvo and DBpedia and published it as Linked Data and SPARQL.
 \end{abstract}
 
 \begin{keyword}
@@ -632,12 +633,10 @@ with the other data using Sparqlify.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.4\textwidth]{images/PanLex-SW-Architecture}
+\includegraphics[width=0.4\textwidth]{images/PanLex-SW-Architecture-New}
 \caption{PanLex architecture}
 \label{fig:panlex-architecture}
 \end{figure}
-
-\todo{Fix the image: It should also show some sources which panlex uses.}
 
 
 \section{Dataset Benefits and Usage Scenarios}
@@ -725,7 +724,7 @@ In this paper we describe the PanLex database and its conversion to RDF.
 Based on our URI and vocabulary design, we created appropriate view definitions
 for the virtual RDB to RDF solution \emph{Sparqlify} which carries out
 the actual RDF transformation.
-Furthermore, we interlinked the languages in PanLex with lexvo,
+Furthermore, we interlinked the languages in PanLex with Lexvo,
 and created about 2.5 million links to DBpedia for expressions in 16 languages.
 %We detailed the developed vocabulary and  
 
