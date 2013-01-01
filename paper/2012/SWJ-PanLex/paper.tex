@@ -18,6 +18,9 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{array}
+
+%\usepackage{authblk}
+
 \usepackage{textcomp}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
@@ -93,16 +96,28 @@
 
 \review{Name Surname, University, Country}{Name Surname, University, Country}{Name Surname, University, Country}
 
-\author[A]{\fnms{Patrick} \snm{Westphal}},
-\author[B]{\fnms{Claus} \snm{Stadler}},
-\author[C]{\fnms{Jonathan} \snm{Pool}},
+%\author[1]{\fnms{Patrick} \snm{Westphal}},
+%\author[1]{\fnms{Claus} \snm{Stadler}},
+%\author[2]{\fnms{Jonathan} \snm{Pool}}
+%\address[1]{University of Leipzig, Institute of Computer Science, AKSW}
+%\address[2]{TODO}
+
+%\address[1]{University of Leipzig, Institute of Computer Science, AKSW, Postfach 100920, D-04009 Leipzig, Germany}
+
+%\author[A]{Patrick Westphal\thanks{A.A@university.edu}},
+%\author[A]{Claus Stadler\thanks{cstadler@informatik.uni-leipzig.de}},
+%\author[B]{Jonathan Pool\thanks{todo}}
+%\address[A]{University of Leipzig, Institute of Computer Science, AKSW, Postfach 100920, D-04009 Leipzig, Germany\\ E-mail: \{lastname\}@informatik.uni-leipzig.de}
+%\address[A]{University of Leipzig, Institute of Computer Science, AKSW, Postfach 100920, D-04009 Leipzig, Germany}
+%\address[B]{TODO}
+
+%\author[A]{\fnms{Patrick} \snm{Westphal}}
+%\author[B]{\fnms{Claus} \snm{Stadler}}
 
 %\runningauthor{M. Martin et al.}
 
-\address[A]{University of Leipzig, Institute of Computer Science, AKSW, Postfach 100920, D-04009 Leipzig, Germany\\
-E-mail: \{lastname\}@informatik.uni-leipzig.de}
-\address[B]{University of Leipzig}
-\address[C]{TODO}
+%\address[B]{University of Leipzig}
+%\address[C]{TODO}
 %\todo{the e-mail address pattern won't work for both of us}
 
 \begin{abstract}
@@ -288,11 +303,10 @@ Licenses    & 10 \\ % SELECT COUNT(li) FROM apli;
 %However, an expression's possible meanings depend on the user's interpretion of them in context of such a source.
 %For this reason, every meaning depends on an approver.
 %\emph{Denotations} capture the mappings between expressions and their possible meanings.  
-
-There are two noteworthy limitations of the database schema:
-Approver combines a user with an information source, however the \emph{information source} is not modelled as a distinct entity.
-Users are only associated with language variety and approver entities. However, whenever a given approver has more than one user with editorial privileges, it is not possible to track which denotations were added by which of the approver's authorized users.
-\todo{What are the consequences? }
+Note that \emph{approver} combines a user with an \emph{information source},
+however the \emph{information source} is not modelled as a distinct entity.
+Also, the information of whether two meanings with different approvers
+are still equal is not being captured. 
 
 
 %These sources are fundamental for the PanLex database design and are aggregated in the approver table.
@@ -330,38 +344,42 @@ Unless otherwise noted, the URIs of instances of PanLex classes follow the patte
 and the \{id\} is the primary key of the corresponding database table.
 
 %As in the original PanLex database there are also \emph{expressions} used in the RDF dataset.
-Expressions are modeled as intances of \vocab{plx:Expression}.
+\begin{itemize}
+\item Expressions are modeled as intances of \vocab{plx:Expression}.
 Their textual representations and normalized versions thereof become the 
 values of the properties \texttt{rdfs:label} and \texttt{plx:degradedText}, respectively.
 Their corresponding language variety is stated
 using \texttt{plx:languageVariety}.
 
+\item For language and language varieties the classes
+\texttt{plx:Language} and \texttt{plx:LanguageVariety} are introduced.
+\emph{ISO 639-1} and \emph{ISO 639-3 codes} are of the classes
+\texttt{plx:Iso639-1Code} and \texttt{plx:Iso639-3Code} respectively.
+
+\item The RDF analog of the PanLex \emph{meaning} is the \texttt{plx:Meaning}.
+Entities of this class may have an identifier assigned with the
+\texttt{plx:identifier} property pointing to an \texttt{xsd:string} literal.
+This meaning identifier represents ids given to the considered meaning in other
+data sources and may at a later stage be used to build links to the meaning
+as represented on these sites.
+Meanings may also have \emph{definitions}, entities of the
+\texttt{plx:Definition} class, giving a textual representation
+(\texttt{rdfs:label}) with more than just a lexeme in a certain
+language variety (\texttt{plx:languageVariety}).
+
 %These resources have an \texttt{rdfs:label} containing the textual representation of the considered expression.
 %Additionally there is a normalized version of the label, reachable via the \texttt{plx:degradedText} property.
 %Expression entities also have an assigned language variety (\texttt{plx:languageVariety}).
 %It refers to the language variety the textual representation is written in.
-
-For Language and Language Varieties the classes
-texttt{plx:Language} and \texttt{plx:LanguageVariety} are introduced.
-
-\emph{ISO 639-1} and \emph{ISO 639-3 codes} are of the classes
-\texttt{plx:Iso639-1Code} and \texttt{plx:Iso639-3Code} respectively.
-
-The RDF analog of the PanLex \emph{meaning} is the \texttt{plx:Meaning}.
-Entities of this class may have an identifier assigned with the \texttt{plx:identifier} property pointing to an \texttt{xsd:string} literal.
-This meaning identifier represents ids given to the considered meaning in other data sources and may be used to build links to the meaning as represented on these sites.
-Meanings may also have \emph{definitions}, entities of the \texttt{plx:Definition} class, giving a textual representation (\texttt{rdfs:label}) with more than just a lexeme in a certain language variety (\texttt{plx:languageVariety}).
-
-Following the semantics of the PanLex database, meanings and expressions are linked via \emph{denotations}.
+\item Following the semantics of the PanLex database, meanings and expressions are linked via \emph{denotations}.
 These are entities of the \texttt{plx:Denotation} class pointing to meanings and expressions via the \texttt{plx:denotationMeaning} and \texttt{plx:denotationExpression} property respectively.
 Denotations may also have a word class assigned to them.
 This can be achieved with the denotation's \texttt{plx:wordClass} property pointing to a \texttt{plx:WordClass} entity.
-
-All approvers share the \texttt{plx:Approver} class. The characteristics of an approver are described using mainly triples with literal objects.
+\item All approvers share the \texttt{plx:Approver} class. The characteristics of an approver are described using mainly triples with literal objects.
 These are for example \texttt{plx:registrationDate} pointing to an \texttt{xsd:date} literal,
 \texttt{dc:title} to assign the title of a source,
 \texttt{dc:creator} to give an \texttt{xsd:string} containing the author's name.
-
+\end{itemize}
 
 %These entities are mainly used for interlinking to the Lexvo dataset\footnote{\url{http://lexvo.org/ontology}}.
 %See \autoref{sec:linking} for more details.
@@ -446,7 +464,7 @@ Class & Properties \\
 \label{tbl:vocabulary}
 \end{table}
 
-An overview of the PanLex vocabulary is shown in \autoref{fig:vocabulary}.%
+%An overview of the PanLex vocabulary is shown in \autoref{fig:vocabulary}.%
 \begin{figure}
 \includegraphics[width=0.47\textwidth]{images/pdf/ontology.pdf}
 \caption{Overview of the PanLex RDF vocabulary}
@@ -456,10 +474,10 @@ An overview of the PanLex vocabulary is shown in \autoref{fig:vocabulary}.%
 
 \subsection{Transformation workflow}
 \label{sec:conversion}
-\todo{how often in PanLex updated?}
-The size of the PanLex database (including indexes) is approximately 18 GB,
-which is big enough to make recurrent RDF conversion cumbersome:
-A full RDF conversion bloats the dataset and results in data duplication.   
+New sources are added to PanLex on almost a daily basis.   
+The size of the PanLex database (including indexes) is currently approximately
+18 GB, which is big enough to make recurrent RDF conversion cumbersome:
+The RDF files of a full conversion of a dataset of this size are very huge.
 Using conventional hardware, it takes impractically long
 to convert all the data. This makes
 testing and debugging and fixing issues in the modelling or data conversion of the
@@ -475,11 +493,12 @@ Essentially, these mappings consist of three clauses:
 \end{itemize}
 ~\autoref{fig:ex:sparqlify-ml} shows an example of a Sparqlify-ML view for the
 languages in PanLex: From each row of the \emph{i1} table three resources are
+created from the \emph{iso3} column and 
 bound to the variable names \emph{?lang}, \emph{?iso3} and \emph{?lexvo3}.
-Resources for \emph{?lang} become typed as a \emph{Language}in the PanLex and the \emph{schema.org} namespace.
-\todo{Maybe we should link to lexvo directly.}
+Resources for \emph{?lang} become typed as a \emph{Language} in the PanLex and the \emph{schema.org} namespace.
 This view-based approach also demonstrates that changing the vocubulary or
 adding support for new ones does not require an ETL process, and can therefore be done with little effort.
+%\todo{Maybe we should link to lexvo directly.}
 %PanLex's languages  iso 639-3 code 
 %typed with plx:Language
 %resources are created for
@@ -608,7 +627,8 @@ endpoint\footnote{\url{http://panlex.org/sparql} and \url{http://panlex.org/snor
 An overview is shown in ~\autoref{fig:panlex-architecture}.
 Our code for interlinking is
 hosted on GitHub\footnote{\url{https://github.com/AKSW/PanLex-2-RDF}}.
-\todo{Where to host the linksets?}
+The created linksets are hosted in the PanLex database and published together
+with the other data using Sparqlify.
 
 \begin{figure}
 \centering
@@ -633,8 +653,9 @@ making it available to a broader community. Users can easily explore the PanLex 
 the services provided by SNORQL and Pubby. This also increases the chance of development of
 interesting mashups.
 For example, the TeraDict translation service\footnote{\url{http://panlex.org/cgi-bin/apidemo-2.cgi}}
-could be easily realized using simple SPARQL query as shown in
-\todo{Create the query: translations in a given target language of an expression}. 
+could be easily realized using simple SPARQL queries.
+% as shown in
+%\todo{Create the query: translations in a given target language of an expression}. 
 Anothe future usage scenario is to link PanLex to Wortschatz in order to 
 improve the recall of word-by-word translations by considering co-occurences.
 
