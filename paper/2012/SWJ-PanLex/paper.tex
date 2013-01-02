@@ -560,7 +560,7 @@ example also demonstrates how ``is-a relations'' to schema.org and links to Lexv
 
 \section{Linking}
 \label{sec:linking}
-The Sparqlify view in the previous section ~\ref{fig:ex:sparqlify-ml} already
+The Sparqlify view in the previous section (\autoref{fig:ex:sparqlify-ml}) already
 established the interlinking of the PanLex languages with Lexvo.
 In this section we outline the interlinking with DBpedia.
 
@@ -579,7 +579,7 @@ Unicode NFKD\footnote{\url{http://unicode.org/reports/tr15/}} normalization and
 removal of punctuation characters.
 % PanLex now uses NFC, not NFKD, for character normalization and does not remove punctuation.
 Each DBpedia resource was then mapped to the PanLex expression that was equal to the resource's normalized label in the respective language.
-Table ~\ref{fig:plx-dbp-link-counts} summarizes the number of links obtained.
+\autoref{fig:plx-dbp-link-counts} summarizes the number of links obtained.
 \begin{table}
 \centering
 \begin{scriptsize}
@@ -673,22 +673,20 @@ data access via Linked Data and SPARQL.
 
 With the RDF version of PanLex, a large lexical resource participates in the Web of Data,
 making it available to a broader community. Users can easily explore the PanLex data using
-the services provided by SNORQL and Pubby. This also increases the chance of development of
+the services provided by SNORQL\footnote{\url{https://github.com/kurtjx/SNORQL}} and Pubby\footnote{\url{http://wifo5-03.informatik.uni-mannheim.de/pubby/}}. This also increases the chance of development of
 new interesting mashups.
 For example, the TeraDict translation service\footnote{\url{http://panlex.org/cgi-bin/apidemo-2.cgi}}
 could now be easily realized using simple SPARQL queries.
 % as shown in
 %\todo{Create the query: translations in a given target language of an expression}. 
-Another future usage scenario is to link PanLex to Wortschatz with the aim of 
+Another future usage scenario is to link PanLex to Wortschatz\footnote{\url{http://wortschatz.uni-leipzig.de/}} with the aim of 
 improving the recall of word-by-word translations by considering the co-occurences.
-
-
 
 \section{Related Work}
 \label{sec:related}
-PanLex is an integration project of many existing lexical resources with
-the goal of eventually covering all languages in the world, especially
-ones having few speakers.
+PanLex is an integration project of many existing lexical resources. % with
+% the goal of eventually covering all languages in the world, especially
+% ones having few speakers.
 The extraction of information from linguistic sources, and
 techniques for automatically inferring translations, are
 relevant work discussed in \cite{panlex_probtrans}. 
@@ -698,14 +696,14 @@ An important initiative is the
 which offers a platform for sharing wordnets and defines several goals.
 These include setting forth standards for uniformly representing wordnets
 of different languages and establishing a universal index of meaning.
-
+%
 %It draws from the EuroWordNet~\cite{eurowordnet} and the  
 %Manually engineered dictionaries %such as EuroWordNet [38]
 % andcurrently mainly used for research purposes\todo{correct?}.
 %A list of the resources used in panlex is compiled on the website\footnote{\url{http://panlex.org/tech/plrefs.shtml}}.
 %In this section we discuss work related to the extraction and inference
 %approaches used in PanLex, and work on the Semantic Web. 
-
+%
 %- There has been considerable research on methods to acquire translation lexicons from either
 %MRDs (Neff and McCord, 1990; Helmreich et
 %al., 1993; Copestake et al., 1994) or from par-
@@ -716,10 +714,11 @@ of different languages and establishing a universal index of meaning.
 %- Manually engineered dictionaries such as
 %EuroWordNet (Vossen, 1998) (whats the name of the new project?)
 %- TRANS GRAPH algorithm (Etzioni etal., 2007).
-
+%
 At the level of the Semantic Web, there is currently a trend in publishing linguistic resources
-as Linked Data\footnote{\url{http://www.w3.org/DesignIssues/LinkedData.html}} and via SPARQL{\footnote{\url{http://www.w3.org/TR/sparql11-query/}}}.
-These efforts are referred to as the \emph{Linguistic Linked Open Data Cloud} (LLOD)\footnote{\url{http://linguistics.okfn.org/resources/llod/}}. 
+%as Linked Data\footnote{\url{http://www.w3.org/DesignIssues/LinkedData.html}} and via SPARQL{\footnote{\url{http://www.w3.org/TR/sparql11-query/}}}.
+as Linked Data\footnote{\url{http://www.w3.org/DesignIssues/LinkedData.html}} and via SPARQL.
+These efforts are referred to as the \emph{Linguistic Linked Open Data Cloud} (LLOD). 
 %Some of these datasets already make use of quasi-standard linguistic Semantic Web Ontolgies, such as  
 Several (quasi-)standard ontologies have been developed for covering different aspects of linguistic resources.
 Examples include the \emph{Ontologies of Linguistic Annotation} (OLiA)~\cite{olia2010},
