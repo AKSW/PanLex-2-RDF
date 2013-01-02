@@ -97,11 +97,23 @@
 \review{Name Surname, University, Country}{Name Surname, University, Country}{Name Surname, University, Country}
 
 %patrick.westphal@studserv.uni-leipzig.de
-%\author[1]{\fnms{Patrick} \snm{Westphal}},
-%\author[1]{\fnms{Claus} \snm{Stadler}},
-%\author[2]{\fnms{Jonathan} \snm{Pool}}
-%\address[1]{University of Leipzig, Institute of Computer Science, AKSW}
-%\address[2]{TODO}
+\author[1]{\fnms{Patrick} \snm{Westphal}},
+\author[2]{\fnms{Claus} \snm{Stadler}},
+\author[3]{\fnms{Jonathan} \snm{Pool}}
+\address[1]{University of Leipzig, patrick.westphal@studserv.uni-leipzig.de}
+\address[2]{University of Leipzig, cstadler@informatik.uni-leipzig.de}
+\address[3]{Long Now Foundation, San Francisco, pool@utilika.org}
+
+%\author[1]{Author A\thanks{A.A@university.edu}}
+%\author[1]{Author B\thanks{B.B@university.edu}}
+%\author[1]{Author C\thanks{C.C@university.edu}}
+%\author[2]{Author D\thanks{D.D@university.edu}}
+%\author[2]{Author E\thanks{E.E@university.edu}}
+%\affil[1]{Department of Computer Science, \LaTeX\ University}
+%\affil[2]{Department of Mechanical Engineering, \LaTeX\ University}
+
+%\address[1]{University of Leipzig, Institute of Computer Science, AKSW, patrick.westphal@studserv.uni-leipzig.de}
+
 
 %\address[1]{University of Leipzig, Institute of Computer Science, AKSW, Postfach 100920, D-04009 Leipzig, Germany}
 
@@ -361,9 +373,9 @@ using \texttt{plx:languageVariety}.
 \item The RDF analog of the PanLex \emph{meaning} is the \texttt{plx:Meaning}.
 Entities of this class may have an identifier assigned with the
 \texttt{plx:identifier} property pointing to an \texttt{xsd:string} literal.
-This meaning identifier represents ids given to the considered meaning in other
-data sources and may at a later stage be used to build links to the meaning
-as represented on these sites.
+%This meaning identifier represents ids given to the considered meaning in other
+%data sources and may at a later stage be used to build links to the meaning
+%as represented on these sites.
 Meanings may also have \emph{definitions}, entities of the
 \texttt{plx:Definition} class, giving a textual representation
 (\texttt{rdfs:label}) with more than just a lexeme in a certain
