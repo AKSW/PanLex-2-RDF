@@ -230,7 +230,7 @@ Furthermore, expressions have meanings. All expressions sharing the same meaning
 
 The lexical database of the PanLex project is based on different sources like monolingual dictionaries,
 bilingual dictionaries, multilingual dictionaries, glossaries, standards, and thesauri.
-The list of used sources can also be found on the web\footnote{\url{http://panlex.org/tech/plrefs.shtml}}.
+The list of used sources can also be found on the Web\footnote{\url{http://panlex.org/tech/plrefs.shtml}}.
 
 The actual data derived from these sources comprises single- and multi-word expressions and meanings assigned to them.
 The most important entities and their relations are depicted in \autoref{fig:db-schema} and are explained in more the detail in the following.
@@ -359,8 +359,8 @@ and the \{id\} is the primary key of the corresponding database table.
 
 %As in the original PanLex database there are also \emph{expressions} used in the RDF dataset.
 \begin{itemize}
-\item Expressions are modeled as intances of \vocab{plx:Expression}.
-Their textual representations and normalized versions thereof become the 
+\item Expressions are modeled as intances of the class \texttt{\small plx:Expression}.
+Their original and normalized textual representations become the 
 values of the properties \texttt{\small rdfs:label} and \texttt{\small plx:degradedText}, respectively.
 Their corresponding language variety is stated
 using \texttt{\small plx:languageVariety}.
