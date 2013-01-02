@@ -543,15 +543,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="7.5334444"
-     inkscape:cy="633.04794"
+     inkscape:cx="694.52094"
+     inkscape:cy="511.63524"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g8084"
      showgrid="false"
-     inkscape:window-width="1600"
+     inkscape:window-width="1280"
      inkscape:window-height="900"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="31"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true" />
@@ -1504,7 +1504,7 @@
                    y="135.16486"
                    x="127.69528"
                    height="14.394668"
-                   width="89.038002"
+                   width="96.438004"
                    id="rect5341-2"
                    style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.90600002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
                 <text
@@ -1518,7 +1518,7 @@
                      y="144.78162"
                      x="131.38213"
                      id="tspan5345-6"
-                     sodipodi:role="line">&quot;dummy&quot;^^xsd:string</tspan></text>
+                     sodipodi:role="line">&quot;between&quot;^^xsd:string</tspan></text>
               </g>
             </g>
           </g>
