@@ -351,7 +351,7 @@ The entities and relations of the schema described in the previous section
 serve as the base for the development of the PanLex RDF vocabulary.
 In general, all PanLex RDF resources reside
 in the namespace \texttt{\small <http://panlex.org/plx/>}, abbreviated with \texttt{\small plx}.
-An example of the resulting ontology is depicted in \autoref{tbl:vocabulary} and
+An example of the resulting ontology is depicted in \autoref{fig:vocabulary} and
 summarized as follows:
 Unless otherwise noted, the URIs of instances of PanLex classes follow the pattern
 \emph{plx:\{className\}/\{id\}}, where \{className\} is spelled in lower camel case
@@ -367,8 +367,8 @@ using \texttt{\small plx:languageVariety}.
 
 \item For language and language varieties the classes
 \texttt{\small plx:Language} and \texttt{\small plx:LanguageVariety} are introduced.
-\emph{ISO 639-1} and \emph{ISO 639-3 codes} are of the classes
-\texttt{\small plx:Iso639-1Code} and \texttt{\small plx:Iso639-3Code} respectively.
+\emph{ISO 639-1} and \emph{ISO 639-3 codes} become instances of the classes
+\texttt{\small plx:Iso639-1Code} and \texttt{\small plx:Iso639-3Code}. % manual linebreak
 
 \item The RDF analog of the PanLex \emph{meaning} is the \texttt{\small plx:Meaning}.
 Entities of this class may have an identifier assigned with the
@@ -378,7 +378,9 @@ Entities of this class may have an identifier assigned with the
 %as represented on these sites.
 Meanings may also have \emph{definitions}, entities of the
 \texttt{\small plx:Definition} class, giving a textual representation
-(\texttt{\small rdfs:label}) with more than just a lexeme in a certain
+(\texttt{\small rdfs:label})
+%with more than just a lexeme
+in a certain
 language variety (\texttt{\small plx:languageVariety}).
 
 %These resources have an \texttt{rdfs:label} containing the textual representation of the considered expression.
@@ -386,7 +388,9 @@ language variety (\texttt{\small plx:languageVariety}).
 %Expression entities also have an assigned language variety (\texttt{plx:languageVariety}).
 %It refers to the language variety the textual representation is written in.
 \item Following the semantics of the PanLex database, meanings and expressions are linked via \emph{denotations}.
-These are entities of the \texttt{\small plx:Denotation} class pointing to meanings and expressions via the \texttt{\small plx:denotationMeaning} and \texttt{\small plx:denotationExpression} property respectively.
+These are entities of the \texttt{\small plx:Denotation} class pointing
+to meanings and expressions via the properties \texttt{\small plx:denotationMeaning}
+and \\ \texttt{\small plx:denotationExpression}. % manual linebreak
 Denotations may also have a word class assigned to them.
 This can be achieved with the denotation's \texttt{\small plx:wordClass} property pointing to a \texttt{\small plx:WordClass} entity.
 \item All approvers share the \texttt{\small plx:Approver} class. The characteristics of an approver are described using mainly triples with literal objects.
@@ -474,7 +478,7 @@ Class & Properties \\
 \bottomrule
 \end{tabular}
 \end{scriptsize}
-\caption{Classes and properties used in the PanLex RDF vocabulary. Note that all \texttt{\small rdf:type} and \texttt{\small rdfs:label} properties have been omitted for brevity.}
+\caption{Classes and properties used in the PanLex RDF vocabulary. Note that all \texttt{rdf:type} and \texttt{rdfs:label} properties have been omitted for brevity.}
 \label{tbl:vocabulary}
 \end{table}
 
