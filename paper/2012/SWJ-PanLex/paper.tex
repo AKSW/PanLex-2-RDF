@@ -247,9 +247,9 @@ The most important entities and their relations are depicted in \autoref{fig:db-
 \begin{itemize}
   \item \emph{Expressions} are lemmas. For example, \emph{``go''} is a valid expression, whereas \emph{``went''} is not.
   Expressions are always given in a language variety and can only be given once per language variety.
-  They were extracted from the afore mentioned mono- or bilingual dictionaries or from other sources.
+  They were extracted from the afore-mentioned mono- or bilingual dictionaries or from other sources.
   \item \emph{Languages} in PanLex are identified using ISO 639-3\footnote{\url{http://www.sil.org/iso639-3/codes.asp}} individual and macrolanguage codes, ISO 639-2\footnote{\url{http://www.loc.gov/standards/iso639-2/}} collective codes and ISO 639-5\footnote{\url{http://www.loc.gov/standards/iso639-5/}} codes.
-  \item \emph {Language Varieties} within a language are further distinguished by arbitrary unique integer identifiers.
+  \item \emph {Language varieties} within a language are further distinguished by arbitrary unique integer identifiers.
   For example, ``eng'' is the ISO 639-3 code for the English language.
   Panlex defines various varieties of it, including ``English'' (eng-000), ``Simple English'' (eng-001) and ``British English'' (eng-005).
   Their labels, when possible, are autonyms, written in the native writing system.
@@ -350,7 +350,7 @@ are still equal is not being captured.
 The entities and relations of the schema described in the previous section
 serve as the base for the development of the PanLex RDF vocabulary.
 In general, all PanLex RDF resources reside
-in the namespace \texttt{<http://panlex.org/plx/>}, abbreviated with \texttt{plx}.
+in the namespace \texttt{\small <http://panlex.org/plx/>}, abbreviated with \texttt{\small plx}.
 An example of the resulting ontology is depicted in \autoref{tbl:vocabulary} and
 summarized as follows:
 Unless otherwise noted, the URIs of instances of PanLex classes follow the pattern
@@ -361,38 +361,38 @@ and the \{id\} is the primary key of the corresponding database table.
 \begin{itemize}
 \item Expressions are modeled as intances of \vocab{plx:Expression}.
 Their textual representations and normalized versions thereof become the 
-values of the properties \texttt{rdfs:label} and \texttt{plx:degradedText}, respectively.
+values of the properties \texttt{\small rdfs:label} and \texttt{\small plx:degradedText}, respectively.
 Their corresponding language variety is stated
-using \texttt{plx:languageVariety}.
+using \texttt{\small plx:languageVariety}.
 
 \item For language and language varieties the classes
-\texttt{plx:Language} and \texttt{plx:LanguageVariety} are introduced.
+\texttt{\small plx:Language} and \texttt{\small plx:LanguageVariety} are introduced.
 \emph{ISO 639-1} and \emph{ISO 639-3 codes} are of the classes
-\texttt{plx:Iso639-1Code} and \texttt{plx:Iso639-3Code} respectively.
+\texttt{\small plx:Iso639-1Code} and \texttt{\small plx:Iso639-3Code} respectively.
 
-\item The RDF analog of the PanLex \emph{meaning} is the \texttt{plx:Meaning}.
+\item The RDF analog of the PanLex \emph{meaning} is the \texttt{\small plx:Meaning}.
 Entities of this class may have an identifier assigned with the
-\texttt{plx:identifier} property pointing to an \texttt{xsd:string} literal.
+\texttt{\small plx:identifier} property pointing to an \texttt{\small xsd:string} literal.
 %This meaning identifier represents ids given to the considered meaning in other
 %data sources and may at a later stage be used to build links to the meaning
 %as represented on these sites.
 Meanings may also have \emph{definitions}, entities of the
-\texttt{plx:Definition} class, giving a textual representation
-(\texttt{rdfs:label}) with more than just a lexeme in a certain
-language variety (\texttt{plx:languageVariety}).
+\texttt{\small plx:Definition} class, giving a textual representation
+(\texttt{\small rdfs:label}) with more than just a lexeme in a certain
+language variety (\texttt{\small plx:languageVariety}).
 
 %These resources have an \texttt{rdfs:label} containing the textual representation of the considered expression.
 %Additionally there is a normalized version of the label, reachable via the \texttt{plx:degradedText} property.
 %Expression entities also have an assigned language variety (\texttt{plx:languageVariety}).
 %It refers to the language variety the textual representation is written in.
 \item Following the semantics of the PanLex database, meanings and expressions are linked via \emph{denotations}.
-These are entities of the \texttt{plx:Denotation} class pointing to meanings and expressions via the \texttt{plx:denotationMeaning} and \texttt{plx:denotationExpression} property respectively.
+These are entities of the \texttt{\small plx:Denotation} class pointing to meanings and expressions via the \texttt{\small plx:denotationMeaning} and \texttt{\small plx:denotationExpression} property respectively.
 Denotations may also have a word class assigned to them.
-This can be achieved with the denotation's \texttt{plx:wordClass} property pointing to a \texttt{plx:WordClass} entity.
-\item All approvers share the \texttt{plx:Approver} class. The characteristics of an approver are described using mainly triples with literal objects.
-These are for example \texttt{plx:registrationDate} pointing to an \texttt{xsd:date} literal,
-\texttt{dc:title} to assign the title of a source,
-\texttt{dc:creator} to give an \texttt{xsd:string} containing the author's name.
+This can be achieved with the denotation's \texttt{\small plx:wordClass} property pointing to a \texttt{\small plx:WordClass} entity.
+\item All approvers share the \texttt{\small plx:Approver} class. The characteristics of an approver are described using mainly triples with literal objects.
+These are for example \texttt{\small plx:registrationDate} pointing to an \texttt{\small xsd:date} literal,
+\texttt{\small dc:title} to assign the title of a source,
+\texttt{\small dc:creator} to give an \texttt{\small xsd:string} containing the author's name.
 \end{itemize}
 
 %These entities are mainly used for interlinking to the Lexvo dataset\footnote{\url{http://lexvo.org/ontology}}.
@@ -417,7 +417,7 @@ These are for example \texttt{plx:registrationDate} pointing to an \texttt{xsd:d
 %The equivalent ISO 639-1 code can be retrieved using the \texttt{plx:iso639-1Code} property.
 
 Since the PanLex project compiled its database by extracting data from different sources, the licenses of these sources were also considered.
-At present, we support the different license categories given in the database by creating resources of the \texttt{plx:License} class.
+At present, we support the different license categories given in the database by creating resources of the \texttt{\small plx:License} class.
 %with appropriate descriptions in their \texttt{rdfs:label}.
 %In the RDF dataset these have an additional \texttt{rdfs:label} property giving the names or descriptions 
 \begin{table}
@@ -474,7 +474,7 @@ Class & Properties \\
 \bottomrule
 \end{tabular}
 \end{scriptsize}
-\caption{Classes and properties used in the PanLex RDF vocabulary. Note that all \texttt{rdf:type} and \texttt{rdfs:label} properties have been omitted for brevity.}
+\caption{Classes and properties used in the PanLex RDF vocabulary. Note that all \texttt{\small rdf:type} and \texttt{\small rdfs:label} properties have been omitted for brevity.}
 \label{tbl:vocabulary}
 \end{table}
 
