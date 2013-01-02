@@ -319,8 +319,8 @@ Licenses    & 10 \\ % SELECT COUNT(li) FROM apli;
 %\emph{Denotations} capture the mappings between expressions and their possible meanings.  
 Note that \emph{approver} combines a user with an \emph{information source},
 however the \emph{information source} is not modelled as a distinct entity.
-Also, the information of whether two meanings with different approvers
-are still equal is not being captured. 
+Also, the information of whether or not two meanings with different approvers
+are the same is not being captured. 
 
 
 %These sources are fundamental for the PanLex database design and are aggregated in the approver table.
@@ -491,14 +491,17 @@ Class & Properties \\
 New sources are added to PanLex on almost a daily basis.   
 The size of the PanLex database (including indexes) is currently approximately
 18 GB, which is big enough to make recurrent RDF conversion cumbersome:
-The RDF files of a full conversion of a dataset of this size are very huge.
+The RDF file of a full conversion of a database is much larger than the
+database itself.
 Using conventional hardware, it takes impractically long
 to convert all the data. This makes
 testing and debugging and fixing issues in the modelling or data conversion of the
 data very time-consuming.
 As the PanLex data already resides in a relational database, the use of a virtual
-RDB 2 RDF mapping solution is a natural choice. The \emph{Sparqlify Mapping Language}
-offers a very easy-to-use mapping language.
+RDB 2 RDF mapping solution is a natural choice.
+The \emph{Sparqlify system}\footnote{\url{https://github.com/AKSW/Sparqlify}} offers,
+besides an efficient query rewriting engine, also a very easy-to-use mapping
+language (ML).
 Essentially, these mappings consist of three clauses:
 \begin{itemize}
   \item \emph{From:} Specifies the logical SQL table (i.e. table, view or query) underlying the Sparqlify-ML view.
@@ -553,21 +556,25 @@ example also demonstrates how ``is-a relations'' to schema.org and links to lexv
 
 \section{Linking}
 \label{sec:linking}
-In this section we first describe how we interlinked PanLex's language codes
-with Lexvo\footnote{\url{http://www.lexvo.org/}} and the expressions with DBpedia\footnote{\url{http://dbpedia.org}}.
-Afterwards we give an overview of how the dataset and the related resources are published.
+The Sparqlify view in the previous section ~\ref{fig:ex:sparqlify-ml} already
+established the interlinking of the PanLex languages with Lexvo.
+In this section we outline the interlinking with DBpedia.
 
-Since Lexvo covers all ISO 639-3 language codes, interlinking could be done with
-the Sparqlify-ML view in Figure~\ref{fig:ex:sparqlify-ml}.
+%In this section we first describe how we interlinked PanLex's language codes
+%with Lexvo\footnote{\url{http://www.lexvo.org/}} and the expressions with DBpedia\footnote{\url{http://dbpedia.org}}.
+%Afterwards we give an overview of how the dataset and the related resources are published.
+
+%Since Lexvo covers all ISO 639-3 language codes, interlinking could be done with
+%the Sparqlify-ML view in Figure~\ref{fig:ex:sparqlify-ml}.
 For DBpedia we were interested in creating \emph{valid} and
 thus \emph{dereferenceable} links.
 Therefore, we iterated the \emph{titles} datasets\footnote{\url{http://wiki.dbpedia.org/Downloads38} - Note that more languages are available in the raw download section at \url{http://downloads.dbpedia.org/3.8/}},
 which map (non-localized) DBpedia URIs to their page titles in the respective language.
-For each language version we normalized the labels: 
+For each language version we normalized the labels by applying
 Unicode NFKD\footnote{\url{http://unicode.org/reports/tr15/}} normalization and
-removal of punctuation characters were applied.
+removal of punctuation characters.
 % PanLex now uses NFC, not NFKD, for character normalization and does not remove punctuation.
-The DBpedia resources were then mapped to the PanLex expression that was equal to the resource's normalized label in the respective language.
+Each DBpedia resource was then mapped to the PanLex expression that was equal to the resource's normalized label in the respective language.
 Table ~\ref{fig:plx-dbp-link-counts} summarizes the number of links obtained.
 \begin{table}
 \centering
@@ -639,7 +646,7 @@ the Linked Data
 and the SPARQL
 endpoint\footnote{\url{http://panlex.org/sparql} and \url{http://panlex.org/snorql}}.
 An overview is shown in ~\autoref{fig:panlex-architecture}.
-Our code for interlinking is
+Our Sparqlify-ML views and the code for interlinking are
 hosted on GitHub\footnote{\url{https://github.com/AKSW/PanLex-2-RDF}}.
 The created linksets are hosted in the PanLex database and published together
 with the other data using Sparqlify.
@@ -663,13 +670,13 @@ data access via Linked Data and SPARQL.
 With the RDF version of PanLex, a large lexical resource participates in the Web of Data,
 making it available to a broader community. Users can easily explore the PanLex data using
 the services provided by SNORQL and Pubby. This also increases the chance of development of
-interesting mashups.
+new interesting mashups.
 For example, the TeraDict translation service\footnote{\url{http://panlex.org/cgi-bin/apidemo-2.cgi}}
-could be easily realized using simple SPARQL queries.
+could now be easily realized using simple SPARQL queries.
 % as shown in
 %\todo{Create the query: translations in a given target language of an expression}. 
-Anothe future usage scenario is to link PanLex to Wortschatz in order to 
-improve the recall of word-by-word translations by considering co-occurences.
+Another future usage scenario is to link PanLex to Wortschatz with the aim of 
+improving the recall of word-by-word translations by considering the co-occurences.
 
 
 
