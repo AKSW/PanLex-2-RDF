@@ -7,6 +7,17 @@
 <title>PanLex: RDF</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="styles-201202.css" title="styles" />
+
+<style>
+.wide {
+    width: 300px;
+} 
+
+.left {
+    text-align: left;
+}
+</style>
+
 <script type="text/javascript">
 // Script commented out ~ Claus
 /*
@@ -46,32 +57,202 @@
 </tr></table></object></h2>
 
 
+<p class="rfb" style="height: 256px; width: 355px">
+<a href="http://richard.cyganiak.de/2007/10/lod/lod-datasets_2011-09-19_colored.html">
+<img src="images/lod-datasets_2011-09-19_colored_300px_transparent.png" height="256px" width="355px" alt="LOD Cloud" />
+</a>
+Linking Open Data cloud diagram, by Richard Cyganiak and Anja Jentzsch. CC-BY-SA. <a href="http://lod-cloud.net/">lod-cloud.net</a>
+</p>
 
-<p class="rfb" style="height: 256px; width: 355px"><img src="images/ontology-small.png" height="256px" width="355px" alt="PanLex schema" /></p>
-
+<h3 class="left">Overview</h3>
 <p>
-To make panlingual lexical translation possible, the PanLex project is constructing a database designed to include translations among all words (and word-like phrases) of the languages of the world. We are gathering translations from thousands of dictionaries, glossaries, vocabularies, thesauri, word lists, wordnets, and other such published and unpublished resources. We subject the translations found there to a set of standards, so they may be combined into a unified network.</p>
-
-<p>Today’s version of the database operates under an open-source database management system (PostgreSQL) running on a Linux server. In addition to command-line access for administrators of the project and special-purpose access for researchers, access to the database for demonstration use is provided via <a href="/try">public web interfaces</a>.</p>
-
-<h3>Sparql</h3>
-The SPARQL endpoint is available <a href="/sparql">here</a>.
-<p>Metrics:
-Triples
-Classes - Instances 
-Properties Usage count
+On this page we collect our efforts of making PanLex part of the Linked Open Data cloud, which offers
+the following advantages:
+</p>
+<ul>
+<li>Data can be looked up via URLs, e.g. <a href="http://panlex.org/plx/approver/1">http://panlex.org/plx/approver/1</a></li>
+<li>Additional information is available via links to other knowledge bases. Currently this is <a href="http://dbpedia.org">DBpedia</a> only, but others (e.g. <a href="http://wortschatz.uni-leipzig.de/">Wortschatz</a>) will follow soon.</li>
+<li>The SPARQL endpoint enables powerful queries over the data via the Web.</li>
+<li>RDF downloads enable one to load their own RDF store.</li>
+</ul>
+<p>
 </p>
 
 
-<h3>Licenses</h3>
-As PanLex is comprised of thousands of data sources, license information is included in the dataset.
-TODO Add link
+<p>
+<br />
+<br />
+<br />
+<br />
+</p>
+<h3 class="left">Downloads</h3>
+
+<table style="width: 100%;">
+<tbody>
+<tr><td><a href="files/rdf/panlex-dump-2013-02-14.nt.bz2">Full Dump (~872MB)</a> (<a href="scripts/preview.php?file=..%2Ffiles%2Frdf%2Fpanlex-dump-2013-02-14.nt.bz2" >Preview</a>)</td></tr>
+<tr><td><a href="files/rdf/panlex-links-dbpedia-2013-02-14.nt.bz2">DBpedia Links (~19MB)</a> (<a href="scripts/preview.php?file=..%2Ffiles%2Frdf%2Fpanlex-links-dbpedia-2013-02-14.nt.bz2" >Preview</a>)</td></tr>
+<tr><td><a href="files/rdf/panlex-ontology-2013-02-14.ttl">Ontology (~3.3K)</a></td></tr>
+<!-- <tr><td><a href="files/rdf/panlex-void-2013-02-14.nt">VoID Description</a></td></tr>  -->
+</tbody>
+</table>
+
+<p><br /></p>
+<h3 class="left">Online Access</h3>
+<p>
+The SPARQL endpoint is available at <a href="/sparql">http://panlex.org/sparql</a>.
+</p>
 
 
 <p>Example Resources:</p>
+<ul>
+<li><a href="http://panlex.org/plx/approver/1">The first approver</a></li>
+<li><a href="http://panlex.org/plx/definition/4711">Definition 4711</a></li>
+<li><a href="http://panlex.org/plx/license/nr">Public Domain License</a></li>
+</ul>
 
+<p><br /></p>
+<h3 class="left">The PanLex Ontology</h3>
+
+<p>
+These two images provide an overview of how classes and properties in the RDF version of PanLex relate. 
+</p>
+<table>
+<tr>
+<td>
+<img src="images/ontology.svg" style="width:500px;" alt="PanLex Ontology Instance Example" />
+</td>
+<td style="width: 100px;">
+</td>
+<td>
+<img src="images/er-diagram.png" style="width:600px;" alt="PanLex Ontology Schema" />
+</td>
+</tr>
+</table>
+
+
+
+
+
+<h3 class="left">Dataset Metrics</h3>
+<p>
+The following table summarizes the number of triples, classes and properties.
+</p>
+<table>
+<thead>
+</thead>
+<tbody>
+<tr><td>Triples: </td><td>272.043.070</td></tr>
+<tr><td>Classes: </td><td>9</td></tr>
+<tr><td>Properties: </td><td>8</td></tr>
+</tbody>
+</table>
+
+<p>
+This table lists the number of instances per class:
+</p>
+<table>
+<thead><tr><th>Class</th><th>Instances</th></tr></thead>
+<tbody>
+<tr><td>Approvers</td><td>3,905</td></tr>
+<tr><td>Expressions</td><td>18,580,594</td></tr>
+<tr><td>Languages</td><td>7,839</td></tr>
+<tr><td>Language Varieties</td><td>7,248</td></tr>
+<tr><td>Meanings</td><td>20,023,427</td></tr>
+<tr><td>Definitions</td><td>2,522,605</td></tr>
+<tr><td>Denotations</td><td>50,803,243</td></tr>
+<tr><td>Users</td><td>7</td></tr>
+<tr><td>Licenses</td><td>10</td></tr>
+</tbody>
+</table>
+
+
+
+<!--
 <p>Example Queries:</p>
+<ul>
+<li>List translations for "Internet"</li>
+<li>List translations for "Internet" together with license information</li>
+<li>List words that are spelled the same in different languages but have different meanings</li>
+</ul>
+-->
 
+<p><br /></p>
+<h3 class="left">Licenses</h3>
+<p>
+As PanLex is comprised of thousands of data sources, license information is included in the dataset for each approver.
+The following table shows some examples on this subject.
+</p>
+
+<table style="width: 100%;">
+<tr>
+<td>List all available licenses and their usage count</td>
+<td>List approvers and their license</td>
+<td>List approvers under public domain license</td>
+</tr>
+<tr>
+<td>
+<pre>
+Prefix plx: &lt;http://panlex.org/plx/&gt;
+Select ?l (Count(*) As ?c) {
+  ?s plx:license ?l
+}
+Group By ?l
+</pre>
+</td>
+<td>
+<pre>
+Prefix plx: &lt;http://panlex.org/plx/&gt;
+Select * {
+  ?s
+    a plx:Approver ;
+    plx:license ?l
+}
+Limit 100
+</pre>
+</td>
+<td>
+<pre>
+Prefix plx: &lt;http://panlex.org/plx/&gt;
+Select * {
+  ?s
+    a plx:Approver ;
+    plx:license &lt;http://panlex.org/plx/license/nr&gt;
+}
+Limit 100
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://panlex.aksw.org/sparql?default-graph-uri=http%3A%2F%2Fpanlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2F%3E%0D%0ASelect+%3Fl+%28Count%28*%29+As+%3Fc%29+{%0D%0A++%3Fs+plx%3Alicense+%3Fl%0D%0A}%0D%0AGroup+By+%3Fl%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
+</td>
+<td>
+<a href="http://panlex.aksw.org/sparql?default-graph-uri=http%3A%2F%2Fpanlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Fl%0D%0A}%0D%0ALimit+100%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
+</td>
+<td>
+<a href="http://panlex.aksw.org/sparql?default-graph-uri=http%3A%2F%2Fpanlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2Flicense%2Fnr%3E%0D%0A}%0D%0ALimit+100&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
+</td>
+</tr>
+</table>
+
+<p><br /></p>
+<h3 class="left">How the RDF data is generated</h3>
+<p>
+The PanLex RDF dataset is created using the <a href="http://sparqlify.org">Sparqlify</a> RDB-RDF mapping tool.
+The corresponding RDF view definitions are available <a href="https://github.com/patrickwestphal/panlex-llod/blob/master/src/plx.sparqlify">here</a>.
+The Linked Data interface is powered directly by the PanLex's Postgres database.
+For improved query performance, the source data is also dumped as RDF and loaded into an <a href="http://www.openlinksw.com/">OpenLink's</a> <a href="http://sourceforge.net/projects/virtuoso/">Virtuoso</a> RDF store. 
+<!--  <img src="images/PanLex-SW-Architecture-With-Virtuoso.svg" style="float:left;" width="500px" alt="PanLex RDF Architecture" />  -->
+</p>
+
+<hr />
+<table style="width: 100%;">
+<tr>
+<td align="center" style="width: 33%;"><img src="/logo.png" style="height: 50px;" alt="PanLex Logo"/></td>
+<td align="center" style="width: 34%;"><img src="images/aksw_logo.svg" style="height: 50px;" alt="AKSW Logo" /></td>
+<td align="center" style="width: 33%;"><img src="images/oplogostd160.png" style="height: 50px;" alt="OpenLink Virtuoso Logo" /></td>
+</tr>
+</table>
 
 <p class="c">
 <a href="http://validator.w3.org/check?uri=referer">
