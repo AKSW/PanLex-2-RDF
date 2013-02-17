@@ -98,9 +98,11 @@ the following advantages:
 
 <p><br /></p>
 <h3 class="left">Online Access</h3>
-<p>
-The SPARQL endpoint is available at <a href="/sparql">http://panlex.org/sparql</a>.
-</p>
+<ul>
+<li>The SPARQL endpoint is available at <a href="/sparql">http://panlex.org/sparql</a>.</li>
+<li>An additional HTML interface that provides clickable result sets is available at <a href="/snorql">http://panlex.org/snorql</a>.</li>
+<!-- <li>All panlex resources (both schema and instance data) resides in the 'plx' namespace: http://panlex.org/plx/</li>  -->
+</ul>
 
 
 <p>Example Resources:</p>
@@ -109,6 +111,63 @@ The SPARQL endpoint is available at <a href="/sparql">http://panlex.org/sparql</
 <li><a href="http://panlex.org/plx/definition/4711">Definition 4711</a></li>
 <li><a href="http://panlex.org/plx/license/nr">Public Domain License</a></li>
 </ul>
+
+<p>Example Queries:</p>
+<table style="width: 100%;">
+<tr>
+<td>List translations for the lexeme "translation"</td>
+<td>Compact translation table for "dictionary"</td>
+</tr>
+<tr>
+<td>
+<pre>
+Prefix plx:<http://panlex.org/plx/>
+SELECT ?ta ?m ?tb ?lvl ?l {
+    ?ea rdfs:label ?ta .
+
+    ?da plx:denotationExpression ?ea .
+    ?da plx:denotationMeaning ?m .
+    ?db plx:denotationMeaning ?m .
+    ?db plx:denotationExpression ?eb .
+
+    ?eb rdfs:label ?tb .
+    ?eb plx:languageVariety ?lv .
+    ?lv rdfs:label ?lvl .
+    ?lv plx:languageVarietyOf ?l .
+
+    Filter(?ta = "translation"^^xsd:string)
+}
+Order By ?ta ?m ?tb ?lvl ?l
+</pre>
+</td>
+<td>
+<pre>
+Prefix plx:<http://panlex.org/plx/>
+SELECT Distinct ?ta ?tb ?lvl ?l {
+    ?ea rdfs:label ?ta .
+
+    ?da plx:denotationExpression ?ea .
+    ?da plx:denotationMeaning ?m .
+    ?db plx:denotationMeaning ?m .
+    ?db plx:denotationExpression ?eb .
+
+    ?eb rdfs:label ?tb .
+    ?eb plx:languageVariety ?lv .
+    ?lv rdfs:label ?lvl .
+    ?lv plx:languageVarietyOf ?l .
+
+    Filter(?ta = "dictionary"^^xsd:string)
+}
+Order By ?ta ?lvl ?tb ?l
+</pre>
+</td>
+</tr>
+<tr>
+<td><a href="http://panlex.aksw.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2F%3E%0D%0ASELECT+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl+{%0D%0A++++%3Fea+rdfs%3Alabel+%3Fta+.%0D%0A%0D%0A++++%3Fda+plx%3AdenotationExpression+%3Fea+.%0D%0A++++%3Fda+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationExpression+%3Feb+.%0D%0A%0D%0A++++%3Feb+rdfs%3Alabel+%3Ftb+.%0D%0A++++%3Feb+plx%3AlanguageVariety+%3Flv+.%0D%0A++++%3Flv+rdfs%3Alabel+%3Flvl+.%0D%0A++++%3Flv+plx%3AlanguageVarietyOf+%3Fl+.%0D%0A%0D%0A++++Filter%28%3Fta+%3D+%22translation%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl">Run It!</a></td>
+<td><a href="http://panlex.aksw.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2F%3E%0D%0ASELECT+Distinct+%3Fta+%3Ftb+%3Flvl+%3Fl+{%0D%0A++++%3Fea+rdfs%3Alabel+%3Fta+.%0D%0A%0D%0A++++%3Fda+plx%3AdenotationExpression+%3Fea+.%0D%0A++++%3Fda+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationExpression+%3Feb+.%0D%0A%0D%0A++++%3Feb+rdfs%3Alabel+%3Ftb+.%0D%0A++++%3Feb+plx%3AlanguageVariety+%3Flv+.%0D%0A++++%3Flv+rdfs%3Alabel+%3Flvl+.%0D%0A++++%3Flv+plx%3AlanguageVarietyOf+%3Fl+.%0D%0A%0D%0A++++Filter%28%3Fta+%3D+%22dictionary%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fta+%3Flvl+%3Ftb+%3Fl">Run It!</a></td>
+</tr>
+</table>
+
 
 <p><br /></p>
 <h3 class="left">The PanLex Ontology</h3>
