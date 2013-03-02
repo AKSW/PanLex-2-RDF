@@ -142,13 +142,13 @@ Order By ?ta ?m ?tb ?lvl ?l
 </td>
 <td>
 <pre>
-Prefix plx:<http://panlex.org/plx/>
+Prefix plx: &lt;http://panlex.org/plx/&gt;
 SELECT Distinct ?al ?alv ?alvl ?bl ?blvl ?blvo {
     ?ae rdfs:label ?al .
     ?ae plx:languageVariety ?alv .
     ?alv rdfs:label ?alvl .
     ?alv plx:languageVarietyOf ?alvo .
-    ?alvo plx:iso639-3Code <http://panlex.org/plx/iso639-3/eng> .
+    ?alvo plx:iso639-3Code &lt;http://panlex.org/plx/iso639-3/eng&gt; .
 
     ?ad plx:denotationExpression ?ae .
     ?ad plx:denotationMeaning ?m .
