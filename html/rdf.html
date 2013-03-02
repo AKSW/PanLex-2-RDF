@@ -99,7 +99,7 @@ the following advantages:
 <p><br /></p>
 <h3 class="left">Online Access</h3>
 <ul>
-<li>The SPARQL endpoint is available at <a href="/sparql">http://panlex.org/sparql</a>.</li>
+<li>The SPARQL endpoint is available at <a href="/sparql">http://panlex.org/sparql</a>. Note that result sets are limited to 1000 rows.</li>
 <li>An additional HTML interface that provides clickable result sets is available at <a href="/snorql">http://panlex.org/snorql</a>.</li>
 <!-- <li>All panlex resources (both schema and instance data) resides in the 'plx' namespace: http://panlex.org/plx/</li>  -->
 </ul>
@@ -142,29 +142,33 @@ Order By ?ta ?m ?tb ?lvl ?l
 </td>
 <td>
 <pre>
-Prefix plx: &lt;http://panlex.org/plx/&gt;
-Select Distinct ?ta ?tb ?lvl ?l {
-    ?ea rdfs:label ?ta .
+Prefix plx:<http://panlex.org/plx/>
+SELECT Distinct ?al ?alv ?alvl ?bl ?blvl ?blvo {
+    ?ae rdfs:label ?al .
+    ?ae plx:languageVariety ?alv .
+    ?alv rdfs:label ?alvl .
+    ?alv plx:languageVarietyOf ?alvo .
+    ?alvo plx:iso639-3Code <http://panlex.org/plx/iso639-3/eng> .
 
-    ?da plx:denotationExpression ?ea .
-    ?da plx:denotationMeaning ?m .
-    ?db plx:denotationMeaning ?m .
-    ?db plx:denotationExpression ?eb .
+    ?ad plx:denotationExpression ?ae .
+    ?ad plx:denotationMeaning ?m .
+    ?bd plx:denotationMeaning ?m .
+    ?bd plx:denotationExpression ?be .
 
-    ?eb rdfs:label ?tb .
-    ?eb plx:languageVariety ?lv .
-    ?lv rdfs:label ?lvl .
-    ?lv plx:languageVarietyOf ?l .
+    ?be rdfs:label ?bl .
+    ?be plx:languageVariety ?blv .
+    ?blv rdfs:label ?blvl .
+    ?blv plx:languageVarietyOf ?blvo .
 
-    Filter(?ta = "dictionary"^^xsd:string)
+    Filter(?al = "dictionary"^^xsd:string)
 }
-Order By ?ta ?lvl ?tb ?l
+Order By ?al ?blvl ?bl ?blvo
 </pre>
 </td>
 </tr>
 <tr>
 <td><a href="http://panlex.aksw.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2F%3E%0D%0ASELECT+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl+{%0D%0A++++%3Fea+rdfs%3Alabel+%3Fta+.%0D%0A%0D%0A++++%3Fda+plx%3AdenotationExpression+%3Fea+.%0D%0A++++%3Fda+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationExpression+%3Feb+.%0D%0A%0D%0A++++%3Feb+rdfs%3Alabel+%3Ftb+.%0D%0A++++%3Feb+plx%3AlanguageVariety+%3Flv+.%0D%0A++++%3Flv+rdfs%3Alabel+%3Flvl+.%0D%0A++++%3Flv+plx%3AlanguageVarietyOf+%3Fl+.%0D%0A%0D%0A++++Filter%28%3Fta+%3D+%22translation%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl">Run It!</a></td>
-<td><a href="http://panlex.aksw.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2F%3E%0D%0ASELECT+Distinct+%3Fta+%3Ftb+%3Flvl+%3Fl+{%0D%0A++++%3Fea+rdfs%3Alabel+%3Fta+.%0D%0A%0D%0A++++%3Fda+plx%3AdenotationExpression+%3Fea+.%0D%0A++++%3Fda+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationExpression+%3Feb+.%0D%0A%0D%0A++++%3Feb+rdfs%3Alabel+%3Ftb+.%0D%0A++++%3Feb+plx%3AlanguageVariety+%3Flv+.%0D%0A++++%3Flv+rdfs%3Alabel+%3Flvl+.%0D%0A++++%3Flv+plx%3AlanguageVarietyOf+%3Fl+.%0D%0A%0D%0A++++Filter%28%3Fta+%3D+%22dictionary%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fta+%3Flvl+%3Ftb+%3Fl">Run It!</a></td>
+<td><a href="http://panlex.aksw.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2F%3E%0D%0ASELECT+Distinct+%3Fal+%3Falv+%3Falvl+%3Fbl+%3Fblvl+%3Fblvo+{%0D%0A++++%3Fae+rdfs%3Alabel+%3Fal+.%0D%0A++++%3Fae+plx%3AlanguageVariety+%3Falv+.%0D%0A++++%3Falv+rdfs%3Alabel+%3Falvl+.%0D%0A++++%3Falv+plx%3AlanguageVarietyOf+%3Falvo+.%0D%0A++++%3Falvo+plx%3Aiso639-3Code+%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2Fiso639-3%2Feng%3E+.%0D%0A%0D%0A++++%3Fad+plx%3AdenotationExpression+%3Fae+.%0D%0A++++%3Fad+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationExpression+%3Fbe+.%0D%0A%0D%0A++++%3Fbe+rdfs%3Alabel+%3Fbl+.%0D%0A++++%3Fbe+plx%3AlanguageVariety+%3Fblv+.%0D%0A++++%3Fblv+rdfs%3Alabel+%3Fblvl+.%0D%0A++++%3Fblv+plx%3AlanguageVarietyOf+%3Fblvo+.%0D%0A%0D%0A++++Filter%28%3Fal+%3D+%22dictionary%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fal+%3Fblvl+%3Fbl+%3Fblvo">Run It!</a></td>
 </tr>
 </table>
 
