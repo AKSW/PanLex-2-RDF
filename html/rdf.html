@@ -70,7 +70,7 @@ On this page we collect our efforts of making PanLex part of the Linked Open Dat
 the following advantages:
 </p>
 <ul>
-<li>Data can be looked up via URLs, e.g. <a href="http://panlex.org/plx/approver/1">http://panlex.org/plx/approver/1</a></li>
+<li>Data can be looked up via URLs, e.g. <a href="http://ld.panlex.org/plx/approver/1">http://panlex.org/plx/approver/1</a></li>
 <li>Additional information is available via links to other knowledge bases. Currently this is <a href="http://dbpedia.org">DBpedia</a> only, but others (e.g. <a href="http://wortschatz.uni-leipzig.de/">Wortschatz</a>) will follow soon.</li>
 <li>The SPARQL endpoint enables powerful queries over the data via the Web.</li>
 <li>RDF downloads enable one to load their own RDF store.</li>
@@ -99,17 +99,17 @@ the following advantages:
 <p><br /></p>
 <h3 class="left">Online Access</h3>
 <ul>
-<li>The SPARQL endpoint is available at <a href="/sparql">http://panlex.org/sparql</a>. Note that result sets are limited to 1000 rows.</li>
-<li>An additional HTML interface that provides clickable result sets is available at <a href="/snorql">http://panlex.org/snorql</a>.</li>
-<!-- <li>All panlex resources (both schema and instance data) resides in the 'plx' namespace: http://panlex.org/plx/</li>  -->
+<li>The SPARQL endpoint is available at <a href="/sparql">http://ld.panlex.org/sparql</a>. Note that result sets are limited to 1000 rows.</li>
+<li>An additional HTML interface that provides clickable result sets is available at <a href="/snorql">http://ld.panlex.org/snorql</a>.</li>
+<!-- <li>All panlex resources (both schema and instance data) resides in the 'plx' namespace: http://ld.panlex.org/plx/</li>  -->
 </ul>
 
 
 <p>Example Resources:</p>
 <ul>
-<li><a href="http://panlex.org/plx/approver/1">The first approver</a></li>
-<li><a href="http://panlex.org/plx/definition/4711">Definition 4711</a></li>
-<li><a href="http://panlex.org/plx/license/nr">Public Domain License</a></li>
+<li><a href="http://ld.panlex.org/plx/approver/1">The first approver</a></li>
+<li><a href="http://ld.panlex.org/plx/definition/4711">Definition 4711</a></li>
+<li><a href="http://ld.panlex.org/plx/license/nr">Public Domain License</a></li>
 </ul>
 
 <p>Example Queries:</p>
@@ -121,7 +121,7 @@ the following advantages:
 <tr>
 <td>
 <pre>
-Prefix plx: &lt;http://panlex.org/plx/&gt;
+Prefix plx: &lt;http://ld.panlex.org/plx/&gt;
 Select ?ta ?m ?tb ?lvl ?l {
     ?ea rdfs:label ?ta .
 
@@ -142,13 +142,13 @@ Order By ?ta ?m ?tb ?lvl ?l
 </td>
 <td>
 <pre>
-Prefix plx: &lt;http://panlex.org/plx/&gt;
+Prefix plx: &lt;http://ld.panlex.org/plx/&gt;
 SELECT Distinct ?al ?alv ?alvl ?bl ?blvl ?blvo {
     ?ae rdfs:label ?al .
     ?ae plx:languageVariety ?alv .
     ?alv rdfs:label ?alvl .
     ?alv plx:languageVarietyOf ?alvo .
-    ?alvo plx:iso639-3Code &lt;http://panlex.org/plx/iso639-3/eng&gt; .
+    ?alvo plx:iso639-3Code &lt;http://ld.panlex.org/plx/iso639-3/eng&gt; .
 
     ?ad plx:denotationExpression ?ae .
     ?ad plx:denotationMeaning ?m .
@@ -167,8 +167,8 @@ Order By ?al ?blvl ?bl ?blvo
 </td>
 </tr>
 <tr>
-<td><a href="http://panlex.aksw.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2F%3E%0D%0ASELECT+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl+{%0D%0A++++%3Fea+rdfs%3Alabel+%3Fta+.%0D%0A%0D%0A++++%3Fda+plx%3AdenotationExpression+%3Fea+.%0D%0A++++%3Fda+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationExpression+%3Feb+.%0D%0A%0D%0A++++%3Feb+rdfs%3Alabel+%3Ftb+.%0D%0A++++%3Feb+plx%3AlanguageVariety+%3Flv+.%0D%0A++++%3Flv+rdfs%3Alabel+%3Flvl+.%0D%0A++++%3Flv+plx%3AlanguageVarietyOf+%3Fl+.%0D%0A%0D%0A++++Filter%28%3Fta+%3D+%22translation%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl">Run It!</a></td>
-<td><a href="http://panlex.aksw.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2F%3E%0D%0ASELECT+Distinct+%3Fal+%3Falv+%3Falvl+%3Fbl+%3Fblvl+%3Fblvo+{%0D%0A++++%3Fae+rdfs%3Alabel+%3Fal+.%0D%0A++++%3Fae+plx%3AlanguageVariety+%3Falv+.%0D%0A++++%3Falv+rdfs%3Alabel+%3Falvl+.%0D%0A++++%3Falv+plx%3AlanguageVarietyOf+%3Falvo+.%0D%0A++++%3Falvo+plx%3Aiso639-3Code+%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2Fiso639-3%2Feng%3E+.%0D%0A%0D%0A++++%3Fad+plx%3AdenotationExpression+%3Fae+.%0D%0A++++%3Fad+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationExpression+%3Fbe+.%0D%0A%0D%0A++++%3Fbe+rdfs%3Alabel+%3Fbl+.%0D%0A++++%3Fbe+plx%3AlanguageVariety+%3Fblv+.%0D%0A++++%3Fblv+rdfs%3Alabel+%3Fblvl+.%0D%0A++++%3Fblv+plx%3AlanguageVarietyOf+%3Fblvo+.%0D%0A%0D%0A++++Filter%28%3Fal+%3D+%22dictionary%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fal+%3Fblvl+%3Fbl+%3Fblvo">Run It!</a></td>
+<td><a href="http://ld.panlex.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASELECT+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl+{%0D%0A++++%3Fea+rdfs%3Alabel+%3Fta+.%0D%0A%0D%0A++++%3Fda+plx%3AdenotationExpression+%3Fea+.%0D%0A++++%3Fda+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationExpression+%3Feb+.%0D%0A%0D%0A++++%3Feb+rdfs%3Alabel+%3Ftb+.%0D%0A++++%3Feb+plx%3AlanguageVariety+%3Flv+.%0D%0A++++%3Flv+rdfs%3Alabel+%3Flvl+.%0D%0A++++%3Flv+plx%3AlanguageVarietyOf+%3Fl+.%0D%0A%0D%0A++++Filter%28%3Fta+%3D+%22translation%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl">Run It!</a></td>
+<td><a href="http://ld.panlex.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASELECT+Distinct+%3Fal+%3Falv+%3Falvl+%3Fbl+%3Fblvl+%3Fblvo+{%0D%0A++++%3Fae+rdfs%3Alabel+%3Fal+.%0D%0A++++%3Fae+plx%3AlanguageVariety+%3Falv+.%0D%0A++++%3Falv+rdfs%3Alabel+%3Falvl+.%0D%0A++++%3Falv+plx%3AlanguageVarietyOf+%3Falvo+.%0D%0A++++%3Falvo+plx%3Aiso639-3Code+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2Fiso639-3%2Feng%3E+.%0D%0A%0D%0A++++%3Fad+plx%3AdenotationExpression+%3Fae+.%0D%0A++++%3Fad+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationExpression+%3Fbe+.%0D%0A%0D%0A++++%3Fbe+rdfs%3Alabel+%3Fbl+.%0D%0A++++%3Fbe+plx%3AlanguageVariety+%3Fblv+.%0D%0A++++%3Fblv+rdfs%3Alabel+%3Fblvl+.%0D%0A++++%3Fblv+plx%3AlanguageVarietyOf+%3Fblvo+.%0D%0A%0D%0A++++Filter%28%3Fal+%3D+%22dictionary%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fal+%3Fblvl+%3Fbl+%3Fblvo">Run It!</a></td>
 </tr>
 </table>
 
@@ -255,7 +255,7 @@ The following table shows some examples on this subject.
 <tr>
 <td>
 <pre>
-Prefix plx: &lt;http://panlex.org/plx/&gt;
+Prefix plx: &lt;http://ld.panlex.org/plx/&gt;
 Select ?l (Count(*) As ?c) {
   ?s plx:license ?l
 }
@@ -264,7 +264,7 @@ Group By ?l
 </td>
 <td>
 <pre>
-Prefix plx: &lt;http://panlex.org/plx/&gt;
+Prefix plx: &lt;http://ld.panlex.org/plx/&gt;
 Select * {
   ?s
     a plx:Approver ;
@@ -275,11 +275,11 @@ Limit 100
 </td>
 <td>
 <pre>
-Prefix plx: &lt;http://panlex.org/plx/&gt;
+Prefix plx: &lt;http://ld.panlex.org/plx/&gt;
 Select * {
   ?s
     a plx:Approver ;
-    plx:license &lt;http://panlex.org/plx/license/nr&gt;
+    plx:license &lt;http://ld.panlex.org/plx/license/nr&gt;
 }
 Limit 100
 </pre>
@@ -287,13 +287,13 @@ Limit 100
 </tr>
 <tr>
 <td>
-<a href="http://panlex.aksw.org/snorql?default-graph-uri=http%3A%2F%2Fpanlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2F%3E%0D%0ASelect+%3Fl+%28Count%28*%29+As+%3Fc%29+{%0D%0A++%3Fs+plx%3Alicense+%3Fl%0D%0A}%0D%0AGroup+By+%3Fl%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
+<a href="http://panlex.aksw.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+%3Fl+%28Count%28*%29+As+%3Fc%29+{%0D%0A++%3Fs+plx%3Alicense+%3Fl%0D%0A}%0D%0AGroup+By+%3Fl%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
 </td>
 <td>
-<a href="http://panlex.aksw.org/snorql?default-graph-uri=http%3A%2F%2Fpanlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Fl%0D%0A}%0D%0ALimit+100%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
+<a href="http://panlex.aksw.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Fl%0D%0A}%0D%0ALimit+100%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
 </td>
 <td>
-<a href="http://panlex.aksw.org/snorql?default-graph-uri=http%3A%2F%2Fpanlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Chttp%3A%2F%2Fpanlex.org%2Fplx%2Flicense%2Fnr%3E%0D%0A}%0D%0ALimit+100&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
+<a href="http://panlex.aksw.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2Flicense%2Fnr%3E%0D%0A}%0D%0ALimit+100&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
 </td>
 </tr>
 </table>
@@ -311,7 +311,7 @@ For improved query performance, the source data is also dumped as RDF and loaded
 <hr />
 <table style="width: 100%;">
 <tr>
-<td align="center" style="width: 33%;"><a href="http://panlex.org"><img src="/logo.png" style="height: 50px;" alt="PanLex Logo"/></a></td>
+<td align="center" style="width: 33%;"><a href="http://ld.panlex.org"><img src="/logo.png" style="height: 50px;" alt="PanLex Logo"/></a></td>
 <td align="center" style="width: 34%;"><a href="http://aksw.org"><img src="images/aksw_logo.svg" style="height: 50px;" alt="AKSW Logo" /></a></td>
 <td align="center" style="width: 33%;"><a href="http://www.openlinksw.com"><img src="images/oplogostd160.png" style="height: 50px;" alt="OpenLink Virtuoso Logo" /></a></td>
 </tr>
