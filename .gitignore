@@ -19,3 +19,6 @@ paper.pdf
 *.lof
 *.eps
 
+config.ini
+
+panlex-rdf-trash

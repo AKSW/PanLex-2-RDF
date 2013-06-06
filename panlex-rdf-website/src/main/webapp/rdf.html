@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+<title>PanLex: RDF</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="styles-201202.css" title="styles" />
+
+<style>
+.wide {
+    width: 300px;
+} 
+
+.left {
+    text-align: left;
+}
+</style>
+
+<script type="text/javascript">
+// Script commented out ~ Claus
+/*
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29495207-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+*/
+</script>
+
+</head>
+
+<body>
+
+<div class="topl"><img src="/logo.png" alt="logo" width="60px" /></div>
+
+<h1>PanLex: RDF</h1>
+
+
+
+<p>&nbsp;</p><h2><object><table class="nav"><tr>
+<td><a href="/index.shtml">Home</a></td>
+<td><a href="/goal">Goal</a></td>
+<td><a href="/tech">Technology</a></td>
+<td><a href="/research">Research</a></td>
+<td><a href="/try">Try it</a></td>
+<td><a href="/help">Help us</a></td>
+<td><a href="/people">People</a></td>
+<td><a href="/partners">Partners</a></td>
+<td><a href="/contact">Contact</a></td>
+<td class="this">RDF</td>
+</tr></table></object></h2>
+
+
+<p class="rfb" style="height: 256px; width: 355px">
+<a href="http://richard.cyganiak.de/2007/10/lod/lod-datasets_2011-09-19_colored.html">
+<img src="images/lod-datasets_2011-09-19_colored_300px_transparent.png" height="256px" width="355px" alt="LOD Cloud" />
+</a>
+Linking Open Data cloud diagram, by Richard Cyganiak and Anja Jentzsch. CC-BY-SA. <a href="http://lod-cloud.net/">lod-cloud.net</a>
+</p>
+
+<h3 class="left">Overview</h3>
+<p>
+On this page we collect our efforts of making PanLex part of the Linked Open Data cloud, which offers
+the following advantages:
+</p>
+<ul>
+<li>Data can be looked up via URLs, e.g. <a href="http://ld.panlex.org/plx/approver/1">http://ld.panlex.org/plx/approver/1</a></li>
+<li>Additional information is available via links to other knowledge bases. Currently this is <a href="http://dbpedia.org">DBpedia</a> only, but others (e.g. <a href="http://wortschatz.uni-leipzig.de/">Wortschatz</a>) will follow soon.</li>
+<li>The SPARQL endpoint enables powerful queries over the data via the Web.</li>
+<li>RDF downloads enable one to load their own RDF store.</li>
+</ul>
+<p>
+</p>
+
+
+<p>
+<br />
+<br />
+<br />
+<br />
+</p>
+<h3 class="left">Downloads</h3>
+
+<table style="width: 100%;">
+<tbody>
+<tr><td><a href="files/rdf/2013-02-14-panlex-dump.nt.bz2">Full Dump (~872MB)</a> (<a href="scripts/preview.php?file=..%2Ffiles%2Frdf%2F2013-02-14-panlex-dump.nt.bz2" >Preview</a>)</td></tr>
+<tr><td><a href="files/rdf/2013-02-14-panlex-links-dbpedia.nt.bz2">DBpedia Links (~19MB)</a> (<a href="scripts/preview.php?file=..%2Ffiles%2Frdf%2F2013-02-14-panlex-links-dbpedia.nt.bz2" >Preview</a>)</td></tr>
+<tr><td><a href="files/rdf/2013-02-14-panlex-ontology.ttl">Ontology (~3.3K)</a></td></tr>
+<!-- <tr><td><a href="files/rdf/panlex-void-2013-02-14.nt">VoID Description</a></td></tr>  -->
+</tbody>
+</table>
+
+<p><br /></p>
+<h3 class="left">Online Access</h3>
+<ul>
+<li>The SPARQL endpoint is available at <a href="/sparql">http://ld.panlex.org/sparql</a>. Note that result sets are limited to 1000 rows.</li>
+<li>An additional HTML interface that provides clickable result sets is available at <a href="/snorql">http://ld.panlex.org/snorql</a>.</li>
+<!-- <li>All panlex resources (both schema and instance data) resides in the 'plx' namespace: http://ld.panlex.org/plx/</li>  -->
+</ul>
+
+
+<p>Example Resources:</p>
+<ul>
+<li><a href="http://ld.panlex.org/plx/approver/1">The first approver</a></li>
+<li><a href="http://ld.panlex.org/plx/definition/4711">Definition 4711</a></li>
+<li><a href="http://ld.panlex.org/plx/license/nr">Public Domain License</a></li>
+</ul>
+
+<p>Example Queries:</p>
+<table style="width: 100%;">
+<tr>
+<td>List translations for the lexeme "translation"</td>
+<td>Compact translation table for "dictionary"</td>
+</tr>
+<tr>
+<td>
+<pre>
+Prefix plx: &lt;http://ld.panlex.org/plx/&gt;
+Select ?ta ?m ?tb ?lvl ?l {
+    ?ea rdfs:label ?ta .
+
+    ?da plx:denotationExpression ?ea .
+    ?da plx:denotationMeaning ?m .
+    ?db plx:denotationMeaning ?m .
+    ?db plx:denotationExpression ?eb .
+
+    ?eb rdfs:label ?tb .
+    ?eb plx:languageVariety ?lv .
+    ?lv rdfs:label ?lvl .
+    ?lv plx:languageVarietyOf ?l .
+
+    Filter(?ta = "translation"^^xsd:string)
+}
+Order By ?ta ?m ?tb ?lvl ?l
+</pre>
+</td>
+<td>
+<pre>
+Prefix plx: &lt;http://ld.panlex.org/plx/&gt;
+SELECT Distinct ?al ?alv ?alvl ?bl ?blvl ?blvo {
+    ?ae rdfs:label ?al .
+    ?ae plx:languageVariety ?alv .
+    ?alv rdfs:label ?alvl .
+    ?alv plx:languageVarietyOf ?alvo .
+    ?alvo plx:iso639-3Code &lt;http://ld.panlex.org/plx/iso639-3/eng&gt; .
+
+    ?ad plx:denotationExpression ?ae .
+    ?ad plx:denotationMeaning ?m .
+    ?bd plx:denotationMeaning ?m .
+    ?bd plx:denotationExpression ?be .
+
+    ?be rdfs:label ?bl .
+    ?be plx:languageVariety ?blv .
+    ?blv rdfs:label ?blvl .
+    ?blv plx:languageVarietyOf ?blvo .
+
+    Filter(?al = "dictionary"^^xsd:string)
+}
+Order By ?al ?blvl ?bl ?blvo
+</pre>
+</td>
+</tr>
+<tr>
+<td><a href="http://ld.panlex.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASELECT+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl+{%0D%0A++++%3Fea+rdfs%3Alabel+%3Fta+.%0D%0A%0D%0A++++%3Fda+plx%3AdenotationExpression+%3Fea+.%0D%0A++++%3Fda+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationExpression+%3Feb+.%0D%0A%0D%0A++++%3Feb+rdfs%3Alabel+%3Ftb+.%0D%0A++++%3Feb+plx%3AlanguageVariety+%3Flv+.%0D%0A++++%3Flv+rdfs%3Alabel+%3Flvl+.%0D%0A++++%3Flv+plx%3AlanguageVarietyOf+%3Fl+.%0D%0A%0D%0A++++Filter%28%3Fta+%3D+%22translation%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl">Run It!</a></td>
+<td><a href="http://ld.panlex.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASELECT+Distinct+%3Fal+%3Falv+%3Falvl+%3Fbl+%3Fblvl+%3Fblvo+{%0D%0A++++%3Fae+rdfs%3Alabel+%3Fal+.%0D%0A++++%3Fae+plx%3AlanguageVariety+%3Falv+.%0D%0A++++%3Falv+rdfs%3Alabel+%3Falvl+.%0D%0A++++%3Falv+plx%3AlanguageVarietyOf+%3Falvo+.%0D%0A++++%3Falvo+plx%3Aiso639-3Code+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2Fiso639-3%2Feng%3E+.%0D%0A%0D%0A++++%3Fad+plx%3AdenotationExpression+%3Fae+.%0D%0A++++%3Fad+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationExpression+%3Fbe+.%0D%0A%0D%0A++++%3Fbe+rdfs%3Alabel+%3Fbl+.%0D%0A++++%3Fbe+plx%3AlanguageVariety+%3Fblv+.%0D%0A++++%3Fblv+rdfs%3Alabel+%3Fblvl+.%0D%0A++++%3Fblv+plx%3AlanguageVarietyOf+%3Fblvo+.%0D%0A%0D%0A++++Filter%28%3Fal+%3D+%22dictionary%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fal+%3Fblvl+%3Fbl+%3Fblvo">Run It!</a></td>
+</tr>
+</table>
+
+
+<p><br /></p>
+<h3 class="left">The PanLex Ontology</h3>
+
+<p>
+These two images provide an overview of how classes and properties in the RDF version of PanLex relate. 
+</p>
+<table>
+<tr>
+<td>
+<img src="images/ontology.svg" style="width:500px;" alt="PanLex Ontology Instance Example" />
+</td>
+<td style="width: 100px;">
+</td>
+<td>
+<img src="images/er-diagram.png" style="width:600px;" alt="PanLex Ontology Schema" />
+</td>
+</tr>
+</table>
+
+
+
+
+
+<h3 class="left">Dataset Metrics</h3>
+<p>
+The following table summarizes the number of triples, classes and properties.
+</p>
+<table>
+<thead>
+</thead>
+<tbody>
+<tr><td>Triples: </td><td>272.043.070</td></tr>
+<tr><td>Classes: </td><td>9</td></tr>
+<tr><td>Properties: </td><td>8</td></tr>
+</tbody>
+</table>
+
+<p>
+This table lists the number of instances per class:
+</p>
+<table>
+<thead><tr><th>Class</th><th>Instances</th></tr></thead>
+<tbody>
+<tr><td>Approvers</td><td>3,905</td></tr>
+<tr><td>Expressions</td><td>18,580,594</td></tr>
+<tr><td>Languages</td><td>7,839</td></tr>
+<tr><td>Language Varieties</td><td>7,248</td></tr>
+<tr><td>Meanings</td><td>20,023,427</td></tr>
+<tr><td>Definitions</td><td>2,522,605</td></tr>
+<tr><td>Denotations</td><td>50,803,243</td></tr>
+<tr><td>Users</td><td>7</td></tr>
+<tr><td>Licenses</td><td>10</td></tr>
+</tbody>
+</table>
+
+
+
+<!--
+<p>Example Queries:</p>
+<ul>
+<li>List translations for "Internet"</li>
+<li>List translations for "Internet" together with license information</li>
+<li>List words that are spelled the same in different languages but have different meanings</li>
+</ul>
+-->
+
+<p><br /></p>
+<h3 class="left">Licenses</h3>
+<p>
+As PanLex is comprised of thousands of data sources, license information is included in the dataset for each approver.
+The following table shows some examples on this subject.
+</p>
+
+<table style="width: 100%;">
+<tr>
+<td>List all available licenses and their usage count</td>
+<td>List approvers and their license</td>
+<td>List approvers under public domain license</td>
+</tr>
+<tr>
+<td>
+<pre>
+Prefix plx: &lt;http://ld.panlex.org/plx/&gt;
+Select ?l (Count(*) As ?c) {
+  ?s plx:license ?l
+}
+Group By ?l
+</pre>
+</td>
+<td>
+<pre>
+Prefix plx: &lt;http://ld.panlex.org/plx/&gt;
+Select * {
+  ?s
+    a plx:Approver ;
+    plx:license ?l
+}
+Limit 100
+</pre>
+</td>
+<td>
+<pre>
+Prefix plx: &lt;http://ld.panlex.org/plx/&gt;
+Select * {
+  ?s
+    a plx:Approver ;
+    plx:license &lt;http://ld.panlex.org/plx/license/nr&gt;
+}
+Limit 100
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://ld.panlex.aksw.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+%3Fl+%28Count%28*%29+As+%3Fc%29+{%0D%0A++%3Fs+plx%3Alicense+%3Fl%0D%0A}%0D%0AGroup+By+%3Fl%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
+</td>
+<td>
+<a href="http://ld.panlex.aksw.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Fl%0D%0A}%0D%0ALimit+100%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
+</td>
+<td>
+<a href="http://ld.panlex.aksw.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2Flicense%2Fnr%3E%0D%0A}%0D%0ALimit+100&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
+</td>
+</tr>
+</table>
+
+<p><br /></p>
+<h3 class="left">How the RDF data is generated</h3>
+<p>
+The PanLex RDF dataset is created using the <a href="http://sparqlify.org">Sparqlify</a> RDB-RDF mapping tool.
+The corresponding RDF view definitions are available <a href="https://github.com/patrickwestphal/panlex-llod/blob/master/src/plx.sparqlify">here</a>.
+The Linked Data interface is powered directly by the PanLex's Postgres database.
+For improved query performance, the source data is also dumped as RDF and loaded into an <a href="http://www.openlinksw.com/">OpenLink's</a> <a href="http://sourceforge.net/projects/virtuoso/">Virtuoso</a> RDF store. 
+<!--  <img src="images/PanLex-SW-Architecture-With-Virtuoso.svg" style="float:left;" width="500px" alt="PanLex RDF Architecture" />  -->
+</p>
+
+<hr />
+<table style="width: 100%;">
+<tr>
+<td align="center" style="width: 33%;"><a href="http://ld.panlex.org"><img src="/logo.png" style="height: 50px;" alt="PanLex Logo"/></a></td>
+<td align="center" style="width: 34%;"><a href="http://aksw.org"><img src="images/aksw_logo.svg" style="height: 50px;" alt="AKSW Logo" /></a></td>
+<td align="center" style="width: 33%;"><a href="http://www.openlinksw.com"><img src="images/oplogostd160.png" style="height: 50px;" alt="OpenLink Virtuoso Logo" /></a></td>
+</tr>
+</table>
+
+<p class="c">
+<a href="http://validator.w3.org/check?uri=referer">
+<img style="border: 0" src="/valid-xhtml11.png" alt="Valid XHTML 1.1!" height="31" width="88" />
+</a>
+</p>
+
+
+</body>
+</html>
+
