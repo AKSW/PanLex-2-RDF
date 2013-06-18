@@ -6,75 +6,126 @@ Prefix dc:<http://purl.org/dc/elements/1.1/>
 Prefix xsd:<http://www.w3.org/2001/XMLSchema#>
 Prefix plx:<http://panlex.org/plx/>
 Prefix owl:<http://www.w3.org/2002/07/owl#>
+Prefix lvont: <http://lexvo.org/ontology#>
 
 
 // (ap)
-// mappings concerning language sources stored in the ap table
+// mappings concerning approvers beeing sources of tranlations stored in
+// the ap table
 Create View ap As
     Construct {
-        ?s a plx:source.
-        ?s plx:hasLabel ?l.
-        ?s plx:hasUri ?u.
-        ?s plx:hasIsbn ?i.
-        ?s plx:hasAuthor ?a .
-        ?s plx:hasTitle ?t.
-        ?s plx:hasYearOfPublication ?y.
-        ?s plx:hasLicense ?li.
+        ?appr a plx:Approver.
+        ?appr plx:registrationDate ?rgdt.
+        ?appr rdfs:label ?labl.
+        ?appr foaf:homepage ?uri.
+        ?appr plx:isbn ?isbn.
+        ?appr dc:creator ?auth.
+        ?appr dc:title ?titl.
+        ?appr dc:publisher ?publ.
+        ?appr plx:yearOfPublication ?year.
+        ?appr plx:quality ?qual.
+        ?appr plx:license ?lcns
     }
     With
-        ?s  = uri(concat(plx:source,'/', ?ap))
-        ?l  = uri(?tt)
-        ?u  = uri(?ur)
-        ?i  = plainLiteral(?bn)
-        ?a  = typedLiteral(?au, xsd:string)
-        ?t  = typedLiteral(?ti, xsd:string)
-        ?y  = typedLiteral(?yr, xsd:integer)
-        ?li = plainLiteral(?li)
+        ?appr = uri(concat(plx:approver, '/', ?ap))
+        ?rgdt = typedLiteral(?dt, xsd:date)
+        ?labl = plainLiteral(?tt)
+        ?uri  = uri(?ur)
+        ?isbn = plainLiteral(?bn)
+        ?auth = typedLiteral(?au, xsd:string)
+        ?titl = typedLiteral(?ti, xsd:string)
+        ?publ = plainLiteral(?pb)
+        ?year = typedLiteral(?yr, xsd:integer)
+        ?qual = typedLiteral(?uq, xsd:integer)
+        ?lcns = uri(concat(plx:license, '/', ?li))
     From
         ap
 
-// (df)
-// mappings concerning meaning definitions
-Create View df As
+// (apli)
+// mappings concerning the licenses of approver sources
+Create View apli AS
     Construct {
-        ?mn a plx:meaning.
-        ?mt a plx:meaningText.
-        ?mn plx:hasMeaningText ?mt.
-        ?mt plx:varietyOfMeaningText ?lv.
-        ?mt plx:definitionText ?tt.
+        ?lcns a plx:License.
+        ?lcns rdfs:label ?llbl.
     }
     With
-        ?mn = uri(concat(plx:meaning,'/',?mn))
-        ?mt = uri(concat(plx:meaningText,'/',?df))
-        ?lv = uri(concat(plx:variety,'/',?lv))
-        ?tt = typedLiteral(?tt, xsd:string)
+        ?lcns = uri(concat(plx:license, '/', ?li))
+        ?llbl = plainLiteral(?lbl)
+    From
+        [[WITH license_labels AS (
+            SELECT 10 AS id, 'Public Domain' AS lbl UNION ALL  -- nr/pbl
+            SELECT 20 AS id, 'Create Commons' AS lbl UNION ALL  -- cc/ccl
+            SELECT 30 AS id, 'request' AS lbl UNION ALL  -- rp/ask
+            SELECT 40 AS id, 'GNU General Public License' AS lbl UNION ALL  -- gp/gpl
+            SELECT 50 AS id, 'GNU Lesser General Public License' AS lbl UNION ALL  -- gl/gll
+            SELECT 60 AS id, 'GNU Free Documentation License' AS lbl UNION ALL  -- gd/gfd
+            SELECT 65 AS id, 'MIT License' AS lbl UNION ALL  -- mi/mit
+            SELECT 70 AS id, 'copyright' AS lbl UNION ALL  -- co/cpr
+            SELECT 80 AS id, 'other' AS lbl UNION ALL  -- zz/ali
+            SELECT 90 AS id, 'unknown' AS lbl  -- na/zxx
+        )
+        SELECT apli.li, ll.lbl FROM apli JOIN license_labels ll ON (apli.id = ll.id)]]
+
+// (av)
+// mappings concerning approver varieties stored in the av table
+Create View av As
+    Construct {
+        ?appr plx:languageVariety ?lvar.
+    }
+    With
+        ?appr = uri(concat(plx:approver, '/', ?ap))
+        ?lvar = uri(concat(plx:languageVariety, '/', ?lv))
+    From
+        av
+
+// (df)
+// mappings concerning definitions (being a textual representation of a
+// meaning in a given variety) stored in the df table
+Create View df As
+    Construct {
+        ?defn a plx:Definition.
+        ?mean plx:meaningDefinition ?defn.
+        ?defn plx:languageVariety ?lvar.
+        ?defn rdfs:label ?text.
+    }
+    With
+        ?defn = uri(concat(plx:definition, '/', ?df))
+        ?mean = uri(concat(plx:meaning, '/', ?mn))
+        ?lvar = uri(concat(plx:languageVariety, '/', ?lv))
+        ?text = plainLiteral(?tt)
     From
         df
 
 // (dn)
-// mappings concerning denotations
+// mappings concerning denotations (connecting expressions with meanings)
+// stored in the dn table
 Create View dn As
     Construct {
-        ?ex plx:denotes ?mn.
+        ?deno a plx:Denotation.
+        ?deno plx:denotationMeaning ?mean.
+        ?deno plx:denotationExpression ?expr.
     }
     With
-        ?ex = uri(concat(plx:expression,'/',?ex))
-        ?mn = uri(concat(plx:meaning,'/',?mn))
+        ?deno = uri(concat(plx:denotation, '/', ?dn))
+        ?mean = uri(concat(plx:meaning, '/', ?mn))
+        ?expr = uri(concat(plx:expression, '/', ?ex))
     From
         dn
 
 // (ex)
-// mappings concerning expressions
+// mappings concerning expressions stored in the ex table
 Create View ex As
     Construct {
-        ?ex a plx:expression.
-        ?ex plx:hasVariety ?lv.
-        ?ex plx:hasText ?tt.
+        ?expr a plx:Expression.
+        ?expr plx:languageVariety ?lvar.
+        ?expr rdfs:label ?etxt.
+        ?expr plx:degradedText ?dtxt.
     }
     With
-        ?ex = uri(concat(plx:expression,'/',?ex))
-        ?lv = uri(concat(plx:variety,'/',?lv))
-        ?tt = typedLiteral(?tt, xsd:string)
+        ?expr = uri(concat(plx:expression, '/', ?ex))
+        ?lvar = uri(concat(plx:languageVariety, '/', ?lv))
+        ?etxt = typedLiteral(?tt, xsd:string)
+        ?dtxt = typedLiteral(?td, xsd:string)
     From
         ex
 
@@ -82,43 +133,104 @@ Create View ex As
 // ISO 639-3 language name links to lexvo.org
 Create View i1 As
     Construct {
-        ?iso1 a plx:iso639-1.
+        ?iso1 a plx:Iso639-1Code.
+        ?iso3 a plx:Iso639-3Code.
         ?iso1 owl:sameAs ?lexvo1.
         ?iso3 owl:sameAs ?lexvo3.
+        ?lang a plx:Language.
+        ?lang a lvont:Language.
+        ?lang a <http://schema.org/Language>.
+        ?lang plx:iso639-1Code ?iso1.
+        ?lang plx:iso639-3Code ?iso3.
     }
     With
-        ?iso1 = uri(concat(plx:iso639-1,'/',?iso1))
-        ?iso3 = uri(concat(plx:iso639-3,'/',?iso3))
-        ?lexvo1 = uri(concat('http://lexvo.org/id/iso639-1/',?iso1))
-        ?lexvo3 = uri(concat('http://lexvo.org/id/iso639-3/',?iso3))
+        ?iso1 = uri(concat(plx:iso639-1, '/', ?iso1))
+        ?iso3 = uri(concat(plx:iso639-3, '/', ?iso3))
+        ?lexvo1 = uri(concat('http://lexvo.org/id/iso639-1/', ?iso1))
+        ?lexvo3 = uri(concat('http://lexvo.org/id/iso639-3/', ?iso3))
+        ?lang = uri(concat(plx:language, '/', ?iso3))
     From
         i1
 
-// (lc)
-// mappings concerning language codes
-Create View lc As
-    Construct {
-        ?lc a plx:langCode.
-        ?lc plx:hasLangCodeType ?tp.
-    }
-    With
-        ?lc = uri(concat(plx:langCode,'/',?lc))
-        ?tp = typedLiteral(?tp, xsd:string)
-    From
-        lc
-
 // (lv)
-// mappings concerning languages and varieties
-Create View lv As
+// mappings concerning language varieties stored in the lv table
+Create View lv AS
     Construct {
-        ?lv a plx:variety.
-        ?lv plx:belongsTo ?lc.
-        ?lv plx:hasName ?tt.
+        ?lvar a plx:LanguageVariety.
+        ?lvar plx:languageVarietyOf ?lang.
+        ?lvar rdfs:label ?name
     }
     With
-        ?lv = uri(concat(plx:variety,'/',?lv))
-        ?lc = uri(concat(plx:langCode,'/',?lc))
-        ?tt = typedLiteral(?tt, xsd:string)
+        ?lvar = uri(concat(plx:languageVariety, '/', ?lv))
+        ?lang = uri(concat(plx:language, '/', ?lc))
+        ?name = plainLiteral(?tt)
     From
-        lv
+        // join with ex since the language variety name is now taken from the
+        // expression table
+        [[SELECT lv.lv, lv.lc, ex.tt FROM lv JOIN ex ON lv.ex=ex.ex]]
 
+// (mi)
+// mappings concerning meaning identifiers (representing ids of other web
+// sites) stored in the mi table
+Create View mi As
+    Construct {
+        ?mean plx:identifier ?labl.
+    }
+    With
+        ?mean = uri(concat(plx:meaning, '/', ?mn))
+        ?labl = plainLiteral(?tt)
+    From
+        mi
+
+// (mn)
+// mappings concerning meanings stored in the mn table
+Create View mn As
+    Construct {
+        ?mean a plx:Meaning.
+        ?mean plx:approver ?appr.
+    }
+    With
+        ?mean = uri(concat(plx:meaning, '/', ?mn))
+        ?appr = uri(concat(plx:approver, '/', ?ap))
+    From
+        mn
+
+// (wc, wcex)
+// mappings concerning word classes (verb, noun, pronoun etc.) of a denotation
+Create View wc As
+    Construct {
+        ?wcls a plx:WordClass.
+        // FIXME: this should be rdfs:label but is given as plx:label in the SWJ submission
+        // so I leave it as it is
+        ?wcls rdfs:label ?labl.
+        ?deno plx:wordClass ?wcls.
+    }
+    With
+        ?wcls = uri(concat(plx:wordClass, '/', ?tt))
+        ?labl = plainLiteral(?tt)
+        ?deno = uri(concat(plx:denotation, '/', ?dn))
+    From
+        // TODO: know why there are ~3981405 expressions but only 15 word
+        // classes and why there are no direct references to the word classes
+        [[SELECT wc.dn, wcex.tt FROM wc JOIN wcex ON wc.ex = wcex.ex]]
+
+// static word class mappings to dbpedia
+// TODO: check if there is a LLOD source providing OLIF data
+Create View wc_dbpedia As
+    Construct {
+        <http://panlex.org/plx/wordClass/misc> owl:sameAs <http://dbpedia.org/resource/Miscellaneous>.
+        <http://panlex.org/plx/wordClass/pron> owl:sameAs <http://dbpedia.org/resource/Pronoun>.
+        <http://panlex.org/plx/wordClass/affx> owl:sameAs <http://dbpedia.org/resource/Affix>.
+        <http://panlex.org/plx/wordClass/auxv> owl:sameAs <http://dbpedia.org/resource/Auxiliary_verb>.
+        <http://panlex.org/plx/wordClass/name> owl:sameAs <http://dbpedia.org/resource/Name>.
+        <http://panlex.org/plx/wordClass/adjv> owl:sameAs <http://dbpedia.org/resource/Adjective>.
+        <http://panlex.org/plx/wordClass/detr> owl:sameAs <http://dbpedia.org/resource/Determiner_%28linguistics%29>.
+        <http://panlex.org/plx/wordClass/verb> owl:sameAs <http://dbpedia.org/resource/Verb>.
+        <http://panlex.org/plx/wordClass/post> owl:sameAs <http://dbpedia.org/resource/Postposition>.
+        <http://panlex.org/plx/wordClass/noun> owl:sameAs <http://dbpedia.org/resource/Noun>.
+        <http://panlex.org/plx/wordClass/ijec> owl:sameAs <http://dbpedia.org/resource/Interjection>.
+        <http://panlex.org/plx/wordClass/vpar> owl:sameAs <http://dbpedia.org/resource/Verb_particle>.
+        <http://panlex.org/plx/wordClass/prep> owl:sameAs <http://dbpedia.org/resource/Preposition>.
+        <http://panlex.org/plx/wordClass/advb> owl:sameAs <http://dbpedia.org/resource/Adverb>.
+        <http://panlex.org/plx/wordClass/conj> owl:sameAs <http://dbpedia.org/resource/Conjunction_(grammar)>.
+    }
