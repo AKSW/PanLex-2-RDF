@@ -1,0 +1,63 @@
+Prefix spy:<http://aksw.org/sparqlify/>
+Prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+Prefix foaf:<http://xmlns.com/foaf/0.1/>
+Prefix dc:<http://purl.org/dc/elements/1.1/>
+Prefix xsd:<http://www.w3.org/2001/XMLSchema#>
+Prefix plx:<http://panlex.org/plx/>
+Prefix owl:<http://www.w3.org/2002/07/owl#>
+Prefix lvont: <http://lexvo.org/ontology#>
+Prefix gold: <http://purl.org/linguistics/gold/>
+Prefix lemon: <http://www.lemon-model.net/lemon#>
+
+Create View ex_dn_mn As
+    Construct {
+        ?form a lemon:Form.
+        ?lexEntry a lemon:LexicalEntry.
+        ?lexSense a lemon:LexicalSense.
+        ?form lemon:writtenRep ?repr.
+        ?lexEntry lemon:lexicalForm ?form.
+        ?lexSense lemon:isSenseOf ?lexEntry.
+        ?lexEntry lemon:sense ?lexSense.
+    }
+    With
+        ?repr = typedLiteral(?tt, xsd:string)
+        ?form = uri(concat(plx:lexicalForm, ?ex))
+        ?lexEntry = uri(concat(plx:lexicalEntry, '/', ?td))
+        ?lexSense = uri(concat(plx:meaning, '/', ?mn))
+    From
+        [[SELECT ex.ex AS ex, tt, td, mn.mn AS mn FROM ex JOIN dn ON ex.ex=dn.ex JOIN mn ON dn.mn=mn.mn]]
+
+// TODO: sense definition
+
+
+Create View wc_pos_gold As
+    Construct {
+        // general case
+        // assumption is based on the statement:
+        //
+        // 12. Word Classifications
+        // A denotation may optionally have word classifications. These assign
+        // grammatical word classes (parts of speech) to denotations.
+        //
+        // from http://www.panlex.org/tech/doc/design/panlex-db-design.pdf
+        <http://panlex.org/plx/wordClass/misc> owl:sameAs <http://purl.org/linguistics/gold/PartOfSpeechProperty>.
+
+        <http://panlex.org/plx/wordClass/pron> owl:sameAs <http://purl.org/linguistics/gold/Pronominal>.
+
+        // this is not a LinguisticProperty in GOLD, but a GrammarUnit !!!
+        <http://panlex.org/plx/wordClass/affx> owl:sameAs <http://purl.org/linguistics/gold/Affix>.
+
+        <http://panlex.org/plx/wordClass/auxv> owl:sameAs <http://purl.org/linguistics/gold/Auxiliary>.
+        <http://panlex.org/plx/wordClass/name> owl:sameAs <http://purl.org/linguistics/gold/ProperNoun>.
+        <http://panlex.org/plx/wordClass/adjv> owl:sameAs <http://purl.org/linguistics/gold/Adjectival>.
+        <http://panlex.org/plx/wordClass/detr> owl:sameAs <http://purl.org/linguistics/gold/Determiner>.
+        <http://panlex.org/plx/wordClass/verb> owl:sameAs <http://purl.org/linguistics/gold/Verbal>.
+        <http://panlex.org/plx/wordClass/post> owl:sameAs <http://purl.org/linguistics/gold/Postposition>.
+        <http://panlex.org/plx/wordClass/noun> owl:sameAs <http://purl.org/linguistics/gold/Noun>.
+        <http://panlex.org/plx/wordClass/ijec> owl:sameAs <http://purl.org/linguistics/gold/Interjection>.
+        <http://panlex.org/plx/wordClass/vpar> owl:sameAs <http://purl.org/linguistics/gold/VerbalParticle>.
+        <http://panlex.org/plx/wordClass/prep> owl:sameAs <http://purl.org/linguistics/gold/Preposition>.
+        <http://panlex.org/plx/wordClass/advb> owl:sameAs <http://purl.org/linguistics/gold/Adverbial>.
+        <http://panlex.org/plx/wordClass/conj> owl:sameAs <http://purl.org/linguistics/gold/Conjunction>.
+    }
