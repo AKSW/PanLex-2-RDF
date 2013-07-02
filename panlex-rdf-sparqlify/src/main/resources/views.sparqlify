@@ -7,6 +7,7 @@ Prefix xsd:<http://www.w3.org/2001/XMLSchema#>
 Prefix plx:<http://panlex.org/plx/>
 Prefix owl:<http://www.w3.org/2002/07/owl#>
 Prefix lvont: <http://lexvo.org/ontology#>
+Prefix dbpedia-owl: <http://dbpedia.org/ontology/>
 
 
 // (ap)
@@ -18,13 +19,13 @@ Create View ap As
         ?appr plx:registrationDate ?rgdt.
         ?appr rdfs:label ?labl.
         ?appr foaf:homepage ?uri.
-        ?appr plx:isbn ?isbn.
+        ?appr dbpedia-owl:isbn ?isbn.
         ?appr dc:creator ?auth.
         ?appr dc:title ?titl.
         ?appr dc:publisher ?publ.
-        ?appr plx:yearOfPublication ?year.
+        ?appr dc:date ?year.
         ?appr plx:quality ?qual.
-        ?appr plx:license ?lcns
+        ?appr plx:license ?lcns.
     }
     With
         ?appr = uri(concat(plx:approver, '/', ?ap))
@@ -35,7 +36,7 @@ Create View ap As
         ?auth = typedLiteral(?au, xsd:string)
         ?titl = typedLiteral(?ti, xsd:string)
         ?publ = plainLiteral(?pb)
-        ?year = typedLiteral(?yr, xsd:integer)
+        ?year = typedLiteral(?yr, xsd:gYear)
         ?qual = typedLiteral(?uq, xsd:integer)
         ?lcns = uri(concat(plx:license, '/', ?li))
     From
