@@ -4,11 +4,18 @@ Prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 Prefix foaf:<http://xmlns.com/foaf/0.1/>
 Prefix dc:<http://purl.org/dc/elements/1.1/>
 Prefix xsd:<http://www.w3.org/2001/XMLSchema#>
-Prefix plx:<http://panlex.org/plx/>
+Prefix plx:<http://ld.panlex.org/plx/>
 Prefix owl:<http://www.w3.org/2002/07/owl#>
 Prefix lvont: <http://lexvo.org/ontology#>
 Prefix dbpedia-owl: <http://dbpedia.org/ontology/>
+Prefix gold: <http://purl.org/linguistics/gold/>
+Prefix lemon: <http://www.lemon-model.net/lemon#>
 
+/*****************************************************************************
+ *
+ * PanLex ontology view definitions
+ *
+ *****************************************************************************/
 
 // (ap)
 // mappings concerning approvers beeing sources of tranlations stored in
@@ -201,8 +208,6 @@ Create View mn As
 Create View wc As
     Construct {
         ?wcls a plx:WordClass.
-        // FIXME: this should be rdfs:label but is given as plx:label in the SWJ submission
-        // so I leave it as it is
         ?wcls rdfs:label ?labl.
         ?deno plx:wordClass ?wcls.
     }
@@ -215,9 +220,16 @@ Create View wc As
         // classes and why there are no direct references to the word classes
         [[SELECT wc.dn, wcex.tt FROM wc JOIN wcex ON wc.ex = wcex.ex]]
 
-// static word class mappings to dbpedia
+
+/******************************************************************************
+ *
+ * view definition for links to DBpedia
+ *
+ ******************************************************************************/
+
 // TODO: check if there is a LLOD source providing OLIF data
-Create View wc_dbpedia As
+
+Create View dbpedia_wc As
     Construct {
         <http://panlex.org/plx/wordClass/misc> owl:sameAs <http://dbpedia.org/resource/Miscellaneous>.
         <http://panlex.org/plx/wordClass/pron> owl:sameAs <http://dbpedia.org/resource/Pronoun>.
@@ -235,3 +247,166 @@ Create View wc_dbpedia As
         <http://panlex.org/plx/wordClass/advb> owl:sameAs <http://dbpedia.org/resource/Adverb>.
         <http://panlex.org/plx/wordClass/conj> owl:sameAs <http://dbpedia.org/resource/Conjunction_(grammar)>.
     }
+
+
+/******************************************************************************
+ *
+ * view definitions for the lemon model
+ *
+ ******************************************************************************/
+
+Create View lemon_Form_LexicalEntry_LexicalSense As
+    Construct {
+        ?form a lemon:Form.
+        ?lexEntry a lemon:LexicalEntry.
+        ?lexSense a lemon:LexicalSense.
+        ?form lemon:writtenRep ?repr.
+        ?lexEntry lemon:lexicalForm ?form.
+        ?lexSense lemon:isSenseOf ?lexEntry.
+        ?lexEntry lemon:sense ?lexSense.
+    }
+    With
+        ?repr = typedLiteral(?tt, xsd:string)
+        ?form = uri(concat(plx:lexicalForm, ?ex))
+        ?lexEntry = uri(concat(plx:lexicalEntry, '/', ?td))
+        ?lexSense = uri(concat(plx:meaning, '/', ?mn))
+    From
+        [[SELECT ex.ex, tt, td, mn.mn FROM ex JOIN dn ON ex.ex=dn.ex JOIN mn ON dn.mn=mn.mn]]
+
+// TODO: sense definition
+
+
+/******************************************************************************
+ *
+ * view definitions for the GOLD ontology
+ *
+ * - main structure of a linguistic sign in the GOLD ontology:
+ *
+ *   gold:LinguisticSign  // reuse of plx:denotation/<?dn>
+ *  
+ *           gold:hasForm               // reuse of
+ *                   gold:FormUnit.     // plx:expression/<?ex>
+ *
+ *           gold:hasGrammar            // not
+ *                   gold:GrammarUnit.  // used
+ *  
+ *           gold:hasMeaning            // reuse of
+ *                   gold:Meaning.      // plx:meaning/<?mn>
+ *  
+ *           gold:hasProperty                  // reuse of
+ *                   gold:LinguisticProperty.  // plx:wordClass/<?wc>
+ *
+ ******************************************************************************/
+
+// mappings concerning denotaions, which are used to model linguistic signs
+Create View gold_LinguisticSign As
+    Construct {
+        ?sign a gold:LinguisticSign.
+        ?semU a gold:SemanticUnit.
+        ?sign gold:hasForm ?form.
+        ?sign gold:hasMeaning ?semU.
+    }
+    With
+        ?sign = uri(concat(plx:sign, ?dn))
+        ?form = uri(concat(plx:formUnit, ?ex))
+        ?semU = uri(concat(plx:semanticUnit, ?mn))
+    From
+        dn
+
+// mappings concerning the gold:FormUnit entities (gotten from ex table)
+Create View gold_FormUnit As
+    Construct {
+        ?form a gold:FormUnit.
+        ?wrEx a gold:WrittenLinguisticExpression.
+        ?form gold:writtenRealization ?wrEx.
+        ?wrEx rdfs:label ?labl.
+    }
+    With
+        ?form = uri(concat(plx:formUnit, ?ex))
+        ?wrEx = uri(concat(plx:writtenExpression, '/', ?td))
+        ?labl = plainLiteral(?tt)
+    From
+        ex
+
+// static mappings for the part of speech entities derived from the
+// plx:WordClasses
+Create View gold_PartOfSpeechProperty As
+    Construct {
+        // general case
+        // assumption is based on the statement:
+        //
+        // 12. Word Classifications
+        // A denotation may optionally have word classifications. These assign
+        // grammatical word classes (parts of speech) to denotations.
+        //
+        // from http://www.panlex.org/tech/doc/design/panlex-db-design.pdf
+        <http://panlex.org/plx/wordClass/misc> owl:sameAs <http://purl.org/linguistics/gold/PartOfSpeechProperty>.
+
+        <http://panlex.org/plx/wordClass/pron> owl:sameAs <http://purl.org/linguistics/gold/Pronominal>.
+
+        // this is not a LinguisticProperty in GOLD, but a GrammarUnit !!!
+        <http://panlex.org/plx/wordClass/affx> owl:sameAs <http://purl.org/linguistics/gold/Affix>.
+
+        <http://panlex.org/plx/wordClass/auxv> owl:sameAs <http://purl.org/linguistics/gold/Auxiliary>.
+        <http://panlex.org/plx/wordClass/name> owl:sameAs <http://purl.org/linguistics/gold/ProperNoun>.
+        <http://panlex.org/plx/wordClass/adjv> owl:sameAs <http://purl.org/linguistics/gold/Adjectival>.
+        <http://panlex.org/plx/wordClass/detr> owl:sameAs <http://purl.org/linguistics/gold/Determiner>.
+        <http://panlex.org/plx/wordClass/verb> owl:sameAs <http://purl.org/linguistics/gold/Verbal>.
+        <http://panlex.org/plx/wordClass/post> owl:sameAs <http://purl.org/linguistics/gold/Postposition>.
+        <http://panlex.org/plx/wordClass/noun> owl:sameAs <http://purl.org/linguistics/gold/Noun>.
+        <http://panlex.org/plx/wordClass/ijec> owl:sameAs <http://purl.org/linguistics/gold/Interjection>.
+        <http://panlex.org/plx/wordClass/vpar> owl:sameAs <http://purl.org/linguistics/gold/VerbalParticle>.
+        <http://panlex.org/plx/wordClass/prep> owl:sameAs <http://purl.org/linguistics/gold/Preposition>.
+        <http://panlex.org/plx/wordClass/advb> owl:sameAs <http://purl.org/linguistics/gold/Adverbial>.
+        <http://panlex.org/plx/wordClass/conj> owl:sameAs <http://purl.org/linguistics/gold/Conjunction>.
+    }
+
+// mappings concerning the gold:LinguisticProperty (gotten from ex, dn and
+// wcex)
+Create View gold_LinguisticProperty As
+    Construct {
+        ?sign gold:hasProperty ?posp.
+    }
+    With
+        ?sign = uri(concat(plx:sign, ?dn))
+        ?posp = uri(?uri)
+    From
+        // plx=> SELECT * FROM wcex;
+        //    ex    |  tt  
+        // ---------+------
+        //  3846607 | noun
+        //  3846608 | verb
+        //  3846609 | adjv
+        //  3846610 | advb
+        //  3846611 | name
+        //  3846614 | pron
+        //  3846615 | vpar
+        //  3956917 | auxv
+        //  3956918 | detr
+        //  3956920 | prep
+        //  3956923 | post
+        //  3956926 | conj
+        //  3956927 | ijec
+        //  3956930 | affx
+        //  3957012 | misc
+        //  (15 Zeilen)
+        [[WITH pos_uris AS (
+            SELECT 3846607 AS ex_id, 'http://purl.org/linguistics/gold/Noun' AS uri UNION ALL -- noun
+            SELECT 3846608 AS ex_id, 'http://purl.org/linguistics/gold/Verbal' AS uri UNION ALL -- verb
+            SELECT 3846609 AS ex_id, 'http://purl.org/linguistics/gold/Adjectival' AS uri UNION ALL -- adjv
+            SELECT 3846610 AS ex_id, 'http://purl.org/linguistics/gold/Adverbial' AS uri UNION ALL -- advb
+            SELECT 3846611 AS ex_id, 'http://purl.org/linguistics/gold/ProperNoun' AS uri UNION ALL -- name
+            SELECT 3846614 AS ex_id, 'http://purl.org/linguistics/gold/Pronominal' AS uri UNION ALL -- pron
+            SELECT 3846615 AS ex_id, 'http://purl.org/linguistics/gold/VerbalParticle' AS uri UNION ALL -- vpar
+            SELECT 3956917 AS ex_id, 'http://purl.org/linguistics/gold/Auxiliary' AS uri UNION ALL -- auxv
+            SELECT 3956918 AS ex_id, 'http://purl.org/linguistics/gold/Determiner' AS uri UNION ALL -- detr
+            SELECT 3956920 AS ex_id, 'http://purl.org/linguistics/gold/Preposition' AS uri UNION ALL -- prep
+            SELECT 3956923 AS ex_id, 'http://purl.org/linguistics/gold/Postposition' AS uri UNION ALL -- post
+            SELECT 3956926 AS ex_id, 'http://purl.org/linguistics/gold/Conjunction' AS uri UNION ALL -- conj
+            SELECT 3956927 AS ex_id, 'http://purl.org/linguistics/gold/Interjection' AS uri UNION ALL -- ijec
+            -- not a LinguisticProperty!!!  SELECT 3956930 AS ex_id, 'http://purl.org/linguistics/gold/Affix' AS uri UNION ALL -- affx
+            SELECT 3957012 AS ex_id, 'http://purl.org/linguistics/gold/PartOfSpeechProperty' AS uri -- misc
+        )
+        SELECT wc.dn, uri FROM wc JOIN pos_uris ON wc.ex=pos_uris.ex_id]]
+
+// TODO: gold:SemanticUnit gold:stringRep string
