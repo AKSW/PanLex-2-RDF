@@ -205,21 +205,28 @@ Create View mn As
 
 // (wc, wcex)
 // mappings concerning word classes (verb, noun, pronoun etc.) of a denotation
-Create View wc As
+Create View dn_wc As
     Construct {
-        ?wcls a plx:WordClass.
-        ?wcls rdfs:label ?labl.
         ?deno plx:wordClass ?wcls.
     }
     With
         ?wcls = uri(concat(plx:wordClass, '/', ?tt))
-        ?labl = plainLiteral(?tt)
         ?deno = uri(concat(plx:denotation, '/', ?dn))
     From
         // TODO: know why there are ~3981405 expressions but only 15 word
         // classes and why there are no direct references to the word classes
         [[SELECT wc.dn, wcex.tt FROM wc JOIN wcex ON wc.ex = wcex.ex]]
 
+Create View wc As
+    Construct {
+        ?wcls a plx:WordClass.
+        ?wcls rdfs:label ?labl.
+    }
+    With
+        ?wcls = uri(concat(plx:wordClass, '/', ?tt))
+        ?labl = plainLiteral(?tt)
+    From
+        wcex
 
 /******************************************************************************
  *
