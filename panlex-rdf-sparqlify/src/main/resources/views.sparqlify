@@ -326,7 +326,6 @@ Create View lemon_LexicalSense As
 Create View gold_LinguisticSign As
     Construct {
         ?sign a gold:LinguisticSign.
-        ?semU a gold:SemanticUnit.
         ?sign gold:hasForm ?form.
         ?sign gold:hasMeaning ?semU.
     }
@@ -336,6 +335,16 @@ Create View gold_LinguisticSign As
         ?semU = uri(concat(plx:semanticUnit, ?mn))
     From
         dn
+
+// mappings concerning the gold:SemanticUnit entities (gotten from mn table)
+Create View gold_SemanticUnit As
+    Construct {
+        ?semU a gold:SemanticUnit.
+    }
+    With
+        ?semU = uri(concat(plx:semanticUnit, ?mn))
+    From
+        mn
 
 // mappings concerning the gold:FormUnit entities (gotten from ex table)
 Create View gold_FormUnit As
@@ -389,6 +398,7 @@ Create View gold_PartOfSpeechProperty As
 // wcex)
 Create View gold_LinguisticProperty As
     Construct {
+        ?posp a gold:PartOfSpeechProperty.
         ?sign gold:hasProperty ?posp.
     }
     With
