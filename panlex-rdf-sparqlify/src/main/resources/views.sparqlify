@@ -5,6 +5,7 @@ Prefix foaf:<http://xmlns.com/foaf/0.1/>
 Prefix dc:<http://purl.org/dc/elements/1.1/>
 Prefix xsd:<http://www.w3.org/2001/XMLSchema#>
 Prefix plx:<http://ld.panlex.org/plx/>
+Prefix plx-wc:<http://ld.panlex.org/plx/wordClass/>
 Prefix owl:<http://www.w3.org/2002/07/owl#>
 Prefix lvont: <http://lexvo.org/ontology#>
 Prefix dbpedia-owl: <http://dbpedia.org/ontology/>
@@ -231,21 +232,21 @@ Create View wc As
 
 Create View dbpedia_wc As
     Construct {
-        <http://panlex.org/plx/wordClass/misc> owl:sameAs <http://dbpedia.org/resource/Miscellaneous>.
-        <http://panlex.org/plx/wordClass/pron> owl:sameAs <http://dbpedia.org/resource/Pronoun>.
-        <http://panlex.org/plx/wordClass/affx> owl:sameAs <http://dbpedia.org/resource/Affix>.
-        <http://panlex.org/plx/wordClass/auxv> owl:sameAs <http://dbpedia.org/resource/Auxiliary_verb>.
-        <http://panlex.org/plx/wordClass/name> owl:sameAs <http://dbpedia.org/resource/Name>.
-        <http://panlex.org/plx/wordClass/adjv> owl:sameAs <http://dbpedia.org/resource/Adjective>.
-        <http://panlex.org/plx/wordClass/detr> owl:sameAs <http://dbpedia.org/resource/Determiner_%28linguistics%29>.
-        <http://panlex.org/plx/wordClass/verb> owl:sameAs <http://dbpedia.org/resource/Verb>.
-        <http://panlex.org/plx/wordClass/post> owl:sameAs <http://dbpedia.org/resource/Postposition>.
-        <http://panlex.org/plx/wordClass/noun> owl:sameAs <http://dbpedia.org/resource/Noun>.
-        <http://panlex.org/plx/wordClass/ijec> owl:sameAs <http://dbpedia.org/resource/Interjection>.
-        <http://panlex.org/plx/wordClass/vpar> owl:sameAs <http://dbpedia.org/resource/Verb_particle>.
-        <http://panlex.org/plx/wordClass/prep> owl:sameAs <http://dbpedia.org/resource/Preposition>.
-        <http://panlex.org/plx/wordClass/advb> owl:sameAs <http://dbpedia.org/resource/Adverb>.
-        <http://panlex.org/plx/wordClass/conj> owl:sameAs <http://dbpedia.org/resource/Conjunction_(grammar)>.
+        plx-wc:misc owl:sameAs <http://dbpedia.org/resource/Miscellaneous>.
+        plx-wc:pron owl:sameAs <http://dbpedia.org/resource/Pronoun>.
+        plx-wc:affx owl:sameAs <http://dbpedia.org/resource/Affix>.
+        plx-wc:auxv owl:sameAs <http://dbpedia.org/resource/Auxiliary_verb>.
+        plx-wc:name owl:sameAs <http://dbpedia.org/resource/Name>.
+        plx-wc:adjv owl:sameAs <http://dbpedia.org/resource/Adjective>.
+        plx-wc:detr owl:sameAs <http://dbpedia.org/resource/Determiner_%28linguistics%29>.
+        plx-wc:verb owl:sameAs <http://dbpedia.org/resource/Verb>.
+        plx-wc:post owl:sameAs <http://dbpedia.org/resource/Postposition>.
+        plx-wc:noun owl:sameAs <http://dbpedia.org/resource/Noun>.
+        plx-wc:ijec owl:sameAs <http://dbpedia.org/resource/Interjection>.
+        plx-wc:vpar owl:sameAs <http://dbpedia.org/resource/Verb_particle>.
+        plx-wc:prep owl:sameAs <http://dbpedia.org/resource/Preposition>.
+        plx-wc:advb owl:sameAs <http://dbpedia.org/resource/Adverb>.
+        plx-wc:conj owl:sameAs <http://dbpedia.org/resource/Conjunction_(grammar)>.
     }
 
 
@@ -340,25 +341,25 @@ Create View gold_PartOfSpeechProperty As
         // grammatical word classes (parts of speech) to denotations.
         //
         // from http://www.panlex.org/tech/doc/design/panlex-db-design.pdf
-        <http://panlex.org/plx/wordClass/misc> owl:sameAs <http://purl.org/linguistics/gold/PartOfSpeechProperty>.
+        plx-wc:misc owl:sameAs <http://purl.org/linguistics/gold/PartOfSpeechProperty>.
 
-        <http://panlex.org/plx/wordClass/pron> owl:sameAs <http://purl.org/linguistics/gold/Pronominal>.
+        plx-wc:pron owl:sameAs <http://purl.org/linguistics/gold/Pronominal>.
 
         // this is not a LinguisticProperty in GOLD, but a GrammarUnit !!!
-        <http://panlex.org/plx/wordClass/affx> owl:sameAs <http://purl.org/linguistics/gold/Affix>.
+        plx-wc:affx owl:sameAs <http://purl.org/linguistics/gold/Affix>.
 
-        <http://panlex.org/plx/wordClass/auxv> owl:sameAs <http://purl.org/linguistics/gold/Auxiliary>.
-        <http://panlex.org/plx/wordClass/name> owl:sameAs <http://purl.org/linguistics/gold/ProperNoun>.
-        <http://panlex.org/plx/wordClass/adjv> owl:sameAs <http://purl.org/linguistics/gold/Adjectival>.
-        <http://panlex.org/plx/wordClass/detr> owl:sameAs <http://purl.org/linguistics/gold/Determiner>.
-        <http://panlex.org/plx/wordClass/verb> owl:sameAs <http://purl.org/linguistics/gold/Verbal>.
-        <http://panlex.org/plx/wordClass/post> owl:sameAs <http://purl.org/linguistics/gold/Postposition>.
-        <http://panlex.org/plx/wordClass/noun> owl:sameAs <http://purl.org/linguistics/gold/Noun>.
-        <http://panlex.org/plx/wordClass/ijec> owl:sameAs <http://purl.org/linguistics/gold/Interjection>.
-        <http://panlex.org/plx/wordClass/vpar> owl:sameAs <http://purl.org/linguistics/gold/VerbalParticle>.
-        <http://panlex.org/plx/wordClass/prep> owl:sameAs <http://purl.org/linguistics/gold/Preposition>.
-        <http://panlex.org/plx/wordClass/advb> owl:sameAs <http://purl.org/linguistics/gold/Adverbial>.
-        <http://panlex.org/plx/wordClass/conj> owl:sameAs <http://purl.org/linguistics/gold/Conjunction>.
+        plx-wc:auxv owl:sameAs <http://purl.org/linguistics/gold/Auxiliary>.
+        plx-wc:name owl:sameAs <http://purl.org/linguistics/gold/ProperNoun>.
+        plx-wc:adjv owl:sameAs <http://purl.org/linguistics/gold/Adjectival>.
+        plx-wc:detr owl:sameAs <http://purl.org/linguistics/gold/Determiner>.
+        plx-wc:verb owl:sameAs <http://purl.org/linguistics/gold/Verbal>.
+        plx-wc:post owl:sameAs <http://purl.org/linguistics/gold/Postposition>.
+        plx-wc:noun owl:sameAs <http://purl.org/linguistics/gold/Noun>.
+        plx-wc:ijec owl:sameAs <http://purl.org/linguistics/gold/Interjection>.
+        plx-wc:vpar owl:sameAs <http://purl.org/linguistics/gold/VerbalParticle>.
+        plx-wc:prep owl:sameAs <http://purl.org/linguistics/gold/Preposition>.
+        plx-wc:advb owl:sameAs <http://purl.org/linguistics/gold/Adverbial>.
+        plx-wc:conj owl:sameAs <http://purl.org/linguistics/gold/Conjunction>.
     }
 
 // mappings concerning the gold:LinguisticProperty (gotten from ex, dn and
