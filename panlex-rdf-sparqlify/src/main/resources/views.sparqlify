@@ -330,9 +330,9 @@ Create View gold_LinguisticSign As
         ?sign gold:hasMeaning ?semU.
     }
     With
-        ?sign = uri(concat(plx:sign, ?dn))
-        ?form = uri(concat(plx:formUnit, ?ex))
-        ?semU = uri(concat(plx:semanticUnit, ?mn))
+        ?sign = uri(concat(plx:denotation, '/', ?dn))
+        ?form = uri(concat(plx:expression, '/', ?ex))
+        ?semU = uri(concat(plx:meaning, '/', ?mn))
     From
         dn
 
@@ -342,7 +342,7 @@ Create View gold_SemanticUnit As
         ?semU a gold:SemanticUnit.
     }
     With
-        ?semU = uri(concat(plx:semanticUnit, ?mn))
+        ?semU = uri(concat(plx:meaning, '/', ?mn))
     From
         mn
 
@@ -355,7 +355,7 @@ Create View gold_FormUnit As
         ?wrEx rdfs:label ?labl.
     }
     With
-        ?form = uri(concat(plx:formUnit, ?ex))
+        ?form = uri(concat(plx:expression, '/', ?ex))
         ?wrEx = uri(concat(plx:writtenExpression, '/', ?td))
         ?labl = plainLiteral(?tt)
     From
@@ -402,7 +402,7 @@ Create View gold_LinguisticProperty As
         ?sign gold:hasProperty ?posp.
     }
     With
-        ?sign = uri(concat(plx:sign, ?dn))
+        ?sign = uri(concat(plx:denotation, '/', ?dn))
         ?posp = uri(?uri)
     From
         // plx=> SELECT * FROM wcex;
