@@ -265,21 +265,37 @@ Create View dbpedia_wc As
 
 Create View lemon_Form_LexicalEntry_LexicalSense As
     Construct {
-        ?form a lemon:Form.
         ?lexEntry a lemon:LexicalEntry.
-        ?lexSense a lemon:LexicalSense.
-        ?form lemon:writtenRep ?repr.
         ?lexEntry lemon:lexicalForm ?form.
         ?lexSense lemon:isSenseOf ?lexEntry.
         ?lexEntry lemon:sense ?lexSense.
     }
     With
-        ?repr = typedLiteral(?tt, xsd:string)
         ?form = uri(concat(plx:lexicalForm, ?ex))
         ?lexEntry = uri(concat(plx:lexicalEntry, '/', ?td))
         ?lexSense = uri(concat(plx:meaning, '/', ?mn))
     From
-        [[SELECT ex.ex, tt, td, mn.mn FROM ex JOIN dn ON ex.ex=dn.ex JOIN mn ON dn.mn=mn.mn]]
+        [[SELECT ex.ex, td, mn.mn FROM ex JOIN dn ON ex.ex=dn.ex JOIN mn ON dn.mn=mn.mn]]
+
+Create View lemon_Form As
+    Construct {
+        ?form a lemon:Form.
+        ?form lemon:writtenRep ?repr.
+    }
+    With
+        ?form = uri(concat(plx:lexicalForm, ?ex))
+        ?repr = typedLiteral(?tt, xsd:string)
+    From
+        ex
+
+Create View lemon_LexicalSense As
+    Construct {
+        ?lexSense a lemon:LexicalSense.
+    }
+    With
+        ?lexSense = uri(concat(plx:meaning, '/', ?mn))
+    From
+        mn
 
 // TODO: sense definition
 
