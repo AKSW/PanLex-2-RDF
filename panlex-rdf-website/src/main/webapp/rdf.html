@@ -85,6 +85,22 @@ the following advantages:
 <br />
 <br />
 </p>
+
+<h3 class="left">News</h3>
+<table class="table">
+<!-- <tr><th>Date</th><th>Message</th><tr> -->
+<tr><td>2013 Jul 9<td style="padding-left: 50px;">Updated documentation on this site with the following items:
+<ul>
+    <li>Integration with the <a href="#integration-with-additional-data-models">GOLD and lemon</a> data models</li>
+    <li>There are now two <a href="#online-access">SPARQL endpoints</a> available: One that provides a virtual RDF view on the PanLex database, and one containing a materialized copy of it.</li>
+</ul>
+
+</td></tr>
+<tr><td><td style="padding-left: 50px;">Integration with the <a href="#integration-with-additional-data-models">GOLD and lemon</a> data models</td></tr>
+<tr><td>2013 Jul 5<td style="padding-left: 50px;">New dump generation in progress... Release planned this friday - Stay tuned!</td></tr>
+</table>
+
+
 <h3 class="left">Downloads</h3>
 
 <table style="width: 100%;">
@@ -95,22 +111,38 @@ the following advantages:
 <!-- <tr><td><a href="files/rdf/panlex-void-2013-02-14.nt">VoID Description</a></td></tr>  -->
 </tbody>
 </table>
+<br />
+<br />
+<i>Check <a href="/downloads/releases">here</a> for older releases</i>
+<br />
+<br />
+
+
 
 <p><br /></p>
-<h3 class="left">Online Access</h3>
+<h3 class="left"><a name="online-access">Online Access</a></h3>
+<p>The following SPARQL endpoints and corresponding HTML intefraces are available:
+    <ul>
+        <li><a href="/sparql">http://ld.panlex.org/sparql</a> | <a href="/snorql">http://ld.panlex.org/snorql</a> offer access to the latest PanLex RDF data via a <a href="http://sourceforge.net/projects/virtuoso/">Virtuoso</a> RDF store.</li>
+        <li><a href="/vsparql">http://ld.panlex.org/vsparql</a> | <a href="/vsnorql">http://ld.panlex.org/vsnorql</a> offer access to a virtual RDF dataset created directly from the official PanLex database by means of SPARQL-&gt;SQL rewriting using <a href="http://sparqlify.org">Sparqlify</a>. The 'v' stands for virtual.</li>
+        <li><ul>
+            <li>You may precede the <span>SELECT</span> keyword of a SPARQL query with <span>EXPLAIN</span> (case insensitive) to review the generated SQL query string: <a href="http://ld.panlex.org/vsnorql/?query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0AExplain+Select+*+{+%3Fs+a+%3Ft+}">Example</a>.</li>
+        </ul>
+        <li>Note that result sets are limited to 1000 rows.</li>
+    </ul>
+</p>
+<p>
+Linked Data resources reside in the namespace &lt;http://ld.panlex.org/plx/&gt; and are powered by the vsparql endpoint.<br />
+Example resources:
 <ul>
-<li>The SPARQL endpoint is available at <a href="/sparql">http://ld.panlex.org/sparql</a>. Note that result sets are limited to 1000 rows.</li>
-<li>An additional HTML interface that provides clickable result sets is available at <a href="/snorql">http://ld.panlex.org/snorql</a>.</li>
+    <li><a href="http://ld.panlex.org/plx/approver/1">The first approver</a></li>
+    <li><a href="http://ld.panlex.org/plx/definition/4711">Definition 4711</a></li>
+    <li><a href="http://ld.panlex.org/plx/license/nr">Public Domain License</a></li>
+</ul>
+</p>
+
 <!-- <li>All panlex resources (both schema and instance data) resides in the 'plx' namespace: http://ld.panlex.org/plx/</li>  -->
-</ul>
 
-
-<p>Example Resources:</p>
-<ul>
-<li><a href="http://ld.panlex.org/plx/approver/1">The first approver</a></li>
-<li><a href="http://ld.panlex.org/plx/definition/4711">Definition 4711</a></li>
-<li><a href="http://ld.panlex.org/plx/license/nr">Public Domain License</a></li>
-</ul>
 
 <p>Example Queries:</p>
 <table style="width: 100%;">
@@ -167,8 +199,10 @@ Order By ?al ?blvl ?bl ?blvo
 </td>
 </tr>
 <tr>
-<td><a href="http://ld.panlex.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASELECT+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl+{%0D%0A++++%3Fea+rdfs%3Alabel+%3Fta+.%0D%0A%0D%0A++++%3Fda+plx%3AdenotationExpression+%3Fea+.%0D%0A++++%3Fda+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationExpression+%3Feb+.%0D%0A%0D%0A++++%3Feb+rdfs%3Alabel+%3Ftb+.%0D%0A++++%3Feb+plx%3AlanguageVariety+%3Flv+.%0D%0A++++%3Flv+rdfs%3Alabel+%3Flvl+.%0D%0A++++%3Flv+plx%3AlanguageVarietyOf+%3Fl+.%0D%0A%0D%0A++++Filter%28%3Fta+%3D+%22translation%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl">Run It!</a></td>
-<td><a href="http://ld.panlex.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASELECT+Distinct+%3Fal+%3Falv+%3Falvl+%3Fbl+%3Fblvl+%3Fblvo+{%0D%0A++++%3Fae+rdfs%3Alabel+%3Fal+.%0D%0A++++%3Fae+plx%3AlanguageVariety+%3Falv+.%0D%0A++++%3Falv+rdfs%3Alabel+%3Falvl+.%0D%0A++++%3Falv+plx%3AlanguageVarietyOf+%3Falvo+.%0D%0A++++%3Falvo+plx%3Aiso639-3Code+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2Fiso639-3%2Feng%3E+.%0D%0A%0D%0A++++%3Fad+plx%3AdenotationExpression+%3Fae+.%0D%0A++++%3Fad+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationExpression+%3Fbe+.%0D%0A%0D%0A++++%3Fbe+rdfs%3Alabel+%3Fbl+.%0D%0A++++%3Fbe+plx%3AlanguageVariety+%3Fblv+.%0D%0A++++%3Fblv+rdfs%3Alabel+%3Fblvl+.%0D%0A++++%3Fblv+plx%3AlanguageVarietyOf+%3Fblvo+.%0D%0A%0D%0A++++Filter%28%3Fal+%3D+%22dictionary%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fal+%3Fblvl+%3Fbl+%3Fblvo">Run It!</a></td>
+<td>Run query: <a href="http://ld.panlex.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASELECT+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl+{%0D%0A++++%3Fea+rdfs%3Alabel+%3Fta+.%0D%0A%0D%0A++++%3Fda+plx%3AdenotationExpression+%3Fea+.%0D%0A++++%3Fda+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationExpression+%3Feb+.%0D%0A%0D%0A++++%3Feb+rdfs%3Alabel+%3Ftb+.%0D%0A++++%3Feb+plx%3AlanguageVariety+%3Flv+.%0D%0A++++%3Flv+rdfs%3Alabel+%3Flvl+.%0D%0A++++%3Flv+plx%3AlanguageVarietyOf+%3Fl+.%0D%0A%0D%0A++++Filter%28%3Fta+%3D+%22translation%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl">Virtuoso</a> | <a href="http://ld.panlex.org/vsnorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASELECT+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl+{%0D%0A++++%3Fea+rdfs%3Alabel+%3Fta+.%0D%0A%0D%0A++++%3Fda+plx%3AdenotationExpression+%3Fea+.%0D%0A++++%3Fda+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fdb+plx%3AdenotationExpression+%3Feb+.%0D%0A%0D%0A++++%3Feb+rdfs%3Alabel+%3Ftb+.%0D%0A++++%3Feb+plx%3AlanguageVariety+%3Flv+.%0D%0A++++%3Flv+rdfs%3Alabel+%3Flvl+.%0D%0A++++%3Flv+plx%3AlanguageVarietyOf+%3Fl+.%0D%0A%0D%0A++++Filter%28%3Fta+%3D+%22translation%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fta+%3Fm+%3Ftb+%3Flvl+%3Fl">Sparqlify</a>
+</td>
+<td>Run query: <a href="http://ld.panlex.org/snorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASELECT+Distinct+%3Fal+%3Falv+%3Falvl+%3Fbl+%3Fblvl+%3Fblvo+{%0D%0A++++%3Fae+rdfs%3Alabel+%3Fal+.%0D%0A++++%3Fae+plx%3AlanguageVariety+%3Falv+.%0D%0A++++%3Falv+rdfs%3Alabel+%3Falvl+.%0D%0A++++%3Falv+plx%3AlanguageVarietyOf+%3Falvo+.%0D%0A++++%3Falvo+plx%3Aiso639-3Code+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2Fiso639-3%2Feng%3E+.%0D%0A%0D%0A++++%3Fad+plx%3AdenotationExpression+%3Fae+.%0D%0A++++%3Fad+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationExpression+%3Fbe+.%0D%0A%0D%0A++++%3Fbe+rdfs%3Alabel+%3Fbl+.%0D%0A++++%3Fbe+plx%3AlanguageVariety+%3Fblv+.%0D%0A++++%3Fblv+rdfs%3Alabel+%3Fblvl+.%0D%0A++++%3Fblv+plx%3AlanguageVarietyOf+%3Fblvo+.%0D%0A%0D%0A++++Filter%28%3Fal+%3D+%22dictionary%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fal+%3Fblvl+%3Fbl+%3Fblvo">Virtuoso</a> | <a href="http://ld.panlex.org/vsnorql/?query=Prefix+plx%3A%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASELECT+Distinct+%3Fal+%3Falv+%3Falvl+%3Fbl+%3Fblvl+%3Fblvo+{%0D%0A++++%3Fae+rdfs%3Alabel+%3Fal+.%0D%0A++++%3Fae+plx%3AlanguageVariety+%3Falv+.%0D%0A++++%3Falv+rdfs%3Alabel+%3Falvl+.%0D%0A++++%3Falv+plx%3AlanguageVarietyOf+%3Falvo+.%0D%0A++++%3Falvo+plx%3Aiso639-3Code+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2Fiso639-3%2Feng%3E+.%0D%0A%0D%0A++++%3Fad+plx%3AdenotationExpression+%3Fae+.%0D%0A++++%3Fad+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationMeaning+%3Fm+.%0D%0A++++%3Fbd+plx%3AdenotationExpression+%3Fbe+.%0D%0A%0D%0A++++%3Fbe+rdfs%3Alabel+%3Fbl+.%0D%0A++++%3Fbe+plx%3AlanguageVariety+%3Fblv+.%0D%0A++++%3Fblv+rdfs%3Alabel+%3Fblvl+.%0D%0A++++%3Fblv+plx%3AlanguageVarietyOf+%3Fblvo+.%0D%0A%0D%0A++++Filter%28%3Fal+%3D+%22dictionary%22^^xsd%3Astring%29%0D%0A}%0D%0AOrder+By+%3Fal+%3Fblvl+%3Fbl+%3Fblvo">Sparqlify</a>
+</td>
 </tr>
 </table>
 
@@ -194,10 +228,81 @@ These two images provide an overview of how classes and properties in the RDF ve
 
 
 
+<h3 class="left"><a name="integration-with-additional-data-models">Integration with additional data models</a></h3>
+<p>
+The PanLex RDF mappings have been improved as to facilitate the integration of PanLex data with the following data models:
+</p>
+
+<h4>Lexicon Model for Ontologies (lemon)</h4>
+<a href="http://lemon-model.net/" style="padding-left:50px">http://lemon-model.net/</a>
+<p>Example Query:</p>
+<table style="width: 100%;">
+<tr>
+<td>List translations for the lexeme "apple"</td>
+</tr>
+<tr>
+<td>
+<pre>
+SELECT ?a ?ar ?b ?br WHERE {
+  ?a
+    a lemon:LexicalEntry ;
+    lemon:lexicalForm ?af ;
+    lemon:sense ?s .
+
+  ?af lemon:writtenRep ?ar .
+
+  ?b
+    a lemon:LexicalEntry ;
+    lemon:sense ?s ;
+    lemon:lexicalForm ?bf .
+  
+  ?bf lemon:writtenRep ?br .
+
+  Filter(?ar = "apple")
+}
+LIMIT 10
+</pre>
+</td>
+</tr>
+<tr>
+<td>Run query: <a href="http://ld.panlex.org/snorql/?query=SELECT+%3Fa+%3Far+%3Fb+%3Fbr+WHERE+{%0D%0A++%3Fa%0D%0A++++a+lemon%3ALexicalEntry+%3B%0D%0A++++lemon%3AlexicalForm+%3Faf+%3B%0D%0A++++lemon%3Asense+%3Fas+.%0D%0A%0D%0A++%3Ff+lemon%3AwrittenRep+%3Far+.%0D%0A%0D%0A++%3Fb%0D%0A++++lemon%3Asense+%3Fs+%3B%0D%0A++++lemon%3AlexicalForm+%3Fbf+.%0D%0A++%0D%0A++%3Fbf+lemon%3AwrittenRep+%3Fbr+.%0D%0A%0D%0A++Filter%28%3Far+%3D+%22apple%22%29%0D%0A}%0D%0ALIMIT+10%0D%0A">Virtuoso</a> | <a href="http://ld.panlex.org/vsnorql/?query=SELECT+%3Fa+%3Far+%3Fb+%3Fbr+WHERE+{%0D%0A++%3Fa%0D%0A++++a+lemon%3ALexicalEntry+%3B%0D%0A++++lemon%3AlexicalForm+%3Faf+%3B%0D%0A++++lemon%3Asense+%3Fas+.%0D%0A%0D%0A++%3Ff+lemon%3AwrittenRep+%3Far+.%0D%0A%0D%0A++%3Fb%0D%0A++++lemon%3Asense+%3Fs+%3B%0D%0A++++lemon%3AlexicalForm+%3Fbf+.%0D%0A++%0D%0A++%3Fbf+lemon%3AwrittenRep+%3Fbr+.%0D%0A%0D%0A++Filter%28%3Far+%3D+%22apple%22%29%0D%0A}%0D%0ALIMIT+10%0D%0A">Sparqlify</a>
+</td>
+</tr>
+</table>
+
+
+<h4>General Ontology for Linguistic Descriptions</h4>
+<a href="http://linguistics-ontology.org/" style="padding-left:50px">http://lemon-model.net/</a>
+<p>Example Query:</p>
+<table style="width: 100%;">
+<tr>
+<td>List all LinguisticSigns (correspond to PanLex's denotation entities)</td>
+</tr>
+<tr>
+<td>
+<pre>
+Select ?s {
+    ?s a gold:LinguisticSign
+}
+Limit 10
+</pre>
+</td>
+</tr>
+<tr>
+<td>Run query: <a href="http://ld.panlex.org/snorql/?query=Select+%3Fs+{%0D%0A++++%3Fs+a+gold%3ALinguisticSign%0D%0A}%0D%0ALimit+10%0D%0A">Virtuoso</a> | <a href="http://ld.panlex.org/vsnorql/?query=Select+%3Fs+{%0D%0A++++%3Fs+a+gold%3ALinguisticSign%0D%0A}%0D%0ALimit+10%0D%0A">Sparqlify</a>
+</td>
+</tr>
+</table>
+
+
 
 
 <h3 class="left">Dataset Metrics</h3>
 <p>
+<i>Note: The metrics are currently not automatically updated and should thus only be seen as rough estimates. We are planning to put an automatic update procedure in place.</i>
+<br />
+<br />
+
 The following table summarizes the number of triples, classes and properties.
 </p>
 <table>
@@ -287,13 +392,14 @@ Limit 100
 </tr>
 <tr>
 <td>
-<a href="http://ld.panlex.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+%3Fl+%28Count%28*%29+As+%3Fc%29+{%0D%0A++%3Fs+plx%3Alicense+%3Fl%0D%0A}%0D%0AGroup+By+%3Fl%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
+Run query: <a href="http://ld.panlex.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+%3Fl+%28Count%28*%29+As+%3Fc%29+{%0D%0A++%3Fs+plx%3Alicense+%3Fl%0D%0A}%0D%0AGroup+By+%3Fl%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Virtuoso</a> | <a href="http://ld.panlex.org/vsnorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+%3Fl+%28Count%28*%29+As+%3Fc%29+{%0D%0A++%3Fs+plx%3Alicense+%3Fl%0D%0A}%0D%0AGroup+By+%3Fl%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Sparqlify</a>
 </td>
 <td>
-<a href="http://ld.panlex.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Fl%0D%0A}%0D%0ALimit+100%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
+Run query: <a href="http://ld.panlex.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Fl%0D%0A}%0D%0ALimit+100%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Virtuoso</a> | <a href="http://ld.panlex.org/vsnorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Fl%0D%0A}%0D%0ALimit+100%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Sparqlify</a>
 </td>
 <td>
-<a href="http://ld.panlex.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2Flicense%2Fnr%3E%0D%0A}%0D%0ALimit+100&format=text%2Fhtml&timeout=0&debug=on">Run it!</a>
+Run query: <a href="http://ld.panlex.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2Flicense%2Fnr%3E%0D%0A}%0D%0ALimit+100&format=text%2Fhtml&timeout=0&debug=on">Virtuoso</a> |
+<a href="http://ld.panlex.org/vsnorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2Flicense%2Fnr%3E%0D%0A}%0D%0ALimit+100&format=text%2Fhtml&timeout=0&debug=on">Sparqlify</a>
 </td>
 </tr>
 </table>
