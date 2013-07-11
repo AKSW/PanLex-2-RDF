@@ -272,10 +272,10 @@ Create View lemon_Form_LexicalEntry_LexicalSense As
     }
     With
         ?form = uri(concat(plx:lexicalForm, ?ex))
-        ?lexEntry = uri(concat(plx:lexicalEntry, '/', ?td))
+        ?lexEntry = uri(concat(plx:expression, '/', ?ex))
         ?lexSense = uri(concat(plx:meaning, '/', ?mn))
     From
-        [[SELECT ex.ex, td, mn.mn FROM ex JOIN dn ON ex.ex=dn.ex JOIN mn ON dn.mn=mn.mn]]
+        [[SELECT ex.ex, mn.mn FROM ex JOIN dn ON ex.ex=dn.ex JOIN mn ON dn.mn=mn.mn]]
 
 Create View lemon_Form As
     Construct {
