@@ -290,7 +290,7 @@ Create View lemon_Form_LexicalEntry_LexicalSense As
     Construct {
         ?lexEntry a lemon:LexicalEntry.
         ?lexEntry lemon:lexicalForm ?form.
-        ?lexSense lemon:isSenseOf ?lexEntry.
+        //?lexSense lemon:isSenseOf ?lexEntry.
         ?lexEntry lemon:sense ?lexSense.
     }
     With
@@ -379,7 +379,8 @@ Create View gold_FormUnit As
     }
     With
         ?form = uri(concat(plx:expression, '/', ?ex))
-        ?wrEx = uri(concat(plx:writtenExpression, '/', ?td))
+        //?wrEx = uri(concat(plx:writtenExpression, '/', ?td))
+        ?wrEx = uri(concat(plx:lexicalForm, ?ex))
         ?labl = plainLiteral(?tt)
     From
         ex
