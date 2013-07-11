@@ -121,6 +121,29 @@ Create View dn As
     From
         dn
 
+
+// (md)
+// mappings for meta data about denotations
+// stored in md table
+Create View md As
+    Construct {
+        ?m
+            a plx:MetaDatum ;
+            plx:key ?k ;
+            plx:value ?v .
+
+        ?d
+            plx:metaDatum ?m .
+    }
+    With
+	?m = uri(plx:metaDatum, ?md)
+        ?d = uri(plx:denotation, '/', ?dn)
+        ?k = plainLiteral(?vb)
+        ?v = plainLiteral(?vl)
+    From
+        md
+
+
 // (ex)
 // mappings concerning expressions stored in the ex table
 Create View ex As
