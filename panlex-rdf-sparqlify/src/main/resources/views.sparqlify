@@ -290,15 +290,15 @@ Create View lemon_Form_LexicalEntry_LexicalSense As
     Construct {
         ?lexEntry a lemon:LexicalEntry.
         ?lexEntry lemon:lexicalForm ?form.
-        ?lexSense lemon:isSenseOf ?lexEntry.
+        //?lexSense lemon:isSenseOf ?lexEntry.
         ?lexEntry lemon:sense ?lexSense.
     }
     With
         ?form = uri(concat(plx:lexicalForm, ?ex))
-        ?lexEntry = uri(concat(plx:lexicalEntry, '/', ?td))
+        ?lexEntry = uri(concat(plx:expression, '/', ?ex))
         ?lexSense = uri(concat(plx:meaning, '/', ?mn))
     From
-        [[SELECT ex.ex, td, mn.mn FROM ex JOIN dn ON ex.ex=dn.ex JOIN mn ON dn.mn=mn.mn]]
+        [[SELECT ex.ex, mn.mn FROM ex JOIN dn ON ex.ex=dn.ex JOIN mn ON dn.mn=mn.mn]]
 
 Create View lemon_Form As
     Construct {
@@ -379,7 +379,8 @@ Create View gold_FormUnit As
     }
     With
         ?form = uri(concat(plx:expression, '/', ?ex))
-        ?wrEx = uri(concat(plx:writtenExpression, '/', ?td))
+        //?wrEx = uri(concat(plx:writtenExpression, '/', ?td))
+        ?wrEx = uri(concat(plx:lexicalForm, ?ex))
         ?labl = plainLiteral(?tt)
     From
         ex
