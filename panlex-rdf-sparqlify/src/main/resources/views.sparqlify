@@ -338,7 +338,7 @@ Create View lemon_LexicalSense As
  *                   gold:GrammarUnit.  // used
  *  
  *           gold:hasMeaning            // reuse of
- *                   gold:Meaning.      // plx:meaning/<?mn>
+ *                   gold:SemanticUnit. // plx:meaning/<?mn>
  *  
  *           gold:hasProperty                  // reuse of
  *                   gold:LinguisticProperty.  // plx:wordClass/<?wc>
