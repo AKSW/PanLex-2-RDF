@@ -63,7 +63,7 @@ Create View apli AS
     From
         [[WITH license_labels AS (
             SELECT 10 AS id, 'Public Domain' AS lbl UNION ALL  -- nr/pbl
-            SELECT 20 AS id, 'Create Commons' AS lbl UNION ALL  -- cc/ccl
+            SELECT 20 AS id, 'Creative Commons' AS lbl UNION ALL  -- cc/ccl
             SELECT 30 AS id, 'request' AS lbl UNION ALL  -- rp/ask
             SELECT 40 AS id, 'GNU General Public License' AS lbl UNION ALL  -- gp/gpl
             SELECT 50 AS id, 'GNU Lesser General Public License' AS lbl UNION ALL  -- gl/gll
