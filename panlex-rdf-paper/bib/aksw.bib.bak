@@ -1,0 +1,3939 @@
+% This file was created with JabRef 2.6.
+% Encoding: UTF8
+
+@INCOLLECTION{DBLP:conf/seco/UnbehauenHAS12,
+  author = {J{\"o}rg Unbehauen and Sebastian Hellmann and S{\"o}ren Auer and
+	Claus Stadler},
+  title = {Knowledge Extraction from Structured Sources},
+  booktitle = {SeCO Book},
+  year = {2012},
+  pages = {34-52},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  crossref = {DBLP:conf/seco/2012},
+  ee = {http://dx.doi.org/10.1007/978-3-642-34213-4_3},
+  keywords = {2012 group_aksw sys:relevantFor:infai sys:relevantFor:bis lod2page
+	sys:relevantFor:lod2}
+}
+
+@ARTICLE{aslam-a-2007-433-a,
+  author = {Aslam Ahtisham Aslam and Sören Auer and Jun Shen and Klaus-Peter
+	Fähnrich},
+  title = {Bridging The Semantic Gap Between Business Processes and Semantic
+	Web Services},
+  journal = {Journal of Internet Technology},
+  year = {2007},
+  volume = {8},
+  pages = {433-443},
+  number = {4},
+  keywords = {2007 aslam auer shen fähnrich group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28}
+}
+
+@INPROCEEDINGS{aslam-a-2006--a,
+  author = {Muhammad Ahtisham Aslam and Sören Auer and Jun Chen and Michael Hermann},
+  title = {Expressing Business Process Models as OWL-S Ontologies},
+  booktitle = {Grid and Peer-to-Peer based Workflows (GPWW), September 4th, Vienna,
+	Austria},
+  year = {2006},
+  editor = {J. Eder, S. Dustdar et al.},
+  volume = {4103},
+  series = {BPM 2006 Workshops},
+  pages = {400-415},
+  address = {Berlin / Heidelberg},
+  month = {September},
+  publisher = {Springer},
+  keywords = {2006 aslam auer chen herrmann group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28}
+}
+
+@INCOLLECTION{aslam-a-2008--a,
+  author = {Muhammad Ahtisham Aslam and Sören Auer and Klaus-Peter Fähnrich},
+  title = {Towards Semantic Business Processes: Concepts, Methodology and Implementation},
+  booktitle = {Semantic Web Methodologies for E-Business Applications: Ontologies,
+	Processes and Management Practices},
+  publisher = {Idea Group Publishing},
+  year = {2008},
+  editor = {García, R},
+  keywords = {2008 aslam auer fähnrich group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@INPROCEEDINGS{aslam-a-2006--b,
+  author = {Muhammad Ahtisham Aslam and Michael Herrmann and Sören Auer and Richard
+	Golden},
+  title = {Real-life SOA Experiences and an Approach Towards Semantic SOA},
+  booktitle = {Proceedings of 4th International Workshop on SOA and Web Services
+	in conjunction with ACM SIGPLAN International Conference on Object-Oriented
+	Programming, Systems, Languages, and Applications, October 22-26,
+	Portland, Oregon, USA},
+  year = {2006},
+  pages = {72-81},
+  month = {October},
+  keywords = {2006 aslam herrmann auer golden group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28}
+}
+
+@INPROCEEDINGS{aslam-a-2007--a,
+  author = {Muhammad Ahtisham Aslam and Jun Shen and Sören Auer and Michael Herrmann},
+  title = {An Integration Life Cycle for Semantic Web Services Composition},
+  booktitle = {Proceedings of the 11th International Conference on Computer Supported
+	Cooperative Work in Design, CSCWD 2007, April 26-28, Melbourne, Australia.
+	IEEE 2007},
+  year = {2007},
+  editor = {Shen et al.},
+  pages = {490-495},
+  month = {April},
+  keywords = {2007 aslan shen auer herrmann group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28}
+}
+
+@INCOLLECTION{auer-?-2009--,
+  author = {Sören Auer},
+  title = {Das Projekt SoftWiki},
+  booktitle = {Agiles Requirements Engineering für Softwareprojekte mit einer großen
+	Anzahl verteilter Stakeholder},
+  publisher = {Leipziger Informatik-Verbund LIV},
+  year = {2009},
+  editor = {Sören Auer and Kim Lauenroth and Steffen Lohmann and Thomas Riechert},
+  volume = {XVIII},
+  series = {Leipziger Beiträge zur Informatik},
+  keywords = {2009 auer language_deutsch group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@INCOLLECTION{auer-s-2006--a,
+  author = {Sören Auer},
+  title = {Semantisch Vernetzte Kirche im Web},
+  booktitle = {Semantic Web Fibel 06 - Leitfaden und Einstiegspunkte für die Praxis},
+  year = {2006},
+  editor = {Blumauer, A. and Pellegrini, T.},
+  address = {Semantic Web School, Wien},
+  keywords = {2006 auer language_deutsch group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@INCOLLECTION{auer-s-2006--c,
+  author = {Sören Auer},
+  title = {Powl - Framwork für Entwicklung von semantischen Web-Applikationen
+	/ Ontowiki - semantische Community-Kollaborationsplattform},
+  booktitle = {Semantic Web Fibel 06 - Leitfaden und Einstiegspunkte für die Praxis},
+  publisher = {Semantic Web School - Zentrum für Wissenstransfer},
+  year = {2006},
+  editor = {Blumauer, A. and Pellegrini, T},
+  address = {Wien},
+  keywords = {2006 auer group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@INCOLLECTION{auer-?-2008--,
+  author = {Sören Auer},
+  title = {Endanwendergetriebene Open-source Softwareentwicklung mit Cofundos},
+  booktitle = {Open Source Jahrbuch 2008},
+  publisher = {Lehmanns Media},
+  year = {2008},
+  editor = {Matthias Bärwolff and Robert A. Gehring and Bernd Lutterbeck},
+  keywords = {2008 language_deutsch group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05},
+  url = {http://www.opensourcejahrbuch.de/download/jb2008}
+}
+
+@INCOLLECTION{auer-s-2009--b,
+  author = {Sören Auer},
+  title = {RapidOWL – A Methodology for Enabling Social Semantic Collaboration},
+  booktitle = {Semantic Web Engineering in the Knowledge Society},
+  publisher = {Idea Group, Information Science Reference – ISR},
+  year = {2009},
+  editor = {Jorge Cardoso and Miltiadis D. Lytras},
+  keywords = {group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@INPROCEEDINGS{auer-s-2008--c,
+  author = {Sören Auer},
+  title = {Methods and Applications of the Social Semantic Web},
+  booktitle = {Proceedings of International workshop on Semantic Web technologies,
+	Belgrade, Serbia, 29-30 September},
+  year = {2008},
+  month = {September},
+  keywords = {2008 auer group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@INPROCEEDINGS{auer-s-2006--b,
+  author = {Sören Auer},
+  title = {RapidOWL - an Agile Knowledge Engineering Methodology},
+  booktitle = {Proceedings of 1st International Workshop on Semantic Technologies
+	in Collaborative Applications (STICA 06), 26th-28th June, Manchester,
+	UK},
+  year = {2006},
+  month = {June},
+  publisher = {IEEE Computer Society (P2623)},
+  keywords = {2006 auer group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28},
+  url = {http://www.informatik.uni-leipzig.de/~auer/publication/RapidOWL.pdf}
+}
+
+@INPROCEEDINGS{auer-s-2005--a,
+  author = {Sören Auer},
+  title = {Powl - A Web Based Platform for Collaborative Semantic Web Development},
+  booktitle = {Proceeding of 1st Workshop Scripting for the Semantic Web (SFSW'05),
+	Hersonissos, Greece, May 30},
+  year = {2005},
+  month = {May},
+  publisher = {CEUR Workshop Proceedings},
+  keywords = {2005 auer event_sfsw group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28}
+}
+
+@INPROCEEDINGS{auer-?-2003--,
+  author = {Sören Auer and Michael Auer and Sebastian Schreiter},
+  title = {Distributed Learning Environment Using XML Templates},
+  booktitle = {Proceedings of Terena Networking Conference (TNC2003), May 19-22,
+	Zagreb, Croatia},
+  year = {2003},
+  month = {May},
+  keywords = {2003 s.auer m.auer schreiter group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28}
+}
+
+@INPROCEEDINGS{auer-s-2008--b,
+  author = {Sören Auer and Holger Braun-Thürmann},
+  title = {Towards Bottom-Up, Stakeholder-Driven Research Funding – Open Source
+	Funding, Open Peer Review},
+  booktitle = {Peer Review Reviewed: The International Career of a Quality-control
+	Instrument and New Challenges 24–25 April, Social Science Research
+	Center Berlin (WZB), Berlin.},
+  year = {2008},
+  month = {April},
+  keywords = {2008 auer thürmann group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28},
+  url = {http://www.informatik.uni-leipzig.de/~auer/publication/OpenScience.pdf}
+}
+
+@INPROCEEDINGS{auer-?-2004--,
+  author = {Sören Auer and Patryk Burek and Tonio Grawe},
+  title = {Knowledge Engineering for IT-based Services},
+  booktitle = {Proceedings of 4th International Conference on Knowledge Management
+	(I-KNOW '04)},
+  year = {2004},
+  publisher = {Journal of Universal Computer Science (J.UCS)},
+  keywords = {2004 event_i-know auer burek grawe group_aksw sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28},
+  url = {http://www.informatik.uni-leipzig.de/~auer/publication/2004_Knowledge_Engineering_for_IT-based_Services.pdf}
+}
+
+@INPROCEEDINGS{Auer+ISWC-2012,
+  author = {Sören Auer and Lorenz Bühmann and Jens Lehmann and Michael Hausenblas
+	and Sebastian Tramp and Bert van Nuffelen and Pablo Mendes and Christian
+	Dirschl and Robert Isele and Hugh Williams and Orri Erling},
+  title = {Managing the life-cycle of Linked Data with the LOD2 Stack},
+  booktitle = {Proceedings of International Semantic Web Conference (ISWC 2012)},
+  year = {2012},
+  note = {22% acceptance rate},
+  keywords = {auer buehmann lehmann tramp group_aksw sys:relevantFor:infai sys:relevantFor:bis
+	sys:relevantFor:lod2 lod2page 2012 event_ISWC},
+  owner = {soeren},
+  timestamp = {2012.08.14},
+  url = {http://svn.aksw.org/lod2/Paper/ISWC2012-InUse_LOD2-Stack/public.pdf}
+}
+
+@ARTICLE{auer-s-2009--a,
+  author = {Sören Auer and Sebastian Dietzold and Michael Martin},
+  title = {Entwicklung semantischer Webapplikationen: Auf dem Weg vom Dokumenten-
+	zum Daten-Web},
+  journal = {T3N Magazin},
+  year = {2008},
+  volume = {12},
+  pages = {30--33},
+  keywords = {language_deutsch 2008 group_aksw ontowiki erfurt auer tramp martin
+	sys:relevantFor:infai sys:relevantFor:bis seebiproject_OntoWiki ontowiki_eu},
+  owner = {seebi},
+  timestamp = {2010.01.17},
+  url = {http://t3n.de/magazin/semantische-webapplikationen-entwickeln-neue-dienste-ebnen-221228/}
+}
+
+@INCOLLECTION{auer-s-2007--a,
+  author = {Sören Auer and Sebastian Dietzold and Thomas Riechert},
+  title = {Social Software für Kollaborative Wissensarbeit},
+  booktitle = {Analyse sozialer Netzwerke und Social Software - Grundlagen und Anwendungsbeispiele},
+  publisher = {GITO-Verlag – Expertenwissen für die industrielle Praxis},
+  year = {2007},
+  editor = {Claudia Müller and Norbert Gronau},
+  pages = {235--256},
+  keywords = {language_deutsch 2007 group_aksw ontowiki auer tramp riechert sys:relevantFor:infai
+	sys:relevantFor:bis seebiproject_OntoWiki},
+  owner = {seebi},
+  timestamp = {2010.01.17}
+}
+
+@INPROCEEDINGS{auer-s-2010--a,
+  author = {Sören Auer and Raphael Doehring and Sebastian Dietzold},
+  title = {L{ESS} - {T}emplate-{B}ased {S}yndication and {P}resentation of {L}inked
+	{D}ata},
+  booktitle = {Proceedings of 7th Extended Semantic Web Conference (ESWC2010) 30
+	May -- 3 June, Heraklion, Greece},
+  year = {2010},
+  month = {May},
+  doi = {doi:10.1007/978-3-642-13489-0_15},
+  keywords = {group_aksw event_eswc ontowiki auer doehring dietzold tramp sys:relevantFor:infai
+	sys:relevantFor:bis 2010 ontowiki ontowiki_eu peer-reviewed},
+  owner = {alex},
+  timestamp = {2010.06.28},
+  url = {http://www.informatik.uni-leipzig.de/~auer/publication/semtem.pdf}
+}
+
+@INCOLLECTION{auer-?-2003--a,
+  author = {Sören Auer and Romy Elze},
+  title = {Strategies for Modelling and Representing Knowledge about Variant
+	Rich Service Products},
+  booktitle = {Content- und Wissensmanagement},
+  year = {2003},
+  editor = {Klaus-Peter Fähnrich and Heinrich Herre},
+  keywords = {2003 auer elze group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@INPROCEEDINGS{auer-?-2003-956-,
+  author = {Sören Auer and Klaus-Peter Fähnrich},
+  title = {A strategy for formal service product model specification},
+  booktitle = {HCI International (International Conference on Human-Computer Interaction)
+	October 2003, Proceedings of the 10th International Conference on
+	Human-Computer Interaction},
+  year = {2003},
+  editor = {Don Harris},
+  volume = {3},
+  series = {Cognitive, Social and Ergonomic Aspects Mahwah/NJ},
+  pages = {956-960},
+  month = {October},
+  publisher = {Erlbaum},
+  keywords = {2003 auer fähnrich group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28},
+  url = {http://books.google.com/books?id=8VnRD8gkCGwC&lpg=PA956&ots=KOgdo1mZLR&dq=A%20strategy%20for%20formal%20service%20product%20model%20specification.&pg=PA956#v=onepage&q=A%20strategy%20for%20formal%20service%20product%20model%20specification.&f=false}
+}
+
+@INPROCEEDINGS{auer-?-2003--b,
+  author = {Sören Auer and Klaus-Peter Fähnrich},
+  title = {Product Models in Service Engineering},
+  booktitle = {Proceedings of the 17th International Conference on Production and
+	Research 2003, August 3-7, Blacksburg, Virginia USA Virginia Tech
+	Blacksburg},
+  year = {2003},
+  month = {August},
+  keywords = {2003 auer fähnrich group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28}
+}
+
+@INPROCEEDINGS{auer-keynote-lrec-2012,
+  author = {Sören Auer and Sebastian Hellmann},
+  title = {The Web of Data: Decentralized, collaborative, interlinked and interoperable},
+  booktitle = {LREC 2012},
+  year = {2012},
+  keywords = {2012 group_aksw event_lrec hellmann auer nif sys:relevantFor:infai
+	sys:relevantFor:bis sys:relevantFor:lod2 lod2page},
+  owner = {sebastian},
+  timestamp = {2012.06.13},
+  url = {http://www.lrec-conf.org/proceedings/lrec2012/keynotes/LREC%202012.Keynote%20Speech%201.Soeren%20Auer.pdf}
+}
+
+@INPROCEEDINGS{auer-?-2006--,
+  author = {Sören Auer and Heinrich Herre},
+  title = {Rapid OWL — An Agile Knowledge Engineering Methodology},
+  booktitle = {Proceedings of at Sixth International Andrei Ershov Memorial Conference
+	- Perspectives of System Informatics (PSI’06), 27-30 June 2006, Novosibirsk,
+	Akademgorodok, Russia},
+  year = {2006},
+  volume = {4378},
+  month = {June},
+  keywords = {2006 auer herre event_psi group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28}
+}
+
+@INPROCEEDINGS{auer-?-2006--a,
+  author = {Sören Auer and Heinrich Herre},
+  title = {A Versioning and Evolution Framework for RDF Knowledge Bases},
+  booktitle = {Proceedings of at Sixth International Andrei Ershov Memorial Conference
+	- Perspectives of System Informatics (PSI’06), 27-30 June, Novosibirsk,
+	Akademgorodok, Russia},
+  year = {2006},
+  volume = {4378},
+  month = {June},
+  keywords = {2006 auer herre event_psi group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28},
+  url = {http://www.informatik.uni-leipzig.de/~auer/publication/PSI-evolution.pdf}
+}
+
+@INCOLLECTION{auer-?-2008--a,
+  author = {Sören Auer and Zachary Ives},
+  title = {Enabling Social Semantic Collaboration – bridging the gap between
+	Web 2.0 and the Semantic Web},
+  booktitle = {Emerging Technologies for Semantic Work Environments: Techniques,
+	Methods, and Applications},
+  publisher = {Information Science Reference (IGI)},
+  year = {2008},
+  editor = {Rech, J., Decker, B., Ras, E.},
+  month = {April},
+  keywords = {2008 auer ives group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@INPROCEEDINGS{auer-?-2007--,
+  author = {Sören Auer and Berit Jungmann and Frank Schönefeld},
+  title = {Semantic Wiki Representations for Building an Enterprise Knowledge
+	Base},
+  booktitle = {Reasoning Web, Third International Summer School 2007, Dresden, Germany,
+	September 3-7, Tutorial Lectures},
+  year = {2007},
+  editor = {Grigoris Antoniou and Uwe Aßmann and Cristina Baroglio and Stefan
+	Decker and Nicola Henze and Paula-Lavinia Patranjan and Robert Tolksdorf},
+  volume = {4636},
+  series = {Lecture Notes in Computer Science},
+  month = {September},
+  publisher = {Springer},
+  keywords = {2007 auer jungmann schönefeld event_ReasoningWeb group_aksw sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@ARTICLE{auer-swj-2010,
+  author = {Sören Auer and Jens Lehmann},
+  title = {Making the Web a Data Washing Machine - Creating Knowledge out of
+	Interlinked Data},
+  journal = {Semantic Web Journal},
+  year = {2010},
+  keywords = {2010 group_aksw auer lehmann mole event_swj sys:relevantFor:infai
+	sys:relevantFor:bis seebiproject_OntoWiki peer-reviewed ontowiki_eu},
+  timestamp = {2010.01.17},
+  url = {http://www.jens-lehmann.org/files/2010/washing_machine_swj.pdf}
+}
+
+@ARTICLE{auer-2011-sharepsi,
+  author = {Sören Auer and Michael Martin and Philipp Frischmuth and Bastiaan
+	Deblieck},
+  title = {Facilitation the publication of Open Governmental Data with the LOD2
+	Stack},
+  journal = {Share PSI},
+  year = {2011},
+  month = {May},
+  keywords = {group_aksw auer sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2
+	auer martin debliek frischmuth 2011},
+  owner = {michael},
+  timestamp = {2011.06.20},
+  url = {http://share-psi.eu/papers/LOD2.pdf}
+}
+
+@INPROCEEDINGS{auer-?-2005--,
+  author = {Sören Auer and Bart Pieterse},
+  title = {Vernetzte Kirche: building a Semantic Web},
+  booktitle = {Proceedings of the ISWC 2005 Workshop on Semantic Web Case Studies
+	and Best Practices for eBusiness (SWCASE05), Galway, Ireland, November
+	7},
+  year = {2005},
+  month = {November},
+  publisher = {CEUR Workshop Proceedings},
+  keywords = {2005 auer pieterse group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28},
+  url = {http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-155/paper3.pdf}
+}
+
+@INPROCEEDINGS{auer_softwiki_2006,
+  author = {Sören Auer and Thomas Riechert and {Klaus-Peter} Fähnrich},
+  title = {{SoftWiki} - Agiles {Requirements-Engineering} für Softwareprojekte
+	mit einer großen Anzahl verteilter Stakeholder},
+  booktitle = {Proc. Workshop Gemeinschaften in Neuen Medien {(GeNeMe)}},
+  year = {2006},
+  editor = {Klaus Meißner and Martin Engelien},
+  pages = {97--108},
+  address = {Dresden},
+  publisher = {{TUDPress,} Dresden},
+  keywords = {language_deutsch ontowiki softwiki event_geneme sys:relevantFor:infai
+	sys:relevantFor:bis group_aksw riechert auer},
+  owner = {seebi},
+  timestamp = {2010.01.22}
+}
+
+@INPROCEEDINGS{auer-s-2010-iswc,
+  author = {Sören Auer and Matthias Weidl and Jens Lehmann and Amrapali J. Zaveri
+	and Key-Sun Choi},
+  title = {I18n of Semantic Web Applications},
+  booktitle = {Proceedings of the 9th International Semantic Web Conference (ISWC2010)},
+  year = {2010},
+  series = {Lecture Notes in Computer Science},
+  address = {Berlin / Heidelberg},
+  publisher = {Springer},
+  doi = {doi:10.1007/978-3-642-17749-1_1},
+  keywords = {2010 event_iswc group_aksw auer lehmann zaveri sys:relevantFor:infai
+	sys:relevantFor:bis sys:relevantFor:lod2 lod2page ontowiki_eu peer-reviewed},
+  owner = {seebi},
+  timestamp = {2010.08.21},
+  url = {http://svn.aksw.org/papers/2010/ISWC_I18n/public.pdf}
+}
+
+@INPROCEEDINGS{dbpedia_iswc,
+  author = {S{\"o}ren Auer and Chris Bizer and Georgi Kobilarov and Jens Lehmann
+	and Richard Cyganiak and Zachary Ives},
+  title = {{DB}pedia: A Nucleus for a Web of Open Data},
+  booktitle = {Proceedings of the 6th International Semantic Web Conference (ISWC)},
+  year = {2008},
+  volume = {4825},
+  series = {Lecture Notes in Computer Science},
+  pages = {722--735},
+  publisher = {Springer},
+  biburl = {http://www.bibsonomy.org/bibtex/267584f8869a3211f5ae708e3757c7242/jens},
+  description = {publications Jens Lehmann},
+  doi = {doi:10.1007/978-3-540-76298-0_52},
+  keywords = {2008 event_iswc group_aksw dbpedia sys:relevantFor:infai sys:relevantFor:bis
+	peer-reviewed ontowiki_eu}
+}
+
+@INPROCEEDINGS{triplify_www,
+  author = {S{\"o}ren Auer and Sebastian Dietzold and Jens Lehmann and Sebastian
+	Hellmann and David Aumueller},
+  title = {Triplify: Light-weight linked data publication from relational databases},
+  booktitle = {Proceedings of the 18th International Conference on World Wide Web,
+	{WWW} 2009, Madrid, Spain, April 20-24, 2009},
+  year = {2009},
+  editor = {Juan Quemada and Gonzalo Le{\'o}n and Yo{\"e}lle S. Maarek and Wolfgang
+	Nejdl},
+  pages = {621--630},
+  publisher = {ACM},
+  bibdate = {2009-05-05},
+  bibsource = {DBLP, http://dblp.uni-trier.de/db/conf/www/www2009.html#AuerDLHA09},
+  biburl = {http://www.bibsonomy.org/bibtex/2154a270c13c0f525a2f1ce82bb8aad32/jens},
+  description = {publications Jens Lehmann},
+  doi = {doi:10.1145/1526709.1526793},
+  isbn = {978-1-60558-487-4},
+  keywords = {2009 event_www group_aksw auer tramp lehmann hellmann aumueller sys:relevantFor:infai
+	sys:relevantFor:bis triplify seebiproject_Triplify ontowiki_eu peer-reviewed
+	triplify},
+  url = {http://doi.acm.org/10.1145/1526709.1526793}
+}
+
+@INPROCEEDINGS{ontowiki_www,
+  author = {S{\"o}ren Auer and Sebastian Dietzold and Jens Lehmann and Thomas
+	Riechert},
+  title = {Onto{W}iki: {A} Tool for Social, Semantic Collaboration},
+  booktitle = {Proceedings of the Workshop on Social and Collaborative Construction
+	of Structured Knowledge ({CKC} 2007) at the 16th International World
+	Wide Web Conference ({WWW2007}) Banff, Canada, May 8, 2007},
+  year = {2007},
+  editor = {Natalya Fridman Noy and Harith Alani and Gerd Stumme and Peter Mika
+	and York Sure and Denny Vrandecic},
+  volume = {273},
+  series = {CEUR Workshop Proceedings},
+  publisher = {CEUR-WS.org},
+  bibdate = {2008-05-30},
+  bibsource = {DBLP, http://dblp.uni-trier.de/db/conf/www/ckc2007.html#AuerDLR07},
+  biburl = {http://www.bibsonomy.org/bibtex/2e646431fba0e629258b74292ab8fcffd/jens},
+  description = {publications Jens Lehmann},
+  keywords = {2007 group_aksw auer tramp lehmann riechert ontowiki sys:relevantFor:infai
+	sys:relevantFor:bis seebiproject_OntoWiki},
+  url = {http://ceur-ws.org/Vol-273/paper_91.pdf}
+}
+
+@INPROCEEDINGS{auer-s-2006-736-a,
+  author = {S{\"o}ren Auer and Sebastian Dietzold and Thomas Riechert},
+  title = {Onto{W}iki - {A} {T}ool for {S}ocial, {S}emantic {C}ollaboration.},
+  booktitle = {The {S}emantic {W}eb - {ISWC} 2006, 5th {I}nternational {S}emantic
+	{W}eb {C}onference, {ISWC} 2006, {A}thens, {GA}, {USA}, {N}ovember
+	5-9, 2006, {P}roceedings},
+  year = {2006},
+  editor = {Isabel F. Cruz and Stefan Decker and Dean Allemang and Chris Preist
+	and Daniel Schwabe and Peter Mika and Michael Uschold and Lora Aroyo},
+  volume = {4273},
+  series = {Lecture Notes in Computer Science},
+  pages = {736--749},
+  address = {Berlin / Heidelberg},
+  publisher = {Springer},
+  biburl = {http://www.bibsonomy.org/bibtex/2adebb2cc068861ce489c3248f1a38a62/aksw},
+  doi = {http://dx.doi.org/10.1007/11926078_53},
+  file = {auer-s-2006-736-a.pdf:auer-s-2006-736-a.pdf:PDF},
+  isbn = {3-540-49029-9},
+  keywords = {2006 event_iswc ontowiki group_aksw auer tramp riechert sys:relevantFor:infai
+	sys:relevantFor:bis seebiproject_OntoWiki},
+  owner = {seebi},
+  timestamp = {2006.06.03}
+}
+
+@INPROCEEDINGS{dbpedia_eswc,
+  author = {S{\"o}ren Auer and Jens Lehmann},
+  title = {What Have {Innsbruck} and {Leipzig} in Common? Extracting Semantics
+	from Wiki Content},
+  booktitle = {Proceedings of the ESWC (2007)},
+  year = {2007},
+  volume = {4519},
+  series = {Lecture Notes in Computer Science},
+  pages = {503--517},
+  address = {Berlin / Heidelberg},
+  publisher = {Springer},
+  biburl = {http://www.bibsonomy.org/bibtex/28ddb3c68b29707dc830b9a0cd0fa6083/jens},
+  description = {publications Jens Lehmann},
+  isbn = {978-3-540-72666-1},
+  keywords = {2007 event_eswc group_aksw dbpedia sys:relevantFor:infai sys:relevantFor:bis}
+}
+
+@INCOLLECTION{ssw_beitrag,
+  author = {S{\"o}ren Auer and Jens Lehmann and Chris Bizer},
+  title = {Semantische Mashups auf Basis Vernetzter Daten},
+  booktitle = {Social Semantic Web},
+  publisher = {Springer},
+  year = {2009},
+  editor = {Andreas Blumauer and Tassilo Pellegrini},
+  series = {X.media.press},
+  pages = {259--286},
+  bibdate = {2008-11-09},
+  bibsource = {DBLP, http://dblp.uni-trier.de/db/series/xmedia/social2009.html#AuerLB09},
+  biburl = {http://www.bibsonomy.org/bibtex/24f35f63cdf457b91aaa9f720a0b2d072/jens},
+  description = {publications Jens Lehmann},
+  isbn = {978-3-540-72215-1},
+  keywords = {language_deutsch 2009 group_aksw ontowiki dbpedia dllearner sys:relevantFor:infai
+	sys:relevantFor:bis},
+  url = {http://dx.doi.org/10.1007/978-3-540-72216-8_14}
+}
+
+@INPROCEEDINGS{linkedgeodata,
+  author = {S{\"o}ren Auer and Jens Lehmann and Sebastian Hellmann},
+  title = {{LinkedGeoData} - Adding a Spatial Dimension to the Web of Data},
+  booktitle = {Proc. of 8th International Semantic Web Conference (ISWC)},
+  year = {2009},
+  biburl = {http://www.bibsonomy.org/bibtex/2d7b66f26a99547a3c117570aca80e4a0/jens},
+  description = {publications Jens Lehmann},
+  doi = {doi:10.1007/978-3-642-04930-9_46},
+  keywords = {2009 event_iswc group_aksw linkedgeodata mole hellmann sys:relevantFor:infai
+	sys:relevantFor:bis peer-reviewed ontowiki_eu lgd},
+  url = {http://www.informatik.uni-leipzig.de/~auer/publication/linkedgeodata.pdf}
+}
+
+@INPROCEEDINGS{AUE+11,
+  author = {S{\"o}ren Auer and Jens Lehmann and Axel-Cyrille Ngonga Ngomo},
+  title = {Introduction to Linked Data and Its Lifecycle on the Web},
+  booktitle = {Reasoning Web},
+  year = {2011},
+  pages = {1-75},
+  keywords = {group_aksw sys:relevantFor:infai sys:relevantFor:bis SIMBA ngonga}
+}
+
+@INCOLLECTION{augustin_datenbank_2009,
+  author = {Christian Augustin and Beatrix Kuchta and Ulf Morgenstern and Thomas
+	Riechert},
+  title = {Datenbank und Website catalogus professorum lipsiensis. Ein sozialstatistisches
+	Analyseinstrumentarium und seine Repräsentation im Netz},
+  booktitle = {Biografische Lexika im Internet},
+  publisher = {{TUDPress,} Verlag der Wissenschaften {GmbH}},
+  year = {2009},
+  editor = {Martina Schattkowsky and Frank Metasch},
+  number = {14},
+  series = {Bausteine},
+  pages = {167–184},
+  address = {Dresden},
+  isbn = {978-3-939888-61-1},
+  keywords = {language_deutsch group_aksw sys:relevantFor:infai sys:relevantFor:bis
+	riechert ontowiki ontowiki_eu},
+  owner = {seebi},
+  timestamp = {2010.01.22},
+  url = {http://www.tud-press.de/2007/suche.php?seitentyp=isbn&isbn=978-3-939888-61-1}
+}
+
+@INPROCEEDINGS{aumueller-?-2005--,
+  author = {David Aumueller and Sören Auer},
+  title = {Towards a Semantic Wiki Experience - Desktop Integration and Interactivity
+	in WikSAR},
+  booktitle = {Proceedings of 1st Workshop on The Semantic Desktop - Next Generation
+	Personal Information Management and Collaboration Infrastructure,
+	Galway, Ireland, Nov. 6th},
+  year = {2005},
+  month = {November},
+  keywords = {2005 aumueller auer group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28}
+}
+
+@INCOLLECTION{beck-?-2004--,
+  author = {Norman Beck and Sören Auer},
+  title = {Semantic Web Content Management},
+  booktitle = {Von e-Learning bis e-Payment : Das Internet als sicherer Marktplatz},
+  year = {2004},
+  editor = {Klaus-Peter Fähnrich},
+  keywords = {2004 beck auer group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@INCOLLECTION{berger-t-2009-27-a,
+  author = {Thorsten Berger and Sebastian Dietzold and Thomas Riechert},
+  title = {Der Einsatz semantischer Daten-Wikis in frühen Phasen des Requirements
+	Engineering},
+  booktitle = {Agiles Requirements Engineering für Softwareprojekte mit einer großen
+	Anzahl verteilter Stakeholder},
+  publisher = {Leipziger Informatik-Verbund (LIV)},
+  year = {2009},
+  editor = {Sören Auer and Kim Lauenroth and Steffen Lohmann and Thomas Riechert},
+  volume = {XVIII},
+  series = {Leipziger Beiträge zur Informatik},
+  pages = {27--38},
+  keywords = {language_deutsch 2009 group_aksw tramp riechert ontowiki sys:relevantFor:infai
+	sys:relevantFor:bis seebiproject_OntoWiki seebiproject_SoftWiki ontowiki_eu},
+  owner = {seebi},
+  timestamp = {2010.01.17}
+}
+
+@INPROCEEDINGS{bizer-?-2007--,
+  author = {Christian Bizer and Richard Cyganiak and Sören Auer and Georgi Kobilarov},
+  title = {DBpedia.org - Querying Wikipedia like a Database},
+  booktitle = {Developers track at 16th International World Wide Web Conference
+	(WWW2007), Banff, Canada, May 2007},
+  year = {2007},
+  month = {May},
+  keywords = {2007 bizer cyganiak auer kobilarov group_aksw sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28},
+  url = {http://www4.wiwiss.fu-berlin.de/bizer/pub/Bizer-etal-WWW2007-DBpedia-Talk.pdf}
+}
+
+@INPROCEEDINGS{bohring-?-2005--,
+  author = {Hannes Bohring and Sören Auer},
+  title = {Mapping XML to OWL Ontologies},
+  booktitle = {Proceedings of 13. Leipziger Informatik-Tage (LIT 2005), Sep. 21-23},
+  year = {2005},
+  series = {Lecture Notes in Informatics (LNI)},
+  month = {September},
+  keywords = {2005 bohring auer event_lit group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28},
+  url = {http://www.informatik.uni-leipzig.de/~auer/publication/xml2owl.pdf}
+}
+
+@INPROCEEDINGS{Buhmann2012,
+  author = {Lorenz B{\"u}hmann and Jens Lehmann},
+  title = {Universal OWL Axiom Enrichment for Large Knowledge Bases},
+  booktitle = {Proceedings of EKAW 2012},
+  year = {2012},
+  keywords = {2012 group_aksw event_ekaw group_mole mole buehmann lehmann sys:relevantFor:infai
+	sys:relevantFor:bis sys:relevantFor:lod2 lod2page peer-reviewed},
+  owner = {jl},
+  timestamp = {2012.07.18},
+  url = {http://jens-lehmann.org/files/2012/ekaw_enrichment.pdf}
+}
+
+@INCOLLECTION{bhm_untersttzung_2006,
+  author = {Karsten Böhm and Bernhard Hollaus and Thomas Riechert},
+  title = {Unterstützung des {Requirements-Engineering-Prozesses} in der Softwareentwicklung
+	durch den Einsatz semantischer Technologien},
+  booktitle = {Integration betrieblicher Informationssysteme, Problemanalysen und
+	Lösungsansätze des {Model-Driven} Integration Engineering},
+  publisher = {Leipziger Informatik-Verbund (LIV)},
+  year = {2006},
+  editor = {{Klaus-Peter} Fähnrich and Stefan Kühne and Andreas Speck and Julia
+	Wagner},
+  pages = {152–165},
+  abstract = {Das {Requirements-Engineering} ist ein we-sentlicher Erfolgsfaktor
+	für die Durchführung von erfolgreichen Softwareentwicklungsprojek-ten.
+	Die Ermittlung von Anforderungen erfolgt häufig nur informell, wobei
+	die beteiligten Part-ner oft ein unterschiedliches fachliches und
+	technisches Hintergrundwissen besitzen und nicht die gleiche Sprache
+	sprechen. Dieser Arti-kel beschreibt, wie diese Dokumentation durch
+	semantische Modelle verbessert werden kann, um die Kommunikation
+	und Umsetzung von Anforderungen zu unterstützen.},
+  keywords = {language_deutsch group_aksw Bug-tracking Knowledge-Management requirements-engineering
+	sys:relevantFor:infai sys:relevantFor:bis riechert ontowiki},
+  owner = {seebi},
+  timestamp = {2010.01.22}
+}
+
+@INPROCEEDINGS{hellmann-jist-2012-sparql,
+  author = {Didier Cherix and Sebastian Hellmann and Jens Lehmann},
+  title = {Improving the Performance of a SPARQL Component for Semantic Web
+	Applications},
+  booktitle = {JIST},
+  year = {2012},
+  keywords = {2012 group_aksw event_jist group_mole mole lehmann hellmann cherix
+	sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2 lod2page
+	peer-reviewed},
+  owner = {sebastian},
+  timestamp = {2012.10.19},
+  url = {http://svn.aksw.org/papers/2012/SPARQLComponent/jist2012/public.pdf}
+}
+
+@INPROCEEDINGS{chiarcos-hellmann-2011-okcon,
+  author = {Christian Chiarcos and Sebastian Hellmann},
+  title = {Working Group for Open Data in Linguistics: Status Quo and Perspectives},
+  booktitle = {Proceedings of the Open Knowledge Conference in 2011},
+  year = {2011},
+  month = {June},
+  organization = {Open Knowledge Foundation},
+  abstract = {Since its formation in 2010, the Open Linguistics Working Group (OWLG)
+	has been steadily growing and the direction the working group is
+	heading has been clarified (although a number of issues remain open).
+	We concentrated on the identification of goals and directions to
+	pursue, and in this paper, we summarize results of this process,
+	and talk about the current status of this working group as well as
+	the main challenges and problems, we have identified so far.},
+  keywords = {group_aksw sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2
+	hellmann chiarcos 2011},
+  owner = {seppl},
+  timestamp = {2011.06.20},
+  url = {http://ceur-ws.org/Vol-739/paper_62.pdf}
+}
+
+@ARTICLE{hellmann-tal-2011,
+  author = {Chiarcos, Christian and Hellmann, Sebastian and Nordhoff, Sebastian},
+  title = {Towards a Linguistic Linked Open Data cloud : The Open Linguistics
+	Working Group},
+  journal = {TAL},
+  year = {2011},
+  volume = {52},
+  pages = {245 - 275},
+  number = {3},
+  added-at = {2011-09-14T00:00:00.000+0200},
+  ee = {http://www.atala.org/IMG/pdf/TAL-2008-49-2-08-Chiarcos.pdf},
+  interhash = {8862f428b095e5b61fde5ae8249aab26},
+  intrahash = {c47d47bc3a2357b3c8b3bb9b62b7dbc6},
+  keywords = {group_aksw sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2
+	hellmann chiarcos nif 2011},
+  owner = {sebastian},
+  timestamp = {2011-09-14T00:00:00.000+0200},
+  url = {http://www.atala.org/Towards-a-Linguistic-Linked-Open}
+}
+
+@INPROCEEDINGS{demter-2012-ekaw,
+  author = {Jan Demter and Sören Auer and Michael Martin and Jens Lehmann},
+  title = {LODStats – An Extensible Framework for High-performance Dataset Analytics},
+  booktitle = {Proceedings of the EKAW 2012},
+  year = {2012},
+  series = {Lecture Notes in Computer Science (LNCS) 7603},
+  publisher = {Springer},
+  note = {29% acceptance rate},
+  keywords = {2012 group_aksw event_ekaw martin auer lehmann lodstats sys:relevantFor:infai
+	sys:relevantFor:bis sys:relevantFor:lod2 lod2page peer-reviewed},
+  owner = {michael},
+  timestamp = {2012.07.10},
+  url = {http://svn.aksw.org/papers/2011/RDFStats/public.pdf}
+}
+
+@INPROCEEDINGS{dietzold-s-2005--d,
+  author = {Sebastian Dietzold},
+  title = {Generating {RDF} {M}odels from {LDAP} {D}irectories},
+  booktitle = {Proceedings of the {SFSW} 05 {W}orkshop on {S}cripting for the {S}emantic
+	{W}eb , {H}ersonissos, {C}rete, {G}reece, {M}ay 30, 2005},
+  year = {2005},
+  editor = {S{\"o}ren Auer and Chris Bizer and Libby Miller},
+  volume = {135},
+  series = {CEUR Workshop Proceedings},
+  publisher = {CEUR-WS},
+  abstract = {Lightweight {D}irectory {A}ccess {P}rotocol ({LDAP}) has gained importance
+	as a database technology for the storage and retrieval of information
+	on network and human resources. {T}his paper describes a method to
+	create {RDF} models from a directory information tree or an {LDAP}
+	search query by mapping {LDAP} schema information into {OWL} ontologies
+	and {LDAP} objects into {RDF} instance triples. {F}urthermore, it
+	reports on an implementation of this method based on the {RDF} {API}
+	for {PHP}.},
+  biburl = {http://www.bibsonomy.org/bibtex/2ceb80fbff902e38009c41adea866c6d6/aksw},
+  file = {dietzold-s-2005--d.pdf:dietzold-s-2005--d.pdf:PDF},
+  keywords = {2005 tramp semanticldap event_sfsw sys:relevantFor:infai sys:relevantFor:bis
+	seebiproject_SemanticLDAP},
+  owner = {seebi},
+  timestamp = {2009.11.04},
+  url = {http://ceur-ws.org/Vol-135/}
+}
+
+@MASTERSTHESIS{dietzold-s-2005--a,
+  author = {Sebastian Dietzold},
+  title = {G{OL} {W}eb - {K}onzept eines {F}rameworks für eine axiombasierte
+	{E}ntwicklung von {S}emantic {W}eb {O}ntologien auf {B}asis der {W}eb
+	{O}ntology {L}anguage ({OWL})},
+  school = {University of Leipzig},
+  year = {2005},
+  type = {Diploma Thesis},
+  file = {dietzold-s-2005--a.pdf:/dietzold-s-2005--a.pdf:PDF},
+  keywords = {language_deutsch 2005 tramp},
+  lang = {de},
+  owner = {seebi},
+  timestamp = {2009.12.16}
+}
+
+@INPROCEEDINGS{dietzold-s-2007--a,
+  author = {Sebastian Dietzold and Sören Auer},
+  title = {Integrating SPARQL Endpoints into Directory Services.},
+  booktitle = {Proceedings of the ESWC'07 Workshop on Scripting for the Semantic
+	Web, SFSW 2007, Innsbruck, Austria, May 30, 2007},
+  year = {2007},
+  editor = {Sören Auer and Christian Bizer and Tom Heath and Gunnar Aastrand
+	Grimnes},
+  volume = {248},
+  series = {CEUR Workshop Proceedings},
+  publisher = {CEUR-WS.org},
+  date = {2008-05-30},
+  ee = {http://ceur-ws.org/Vol-248/challenge5.pdf},
+  interhash = {e616d5b3fe1bd7802879e3cbacb4ccb4},
+  intrahash = {56197b1d6f9815a68b2792e2d20446b3},
+  keywords = {group_aksw 2007 semanticldap tramp auer event_sfsw sys:relevantFor:infai
+	sys:relevantFor:bis seebiproject_SemanticLDAP},
+  owner = {seebi},
+  timestamp = {2010.01.17}
+}
+
+@INPROCEEDINGS{dietzold-s-2006--b,
+  author = {Sebastian Dietzold and Sören Auer},
+  title = {Access {C}ontrol on {RDF} {T}riple {S}tores from a {S}emantic {W}iki
+	{P}erspective},
+  booktitle = {Proc. of 2nd {W}orkshop on {S}cripting for the {S}emantic {W}eb at
+	{ESWC}, {B}udva, {M}ontenegro, {J}une 12, 2006},
+  year = {2006},
+  editor = {Chris Bizer and Sören Auer and Libby Miller},
+  volume = {183},
+  series = {CEUR Workshop Proceedings ISSN 1613-0073},
+  month = {June},
+  biburl = {http://www.bibsonomy.org/bibtex/2c6c235c2ee1b79b8a4d432ef894ca823/aksw},
+  file = {dietzold-s-2006--b.pdf:dietzold-s-2006--b.pdf:PDF},
+  keywords = {2006 group_aksw auer tramp event_sfsw sys:relevantFor:infai sys:relevantFor:bis
+	ontowiki seebiproject_OntoWiki},
+  owner = {seebi},
+  timestamp = {2006.05.24},
+  url = {http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-181/paper3.pdf}
+}
+
+@INPROCEEDINGS{dietzold-s-2007-290-a,
+  author = {Sebastian Dietzold and Sören Auer},
+  title = {Accessing RDF Knowledge Bases via LDAP Clients},
+  booktitle = {Proceedings of International Conference Semantics Systems 2007, I-SEMANTICS'07,
+	Graz, Austria; September 5 -- 7, 2007},
+  year = {2007},
+  editor = {Tassilo Pellegrini and Sebastian Schaffert},
+  pages = {290-296},
+  month = {09},
+  publisher = {Journal of Univeral Computer Science},
+  biburl = {http://www.bibsonomy.org/bibtex/20fec61341781bb6e9c3e6f4a9cc7a2e1/aksw},
+  keywords = {2007 group_aksw auer tramp semanticldap event_i-semantics sys:relevantFor:infai
+	sys:relevantFor:bis ontowiki seebiproject_SemanticLDAP},
+  owner = {seebi},
+  pdf = {dietzold-s-2007-290-a.pdf},
+  timestamp = {2008.02.18},
+  url = {http://www.i-know.tugraz.at/content/download/843/3534/file/Dietzold.pdf}
+}
+
+@ARTICLE{dietzold-s-2009-20-a,
+  author = {Sebastian Dietzold and Sören Auer},
+  title = {Realisierung von {S}ozialen {N}etzwerken im {S}emantic {W}eb mit
+	{O}nto{W}iki},
+  journal = {i-com - Zeitschrift für interaktive und kooperative Medien},
+  year = {2009},
+  volume = {3},
+  pages = {20-24},
+  doi = {10.1524/icom.2009.0032},
+  keywords = {language_deutsch group_aksw 2009 tramp auer ontowiki sys:relevantFor:infai
+	sys:relevantFor:bis seebiproject_OntoWiki ontowiki_eu},
+  owner = {seebi},
+  timestamp = {2009.12.16}
+}
+
+@INPROCEEDINGS{dietzold-s-2006--c,
+  author = {Sebastian Dietzold and Sören Auer and Thomas Riechert},
+  title = {Kolloborative {W}issensarbeit mit {O}nto{W}iki},
+  booktitle = {Proceedings of the {INFORMATIK} 2006 {W}orkshop: {B}ildung von {S}ozialen
+	{N}etzwerken in {A}nwendungen der "{S}ocial {S}oftware"},
+  year = {2006},
+  biburl = {http://www.bibsonomy.org/bibtex/2a83ad6a1a4df24fae621f61185e4f299/aksw},
+  keywords = {language_deutsch 2006 group_aksw auer tramp ontowiki riechert event_gi
+	sys:relevantFor:infai sys:relevantFor:bis seebiproject_OntoWiki},
+  owner = {seebi},
+  timestamp = {2006.07.21},
+  url = {http://www.informatik.uni-leipzig.de/~auer/publication/WissensarbeitMitOntoWiki.pdf}
+}
+
+@INPROCEEDINGS{dietzold-s-2001-134-a,
+  author = {Sebastian Dietzold and Barbara Heller},
+  title = {Konzeption und {A}ufbau eines vertikalen {E}nterprise-{P}ortals für
+	ein medizinisches {K}ompetenznetzwerk},
+  booktitle = {Abstracts der 46. {J}ahrestagung der {D}eutschen {G}esellschaft für
+	{M}edizinische {I}nformatik, {B}iometrie und {E}pidemiologie ({GMDS})},
+  year = {2001},
+  volume = {32},
+  number = {2-3},
+  series = {Informatik, Biometrie und Epidemiologie in Medizin und Biologie},
+  pages = {134},
+  address = {Köln},
+  publisher = {Urban \& Fischer},
+  file = {dietzold-s-2001-134-a:dietzold-s-2001-134-a:PDF},
+  keywords = {language_deutsch 2001 tramp},
+  lang = {de},
+  owner = {seebi},
+  timestamp = {2009.12.16},
+  url = {http://onto-med.de/en/publications/abstracts/dietzold-gmds-koeln-2001.pdf}
+}
+
+@INPROCEEDINGS{dietzold-s-2002-378-a,
+  author = {Sebastian Dietzold and Barbara Heller and Matthias Löbe},
+  title = {Konzepte für ein modernes {I}nformationsmanagement medizinischer
+	{N}etzwerke},
+  booktitle = {Abstracts der 46. {J}ahrestagung der {D}eutschen {G}esellschaft für
+	{M}edizinische {I}nformatik, {B}iometrie und {E}pidemiologie ({GMDS})},
+  year = {2002},
+  volume = {33},
+  number = {2-3},
+  series = {Informatik, Biometrie und Epidemiologie in Medizin und Biologie},
+  pages = {378},
+  address = {Berlin},
+  publisher = {Urban \& Fischer},
+  file = {dietzold-s-2002-378-a:dietzold-s-2002-378-a:PDF},
+  keywords = {language_deutsch 2002 tramp},
+  lang = {de},
+  owner = {seebi},
+  timestamp = {2009.12.16},
+  url = {http://onto-med.de/en/publications/abstracts/dietzold-loebe-gmds-berlin-2002.pdf}
+}
+
+@INPROCEEDINGS{dietzold-s-2008--a,
+  author = {Sebastian Dietzold and Sebastian Hellmann and Martin Peklo},
+  title = {Using JavaScript RDFa Widgets for Model/View Separation inside Read/Write
+	Websites},
+  booktitle = {Proceedings of the 4th Workshop on Scripting for the Semantic Web},
+  year = {2008},
+  biburl = {http://www.bibsonomy.org/bibtex/2a88dcdb9779f3a5405228932951a276b/aksw},
+  keywords = {2008 group_aksw ontowiki tramp hellmann event_sfsw sys:relevantFor:infai
+	sys:relevantFor:bis rdfauthor seebiproject_RDFauthor},
+  owner = {seebi},
+  pdf = {dietzold-s-2008--a.pdf},
+  timestamp = {2008.05.22},
+  url = {http://www.semanticscripting.org/SFSW2008/papers/15.pdf}
+}
+
+@INPROCEEDINGS{dietzold-s-2006--d,
+  author = {Sebastian Dietzold and Roland Mücke},
+  title = {Automatische Erfassung verteilter RDF Beschreibungen von Klinischer
+	Studien mit GRDDL},
+  booktitle = {51. Jahrestagung der Deutschen Gesellschaft für Medizinische Informatik,
+	Biometrie und Epidemiologie
+	
+	Deutsche Gesellschaft für Medizinische Informatik, Biometrie und Epidemiologie
+	e. V. (gmds)},
+  year = {2006},
+  keywords = {language_deutsch 2006 tramp group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {seebi},
+  timestamp = {2008.08.13},
+  url = {http://www.egms.de/en/meetings/gmds2006/06gmds362.shtml}
+}
+
+@INCOLLECTION{dietzold-s-2009-49-a,
+  author = {Sebastian Dietzold and Thomas Riechert},
+  title = {Realisierung einer Web-basierten Plattform für das verteilte Requirements
+	Engineering auf Basis des Application-Frameworks OntoWiki},
+  booktitle = {Agiles Requirements Engineering für Softwareprojekte mit einer großen
+	Anzahl verteilter Stakeholder},
+  publisher = {Leipziger Informatik-Verbund (LIV)},
+  year = {2009},
+  editor = {Sören Auer and Kim Lauenroth and Steffen Lohmann and Thomas Riechert},
+  volume = {XVIII},
+  series = {Leipziger Beiträge zur Informatik},
+  pages = {49--58},
+  keywords = {language_deutsch 2009 group_aksw tramp riechert erfurt ontowiki sys:relevantFor:infai
+	sys:relevantFor:bis seebiproject_OntoWiki seebiproject_SoftWiki ontowiki_eu},
+  owner = {seebi},
+  timestamp = {2010.01.17}
+}
+
+@INCOLLECTION{dietzold-s-2007-277-a,
+  author = {Sebastian Dietzold and Thomas Riechert and S{\"o}ren Auer},
+  title = {Semantische Datenintegration mit Hilfe von Semantic Web und Wiki-Technologien},
+  booktitle = {Integration Engineering: Motivation -- Begriffe -- Methoden -- Anwendungsf{\"a}lle},
+  publisher = {Leipziger Informatik-Verbund (LIV)},
+  year = {2007},
+  editor = {Klaus-Peter F{\"a}hnrich and Maik Thr{\"a}nert and Peter Wetzel},
+  series = {Leipziger Beitr{\"a}ge zur Informatik},
+  pages = {277-283},
+  address = {Leipzig, Germany},
+  interhash = {78619ca08d9e4571cdcfec165feb2576},
+  intrahash = {7c61e4f62eb9ba3a31e4786f95e7e21b},
+  keywords = {language_deutsch 2007 group_aksw ontowiki tramp riechert auer sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {seebi},
+  timestamp = {2010.01.17}
+}
+
+@INPROCEEDINGS{dietzold-s-2008-19-a,
+  author = {Sebastian Dietzold and Jörg Unbehauen and Sören Auer},
+  title = {xOperator - Interconnecting the Semantic Web and Instant Messaging
+	Networks},
+  booktitle = {Proceedings of 5th European Semantic Web Conference (ESWC 2008),
+	1-5 June, 2008, Tenerife, Spain.},
+  year = {2008},
+  pages = {19--33},
+  biburl = {http://www.bibsonomy.org/bibtex/2a2f871befe81154aacf9e32ab249dcdb/aksw},
+  keywords = {2008 event_eswc group_aksw auer tramp sys:relevantFor:infai sys:relevantFor:bis
+	unbehauen xoperator seebiproject_xOperator seebiproject_FederatedSocialWeb},
+  owner = {seebi},
+  pdf = {dietzold-s-2008-19-a.pdf},
+  timestamp = {2008.05.22},
+  url = {http://www.eswc2008.org/final-pdfs-for-web-site/aao-2.pdf}
+}
+
+@INPROCEEDINGS{dietzold-s-2008-787-a,
+  author = {Sebastian Dietzold and Jörg Unbehauen and Sören Auer},
+  title = {xOperator - An Extensible Semantic Agent for Instant Messaging Networks},
+  booktitle = {Proceedings of 5th European Semantic Web Conference (ESWC 2008),
+	1-5 June, 2008, Tenerife, Spain.},
+  year = {2008},
+  pages = {787–-791},
+  biburl = {http://www.bibsonomy.org/bibtex/242ca419d839e057416986b32ea2d8a21/aksw},
+  keywords = {2008 group_aksw event_eswc auer tramp sys:relevantFor:infai sys:relevantFor:bis
+	unbehauen xoperator seebiproject_xOperator seebiproject_FederatedSocialWeb},
+  owner = {seebi},
+  pdf = {dietzold-s-2008-787-a.pdf},
+  timestamp = {2008.05.22},
+  url = {http://www.eswc2008.org/demos/demo05.pdf}
+}
+
+@INCOLLECTION{2011dispedia,
+  author = {Elze, Romy and Hesse, Tom-Michael and Martin, Michael},
+  title = {Dispedia.de - A Linked Information System for Rare Diseases},
+  booktitle = {Information Quality in e-Health},
+  publisher = {Springer Berlin / Heidelberg},
+  year = {2011},
+  editor = {Holzinger, Andreas and Simonic, Klaus-Martin},
+  volume = {7058},
+  series = {Lecture Notes in Computer Science},
+  pages = {691-701},
+  abstract = {The challenge of developing information systems for rare diseases
+	is in harmonizing social care conditions and health care conditions
+	with the focus on personalization and patient autonomy. Knowledge
+	about the most rare diseases is limited, which is the result of poorly
+	funded research and the existence of only a few specialized experts.
+	Furthermore, the treatment and care of the affected patients is very
+	complex, cost-intensive, time critical, and involved stakeholders
+	are very heterogeneous. The information needed by the patient depends
+	on his or her personal situation and constitution. To support the
+	information logistics between patients of rare diseases and (all)
+	other stakeholders (e.g. physicians, therapists, and researchers),
+	we developed an information system with Linked Open Data technologies
+	in order to create a platform and tool independent solution addressing
+	the heterogeneity of the stakeholders. To engineer system and data
+	model requirements of our approach we analyzed the rare disease Amyotrophic
+	Lateral Sclerosis (ALS), which have wide-spreaded characteristics.
+	The resulting formal knowledge representation was encoded in OWL,
+	which allows, for instance, a modular development of complex areas
+	and also the re-usage of existing knowledge bases.},
+  keywords = {2011 event_usab group_aksw sys:relevantFor:infai sys:relevantFor:bis
+	martin hesse elze}
+}
+
+@INPROCEEDINGS{iermilov-2012-kesw,
+  author = {Ivan Ermilov and Claus Stadler and Michael Martin and Sören Auer},
+  title = {Towards an Open-Governmental Data Web},
+  booktitle = {Proceedings of the KESW 2012},
+  year = {2012},
+  series = {Lecture Notes in Computer Science (LNCS) 7603},
+  abstract = {Up to the present day much effort has been made to publish government
+	data on the Web. However, such data has been published in different
+	formats. For any particular source and use (e.g. exploration, visualization,
+	integration) of such information specic applications have to be
+	written. This limits the overall usability of the information provided
+	and makes it diffcult to access information resources. These limitations
+	can be overridden, if the information will be provided using a homogeneous
+	data and access model complying with the Linked Data principles.
+	In this paper we showcase how raw Open Government Data (OGD) from
+	heterogeneous sources can be processed, converted, published and
+	used on the Web of Linked Data. In particular we demonstrate our
+	experience in processing of OGD on two use cases: the Digital Agenda
+	Scoreboard and the Financial Transparency System of the European
+	Commission.},
+  keywords = {2012 group_aksw event_kesw iermilov auer stadler martin sys:relevantFor:infai
+	sys:relevantFor:bis sys:relevantFor:lod2 lod2page peer-reviewed},
+  owner = {iermilov},
+  timestamp = {2012.10.08},
+  url = {http://svn.aksw.org/papers/2012/KESW2012_OpenGovWeb/public.pdf}
+}
+
+@INPROCEEDINGS{ermilov-t-2011--a,
+  author = {Timofey Ermilov and Norman Heino and Sebastian Tramp and Sören Auer},
+  title = {{O}nto{W}iki {M}obile –- {K}nowledge {M}anagement in your {P}ocket},
+  booktitle = {Proceedings of the ESWC2011},
+  year = {2011},
+  keywords = {2011 group_aksw event_eswc tramp heino ermilov auer seebiproject_OntoWiki
+	sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2 lod2page
+	peer-reviewed},
+  owner = {seebi},
+  timestamp = {2011.02.24},
+  url = {http://svn.aksw.org/papers/2011/ESWC_OntoWiki_Mobile/public.pdf}
+}
+
+@MASTERSTHESIS{Frischmuth-2009-1,
+  author = {Philipp Frischmuth},
+  title = {Aspekte der Kommunikation und Datenintegration in semantischen Daten-Wikis},
+  school = {Universität Leipzig},
+  year = {2009},
+  type = {Diploma Thesis},
+  keywords = {language_deutsch 2009 frischmuth ontowiki},
+  owner = {philipp},
+  timestamp = {2010.03.03}
+}
+
+@INCOLLECTION{Frischmuth-2010-1,
+  author = {Philipp Frischmuth and Thomas Riechert and Sebastian Tramp},
+  title = {Realisierung einer web-basierten Plattform für die verteilte Akquise
+	von Professorendaten auf Basis des OntoWiki-Frameworks},
+  booktitle = {Catalogus Professorum Lipsiensis -- Konzeption, technische Umsetzung
+	und Anwendungen für Professorenkataloge im Semantic Web},
+  publisher = {Leipziger Informatik-Verbund (LIV)},
+  year = {2010},
+  editor = {Ulf Morgenstern and Thomas Riechert},
+  volume = {XXI},
+  series = {Leipziger Beiträge zur Informatik},
+  pages = {65--75},
+  keywords = {language_deutsch 2010 group_aksw tramp riechert frischmuth ontowiki
+	sys:relevantFor:infai sys:relevantFor:bis seebiproject_OntoWiki ontowiki_eu},
+  owner = {philipp},
+  timestamp = {2010.03.03}
+}
+
+@INPROCEEDINGS{08MaNgo,
+  author = {Martin Gebauer and Axel-Cyrille {Ngonga Ngomo}},
+  title = {SMORE – A Semantic Model Repository},
+  booktitle = {Proceedings of the 1st Workshop of Knowledge Reuse at the International
+	Conference on Software Reuse (ICSR)},
+  year = {2008},
+  keywords = {group_aksw SIMBA ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17}
+}
+
+@INPROCEEDINGS{gerber-d-2010--c,
+  author = {Daniel Gerber and Marvin Frommhold and Michael Martin and Sebastian
+	Tramp and Sören Auer},
+  title = {Learning Semantic Web Technologies with the Web-Based SPARQLTrainer},
+  booktitle = {Proceedings of the 6th International Conference on Semantic Systems
+	2010},
+  year = {2010},
+  series = {ACM},
+  address = {Graz / Austria},
+  month = {September},
+  abstract = {The success of the Semantic Web in research, technology and standardization
+	communities has resulted in a large variety of different approaches,
+	standards and techniques. This diversity and heterogeneity often
+	involve an increasing difficulty of becoming acquainted with Semantic
+	Web technologies. In this work, we present the SPARQLTrainer approach
+	for educating novices in semantic technologies in a playful way.
+	With SPARQLTrainer educators can devise a SPARQL course by defining
+	a number of exercises either generically or for a specific domain.
+	Learners can complete courses by stepwise answering questions of
+	increasing complexity. These questions usually require the learner
+	to build a SPARQL query for querying a certain knowledge base and
+	using certain SPARQL features. The SPARQL queries created by a learner
+	are compared with example solutions given by the instructor. This
+	comparison takes possible variations into account and gives specific
+	feedback to the learner.},
+  keywords = {2010 group_aksw event_i-semantics gerber frommhold tramp martin auer
+	sparql trainer event_i-semantics sys:relevantFor:infai sys:relevantFor:bis
+	sys:relevantFor:lod2 lod2page},
+  owner = {micha},
+  timestamp = {2010.08.25}
+}
+
+@INPROCEEDINGS{Gerber2011,
+  author = {Daniel Gerber and Axel-Cyrille {Ngonga Ngomo}},
+  title = {Bootstrapping the Linked Data Web},
+  booktitle = {1st Workshop on Web Scale Knowledge Extraction @ ISWC 2011},
+  year = {2011},
+  abstract = {Most knowledge sources on the Data Web were extracted from structured
+	or semi-structured data. Thus, they encompass solely a small fraction
+	of the information available on the document-oriented Web. In this
+	paper, we present BOA, an iterative bootstrapping strategy for extracting
+	RDF from unstructured data. The idea behind BOA is to use the Data
+	Web as background knowledge for the extraction of natural language
+	patterns that represent predicates found on the Data Web. These patterns
+	are used to extract instance knowledge from natural language text.
+	This knowledge is finally fed back into the Data Web, therewith closing
+	the loop. We evaluate our approach on two data sets using DBpedia
+	as background knowledge. Our results show that we can extract several
+	thousand new facts in one iteration with very high accuracy. Moreover,
+	we provide the first repository of natural language representations
+	of predicates found on the Data Web.},
+  keywords = {2011 group_aksw event_iswc event_wekex gerber boa SIMBA sys:relevantFor:infai
+	sys:relevantFor:bis ngonga},
+  owner = {gerb},
+  timestamp = {2011.10.25}
+}
+
+@INPROCEEDINGS{Gueret2012,
+  author = {Christophe Gu{\'e}ret and Paul T. Groth and Claus Stadler and Jens
+	Lehmann},
+  title = {Assessing Linked Data Mappings Using Network Measures},
+  booktitle = {Proceedings of the 9th Extended Semantic Web Conference},
+  year = {2012},
+  volume = {7295},
+  series = {Lecture Notes in Computer Science},
+  pages = {87--102},
+  publisher = {Springer},
+  keywords = {2012 group_aksw group_mole event_ESWC sys:relevantFor:infai sys:relevantFor:bis
+	sys:relevantFor:lod2 lod2page peer-reviewed stadler lehmann},
+  owner = {jl},
+  timestamp = {2012.07.18},
+  url = {http://jens-lehmann.org/files/2012/linked_mapping_qa.pdf}
+}
+
+@INPROCEEDINGS{2009_relfinder,
+  author = {Philipp Heim and Sebastian Hellmann and Jens Lehmann and Steffen
+	Lohmann and Timo Stegemann},
+  title = {{RelFinder}: Revealing Relationships in {RDF} Knowledge Bases},
+  booktitle = {Proceedings of the 3rd International Conference on Semantic and Media
+	Technologies (SAMT)},
+  year = {2009},
+  volume = {5887},
+  series = {Lecture Notes in Computer Science},
+  pages = {182-187},
+  publisher = {Springer},
+  keywords = {2009 group_aksw event_SAMT sys:relevantFor:infai sys:relevantFor:bis
+	lehmann hellmann}
+}
+
+@INCOLLECTION{heino-n-2009-61-a,
+  author = {Norman Heino and Sebastian Dietzold and Michael Martin and Sören
+	Auer},
+  title = {Developing Semantic Web Applications with the OntoWiki Framework},
+  booktitle = {Networked Knowledge - Networked Media},
+  publisher = {Springer},
+  year = {2009},
+  editor = {Tassilo Pellegrini and S{\"o}ren Auer and Klaus Tochtermann and Sebastian
+	Schaffert},
+  volume = {221},
+  series = {Studies in Computational Intelligence},
+  pages = {61--77},
+  address = {Berlin / Heidelberg},
+  abstract = {In this paper, we introduce the OntoWiki Application Framework for
+	developing Semantic Web applications with a strong emphasis on collaboration.
+	After presenting OntoWiki as our main show case for the framework,
+	we give both an architectural overview and a detailed view on the
+	included components.We conclude this paper with a presentation of
+	different use cases where the framework was strongly involved.},
+  biburl = {http://www.bibsonomy.org/bibtex/2bb7746b8ddbae8740f509ca6cf3ee852/aksw},
+  doi = {doi:10.1007/978-3-642-02184-8_5},
+  keywords = {2009 group_aksw auer ontowiki tramp heino martin erfurt sys:relevantFor:infai
+	sys:relevantFor:bis ontowiki seebiproject_OntoWiki ontowiki_eu},
+  owner = {seebi},
+  timestamp = {2009.08.16},
+  url = {http://www.springerlink.com/content/0j7673v3012p7156/}
+}
+
+@INPROCEEDINGS{Heino:2012te,
+  author = {Norman Heino and Jeff Pan},
+  title = {{RDFS Reasoning on Massively Parallel Hardware}},
+  booktitle = {Proceedings of the International Semantic Web Conference (ISWC) 2012,
+	Boston},
+  year = {2012},
+  publisher = {Springer},
+  keywords = {2012 group_aksw heino sys:relevantFor:infai sys:relevantFor:bis peer-reviewed},
+  owner = {norman},
+  timestamp = {2012.09.07}
+}
+
+@INPROCEEDINGS{heino-n-2011--a,
+  author = {Norman Heino and Sebastian Tramp and Sören Auer},
+  title = {Managing Web Content using Linked Data Principles -- Combining semantic
+	structure with dynamic content syndication},
+  booktitle = {Proceedings of the 35th Annual IEEE International Computer Software
+	and Applications Conference (COMPSAC 2011)},
+  year = {2011},
+  publisher = {IEEE Computer Society},
+  keywords = {2011 group_aksw auer ontowiki tramp heino sys:relevantFor:lod2 sys:relevantFor:infai
+	sys:relevantFor:bis seebiproject_OntoWiki},
+  owner = {seebi},
+  timestamp = {2011.08.11},
+  url = {http://svn.aksw.org/papers/2011/COMPSAC_lod2.eu/public.pdf}
+}
+
+@INPROCEEDINGS{sh_phdsymposium_10,
+  author = {Sebastian Hellmann},
+  title = {The Semantic Gap of Formalized Meaning.},
+  booktitle = {ESWC (2)},
+  year = {2010},
+  editor = {Lora Aroyo and Grigoris Antoniou and Eero Hyvönen and Annette ten
+	Teije and Heiner Stuckenschmidt and Liliana Cabral and Tania Tudorache},
+  volume = {6089},
+  series = {Lecture Notes in Computer Science},
+  pages = {462-466},
+  publisher = {Springer},
+  note = {\textbf{Acceptance rate 30\%}},
+  added-at = {2010-07-21T15:58:30.000+0200},
+  biburl = {http://www.bibsonomy.org/bibtex/29af45d7e83ecea07c187c8b88a3f5b9a/dblp},
+  date = {2010-06-08},
+  ee = {http://dx.doi.org/10.1007/978-3-642-13489-0_44},
+  interhash = {b77ce32d56f8705548cf13e17e9a46a1},
+  intrahash = {9af45d7e83ecea07c187c8b88a3f5b9a},
+  isbn = {978-3-642-13488-3},
+  keywords = {hellmann sys:relevantFor:bis sys:relevantFor:infai 2010 group_aksw
+	mole event_ESWC peer-reviewed},
+  owner = {sebastian},
+  timestamp = {2010.12.11},
+  url = {http://svn.aksw.org/papers/2010/ESWC_PHDSym_NLP2RDF/PhD_ESWC_hellmann_public.pdf}
+}
+
+@MASTERSTHESIS{sh_thesis_08,
+  author = {Sebastian Hellmann},
+  title = {Comparison of Concept Learning Algorithms With Emphasis on Ontology
+	Engineering for the Semantic Web},
+  school = {University of Leipzig},
+  year = {2008},
+  type = {Diploma Thesis},
+  keywords = {2008 hellmann group_aksw mole sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {sebastian},
+  timestamp = {2010.07.07},
+  url = {http://lips.informatik.uni-leipzig.de/files/2008-3.pdf}
+}
+
+@INPROCEEDINGS{hellmann-jist-2012-wiktionary,
+  author = {Sebastian Hellmann and Jonas Brekle and Sören Auer},
+  title = {Leveraging the Crowdsourcing of Lexical Resources for Bootstrapping
+	a Linguistic Data Cloud },
+  booktitle = {JIST},
+  year = {2012},
+  keywords = {2012 group_aksw event_jist group_mole mole hellmann brekle auer sys:relevantFor:infai
+	sys:relevantFor:bis sys:relevantFor:lod2 lod2page peer-reviewed},
+  owner = {sebastian},
+  timestamp = {2012.10.19},
+  url = {http://svn.aksw.org/papers/2012/JIST_Wiktionary/public.pdf}
+}
+
+@INCOLLECTION{sh_scalability_2011,
+  author = {Sebastian Hellmann and Jens Lehmann and Sören Auer},
+  title = {Learning of OWL Class Expressions on Very Large Knowledge Bases and
+	its Applications.},
+  booktitle = {Learning of OWL Class Expressions on Very Large Knowledge Bases and
+	its Applications},
+  publisher = {IGI Global},
+  year = {2011},
+  editor = {Semantic Services, Interoperability and Web Applications: Emerging
+	Concepts},
+  chapter = {5},
+  pages = {104-130},
+  doi = {doi:10.4018/978-1-60960-593-3},
+  keywords = {peer-reviewed 2011 hellmann lehmann auer group_aksw mole sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {sebastian},
+  timestamp = {2011.06.27}
+}
+
+@INPROCEEDINGS{hellmann-2012-ekaw,
+  author = {Sebastian Hellmann and Jens Lehmann and Sören Auer},
+  title = {Linked-Data Aware URI Schemes for Referencing Text Fragments},
+  booktitle = {EKAW 2012},
+  year = {2012},
+  series = {Lecture Notes in Computer Science (LNCS) 7603},
+  publisher = {Springer},
+  doi = {doi:10.1007/978-3-642-16438-5_10},
+  keywords = {2012 group_aksw event_ekaw hellmann auer lehmann nif sys:relevantFor:infai
+	sys:relevantFor:bis sys:relevantFor:lod2 lod2page peer-reviewed},
+  owner = {sebastian},
+  timestamp = {2012.06.13},
+  url = {http://svn.aksw.org/papers/2012/NIF/EKAW_short_paper/public.pdf}
+}
+
+@ARTICLE{hellmann_ijswis_09,
+  author = {Sebastian Hellmann and Jens Lehmann and Sören Auer},
+  title = {Learning of {OWL} Class Descriptions on Very Large Knowledge Bases},
+  journal = {International Journal on Semantic Web and Information Systems},
+  year = {2009},
+  volume = {5},
+  pages = {25--48},
+  number = {2},
+  note = {\textbf{Impact Factor: 2.345}},
+  biburl = {http://www.bibsonomy.org/bibtex/2ede309d0985a6ce5a8c75d3c5a2df30e/jens},
+  description = {publications Jens Lehmann},
+  doi = {doi:10.4018/jswis.2009040102},
+  keywords = {2009 group_aksw dllearner mole hellmann lehmann auer event_IJSWIS
+	sys:relevantFor:infai sys:relevantFor:bis peer-reviewed ontowiki_eu},
+  url = {http://jens-lehmann.org/files/2009_dllearner_sparql.pdf}
+}
+
+@INPROCEEDINGS{sh_scalability_poster_08,
+  author = {Sebastian Hellmann and Jens Lehmann and S{\"o}ren Auer},
+  title = {Learning of {OWL} Class Descriptions on Very Large Knowledge Bases},
+  booktitle = {Proceedings of the Poster and Demonstration Session at the 7th International
+	Semantic Web Conference ({ISWC2008}), Karlsruhe, Germany, October
+	28, 2008},
+  year = {2008},
+  editor = {Christian Bizer and Anupam Joshi},
+  volume = {401},
+  series = {CEUR Workshop Proceedings},
+  publisher = {CEUR-WS.org},
+  bibdate = {2008-10-29},
+  bibsource = {DBLP, http://dblp.uni-trier.de/db/conf/semweb/iswc2008p.html#HellmannLA08},
+  biburl = {http://www.bibsonomy.org/bibtex/267bb52f69f2a430165d1266d6d7182de/jens},
+  description = {publications Jens Lehmann},
+  keywords = {2008 group_aksw dllearner hellmann lehmann auer sys:relevantFor:infai
+	sys:relevantFor:bis event_iswc},
+  url = {http://ceur-ws.org/Vol-401/iswc2008pd_submission_83.pdf}
+}
+
+@INPROCEEDINGS{hellmann-2012-nif-combinator,
+  author = {Sebastian Hellmann and Jens Lehmann and S{\"o}ren Auer and Marcus
+	Nitzschke},
+  title = {NIF Combinator: Combining NLP Tool Output},
+  booktitle = {EKAW},
+  year = {2012},
+  pages = {446-449},
+  ee = {http://dx.doi.org/10.1007/978-3-642-33876-2_44},
+  keywords = {2012 hellmann lehmann nitzschke group_aksw mole sys:relevantFor:infai
+	sys:relevantFor:bis peer-reviewed sys:relevantFor:lod2 lod2page}
+}
+
+@INPROCEEDINGS{hellmann-jist-2012-NKE,
+  author = {Sebastian Hellmann and Jens Lehmann and J{\"o}rg Unbehauen and Claus
+	Stadler and Thanh Nghia Lam and Markus Strohmaier},
+  title = {Navigation-induced Knowledge Engineering by Example},
+  booktitle = {JIST},
+  year = {2012},
+  keywords = {2012 group_aksw event_jist group_mole mole hellmann stadler unbehauen
+	strohmaier sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2
+	lod2page peer-reviewed},
+  owner = {sebastian},
+  timestamp = {2012.10.19},
+  url = {http://svn.aksw.org/papers/2012/JIST_NKE/public.pdf}
+}
+
+@INCOLLECTION{Hellmann2012,
+  author = {Hellmann, Sebastian and Stadler, Claus and Lehmann, Jens},
+  title = {The German DBpedia: A Sense Repository for Linking Entities},
+  booktitle = {Linked Data in Linguistics},
+  publisher = {Springer},
+  year = {2012},
+  keywords = {2012 hellmann stadler lehmann group_aksw mole nif sys:relevantFor:infai
+	sys:relevantFor:bis peer-reviewed sys:relevantFor:lod2 lod2page},
+  owner = {jl},
+  timestamp = {2012.07.18},
+  url = {http://jens-lehmann.org/files/2012/german_dbpedia_sense_repository.pdf}
+}
+
+@INPROCEEDINGS{hellmann_odbase_dbpedia_live_09,
+  author = {Sebastian Hellmann and Claus Stadler and Jens Lehmann and Sören Auer},
+  title = {{DBpedia} Live Extraction},
+  booktitle = {Proc. of 8th International Conference on Ontologies, DataBases, and
+	Applications of Semantics (ODBASE)},
+  year = {2009},
+  volume = {5871},
+  series = {Lecture Notes in Computer Science},
+  pages = {1209--1223},
+  biburl = {http://www.bibsonomy.org/bibtex/27f9a95be2bad73ea9ec9e7e48af4c9ec/jens},
+  description = {publications Jens Lehmann},
+  doi = {doi:10.1007/978-3-642-05151-7_33},
+  keywords = {2009 event_odbase hellmann stadler lehmann auer group_aksw dbpedia
+	mole sys:relevantFor:infai sys:relevantFor:bis peer-reviewed ontowiki_eu},
+  url = {http://svn.aksw.org/papers/2009/ODBASE_LiveExtraction/dbpedia_live_extraction_public.pdf}
+}
+
+@INPROCEEDINGS{sh_tigernavigator_10,
+  author = {Sebastian Hellmann and Jörg Unbehauen and Christian Chiarcos and
+	Axel-Cyrille {Ngonga Ngomo}},
+  title = {The TIGER Corpus Navigator},
+  booktitle = {Proceedings of the Ninth International Workshop on Treebanks and
+	Linguistic Theories (TLT9)},
+  year = {2010},
+  series = {NEALT Proceeding Series},
+  keywords = {2010 group_aksw hellmann unbehauen chiarcos ngonga mole simba sys:relevantFor:infai
+	sys:relevantFor:bis dllearner event_TLT9},
+  owner = {sebastian},
+  timestamp = {2010.10.18},
+  url = {http://dspace.utlib.ee/dspace/bitstream/10062/15937/1/tlt9_submission_33.pdf}
+}
+
+@INPROCEEDINGS{hanne,
+  author = {Sebastian Hellmann and Jörg Unbehauen and Jens Lehmann},
+  title = {HANNE - A Holistic Application for Navigational Knowledge Engineering},
+  booktitle = {Posters and Demos of ISWC 2010},
+  year = {2010},
+  keywords = {2010 group_aksw event_iswc hellmann unbehauen lehmann mole sys:relevantFor:infai
+	sys:relevantFor:bis dllearner},
+  url = {http://iswc2010.semanticweb.org/pdf/522.pdf}
+}
+
+@INPROCEEDINGS{HING11,
+  author = {Stanley Hillner and Axel-Cyrille {Ngonga Ngomo}},
+  title = {Parallelizing LIMES for Large-Scale Link Discovery},
+  booktitle = {I'Semantics},
+  year = {2011},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2011.07.04}
+}
+
+@INPROCEEDINGS{HOE+08d,
+  author = {Robert Hoehndorf and Axel-Cyrille {Ngonga Ngomo} and Michael Dannemann},
+  title = {Towards Ontological Interpretations for Improved Text Mining},
+  booktitle = {Proceedings of the Third International Symposium on Semantic Mining
+	in Biomedicine},
+  year = {2008},
+  pages = {165–-166},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17},
+  url = {http://www.onto-med.de/publications/2008/hoehndorf-r-2008-165-a.pdf}
+}
+
+@ARTICLE{HOE+10b,
+  author = {Robert Hoehndorf and Axel-Cyrille {Ngonga Ngomo} and Michael Dannemann
+	and Janet Kelso},
+  title = {Statistical tests for associations between two directed acyclic graphs},
+  journal = {PLOS One},
+  year = {2010},
+  volume = {5},
+  pages = {-},
+  note = {IF: 4.35},
+  keywords = {group_aksw SIMBA ngonga},
+  owner = {ngonga},
+  timestamp = {2010.05.18},
+  url = {http://www.plosone.org/article/info:doi/10.1371/journal.pone.0010996}
+}
+
+@INPROCEEDINGS{HOE+08c,
+  author = {Robert Hoehndorf and Axel-Cyrille {Ngonga Ngomo} and Michael Dannemann
+	and Janet Kelso},
+  title = {From Terms to Categories: Testing the Significance of Co-occurrences
+	between Ontological Categories},
+  booktitle = {Proceedings of the Third International Symposium on Semantic Mining
+	in Biomedicine},
+  year = {2008},
+  pages = {53--60},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17},
+  url = {http://leechuck.de/pub/tm.pdf}
+}
+
+@INPROCEEDINGS{HOE+09a,
+  author = {Robert Hoehndorf and Axel-Cyrille {Ngonga Ngomo} and Heinrich Herre},
+  title = {Developing Consistent and Modular Software Models with Ontologies},
+  booktitle = {Proceedings of the 8th International Conference on Software Methodologies,
+	Tools, and Techniques},
+  year = {2009},
+  pages = {399--412},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17},
+  url = {http://www.booksonline.iospress.nl/Content/View.aspx?piid=13593}
+}
+
+@ARTICLE{HOE+10,
+  author = {Robert Hoehndorf and Axel-Cyrille {Ngonga Ngomo} and Janet Kelso},
+  title = {Applying the functional abnormality ontology pattern to anatomical
+	functions},
+  journal = {Journal of Biomedical Semantics},
+  year = {2010},
+  volume = {01},
+  pages = {00},
+  note = {Average BMC IF: 2.95.},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2010.01.25},
+  url = {http://www.jbiomedsem.com/content/1/1/4}
+}
+
+@INPROCEEDINGS{HOE+09b,
+  author = {Robert Hoehndorf and Axel-Cyrille {Ngonga Ngomo} and Janet Kelso},
+  title = {The application of an ontology design pattern for functional abnormalities
+	to phenotype ontologies and the extraction of an ontology of anatomical
+	functions},
+  booktitle = {Proceedings of the third International Symposium on Languages in
+	Bio-Medicine},
+  year = {2009},
+  pages = {38--46},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17},
+  url = {http://lbm2009.biopathway.org/Papers.php}
+}
+
+@ARTICLE{HEO+11a,
+  author = {Robert Hoehndorf and Axel-Cyrille {Ngonga Ngomo} and Sampo Pyysalo
+	and Tomoko Ohta and Anika Oellrich and Dietrich Rebholz-Schuhmann},
+  title = {Specifying relations between genes and gene products in GENIA},
+  journal = {Journal of Biomedical Semantics},
+  year = {2011},
+  volume = {1},
+  note = {To appear.},
+  keywords = {group_aksw event_eckm SIMBA sys:relevantFor:infai sys:relevantFor:bis
+	ngonga},
+  owner = {ngonga},
+  timestamp = {2011.02.10}
+}
+
+@INPROCEEDINGS{HOE10d,
+  author = {Robert Hoehndorf and Axel-Cyrille {Ngonga Ngomo} and Sampo Pyysalo
+	and Tomoko Ohta and Anika Oellrich and Dietrich Rebholz-Schuhmann},
+  title = {Applying ontology design patterns to the implementation of relations
+	in GENIA},
+  booktitle = {Proceedings of the fourth International Symposium for Semantic Mining
+	in Biomedicine},
+  year = {2010},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2011.02.10},
+  url = {http://leechuck.de/pub/smbm.pdf}
+}
+
+@INPROCEEDINGS{iglesias-j-2011--a,
+  author = {Josué Iglesias and Jens Lehmann},
+  title = {Towards Integrating Fuzzy Logic Capabilities into an Ontology-based
+	Inductive Logic Programming Framework},
+  booktitle = {Proc. of the 11th International Conference on Intelligent Systems
+	Design and Applications (ISDA)},
+  year = {2011},
+  keywords = {2011 group_aksw lehmann mole sys:relevantFor:infai sys:relevantFor:bis
+	sys:relevantFor:lod2 lod2page dllearner},
+  owner = {jl},
+  timestamp = {2011.08.23}
+}
+
+@INPROCEEDINGS{khalili-2012-compsac,
+  author = {Ali Khalili and Sören Auer and Daniel Hladky},
+  title = {The RDFa Content Editor - From WYSIWYG to WYSIWYM},
+  booktitle = {Proceedings of COMPSAC 2012 - Trustworthy Software Systems for the
+	Digital Society, July 16-20, 2012, Izmir, Turkey.},
+  year = {2012},
+  note = {Best paper award},
+  keywords = {2012 group_aksw event_compsac khalili auer hladky rdface sys:relevantFor:infai
+	sys:relevantFor:bis sys:relevantFor:lod2 lod2page peer-reviewed},
+  owner = {soeren},
+  timestamp = {2012.08.14},
+  url = {http://svn.aksw.org/papers/2012/COMPSAC_RDFaCE/public.pdf}
+}
+
+@INPROCEEDINGS{khalilii-2012-ekaw,
+  author = {Ali Khalili and Sören Auer and Darya Tarasowa and Ivan Ermilov},
+  title = {SlideWiki: Elicitation and Sharing of Corporate Knowledge using Presentations},
+  booktitle = {Proceedings of the EKAW 2012},
+  year = {2012},
+  series = {Lecture Notes in Computer Science (LNCS) 7603},
+  publisher = {Springer},
+  note = {16% acceptance rate, nominated for the best-paper award},
+  abstract = {Presentations play a crucial role in knowledge management within organizations,
+	in particular to facilitate organizational learning and innovation.
+	Much of the corporate strategy, direction and accumulated knowledge
+	within organizations is encapsulated in presentations. In this paper,
+	we investigate the limitations of current presentation tools for
+	semi-structured knowledge representation and sharing within organizations.
+	We address challenges such as collaborative creation of presentations,
+	tracking changes within them, sharing and reusing existing presentations.
+	Then we present SlideWiki as a crowd-sourcing platform for the elicitation
+	and sharing of corporate knowledge using presentations. With SlideWiki
+	users can author, collaborate and arrange slides in organizational
+	presentations by employing Web 2.0 strategies. Presentations can
+	be organized hierarchically, so as to structure them reasonably according
+	to their content. According to the wiki paradigm, all content in
+	SlideWiki (i.e. slides, decks, themes, diagrams) are versioned and
+	users can fork and merge presentations the same way as modern social
+	coding platforms allow. Moreover, SlideWiki supports social networking
+	activities such as following and discussing presentations for effective
+	knowledge management. The article also comprises an evaluation of
+	our SlideWiki implementation involving real users.},
+  keywords = {2012 group_aksw event_ekaw iermilov auer tarasowa slidewiki khalili
+	sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2 lod2page
+	peer-reviewed},
+  owner = {michael},
+  timestamp = {2012.07.10},
+  url = {http://svn.aksw.org/papers/2012/EKAW_SlideWiki/camera-ready/public.pdf}
+}
+
+@INCOLLECTION{sh_ontos_feeder_eswc,
+  author = {Klebeck, Alex and Hellmann, Sebastian and Ehrlich, Christian and
+	Auer, Sören},
+  title = {OntosFeeder – A Versatile Semantic Context Provider for Web Content
+	Authoring},
+  booktitle = {The Semanic Web: Research and Applications},
+  publisher = {Springer Berlin / Heidelberg},
+  year = {2011},
+  editor = {Antoniou, Grigoris and Grobelnik, Marko and Simperl, Elena and Parsia,
+	Bijan and Plexousakis, Dimitris and De Leenheer, Pieter and Pan,
+	Jeff},
+  volume = {6644},
+  series = {Lecture Notes in Computer Science},
+  pages = {456-460},
+  note = {10.1007/978-3-642-21064-8_34},
+  affiliation = {Ontos GmbH, Poetenweg 49, Leipzig, Germany},
+  keywords = {2011 hellmann auer event_eswc group_aksw mole sys:relevantFor:infai
+	sys:relevantFor:bis peer-reviewed},
+  url = {http://dx.doi.org/10.1007/978-3-642-21064-8_34}
+}
+
+@INPROCEEDINGS{kobilarov-?-2009--,
+  author = {Georgi Kobilarov and Christian Bizer and Sören Auer and Jens Lehmann},
+  title = {{DBpedia} - A Linked Data Hub and Data Source for Web Applications
+	and Enterprises},
+  booktitle = {Proceedings of Developers Track of 18th International World Wide
+	Web Conference (WWW 2009), April 20th-24th, Madrid, Spain},
+  year = {2009},
+  month = {April},
+  abstract = {The DBpedia project provides Linked Data identifiers for currently
+	2.6 million things and serves a large knowledge base of structured
+	information. DBpedia developed into the central interlinking hub
+	for the Linking Open Data project, its URIs are used within named
+	entity recognition services such as OpenCalais and annotation services
+	such as Faviki, and the BBC started using DBpedia as their central
+	semantic backbone. DBpedia's structured data serves as background
+	information in the process interlinking datasets and provides a rich
+	source of information for application developers. Beside making the
+	DBpedia knowledge base available as linked data and RDF dumps, we
+	offer a Lookup Service which can be used by applications to discover
+	URIs for identifying concepts, and a SPARQL endpoint that can be
+	retrieve data from the DBpedia knowledge base to be used in applications.
+	This talk will give an introduction to DBpedia for web developers
+	and an overview of DBpedia's development over the last year. We will
+	demonstrate how DBpedia URIs are used for document annotation and
+	how Web applications can via DBpedia facilitate Wikipedia as a source
+	of structured knowledge.},
+  keywords = {2009 kobilarov bizer auer lehmann event_www group_aksw dbpedia mole
+	sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28},
+  url = {http://www2009.eprints.org/228/}
+}
+
+@ARTICLE{Kontokostas2012,
+  author = {Dimitris Kontokostas and Charalampos Bratsas and Sören Auer and Sebastian
+	Hellmann and Ioannis Antoniou and George Metakides},
+  title = {Internationalization of Linked Data: The case of the Greek DBpedia
+	edition},
+  journal = {Web Semantics: Science, Services and Agents on the World Wide Web},
+  year = {2012},
+  pages = { - },
+  number = {0},
+  doi = {10.1016/j.websem.2012.01.001},
+  issn = {1570-8268},
+  keywords = {DBpedia 2012 group_aksw hellmann auer kontokostas sys:relevantFor:infai
+	sys:relevantFor:bis sys:relevantFor:lod2 lod2page peer-reviewed},
+  owner = {sebastian},
+  timestamp = {2012.06.13},
+  url = {http://www.sciencedirect.com/science/article/pii/S1570826812000030}
+}
+
+@INPROCEEDINGS{dimitris-websci-2011,
+  author = {Kontokostas, Dimitris and Bratsas, Charalampos and Auer, Sören and
+	Hellmann, Sebastian and Antoniou, Ioannis and Metakides, George},
+  title = {Towards Linked Data Internationalization - Realizing the Greek DBpedia},
+  booktitle = {Proceedings of the ACM WebSci'11},
+  year = {2011},
+  keywords = {2011 kontokostas auer hellmann bratsas event_WebSci group_aksw dbpedia
+	mole sys:relevantFor:infai sys:relevantFor:bis peer-reviewed},
+  owner = {sebastian},
+  timestamp = {2011.06.27}
+}
+
+@INPROCEEDINGS{kunze-?-2006--,
+  author = {Jan Kunze and Thomas Riechert and Sören Auer},
+  title = {Eine Schnittstelle für Arztpraxisdaten mittels einer Ontologie auf
+	Basis von HL7 Version 3},
+  booktitle = {Tagungsband XML-Tage, Berlin, 25.-27. September},
+  year = {2006},
+  editor = {Robert Tolksdorf and Rainer Eckstein},
+  month = {September},
+  keywords = {2006 kunze riechert auer language_deutsch group_aksw sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28},
+  url = {http://www.informatik.uni-leipzig.de/~auer/publication/HL72OWL.pdf}
+}
+
+@BOOK{jl_2010_learningowlclassexpressions,
+  title = {Learning OWL Class Expressions},
+  publisher = {AKA Heidelberg},
+  year = {2010},
+  editor = {Pascal Hitzler},
+  author = {Jens Lehmann},
+  volume = {6},
+  pages = {265},
+  series = {Studies on the Semantic Web},
+  note = {ISBN 978-3-89838-336-3.2010},
+  keywords = {2010 group_aksw dllearner mole sys:relevantFor:infai sys:relevantFor:bis}
+}
+
+@INPROCEEDINGS{mldm07,
+  author = {Jens Lehmann},
+  title = {Hybrid Learning of Ontology Classes},
+  booktitle = {Machine Learning and Data Mining in Pattern Recognition, 5th International
+	Conference, {MLDM} 2007, Leipzig, Germany, July 18-20, 2007, Proceedings},
+  year = {2007},
+  editor = {Petra Perner},
+  volume = {4571},
+  series = {Lecture Notes in Computer Science},
+  pages = {883--898},
+  publisher = {Springer},
+  bibdate = {2007-08-29},
+  bibsource = {DBLP, http://dblp.uni-trier.de/db/conf/mldm/mldm2007.html\#Lehmann07},
+  biburl = {http://www.bibsonomy.org/bibtex/241e5c2a1eecd3580f29b2ed93244e8e9/jens},
+  description = {publications Jens Lehmann},
+  isbn = {978-3-540-73498-7},
+  keywords = {2007 group_aksw dllearner event_mldm sys:relevantFor:infai sys:relevantFor:bis},
+  url = {http://dx.doi.org/10.1007/978-3-540-73499-4_66}
+}
+
+@PHDTHESIS{jl_2010_phd_thesis,
+  author = {Jens Lehmann},
+  title = {Learning {OWL} Class Expressions},
+  school = {University of Leipzig},
+  year = {2010},
+  note = {PhD in Computer Science},
+  keywords = {2010 group_aksw dllearner mole sys:relevantFor:infai sys:relevantFor:bis},
+  url = {http://jens-lehmann.org/files/2010/phd_thesis.pdf}
+}
+
+@ARTICLE{dllearner_jmlr,
+  author = {Jens Lehmann},
+  title = {{DL-Learner:} Learning Concepts in Description Logics},
+  journal = {Journal of Machine Learning Research (JMLR)},
+  year = {2009},
+  volume = {10},
+  pages = {2639--2642},
+  biburl = {http://www.bibsonomy.org/bibtex/2d863a06ce17d41d0e6695f0edac74f5f/jens},
+  description = {publications Jens Lehmann},
+  keywords = {2009 group_aksw dllearner mole event_jmlr sys:relevantFor:infai sys:relevantFor:bis},
+  url = {http://www.jmlr.org/papers/volume10/lehmann09a/lehmann09a.pdf}
+}
+
+@ARTICLE{celoe,
+  author = {Jens Lehmann and Sören Auer and Lorenz Bühmann and Sebastian Tramp},
+  title = {Class expression learning for ontology engineering},
+  journal = {Journal of Web Semantics},
+  year = {2011},
+  volume = {9},
+  pages = {71 - 81},
+  keywords = {2011 group_aksw tramp lehmann buehmann auer seebiproject_OntoWiki
+	sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2 lod2page
+	peer-reviewed},
+  owner = {jl},
+  timestamp = {2011.02.18}
+}
+
+@ARTICLE{ann_extraction,
+  author = {Jens Lehmann and Sebastian Bader and Pascal Hitzler},
+  title = {Extracting Reduced Logic Programs from Artificial Neural Networks},
+  journal = {Applied Intelligence},
+  year = {2008},
+  biburl = {http://www.bibsonomy.org/bibtex/2da8ca1f0994dbac3bb46c1de25fb13fb/jens},
+  description = {publications Jens Lehmann},
+  keywords = {2008 group_aksw sys:relevantFor:infai sys:relevantFor:bis}
+}
+
+@ARTICLE{dbpedia_jws_09,
+  author = {Jens Lehmann and Chris Bizer and Georgi Kobilarov and Sören Auer
+	and Christian Becker and Richard Cyganiak and Sebastian Hellmann},
+  title = {{DB}pedia - A Crystallization Point for the Web of Data},
+  journal = {Journal of Web Semantics},
+  year = {2009},
+  volume = {7},
+  pages = {154--165},
+  number = {3},
+  biburl = {http://www.bibsonomy.org/bibtex/2cd252e88108ce7f1635d6b0c9dcb5ae2/jens},
+  description = {publications Jens Lehmann},
+  doi = {doi:10.1016/j.websem.2009.07.002},
+  keywords = {2009 event_jws group_aksw dbpedia mole lehmann auer hellmann sys:relevantFor:infai
+	sys:relevantFor:bis peer-reviewed ontowiki_eu},
+  url = {http://jens-lehmann.org/files/2009/dbpedia_jws.pdf}
+}
+
+@INPROCEEDINGS{lehmann2011,
+  author = {Jens Lehmann and Lorenz Bühmann},
+  title = {AutoSPARQL: Let Users Query Your Knowledge Base},
+  booktitle = {Proceedings of ESWC 2011},
+  year = {2011},
+  keywords = {2011 group_aksw mole event_eswc lehmann buehmann sys:relevantFor:infai
+	dllearner sys:relevantFor:bis sys:relevantFor:lod2 lod2page autosparql
+	peer-reviewed},
+  owner = {jl},
+  timestamp = {2011.03.22},
+  url = {http://jens-lehmann.org/files/2011/autosparql_eswc.pdf}
+}
+
+@INPROCEEDINGS{lehmann-2010-iswc,
+  author = {Jens Lehmann and Lorenz Bühmann},
+  title = {ORE - A Tool for Repairing and Enriching Knowledge Bases},
+  booktitle = {Proceedings of the 9th International Semantic Web Conference (ISWC2010)},
+  year = {2010},
+  series = {Lecture Notes in Computer Science},
+  address = {Berlin / Heidelberg},
+  publisher = {Springer},
+  doi = {doi:10.1007/978-3-642-17749-1_12},
+  keywords = {2010 event_iswc group_aksw mole lehmann buehmann sys:relevantFor:infai
+	dllearner sys:relevantFor:bis sys:relevantFor:lod2 lod2page peer-reviewed
+	ontowiki_eu},
+  owner = {seebi},
+  timestamp = {2010.08.30},
+  url = {http://svn.aksw.org/papers/2010/ORE/public.pdf}
+}
+
+@INPROCEEDINGS{LEH+12b,
+  author = {Jens Lehmann and Tim Furche and Giovanni Grasso and Axel-Cyrille
+	{Ngonga Ngomo} and Christian Schallhart and Andrew Sellers and Christina
+	Unger and Lorenz Bühmann and Daniel Gerber and Konrad Höffner and
+	David Liu and Sören Auer},
+  title = {DEQA: Deep Web Extraction for Question Answering},
+  booktitle = {Proceedings of ISWC},
+  year = {2012},
+  keywords = {group_aksw SIMBA MOLE sys:relevantFor:infai sys:relevantFor:bis ngonga
+	lehmann gerber buehmann boa auer},
+  owner = {ngonga},
+  timestamp = {2012.09.18}
+}
+
+@INPROCEEDINGS{LEH+12a,
+  author = {Jens Lehmann and Daniel Gerber and Mohamed Morsey and Axel-Cyrille
+	{Ngonga Ngomo}},
+  title = {DeFacto - Deep Fact Validation},
+  booktitle = {ISWC},
+  year = {2012},
+  keywords = {group_aksw SIMBA MOLE sys:relevantFor:infai sys:relevantFor:bis ngonga
+	lehmann gerber boa defacto morsey},
+  owner = {ngonga},
+  timestamp = {2012.09.18}
+}
+
+@INPROCEEDINGS{el_operator,
+  author = {Jens Lehmann and Christoph Haase},
+  title = {Ideal Downward Refinement in the {EL} Description Logic},
+  booktitle = {Inductive Logic Programming, 19th International Conference, ILP 2009,
+	Leuven, Belgium},
+  year = {2009},
+  biburl = {http://www.bibsonomy.org/bibtex/24dff6b9b0c73296aa64d12369dffa783/jens},
+  description = {publications Jens Lehmann},
+  keywords = {2009 event_ilp group_aksw dllearner mole sys:relevantFor:infai sys:relevantFor:bis}
+}
+
+@TECHREPORT{el_operator_techreport,
+  author = {Jens Lehmann and Christoph Haase},
+  title = {Ideal Downward Refinement in the {EL} Description Logic},
+  institution = {University of Leipzig},
+  year = {2009},
+  biburl = {http://www.bibsonomy.org/bibtex/2587ecc679dc1c513093512cdef151d04/jens},
+  description = {publications Jens Lehmann},
+  keywords = {2009 group_aksw dllearner mole sys:relevantFor:infai sys:relevantFor:bis},
+  url = {http://jens-lehmann.org/files/2009_ideal_operator_el_tr.pdf}
+}
+
+@INPROCEEDINGS{alc_learning_algorithm,
+  author = {Jens Lehmann and Pascal Hitzler},
+  title = {A Refinement Operator Based Learning Algorithm for the {$\mathcal{ALC}$}
+	Description Logic},
+  booktitle = {Inductive Logic Programming, 17th International Conference, ILP 2007,
+	Corvallis, OR, USA, June 19-21, 2007},
+  year = {2007},
+  editor = {Hendrik Blockeel and Jan Ramon and Jude W. Shavlik and Prasad Tadepalli},
+  volume = {4894},
+  series = {Lecture Notes in Computer Science},
+  pages = {147--160},
+  publisher = {Springer},
+  note = {Best Student Paper Award},
+  keywords = {2007 event_ilp group_aksw dllearner sys:relevantFor:infai sys:relevantFor:bis}
+}
+
+@INPROCEEDINGS{property_analysis,
+  author = {Jens Lehmann and Pascal Hitzler},
+  title = {Foundations of Refinement Operators for Description Logics},
+  booktitle = {Inductive Logic Programming, 17th International Conference, ILP 2007,
+	Corvallis, OR, USA, June 19-21, 2007},
+  year = {2007},
+  editor = {Hendrik Blockeel and Jan Ramon and Jude W. Shavlik and Prasad Tadepalli},
+  volume = {4894},
+  series = {Lecture Notes in Computer Science},
+  pages = {161--174},
+  publisher = {Springer},
+  note = {Best Student Paper Award},
+  keywords = {2007 event_ilp group_aksw dllearner sys:relevantFor:infai sys:relevantFor:bis}
+}
+
+@ARTICLE{mlj,
+  author = {Jens Lehmann and Pascal Hitzler},
+  title = {Concept Learning in Description Logics Using Refinement Operators},
+  journal = {Machine Learning journal},
+  year = {2010},
+  volume = {78},
+  pages = {203--250},
+  number = {1-2},
+  biburl = {http://www.bibsonomy.org/bibtex/211d55726073b12be444245965f12d57b/jens},
+  description = {publications Jens Lehmann},
+  doi = {doi:10.1007/s10994-009-5146-2},
+  keywords = {2010 event_mlj group_aksw dllearner mole sys:relevantFor:infai sys:relevantFor:bis
+	peer-reviewed ontowiki_eu},
+  publisher = {Springer},
+  url = {http://jens-lehmann.org/files/2010/concept_learning_mlj.pdf}
+}
+
+@TECHREPORT{alc_learning_algorithm_techreport,
+  author = {Jens Lehmann and Pascal Hitzler},
+  title = {A Refinement Operator Based Learning Algorithm for the {$\mathcal{ALC}$}
+	Description Logic},
+  institution = {University of Leipzig},
+  year = {2007},
+  biburl = {http://www.bibsonomy.org/bibtex/24d90f2406fb3f2d3e257aff81e66a39d/jens},
+  description = {publications Jens Lehmann},
+  keywords = {2007 group_aksw dllearner sys:relevantFor:infai sys:relevantFor:bis},
+  url = {http://jens-lehmann.org/files/2007_alc_learning_algorithm_techreport.pdf}
+}
+
+@TECHREPORT{property_analysis_techreport,
+  author = {Jens Lehmann and Pascal Hitzler},
+  title = {Foundations of Refinement Operators for Description Logics},
+  institution = {University of Leipzig},
+  year = {2007},
+  biburl = {http://www.bibsonomy.org/bibtex/28c37a8f80a2a5e3b92230321d0599df3/jens},
+  description = {publications Jens Lehmann},
+  keywords = {2007 group_aksw dllearner sys:relevantFor:infai sys:relevantFor:bis},
+  url = {http://jens-lehmann.org/files/2007_operator_analysis_techreport.pdf}
+}
+
+@UNPUBLISHED{dbpedia_navigator,
+  author = {Jens Lehmann and Sebastian Knappe},
+  title = {{DBpedia} {N}avigator},
+  note = {Semantic Web Challenge, International Semantic Web Conference 2008},
+  year = {2008},
+  keywords = {2008 group_aksw dllearner sys:relevantFor:infai sys:relevantFor:bis}
+}
+
+@INPROCEEDINGS{lehmann-?-2007--,
+  author = {Jens Lehmann and Jörg Schüppel and Sören Auer},
+  title = {Discovering Unknown Connections - the {DBpedia} Relationship Finder},
+  booktitle = {Proceedings of 1st Conference on Social Semantic Web. Leipzig (CSSW’07),
+	24.-28. September},
+  year = {2007},
+  volume = {P-113 of GI-Edition},
+  series = {Lecture Notes in Informatics (LNI)},
+  month = {September},
+  publisher = {Bonner Köllen Verlag},
+  keywords = {2007 event_cssw lehmann schüppel auer group_aksw sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28},
+  url = {http://www.informatik.uni-leipzig.de/~auer/publication/relfinder.pdf}
+}
+
+@INPROCEEDINGS{lohmann-s-2008-182-a,
+  author = {Steffen Lohmann and Philipp Heim and Sören Auer and Sebastian Dietzold
+	and Thomas Riechert},
+  title = {Semantifying Requirements Engineering – The SoftWiki Approach},
+  booktitle = {Proceedings of the 4th International Conference on Semantic Technologies
+	(I-SEMANTICS '08)},
+  year = {2008},
+  series = {J.UCS},
+  pages = {182--185},
+  keywords = {2007 event_i-semantics group_aksw ontowiki auer tramp riechert softwiki
+	sys:relevantFor:infai sys:relevantFor:bis seebiproject_SoftWiki seebiproject_OntoWiki},
+  owner = {seebi},
+  timestamp = {2010.01.17}
+}
+
+@INPROCEEDINGS{lohmann_collaborative_2008,
+  author = {Steffen Lohmann and Thomas Riechert and Sören Auer},
+  title = {Collaborative Development of Knowledge Bases in Distributed Requirements
+	Elicitation.},
+  booktitle = {Software Engineering {(Workshops)}},
+  year = {2008},
+  editor = {Walid Maalej and Bernd Brügge},
+  volume = {122},
+  series = {LNI},
+  pages = {22--28},
+  publisher = {GI},
+  isbn = {978-3-88579-216-1},
+  keywords = {dblp group_aksw sys:relevantFor:infai sys:relevantFor:bis riechert
+	auer ontowiki},
+  owner = {seebi},
+  timestamp = {2010.01.22},
+  url = {http://dblp.uni-trier.de/db/conf/se/se2008w.html#LohmannRA08}
+}
+
+@INPROCEEDINGS{martin-07-cssw,
+  author = {Michael Martin},
+  title = {Exploring the Netherlands on a Semantic Path},
+  booktitle = {Proceedings of the 1st Conference on Social Semantic Web},
+  year = {2007},
+  editor = {Sören Auer and Christian Bizer and Claudia Müller and Anna Zhdanova},
+  volume = {P-113},
+  series = {{GI-Edition} - Lecture Notes in Informatics {(LNI),} {ISSN} 1617-5468},
+  pages = {179-},
+  address = {Leipzig, Germany},
+  publisher = {Bonner Köllen Verlag},
+  date = {2008-02-20},
+  isbn = {978-3-88579-207-9},
+  keywords = {2008 event_cssw martin vakantieland dblp group_aksw sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {michael},
+  url = {http://www.ceur-ws.org/Vol-301/Poster_5_Martin.pdf}
+}
+
+@INPROCEEDINGS{martin-2008-phd,
+  author = {Michael Martin},
+  title = {Performanzsteigerung datenbankgestützter RDF-Triple-Stores},
+  booktitle = {Tagungsband XInnovations 2008 in Berlin},
+  year = {2008},
+  editor = {Robert Tolksdorf and Johann-Christoph Freytag},
+  pages = {126-131},
+  keywords = {language_deutsch 2008 group_aksw martin sys:relevantFor:infai sys:relevantFor:bis
+	cache ontowiki},
+  owner = {michael},
+  url = {http://2008.xinnovations.de/tl_files/doc/download/Montag,%2022.09.08/workshop%20phd/04_martin.pdf}
+}
+
+@INPROCEEDINGS{martin-2010-swa,
+  author = {Michael Martin and Sören Auer},
+  title = {Categorisation of Semantic Web Applications},
+  booktitle = {proceedings of the 4th International Conference on Advances in Semantic
+	Processing (SEMAPRO2010) 25 October -- 30 October, Florence, Italy},
+  year = {2010},
+  month = {October},
+  keywords = {group_aksw event_semapro vakantieland linked-geo-data auer martin
+	sys:relevantFor:infai sys:relevantFor:bis 2010 ontowiki sys:relevantFor:lod2
+	lod2page},
+  owner = {michael},
+  timestamp = {2010.08.25},
+  url = {http://svn.aksw.org/papers/2010/SEMAPRO_Categorisation_SWA/public.pdf}
+}
+
+@INPROCEEDINGS{martin-s-2011,
+  author = {Michael Martin and Daniel Gerber and Norman Heino and Sören Auer
+	and Timofey Ermilov},
+  title = {Managing Multimodal and Multilingual Semantic Content},
+  booktitle = {Proceedings of the 7th International Conference on Web Information
+	Systems and Technologies},
+  year = {2011},
+  abstract = {With the advent and increasing popularity of Semantic Wikis and the
+	Linked Data the man- agement of semantically represented knowledge
+	became mainstream. However, certain categories of semantically enriched
+	content, such as multimodal documents as well as multilingual textual
+	resources are still difficult to handle. In this paper, we present
+	a comprehensive strategy for managing the life-cycle of both multimodal
+	and multilingual semantically enriched content. The strategy is based
+	on extending a number of semantic knowledge management techniques
+	such as authoring, versioning, evolution, access and exploration
+	for semantically enriched multimodal and multilingual content. We
+	showcase an implementation and user interface based on the semantic
+	wiki paradigm and present a use case from the e-tourism domain.},
+  keywords = {2011 group_aksw event_webist gerber heino martin auer ermilov sys:relevantFor:infai
+	sys:relevantFor:bis ontowiki sys:relevantFor:lod2 lod2page multimedia
+	multilingual management},
+  owner = {gerb},
+  timestamp = {2011.04.07}
+}
+
+@INPROCEEDINGS{martin-2011-okcon,
+  author = {Michael Martin and Martin Kaltenböck and Helmut Nagy and Sören Auer},
+  title = {The Open Government Data Stakeholder Survey},
+  booktitle = {Proceedings of the Open Knowledge Conference in 2011},
+  year = {2011},
+  month = {June},
+  organization = {Open Knowledge Foundation},
+  abstract = {This paper describes the results of the LOD2 Open Government Data
+	Stakeholder Survey 2010 (OGD Stakeholder Survey). The objective of
+	the survey was to involve as many relevant stakeholders as possible
+	in the 27 European Union countries in an online questionnaire and
+	ask them about their needs and requirements in the area of open data
+	as well as for the publicdata.eu portal. The main areas of the survey
+	have been questions about Open Government Data itself, questions
+	about data, about the usage of data, questions about the requirements
+	for a centralised data catalogue as well as questions about the participants
+	themselves. The goal of the OGD Stakeholder Survey has been to reach
+	a broad audience of the main stakeholders of open data: citizens,
+	public administration, politics and industry. In the course of the
+	survey that was open for 5 weeks from November 2010 to December 2010
+	in total 329 participants completed the survey. The results have
+	been published in April 2011 in the form of HTML and PDF, the raw
+	data in CSV. In addition to these publication formats (HTML, PDF,
+	CSV) we published the data also as Linked Data using various vocabularies
+	and tools.},
+  keywords = {group_aksw auer sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2
+	auer martin kaltenböck nagy 2011},
+  owner = {michael},
+  timestamp = {2011.06.20},
+  url = {http://okcon.org/2011/programme/the-open-government-data-stakeholder-survey}
+}
+
+@INCOLLECTION{martin-m-2010--clp,
+  author = {Michael Martin and Thomas Riechert},
+  title = {Ortsbezogene Navigation basierend auf einem Vokabular zur Erzeugung
+	geographischer Hierarchien},
+  booktitle = {Catalogus Professorum Lipsiensis -- Konzeption, technische Umsetzung
+	und Anwendungen für Professorenkataloge im Semantic Web},
+  publisher = {Leipziger Informatik-Verbund (LIV)},
+  year = {2010},
+  editor = {Ulf Morgenstern and Thomas Riechert},
+  volume = {21},
+  series = {Leipziger Beiträge zur Informatik},
+  chapter = {Werkzeuge zur Realisierung der Datenbank},
+  pages = {107--116},
+  abstract = {Der geschichtswissenschaftliche Professorenkatalog der Universität
+	Leipzig enthält u.a. Informationen zu Lebensläufen von Professoren,
+	die an der Universität Leipzig seit dem Jahr 1409 lehrten. Diese
+	historischen Informationen werden in einem kollaborativen Prozess
+	unter Verwendung des semantischen Daten-Wikis OntoWiki aquiriert
+	und publiziert. Mit dem Professorenkatalog liegt eine Wissensbasis
+	vor, die auch geografische Informationen zu Geburts-, Graduierungs-
+	und Sterbeorten von Professoren enthält. Der Buchbeitrag stellt einen
+	Evolutionsprozess und die Verwendung eines geeigneten Vokabulars
+	vor, um die implizit enthaltene Geo-Hierarchie aufzuarbeiten. Die
+	daraus resultierende Geo-Hierarchie wird anschließend zur Navigation
+	eingesetzt.},
+  keywords = {language_deutsch 2010 group_aksw ontowiki martin riechert sys:relevantFor:infai
+	sys:relevantFor:bis ontowiki_eu}
+}
+
+@INPROCEEDINGS{martin-s-2010--a,
+  author = {Michael Martin and J{\"o}rg Unbehauen and S{\"o}ren Auer},
+  title = {{I}mproving the {P}erformance of {S}emantic {W}eb {A}pplications
+	with {SPARQL} {Q}uery {C}aching},
+  booktitle = {Proceedings of 7th Extended Semantic Web Conference (ESWC 2010),
+	30 May -- 3 June 2010, Heraklion, Crete, Greece},
+  year = {2010},
+  editor = {Lora Aroyo and Grigoris Antoniou and Eero Hyvönen and Annette ten
+	Teije and Heiner Stuckenschmidt and Liliana Cabral and Tania Tudorache},
+  volume = {6089},
+  series = {Lecture Notes in Computer Science},
+  pages = {304-318},
+  address = {Berlin / Heidelberg},
+  publisher = {Springer},
+  abstract = {The performance of triple stores is one of the major obstacles for
+	the deployment of semantic technologies in many usage scenarios.
+	In particular, Semantic Web applications, which use triple stores
+	as persistence backends, trade performance for the advantage of flexibility
+	with regard to information structuring. In order to get closer to
+	the performance of relational database-backed Web applications, we
+	developed an approach for improving the performance of triple stores
+	by caching query results and even complete application objects. The
+	selective invalidation of cache objects, following updates of the
+	underlying knowledge bases, is based on analysing the graph patterns
+	of cached SPARQL queries in order to obtain information about what
+	kind of updates will change the query result. We evaluated our approach
+	by extending the BSBM triple store benchmark with an update dimension
+	as well as in typical Semantic Web application scenarios.},
+  citeseerurl = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.161.4775},
+  doi = {doi:10.1007/978-3-642-13489-0_21},
+  keywords = {group_aksw event_eswc ontowiki martin unbehauen auer cache sys:relevantFor:infai
+	sys:relevantFor:bis 2010 ontowiki peer-reviewed ontowiki_eu},
+  owner = {michael},
+  timestamp = {2010.03.08},
+  url = {http://www.springerlink.com/content/764m684325739v67/}
+}
+
+@ARTICLE{dbpedia_live_2012,
+  author = {Mohamed Morsey and Jens Lehmann and Sören Auer and Claus Stadler
+	and Sebastian Hellmann},
+  title = {DBpedia and the Live Extraction of Structured Data from Wikipedia},
+  journal = {Program: electronic library and information systems},
+  year = {2012},
+  volume = {46},
+  pages = {27},
+  abstract = {Purpose - DBpedia extracts structured information from Wikipedia,
+	interlinks it with other knowledge bases and freely publishes the
+	results on the Web using Linked Data and SPARQL. However, the DBpedia
+	release process is heavy-weight and releases are sometimes based
+	on several months old data. DBpedia-Live solves this problem by providing
+	a live synchronization method based on the update stream of Wikipedia.
+	
+	
+	Design/methodology/approach - Wikipedia provides DBpedia with a continuous
+	stream of updates, i.e. a stream of recently updated articles. DBpedia-Live
+	processes that stream on the fly to obtain RDF data and stores the
+	extracted data back to DBpedia. DBpedia-Live publishes the newly
+	added/deleted triples in files, in order to enable synchronization
+	between our DBpedia endpoint and other DBpedia mirrors.
+	
+	
+	Findings - During the realization of DBpedia-Live we learned, that
+	it is crucial to process Wikipedia updates in a priority queue. Recently-updated
+	Wikipedia articles should have the highest priority, over mapping-changes
+	and unmodified pages. An overall finding is that there is a plenty
+	of opportunities arising from the emerging Web of Data for librarians.
+	
+	
+	Practical implications - DBpedia had and has a great effect on the
+	Web of Data and became a crystallization point for it. Many companies
+	and researchers use DBpedia and its public services to improve their
+	applications and research approaches. The DBpedia-Live framework
+	improves DBpedia further by timely synchronizing it with Wikipedia,
+	which is relevant for many use cases requiring up-to-date information.
+	
+	
+	Originality/value - The new DBpedia-Live framework adds new features
+	to the old DBpedia-Live framework, e.g. abstract extraction, ontology
+	changes, and changesets publication.},
+  keywords = {group_aksw mole sys:relevantFor:bis sys:relevantFor:lod2 morsey lehmann
+	auer stadler hellmann},
+  owner = {mohamed},
+  timestamp = {2012.04.13},
+  url = {http://svn.aksw.org/papers/2011/DBpedia_Live/public.pdf}
+}
+
+@INPROCEEDINGS{MOR+12,
+  author = {Mohamed Morsey and Jens Lehmann and S{\"o}ren Auer and Axel-Cyrille
+	{Ngonga Ngomo}},
+  title = {Usage-Centric Benchmarking of RDF Triple Stores},
+  booktitle = {Proceedings of the 26th AAAI Conference on Artificial Intelligence
+	(AAAI 2012)},
+  year = {2012},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2
+	morsey ngonga lehmann auer mole dbpsb},
+  owner = {mohamed},
+  timestamp = {2012.07.26},
+  url = {http://www.aaai.org/ocs/index.php/AAAI/AAAI12/paper/download/5168/5384}
+}
+
+@INPROCEEDINGS{MOR+11,
+  author = {Mohamed Morsey and Jens Lehmann and S{\"o}ren Auer and Axel-Cyrille
+	{Ngonga Ngomo}},
+  title = {DBpedia SPARQL Benchmark -- Performance Assessment with Real Queries
+	on Real Data},
+  booktitle = {ISWC 2011},
+  year = {2011},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2
+	morsey ngonga lehmann auer mole dbpsb},
+  owner = {ngonga},
+  timestamp = {2011.08.24}
+}
+
+@INPROCEEDINGS{dietzold-s-2006--e,
+  author = {Roland Mücke and Matthias Löbe and Sebastian Dietzold},
+  title = {Einfluss von Content Management Systemen auf die Qualität der Informationsportale
+	medizinischer Forschungsnetze},
+  booktitle = {51. Jahrestagung der Deutschen Gesellschaft für Medizinische Informatik,
+	Biometrie und Epidemiologie
+	
+	Deutsche Gesellschaft für Medizinische Informatik, Biometrie und Epidemiologie
+	e. V. (gmds)},
+  year = {2006},
+  keywords = {language_deutsch 2006 tramp group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {seebi},
+  timestamp = {2008.08.13},
+  url = {http://www.egms.de/en/meetings/gmds2006/06gmds361.shtml}
+}
+
+@INPROCEEDINGS{NGON12,
+  author = {Axel-Cyrille {Ngonga Ngomo}},
+  title = {Link Discovery with Guaranteed Reduction Ratio in Affine Spaces with
+	Minkowski Measures},
+  booktitle = {Proceedings of ISWC},
+  year = {2012},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2012.09.18}
+}
+
+@INPROCEEDINGS{NGON12b,
+  author = {{Ngonga Ngomo}, Axel-Cyrille},
+  title = {Learning conformation rules for linked data integration},
+  booktitle = {Proceedings of Seventh International Workshop on Ontology Matching},
+  year = {2012},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2012.09.18}
+}
+
+@INPROCEEDINGS{NGON11,
+  author = {Axel-Cyrille {Ngonga Ngomo}},
+  title = {A Time-Efficient Hybrid Approach to Link Discovery},
+  booktitle = {Proceedings of OM@ISWC},
+  year = {2011},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2011.09.12}
+}
+
+@ARTICLE{NGON10a,
+  author = {Axel-Cyrille {Ngonga Ngomo}},
+  title = {Low-Bias Extraction of Domain-Specific Concepts},
+  journal = {Informatica},
+  year = {2010},
+  volume = {34},
+  pages = {37–-43},
+  number = {2010},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17},
+  url = {http://www.informatica.si/PDF/34-1/04_Ngomo%20-%20Low-Bias%20Extraction%20of%20Domain-Specific%20Concepts.pdf}
+}
+
+@INCOLLECTION{NGO09a,
+  author = {Axel-Cyrille {Ngonga Ngomo}},
+  title = {Low-Bias Extraction of Domain-Specific Concepts.},
+  booktitle = {Posters of CICLING 2009},
+  publisher = {Polibits},
+  year = {2009},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2011.02.11}
+}
+
+@PHDTHESIS{NGO09f,
+  author = {Axel-Cyrille {Ngonga Ngomo}},
+  title = {Low-Bias Extraction of Domain-Specific Concepts},
+  school = {University of Leipzig},
+  year = {2009},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2011.02.11},
+  url = {http://bis.informatik.uni-leipzig.de/AxelNgonga/files?get=diss_final.pdf}
+}
+
+@INPROCEEDINGS{NGON08,
+  author = {Axel-Cyrille {Ngonga Ngomo}},
+  title = {SIGNUM – A Graph Algorithm for Terminology Extraction},
+  booktitle = {roceedings of the 9th International Conference on Intelligent Text
+	Processing and Computational Linguistics (CICLING 2008)},
+  year = {2008},
+  pages = {85--95},
+  note = {Best Student Paper Award},
+  keywords = {group_aksw event_cicling SIMBA sys:relevantFor:infai sys:relevantFor:bis
+	ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17},
+  url = {http://www.springerlink.com/content/2862310542338683/}
+}
+
+@INPROCEEDINGS{NGON08a,
+  author = {Axel-Cyrille {Ngonga Ngomo}},
+  title = {Knowledge-Free Discovery of Domain-Specific Multi-Word Units},
+  booktitle = {ACM Symposium on Applied Computing (ACM SAC)},
+  year = {2008},
+  pages = {1561--1565},
+  keywords = {group_aksw event_sac SIMBA sys:relevantFor:infai sys:relevantFor:bis
+	ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17},
+  url = {http://portal.acm.org/citation.cfm?id=1364053}
+}
+
+@INCOLLECTION{NGON07b,
+  author = {Axel-Cyrille {Ngonga Ngomo}},
+  title = {Towards an implicit and collaborative evolution of terminological
+	ontologies},
+  booktitle = {BUILDING THE KNOWLEDGE SOCIETY ON THE INTERNET – sharing and exchanging
+	knowledge in networked environments},
+  publisher = {IGI Global},
+  year = {2007},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17},
+  url = {http://www.igi-global.com/bookstore/chapter.aspx?TitleId=6002}
+}
+
+@INCOLLECTION{NGON07c,
+  author = {Axel-Cyrille {Ngonga Ngomo}},
+  title = {Adaptive and Context-Sensitive Information Retrieval},
+  booktitle = {Creating Collaborative Advantage Through Knowledge and Innovation},
+  publisher = {World Scientific},
+  year = {2007},
+  volume = {5},
+  pages = {289--300},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17},
+  url = {http://ebooks.worldscinet.com/ISBN/9789812707482/9789812707482_0019.html}
+}
+
+@INPROCEEDINGS{NGON06b,
+  author = {Axel-Cyrille {Ngonga Ngomo}},
+  title = {Adaptive and Context-Sensitive Information Retrieval},
+  booktitle = {Proceedings of the third International Conference on Knowledge Management},
+  year = {2006},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17}
+}
+
+@INPROCEEDINGS{NGON06c,
+  author = {Axel-Cyrille {Ngonga Ngomo}},
+  title = {Clique-Based Clustering},
+  booktitle = {Proceeding of the IASTED Knowledge Sharing and Collaborative Engineering
+	Conference},
+  year = {2006},
+  keywords = {group_aksw sys:relevantFor:infai sys:relevantFor:bis SIMBA ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17}
+}
+
+@INPROCEEDINGS{NGAU11,
+  author = {Axel-Cyrille {Ngonga Ngomo} and S{\"o}ren Auer},
+  title = {LIMES - A Time-Efficient Approach for Large-Scale Link Discovery
+	on the Web of Data},
+  booktitle = {Proceedings of IJCAI},
+  year = {2011},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17}
+}
+
+@INPROCEEDINGS{NGBO05,
+  author = {Axel-Cyrille {Ngonga Ngomo} and Karsten Böhm},
+  title = {Building Adaptive Knowledge Spaces by Combining Machine Learning
+	Algorithms with Ontologies and Text Mining Technologies},
+  booktitle = {29th Annual Conference of the German Classification Society},
+  year = {2005},
+  keywords = {SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17}
+}
+
+@INPROCEEDINGS{NGFA03,
+  author = {Axel-Cyrille {Ngonga Ngomo} and Klaus-Peter Fähnrich},
+  title = {Der Informationsraum als Metapher für die Realisierung dynamischer
+	Informationsbedürfnisse im Kontext rollenbasierter Communities},
+  booktitle = {Proceedings of LIT03},
+  year = {2003},
+  keywords = {language_deutsch SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17}
+}
+
+@INPROCEEDINGS{NGO+11,
+  author = {Axel-Cyrille {Ngonga Ngomo} and Norman Heino and Klaus Lyko and Ren\'e
+	Speck and Martin Kaltenb\"ock},
+  title = {SCMS - Semantifying Content Management Systems},
+  booktitle = {ISWC 2011},
+  year = {2011},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis heino ngonga},
+  owner = {ngonga},
+  timestamp = {2011.08.24}
+}
+
+@INPROCEEDINGS{NGHA04,
+  author = {Axel-Cyrille {Ngonga Ngomo} and Jörg Härtwig},
+  title = {Kontext-dynamische Informationsversorgung durch Prozesse und Ontologien},
+  booktitle = {Tagungsband LIT´04},
+  year = {2004},
+  keywords = {language_deutsch SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17}
+}
+
+@INPROCEEDINGS{NGO+11a,
+  author = {Axel-Cyrille {Ngonga Ngomo} and Jens Lehmann and Sören Auer and Konrad
+	Höffner},
+  title = {RAVEN -- Active Learning of Link Specifications},
+  booktitle = {Proceedings of OM@ISWC},
+  year = {2011},
+  keywords = {group_aksw SIMBA mole sys:relevantFor:infai sys:relevantFor:bis ngonga
+	lehmann},
+  owner = {ngonga},
+  timestamp = {2011.09.12}
+}
+
+@INPROCEEDINGS{NGLY12,
+  author = {Axel-Cyrille {Ngonga Ngomo} and Klaus Lyko},
+  title = {EAGLE: Efficient Active Learning of Link Specifications using Genetic
+	Programming},
+  booktitle = {Proceedings of ESWC},
+  year = {2012},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2012.03.06}
+}
+
+@INPROCEEDINGS{NGSC09a,
+  author = {Axel-Cyrille {Ngonga Ngomo} and Frank Schumacher},
+  title = {Border Flow – A local graph clustering algorithm for Natural Language
+	Processing},
+  booktitle = {Proceedings of the 10th International Conference on Intelligent Text
+	Processing and Computational Linguistics (CICLING 2009)},
+  year = {2009},
+  pages = {547--558},
+  note = {Best Presentation Award},
+  keywords = {group_aksw event_cicling SIMBA sys:relevantFor:infai sys:relevantFor:bis
+	ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17},
+  url = {http://www.springerlink.com/index/n1vmx68716145566.pdf}
+}
+
+@ARTICLE{NGSC09b,
+  author = {Axel-Cyrille {Ngonga Ngomo} and Frank Schumacher},
+  title = {Disentangling the Wikipedia Category Graph for Corpus Extraction},
+  journal = {Research Journal on Computer science and Computer Engineering with
+	Applications},
+  year = {2009},
+  volume = {39(2)},
+  pages = {5--10},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17},
+  url = {http://www.gelbukh.com/polibits/2009_39/39_01.pdf}
+}
+
+@INCOLLECTION{NGSC09c,
+  author = {Axel-Cyrille {Ngonga Ngomo} and Frank Schumacher},
+  title = {Disentangling the Wikipedia Category Graph for Corpus Extraction},
+  booktitle = {Posters of CICLING 2009},
+  publisher = {Polibits},
+  year = {2009},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2011.02.11}
+}
+
+@INPROCEEDINGS{NGSC07,
+  author = {Axel-Cyrille {Ngonga Ngomo} and Frank Schumacher},
+  title = {Involving the User in Semantic Search},
+  booktitle = {Proceedings of the HCI International},
+  year = {2007},
+  pages = {507--516},
+  keywords = {group_aksw event_hcii SIMBA sys:relevantFor:infai sys:relevantFor:bis
+	ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17}
+}
+
+@INPROCEEDINGS{NGSC06a,
+  author = {Axel-Cyrille {Ngonga Ngomo} and Frank Schumacher},
+  title = {Implicit Knowledge Sharing},
+  booktitle = {Proceedings of the 7th European Conference on Knowledge Management},
+  year = {2006},
+  keywords = {group_aksw event_eckm SIMBA sys:relevantFor:infai sys:relevantFor:bis
+	ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17}
+}
+
+@INPROCEEDINGS{NGWI07,
+  author = {Axel-Cyrille {Ngonga Ngomo} and Hans-Friedrich Witschel},
+  title = {A framework for adaptive information retrieval},
+  booktitle = {Proceedings of the first International Conference on Theoeretical
+	Information Retrieval},
+  year = {2007},
+  pages = {105–-113},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2009.12.17}
+}
+
+@INPROCEEDINGS{NGO10b,
+  author = {{Ngonga Ngomo}, {Axel-Cyrille}},
+  title = {Parameter-Free Clustering of Protein-Protein Interaction Graphs},
+  booktitle = {Proceedings of Symposium on Machine Learning in Systems Biology 2010},
+  year = {2010},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga},
+  owner = {ngonga},
+  timestamp = {2011.02.10},
+  url = {http://mlsb10.ijs.si/files/MLSB10-Proceedings.pdf}
+}
+
+@ARTICLE{otto-s-2007-14-a,
+  author = {Stefan Otto and Sebastian Dietzold},
+  title = {Caucasian Spiders - A faunistic Database on the spiders of the Caucasus
+	- http://caucasus-spiders.info.},
+  journal = {Newsl. Brit. Arachn. Soc.},
+  year = {2007},
+  volume = {108},
+  pages = {14},
+  biburl = {http://www.bibsonomy.org/bibtex/2489bfebe82e7f28dd5a45bc136041499/aksw},
+  file = {otto-s-2007-14-a.pdf:/otto-s-2007-14-a.pdf:PDF},
+  keywords = {2007 group_aksw tramp ontowiki sys:relevantFor:infai sys:relevantFor:bis
+	seebiproject_OntoWiki},
+  owner = {seebi},
+  timestamp = {2007.06.12}
+}
+
+@POSTER{quastoff-m-2010--a,
+  author = {Matthias Quasthoff and Sebastian Hellmann and Konrad Höffner},
+  title = {Standardized Multilingual Language Resources for the Web of Data:
+	http://corpora.uni-leipzig.de/rdf},
+  note = {3rd prize at the LOD Triplification Challenge, Graz, 2009},
+  keywords = {2009 hellmann group_aksw mole sys:relevantFor:bis sys:relevantFor:infai
+	hoeffner},
+  owner = {sebastian},
+  timestamp = {2010.12.11},
+  url = {http://triplify.org/files/challenge_2009/languageresources.pdf},
+  year = {2009}
+}
+
+@INPROCEEDINGS{riechert_leveraging_2009,
+  author = {Thomas Riechert and Thorsten Berger},
+  title = {Leveraging semantic data Wikis for distributed requirements elicitation},
+  booktitle = {2009 {ICSE} Workshop on Wikis for Software Engineering},
+  year = {2009},
+  pages = {7--13},
+  address = {Vancouver, {BC,} Canada},
+  doi = {10.1109/WIKIS4SE.2009.5069992},
+  keywords = {group_aksw riechert sys:relevantFor:infai ontowiki sys:relevantFor:bis
+	sameas_6b03b3c816df71266e2ecaeb608fe2d9 ontowiki_eu},
+  owner = {seebi},
+  timestamp = {2010.01.22},
+  url = {http://ieeexplore.ieee.org/Xplore/login.jsp?url=http%3A%2F%2Fieeexplore.ieee.org%2Fstamp%2Fstamp.jsp%3Ftp%3D%26arnumber%3D5069992%26isnumber%3D5069982&authDecision=-203}
+}
+
+@INPROCEEDINGS{riechert_working_2006,
+  author = {Thomas Riechert and Ernesto {Jiménez-Ruiz} and Iván Cantador and
+	Michael Engler and Danius T. Michaelides and Manfred Bortenschlager
+	and Robert Tolksdorf},
+  title = {Working Group Report on Semantic Technologies in Collaborative Applications.},
+  booktitle = {WETICE},
+  year = {2006},
+  pages = {347--351},
+  publisher = {{IEEE} Computer Society},
+  isbn = {0-7695-2623-3},
+  keywords = {dblp event_wetice group_aksw riechert sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {seebi},
+  timestamp = {2010.01.22},
+  url = {http://dblp.uni-trier.de/db/conf/wetice/wetice2006.html#RiechertRCEMBT06}
+}
+
+@INPROCEEDINGS{riechert_swore_2007,
+  author = {Thomas Riechert and Kim Lauenroth and Jens Lehmann},
+  title = {{SWORE} - {SoftWiki} Ontology for Requirements Engineering},
+  booktitle = {Proceedings of the 1st Conference on Social Semantic Web},
+  year = {2007},
+  editor = {Sören Auer and Christian Bizer and Claudia Müller and Anna Zhdanova},
+  volume = {P-113},
+  series = {{GI-Edition} - Lecture Notes in Informatics {(LNI),} {ISSN} 1617-5468},
+  month = sep,
+  publisher = {Bonner Köllen Verlag},
+  keywords = {CSSW event_cssw group_aksw riechert lehmann sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {seebi},
+  timestamp = {2010.01.22},
+  url = {http://aksw.org/cssw07/softwiki/1_riechert.pdf}
+}
+
+@INPROCEEDINGS{swore_sabre,
+  author = {Thomas Riechert and Kim Lauenroth and Jens Lehmann},
+  title = {Semantisch unterstütztes Requirements Engineering},
+  booktitle = {Proceedings of the SABRE-07 SoftWiki Workshop},
+  year = {2007},
+  biburl = {http://www.bibsonomy.org/bibtex/203949b1faf8234885a317d498a4cac69/jens},
+  description = {publications Jens Lehmann},
+  keywords = {language_deutsch 2007 group_aksw softwiki sys:relevantFor:infai sys:relevantFor:bis}
+}
+
+@INPROCEEDINGS{swore,
+  author = {Thomas Riechert and Kim Lauenroth and Jens Lehmann and Sören Auer},
+  title = {Towards Semantic based Requirements Engineering},
+  booktitle = {Proceedings of the 7th International Conference on Knowledge Management
+	(I-KNOW)},
+  year = {2007},
+  biburl = {http://www.bibsonomy.org/bibtex/2c10c6638dfd115382cdff7dbd853de63/jens},
+  description = {publications Jens Lehmann},
+  keywords = {2007 event_i-know group_aksw softwiki sys:relevantFor:infai sys:relevantFor:bis}
+}
+
+@INPROCEEDINGS{riechert_mapping_2007,
+  author = {Thomas Riechert and Steffen Lohmann},
+  title = {Mapping Cognitive Models to Social Semantic Spaces - Collaborative
+	Development of Project Ontologies},
+  booktitle = {Proceedings of the 1st Conference on Social Semantic Web},
+  year = {2007},
+  editor = {Sören Auer and Christian Bizer and Claudia Müller and Anna Zhdanova},
+  volume = {P-113},
+  series = {{GI-Edition} - Lecture Notes in Informatics {(LNI),} {ISSN} 1617-5468},
+  pages = {91--98},
+  address = {Leipzig, Germany},
+  publisher = {Bonner Köllen Verlag},
+  abstract = {In this paper, we present an approach that applies concepts from the
+	areas of Social Software and Semantic Web to application development.
+	We start with a short introduction into Semantic Based Requirements
+	Engineering. Then, we present an ontology for capturing requirements
+	and related information. Based on this ontology, we describe how
+	stakeholders are enabled to directly participate in requirements
+	elicitation and to collaboratively create a project ontology. Finally,
+	we report about the application of the presented approach in a use
+	case from the egovernment domain.},
+  keywords = {CSSW event_cssw group_aksw sys:relevantFor:infai sys:relevantFor:bis
+	riechert},
+  owner = {seebi},
+  timestamp = {2010.01.22},
+  url = {http://aksw.org/cssw07/paper/8_riechert.pdf}
+}
+
+@INPROCEEDINGS{riechert-t-2010-iswc,
+  author = {Thomas Riechert and Ulf Morgenstern and Sören Auer and Sebastian
+	Tramp and Michael Martin},
+  title = {Knowledge Engineering for Historians on the Example of the Catalogus
+	Professorum Lipsiensis},
+  booktitle = {Proceedings of the 9th International Semantic Web Conference (ISWC2010)},
+  year = {2010},
+  editor = {Peter F. Patel-Schneider and Yue Pan and Pascal Hitzler and Peter
+	Mika and Lei Zhang and Jeff Z. Pan and Ian Horrocks and Birte Glimm},
+  volume = {6497},
+  series = {Lecture Notes in Computer Science},
+  pages = {225-240},
+  address = {Shanghai / China},
+  publisher = {Springer},
+  abstract = {Although the Internet, as an ubiquitous medium for communication,
+	publication and research, already significantly influenced the way
+	historians work, the capabilities of the Web as a direct medium for
+	collaboration in historic research are not much explored. We report
+	about the application of an adaptive, semantics-based knowledge engineering
+	approach for the development of a prosopographical knowledge base
+	on the Web - the Catalogus Professorum Lipsiensis. In order to enable
+	historians to collect, structure and publish prosopographical knowledge
+	an ontology was developed and knowledge engineering facilities based
+	on the semantic data wiki OntoWiki were implemented. The resulting
+	knowledge base contains information about more than 14.000 entities
+	and is tightly interlinked with the emerging Web of Data. For access
+	and exploration by other historians a number of access interfaces
+	were developed, such as a visual SPARQL query builder, a relationship
+	finder and a Linked Data interface. The approach is transferable
+	to other prosopographical research projects and historical research
+	in general, thus improving the collaboration in historic research
+	communities and facilitating the reusability of historic research
+	results.},
+  doi = {doi:10.1007/978-3-642-17749-1_15},
+  keywords = {2010 event_iswc group_aksw tramp auer martin riechert ontowiki sys:relevantFor:infai
+	sys:relevantFor:bis seebiproject_OntoWiki sys:relevantFor:lod2 lod2page
+	peer-reviewed ontowiki_eu},
+  owner = {seebi},
+  timestamp = {2010.08.21},
+  url = {http://www.springerlink.com/content/n611284x31l1552p/}
+}
+
+@INPROCEEDINGS{riechert-t-2010-iswc-demo,
+  author = {Thomas Riechert and Ulf Morgenstern and Sören Auer and Sebastian
+	Tramp and Michael Martin},
+  title = {The Catalogus Professorum Lipsiensis – Semantics-based Collaboration
+	and Exploration for Historians },
+  booktitle = {Proceedings of the 9th International Semantic Web Conference (ISWC2010)},
+  year = {2010},
+  series = {Lecture Notes in Computer Science},
+  address = {Shanghai / China},
+  publisher = {Springer},
+  keywords = {2010 event_iswc group_aksw tramp auer martin riechert ontowiki sys:relevantFor:infai
+	sys:relevantFor:bis seebiproject_OntoWiki sys:relevantFor:lod2 lod2page},
+  owner = {micha},
+  timestamp = {2010.09.23},
+  url = {http://svn.aksw.org/papers/2010/ISWC_CP_demo/iswc_cp_demo.pdf}
+}
+
+@INCOLLECTION{riechert-?-2009-109-,
+  author = {Thomas Riechert and Fan Zhang and Sören Auer},
+  title = {Integration des SoftWiki-Ansatzes in das Cofundos-Entwicklungsmodell},
+  booktitle = {Agiles Requirements Engineering für Softwareprojekte mit einer großen
+	Anzahl verteilter Stakeholder},
+  publisher = {Leipziger Informatik-Verbund (LIV)},
+  year = {2009},
+  editor = {Sören Auer and Kim Lauenroth and Steffen Lohmann and Thomas Riechert},
+  volume = {XVIII},
+  series = {Leipziger Beiträge zur Informatik},
+  pages = {109-116},
+  keywords = {2009 riechert zhang auer language_deutsch group_aksw sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28}
+}
+
+@INPROCEEDINGS{riess-c-2010-iswc,
+  author = {Christoph Rieß and Norman Heino and Sebastian Tramp and Sören Auer},
+  title = {Evo{P}at -- {P}attern-{B}ased {E}volution and {R}efactoring of {RDF}
+	{K}nowledge {B}ases},
+  booktitle = {Proceedings of the 9th International Semantic Web Conference (ISWC2010)},
+  year = {2010},
+  series = {Lecture Notes in Computer Science},
+  address = {Berlin / Heidelberg},
+  publisher = {Springer},
+  doi = {doi:10.1007/978-3-642-17746-0_41},
+  keywords = {2010 event_iswc group_aksw tramp auer heino ontowiki sys:relevantFor:infai
+	sys:relevantFor:bis seebiproject_OntoWiki sys:relevantFor:lod2 lod2page
+	peer-reviewed ontowiki_eu},
+  owner = {seebi},
+  timestamp = {2010.08.21},
+  url = {http://svn.aksw.org/papers/2010/ISWC_Evolution/public.pdf}
+}
+
+@INPROCEEDINGS{EURECOM+3675,
+  author = {{R}izzo, {G}iuseppe and {T}roncy, {R}apha{ë}l and {H}ellmann, {S}ebastian
+	and {B}ruemmer, {M}artin},
+  title = {{NERD} meets {NIF}: {L}ifting {NLP} extraction results to the linked
+	data cloud},
+  booktitle = {{LDOW}, 5th {W}orkshop on {L}inked {D}ata on the {W}eb, {A}pril 16,
+	2012, {L}yon, {F}rance},
+  year = {2012},
+  address = {{L}yon, {FRANCE}},
+  month = {04},
+  keywords = {group_aksw sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2
+	hellmann bruemmer nif 2012},
+  owner = {seppl},
+  timestamp = {2012.05.04},
+  url = {http://nerd.eurecom.fr/ui/paper/Rizzo_Troncy_Hellmann_Bruemmer-ldow2012.pdf}
+}
+
+@MISC{RDB2RDF,
+  author = {Satya S. Sahoo and Wolfgang Halb and Sebastian Hellmann and Kingsley
+	Idehen and Ted Thibodeau Jr and Sören Auer and Juan Sequeda and Ahmed
+	Ezzat},
+  title = {A Survey of Current Approaches for Mapping of Relational Databases
+	to RDF},
+  month = {01},
+  year = {2009},
+  added-at = {2009-02-25T18:43:03.000+0100},
+  biburl = {http://www.bibsonomy.org/bibtex/270279ab60535eaca1cc9e52d4423cbdb/joergh},
+  interhash = {3e39f77c772d26a207df1c4d8c3d61d6},
+  intrahash = {70279ab60535eaca1cc9e52d4423cbdb},
+  keywords = {W3C hellmann mole group_aksw sys:relevantFor:bis sys:relevantFor:infai
+	auer},
+  url = {http://www.w3.org/2005/Incubator/rdb2rdf/RDB2RDF_SurveyReport.pdf}
+}
+
+@INPROCEEDINGS{salas-icsc-2012,
+  author = {Salas, Percy E and Martin, Michael and Maia Da Mota, Fernando and
+	Breitman, Karin and Auer, Sören and Casanova, Marco A},
+  title = {Publishing Statistical Data on the Web},
+  booktitle = {Proceedings of 6th International IEEE Conference on Semantic Computing},
+  year = {2012},
+  series = {IEEE 2012},
+  address = {Palermo, Italy},
+  publisher = {IEEE},
+  note = {to be published},
+  keywords = {2012 group_aksw martin auer sys:relevantFor:infai sys:relevantFor:bis
+	sys:relevantFor:lod2},
+  owner = {michael},
+  timestamp = {2012.07.31},
+  url = {http://svn.aksw.org/papers/2012/ICSC_PublishingStatisticalData/public.pdf}
+}
+
+@INPROCEEDINGS{salas-topi-2012,
+  author = {Salas, Percy E and Martin, Michael and Maia Da Mota, Fernando and
+	Breitman, Karin and Auer, Sören and Casanova, Marco A},
+  title = {OLAP2DataCube: An Ontowiki Plugin for Statistical Data Publishing},
+  booktitle = {Proceedings of the 2nd Workshop on Developing Tools as Plug-ins},
+  year = {2012},
+  series = {TOPI 2012},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  keywords = {2012 group_aksw martin auer cubeviz sys:relevantFor:infai sys:relevantFor:bis
+	sys:relevantFor:lod2},
+  url = {http://www.mendeley.com/download/public/13139761/4853384212/00f628095e219be5273dcd9e4a27a9f760be8de0/dl.pdf}
+}
+
+@INPROCEEDINGS{SHE+11,
+  author = {Saeedeh Shekarpour and Sören Auer and Axel-Cyrille {Ngonga Ngomo}
+	and Daniel Gerber and Sebastian Hellmann and Claus Stadler},
+  title = {Keyword-driven SPARQL Query Generation Leveraging Background Knowledge},
+  booktitle = {International Conference on Web Intelligence},
+  year = {2011},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis stadler
+	ngonga shekarpour sina},
+  owner = {ngonga},
+  timestamp = {2011.07.04}
+}
+
+@INPROCEEDINGS{SHE+12,
+  author = {Saeedeh Shekarpour and Axel-Cyrille {Ngonga Ngomo} and Sören Auer},
+  title = {Query Segmentation and Resource Disambiguation Leveraging Background
+	Knowledge},
+  booktitle = {Proceedings of WoLE Workshop},
+  year = {2012},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai sys:relevantFor:bis ngonga
+	shekarpour auer sina},
+  owner = {ngonga},
+  timestamp = {2012.09.18}
+}
+
+@ARTICLE{SLHA11,
+  author = {Claus Stadler and Jens Lehmann and Konrad H{\"o}ffner and S{\"o}ren
+	Auer},
+  title = {LinkedGeoData: A Core for a Web of Spatial Open Data},
+  journal = {Semantic Web Journal},
+  year = {2011},
+  keywords = {sys:relevantFor:bis sys:relevantFor:infai stadler lehmann hoeffner
+	auer mole lgd},
+  owner = {stadler},
+  timestamp = {2011.09.09},
+  url = {http://www.semantic-web-journal.net/sites/default/files/swj173_2.pdf}
+}
+
+@INPROCEEDINGS{stadler-c-2010--a,
+  author = {Claus Stadler and Michael Martin and Jens Lehmann and Sebastian Hellmann},
+  title = {{U}pdate {S}trategies for {DB}pedia {L}ive},
+  booktitle = {6th Workshop on Scripting and Development for the Semantic Web Colocated
+	with ESWC 2010 30th or 31st May, 2010 Crete, Greece},
+  year = {2010},
+  abstract = {Wikipedia is one of the largest public information spaces with a huge
+	user community, which collaboratively works on the largest online
+	encyclopedia. Their users add or edit up to 150 thousand wiki pages
+	per day. The DBpedia project extracts RDF from Wikipedia and interlinks
+	it with other knowledge bases. In the DBpedia live extraction mode,
+	Wikipedia edits are instantly processed to update information in
+	DBpedia. Due to the high number of edits and the growth of Wikipedia,
+	the update process has to be very efficient and scalable. In this
+	paper, we present different strategies to tackle this challenging
+	problem and describe how we modified the DBpedia live extraction
+	algorithm to work more efficiently.},
+  keywords = {sys:relevantFor:bis sys:relevantFor:infai martin stadler hellmann
+	lehmann dbpedia event_sfsw 2010 group_aksw peer-reviewed ontowiki_eu},
+  owner = {michael},
+  timestamp = {2010.06.24},
+  url = {http://www.semanticscripting.org/SFSW2010/papers/sfsw2010_submission_5.pdf}
+}
+
+@ARTICLE{sparqlify,
+  author = {Claus Stadler and J{\"o}org Unbehauen and Jens Lehmann and S{\"o}ren
+	Auer},
+  title = {Connecting Crowd-sourced Spatial Information to the Data Web with
+	Sparqlify},
+  journal = {VLDB Special Issue on Structured, Social and Crowd-sourced Data on
+	the Web (under review)},
+  year = {2012},
+  keywords = {sys:relevantFor:bis sys:relevantFor:infai stadler lehmann unbehauen
+	auer 2012 lgd sparqlify},
+  owner = {stadler},
+  timestamp = {2012.11.14},
+  url = {http://www.semantic-web-journal.net/sites/default/files/swj173_2.pdf}
+}
+
+@INPROCEEDINGS{story-h-2011--a,
+  author = {Henry Story and Andrei Sambra and Sebastian Tramp},
+  title = {Friending On The Social Web},
+  booktitle = {Federated Social Web Europe 2011, Berlin June 3rd-5th 2011},
+  year = {2011},
+  keywords = {2011 group_aksw tramp seebiproject_SemanticPingback seebiproject_FederatedSocialWeb
+	sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2 lod2page
+	peer-reviewed},
+  owner = {seebi},
+  timestamp = {2011.06.06}
+}
+
+@INPROCEEDINGS{tarasowa-2012-kesw,
+  author = {Darya Tarasowa and Ali Khalili and Sören Auer},
+  title = {CrowdLearn: Collaborative Engineering of (semi-)Structured Learning
+	Objects},
+  booktitle = {Proceedings of the KESW 2012},
+  year = {2012},
+  abstract = {A special activity, that became possible nowadays, is the collaborative
+	e-learning and collaborative engineering of learning materials. Such
+	an opportunity is available in educational systems, based on the
+	wiki paradigm. However, Ward Cunningham's wiki paradigm was mainly
+	only applied to unstructured, textual content thus limiting the content
+	structuring, re-purposing and reuse. Some steps in this direction
+	are made by Semantic Web technologies and their combination with
+	the wiki paradigm. In many potential usage scenarios, however, the(semi-)structured
+	educational content (e.g. presentations, questionnaires, diagrams,
+	etc.) should be managed and the collaboration of large user communities
+	around such content should be effectively facilitated. We present
+	the CrowdLearn concept for collaborative engineering of the semantically
+	structured learning objects as well as a model-driven approach to
+	generate the wiki-like application operating in the spirit of CrowdLearn.
+	We implement and evaluate the approach with Slidewiki - an educational
+	platform mainly dealing with slide presentations. The article also
+	comprises a usability evaluation with real students.},
+  keywords = {2012 group_aksw event_kesw auer tarasowa khalili sys:relevantFor:infai
+	sys:relevantFor:bis sys:relevantFor:lod2 lod2page peer-reviewed},
+  owner = {michael},
+  timestamp = {2012.22.10},
+  url = {http://svn.aksw.org/papers/2012/KESW_crowdlearn/public.pdf}
+}
+
+@INPROCEEDINGS{tramp-s-2011--b,
+  author = {Sebastian Tramp and Timofey Ermilov and Philipp Frischmuth and Sören
+	Auer},
+  title = {Architecture of a Distributed Semantic Social Network},
+  booktitle = {Federated Social Web Europe 2011, Berlin June 3rd-5th 2011},
+  year = {2011},
+  keywords = {2011 group_aksw tramp frischmuth ermilov auer seebiproject_MSSW seebiproject_SemanticPingback
+	seebiproject_FederatedSocialWeb sys:relevantFor:infai sys:relevantFor:bis
+	sys:relevantFor:lod2 lod2page peer-reviewed},
+  owner = {seebi},
+  timestamp = {2011.06.06}
+}
+
+@INPROCEEDINGS{tramp-s-2011--a,
+  author = {Sebastian Tramp and Philipp Frischmuth and Natanael Arndt and Timofey
+	Ermilov and Sören Auer},
+  title = {Weaving a {D}istributed, {S}emantic {S}ocial {N}etwork for {M}obile
+	{U}sers},
+  booktitle = {Proceedings of the ESWC2011},
+  year = {2011},
+  keywords = {2011 group_aksw event_eswc tramp frischmuth ermilov auer seebiproject_MSSW
+	seebiproject_SemanticPingback seebiproject_FederatedSocialWeb sys:relevantFor:infai
+	sys:relevantFor:bis sys:relevantFor:lod2 lod2page peer-reviewed},
+  owner = {seebi},
+  timestamp = {2010.12.20},
+  url = {http://svn.aksw.org/papers/2011/ESWC_MobileSocialSemanticWeb/public.pdf}
+}
+
+@INPROCEEDINGS{tramp-s-2010--b,
+  author = {Sebastian Tramp and Philipp Frischmuth and Timofey Ermilov and Sören
+	Auer},
+  title = {{W}eaving a {S}ocial {D}ata {W}eb with {S}emantic {P}ingback},
+  booktitle = {Proceedings of the EKAW 2010 - Knowledge Engineering and Knowledge
+	Management by the Masses; 11th October-15th October 2010 - Lisbon,
+	Portugal},
+  year = {2010},
+  editor = {P. Cimiano and H.S. Pinto},
+  volume = {6317},
+  series = {Lecture Notes in Artificial Intelligence (LNAI)},
+  pages = {135--149},
+  address = {Berlin / Heidelberg},
+  month = {October},
+  publisher = {Springer},
+  doi = {doi:10.1007/978-3-642-16438-5_10},
+  keywords = {2010 group_aksw event_ekaw tramp frischmuth ermilov auer ontowiki
+	sys:relevantFor:infai sys:relevantFor:bis seebiproject_SemanticPingback
+	sys:relevantFor:lod2 lod2page seebiproject_FederatedSocialWeb peer-reviewed
+	ontowiki_eu},
+  owner = {seebi},
+  timestamp = {2010.06.16},
+  url = {http://svn.aksw.org/papers/2010/EKAW_SemanticPingback/public.pdf}
+}
+
+@ARTICLE{tramp-s-2012--a,
+  author = {Sebastian Tramp and Philipp Frischmuth and Timofey Ermilov and Saeedeh
+	Shekarpour and Sören Auer},
+  title = {An {A}rchitecture of a {D}istributed {S}emantic {S}ocial {N}etwork},
+  journal = {Semantic Web Journal},
+  year = {2012},
+  volume = {Special Issue on The Personal and Social Semantic Web},
+  abstract = {Online social networking has become one of the most popular services
+	on the Web. However, current social networks are like walled gardens
+	in which users do not have full control over their data, are bound
+	to speciﬁc usage terms of the social network operator and suffer
+	from a lock-in effect due to the lack of interoperability and standards
+	compliance between social networks. In this paper we propose an architecture
+	for an open, distributed social network, which is built solely on
+	Semantic Web standards and emerging best practices. Our architecture
+	combines vocabularies and protocols such as WebID, FOAF, Semantic
+	Pingback and PubSubHubbub into a coherent distributed semantic social
+	network, which is capable to provide all crucial functionalities
+	known from centralized social networks. We present our reference
+	implementation, which utilizes the OntoWiki
+	
+	application framework and take this framework as the basis for an
+	extensive evaluation. Our results show that a distributed social
+	network is feasible, while it also avoids the limitations of centralized
+	solutions.},
+  keywords = {2011 group_aksw tramp frischmuth ermilov auer shekarpour seebiproject_MSSW
+	seebiproject_SemanticPingback seebiproject_FederatedSocialWeb sys:relevantFor:infai
+	sys:relevantFor:bis sys:relevantFor:lod2 lod2page peer-reviewed},
+  owner = {seebi},
+  timestamp = {2011.06.06},
+  url = {http://www.semantic-web-journal.net/sites/default/files/swj201_4.pdf}
+}
+
+@INPROCEEDINGS{tramp-s-2010-ekaw-demo,
+  author = {Sebastian Tramp and Philipp Frischmuth and Norman Heino},
+  title = {Onto{W}iki -- a {S}emantic {D}ata {W}iki {E}nabling the {C}ollaborative
+	{C}reation and ({L}inked {D}ata) {P}ublication of {RDF} {K}nowledge
+	{B}ases},
+  booktitle = {Demo Proceedings of the EKAW 2010},
+  year = {2010},
+  editor = {Oscar Corcho and Johanna Voelker},
+  month = {October},
+  keywords = {2010 group_aksw event_ekaw tramp heino frischmuth ontowiki sys:relevantFor:infai
+	sys:relevantFor:bis seebiproject_OntoWiki sys:relevantFor:lod2 lod2page
+	peer-reviewed ontowiki_eu},
+  owner = {seebi},
+  timestamp = {2010.08.21},
+  url = {http://svn.aksw.org/papers//2010/EKAW_Demo_OntoWiki/public.pdf}
+}
+
+@INPROCEEDINGS{tramp-s-2010--a,
+  author = {Sebastian Tramp and Norman Heino and Sören Auer and Philipp Frischmuth},
+  title = {Making the {Semantic Data Web easily writeable with RDFauthor}},
+  booktitle = {Proceedings of 7th Extended Semantic Web Conference (ESWC 2010)},
+  year = {2010},
+  editor = {L. Aroyo et al.},
+  volume = {6089},
+  series = {Lecture Notes in Computer Science},
+  pages = {436-–440},
+  address = {Berlin / Heidelberg},
+  organization = {Springer},
+  abstract = {In this demo we present RDFauthor, an approach for authoring information
+	that adheres to the RDF data model. RDFauthor completely hides syntax
+	as well as RDF and ontology data model difficulties from end users
+	and allows to edit information on arbitrary RDFa-annotated web pages.
+	RDFauthor is based on extracting RDF triples from RDFa-annoted Web
+	pages and transforming the RDFa-annotated HTML view into an editable
+	form by using a set of authoring widgets. As
+	
+	a result, every RDFa-annotated web page can be made writeable, even
+	if information originates from different sources.},
+  doi = {doi:10.1007/978-3-642-13489-0_39},
+  keywords = {2010 group_aksw event_eswc tramp heino auer frischmuth ontowiki rdfauthor
+	sys:relevantFor:infai sys:relevantFor:bis seebiproject_RDFauthor
+	sys:relevantFor:lod2 lod2page ontowiki_eu peer-reviewed},
+  owner = {norman},
+  timestamp = {2010.03.01},
+  url = {http://svn.aksw.org/papers/2010/ESWC_Demo_RDFauthor/public.pdf}
+}
+
+@INPROCEEDINGS{tramp-s-2010--c,
+  author = {Sebastian Tramp and Norman Heino and Sören Auer and Philipp Frischmuth},
+  title = {R{DF}author: {Employing RDFa for collaborative Knowledge Engineering}},
+  booktitle = {Proceedings of the EKAW 2010 - Knowledge Engineering and Knowledge
+	Management by the Masses; 11th October-15th October 2010 - Lisbon,
+	Portugal},
+  year = {2010},
+  editor = {P. Cimiano and H.S. Pinto},
+  volume = {6317},
+  series = {Lecture Notes in Artificial Intelligence (LNAI)},
+  pages = {90--104},
+  address = {Berlin / Heidelberg},
+  month = {October},
+  publisher = {Springer},
+  keywords = {2010 group_aksw event_ekaw tramp heino auer frischmuth ontowiki rdfauthor
+	sys:relevantFor:infai sys:relevantFor:bis seebiproject_RDFauthor
+	sys:relevantFor:lod2 lod2page ontowiki_eu peer-reviewed},
+  owner = {seebi},
+  timestamp = {2010.06.16},
+  url = {http://svn.aksw.org/papers//2010/EKAW_RDFauthor/public.pdf}
+}
+
+@INPROCEEDINGS{tramp-s-2012--b,
+  author = {Sebastian Tramp and Henry Story and Andrei Sambra and Philipp Frischmuth
+	and Michael Martin and Sören Auer},
+  title = {Extending the {W}eb{ID} {P}rotocol with {A}ccess {D}elegation},
+  booktitle = {Proceedings of the Third International Workshop on Consuming Linked
+	Data (COLD2012)},
+  year = {2012},
+  editor = {Andreas Harth and Olaf Hartig and Juan Sequeda},
+  series = {CEUR Workshop Proceedings},
+  publisher = {CEUR-WS.org},
+  keywords = {2012 group_aksw tramp auer frischmuth martin sys:relevantFor:infai
+	sys:relevantFor:bis sys:relevantFor:lod2 lod2page},
+  owner = {seebi},
+  timestamp = {2012.08.25}
+}
+
+@POSTER{unbehauen-s-2008-challenge,
+  author = {Jörg Unbehauen and Sebastian Hellmann and Michael Martin and Sebastian
+	Dietzold and Sören Auer},
+  title = {xOperator - Chat with the Semantic Web},
+  note = {Poster @ the ISWC 2008},
+  description = {ESWC 2008: Semantic Web Challenge (challenge finalist)},
+  keywords = {2008 event_iswc group_aksw auer tramp sys:relevantFor:infai sys:relevantFor:bis
+	unbehauen martin hellmann xoperator seebiproject_xOperator seebiproject_FederatedSocialWeb},
+  owner = {joerg},
+  url = {http://www.michael-martin.info/documents/ISWC2008/ISWC08-SWC-poster.pdf},
+  year = {2008}
+}
+
+@INPROCEEDINGS{unbehauen-jist-2012-sparqlmap,
+  author = {Jörg Unbehauen and Claus Stadler and Sören Auer},
+  title = {Accessing Relational Data on the Web with SparqlMap},
+  booktitle = {JIST},
+  year = {2012},
+  keywords = {2012 group_aksw event_jist sparqlmap sys:relevantFor:infai sys:relevantFor:bis
+	sys:relevantFor:lod2 peer-reviewed},
+  owner = {joerg},
+  timestamp = {2012.11.12},
+  url = {http://svn.aksw.org/papers/2012/SPARQLComponent/JIST_SparqlMap/public.pdf}
+}
+
+@INPROCEEDINGS{UNG+12,
+  author = {Christina Unger and Lorenz B{\"u}hmann and Jens Lehmann and Axel-Cyrille
+	Ngonga Ngomo and Daniel Gerber and Philipp Cimiano},
+  title = {SPARQL Template-Based Question Answering},
+  booktitle = {Proceedings of WWW},
+  year = {2012},
+  keywords = {group_aksw SIMBA sys:relevantFor:infai boa sys:relevantFor:bis ngonga
+	lehmann MOLE},
+  owner = {ngonga},
+  timestamp = {2012.03.06}
+}
+
+@INPROCEEDINGS{voelkel-?-2006-133-,
+  author = {Max Völkel and Sebastian Schaffert and Elena Pasaru-Bontas and Sören
+	Auer},
+  title = {Wiki-based knowledge engineering: second workshop on semantic Wikis},
+  booktitle = {Proceedings of the 2006 International Symposium on Wikis},
+  year = {2006},
+  pages = {133-134},
+  address = {Odense, Denmark},
+  month = {August 21-23},
+  publisher = {ACM},
+  keywords = {2006 völkel schaffert pasaru-bontas auer group_aksw sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@INPROCEEDINGS{weiske-?-2007--,
+  author = {Christian Weiske and Sören Auer},
+  title = {Implementing SPARQL Support for Relational Databases and Possible
+	Enhancements},
+  booktitle = {Proceedings of 1st Conference on Social Semantic Web. Leipzig (CSSW’07),
+	24.-28. September,},
+  year = {2007},
+  volume = {P-113 og GI-Edition},
+  series = {Lecture Notes in Informatics (LNI)},
+  month = {September},
+  publisher = {Bonner Köllen Verlag},
+  keywords = {2007 event_cssw weiske auer group_aksw sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.06.28},
+  url = {http://www.informatik.uni-leipzig.de/~auer/publication/sparql-enhancements.pdf}
+}
+
+@MISC{wikipedia-knowledge-extraction,
+  author = {Wikipedia},
+  title = {Knowledge Extraction --- {W}ikipedia{,} The Free Encyclopedia},
+  year = {2011},
+  note = {[Online; accessed 10-August-2011; The article was bootstrapped by
+	the LOD2 Project]},
+  keywords = {hellmann},
+  owner = {sebastian},
+  timestamp = {2011.09.05},
+  url = {http://en.wikipedia.org/w/index.php?title=Knowledge_extraction&oldid=444058923}
+}
+
+@INPROCEEDINGS{zaveri-2011-icwi,
+  author = {Amrapali Zaveri and Ricardo Pietrobon and Sören Auer and Jens Lehmann
+	and Michael Martin and Timofey Ermilov},
+  title = {ReDD-Observatory: Using the Web of Data for Evaluating the Research-Disease
+	Disparity},
+  booktitle = {Proc. of the IEEE/WIC/ACM International Conference on Web Intelligence},
+  year = {2011},
+  keywords = {group_aksw sys:relevantFor:infai sys:relevantFor:bis sys:relevantFor:lod2
+	2011 martin zaveri pietrobon ermilov lehmann auer redd},
+  owner = {michael},
+  timestamp = {2011.06.20},
+  url = {http://liris.cnrs.fr/~wi-iat11/WI_2011/accepted-papers/}
+}
+
+@INPROCEEDINGS{obml-zaveri-2010,
+  author = {Amrapali Zaveri and Ricardo Pietrobon and Timofey Ermilov and Michael
+	Martin and Norman Heino and Sören Auer},
+  title = {Evaluating the disparity between active areas of biomedical research
+	and the global burden of disease employing Linked Data and data-driven
+	discovery},
+  booktitle = {OBML 2010 Workshop Proceedings},
+  year = {2010},
+  editor = {H.Herre, R.Hoehndorf, J.Kelso, S.Schulz},
+  volume = {IMISE Report},
+  number = {2/2010},
+  address = {Mannheim},
+  month = {September},
+  organization = {IMISE},
+  keywords = {2010 event_obml group_aksw zaveri pietrobon martin ermilov auer heino
+	sys:relevantFor:infai sys:relevantFor:bis obml redd sys:relevantFor:lod2
+	lod2page},
+  owner = {michael},
+  timestamp = {2010.09.07},
+  url = {http://www.onto-med.de/obml/ws2010/obml2010report.pdf}
+}
+
+@PROCEEDINGS{auer-?-2009--a,
+  title = {Proceeding of 5th Scripting for the Semantic Web Workshop at the
+	ESWC (SFSW 2009)},
+  year = {2009},
+  editor = {Sören Auer and Chris Bizer and Gunnar Aastrand Grimmnes},
+  address = {Hersonissos, Greece},
+  publisher = {CEUR Workshop Proceedings},
+  month = {June 1},
+  keywords = {2009 event_sfsw auer bizer grimmnes group_aksw sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05},
+  url = {http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-449/}
+}
+
+@PROCEEDINGS{auer-?-2008--b,
+  title = {Proc. of Scripting for the Semantic Web Workshop at the ESWC (SFSW
+	2008)},
+  year = {2008},
+  editor = {Sören Auer and Chris Bizer and Tom Heath and Gunnar Aastrand Grimmnes},
+  address = {Tenerife, Spain},
+  publisher = {CEUR Workshop Proceedings},
+  month = {June 2},
+  keywords = {2008 event_sfsw auer bizer heath grimmnes group_aksw sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05},
+  url = {http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-248/}
+}
+
+@BOOK{auer_agiles_2009,
+  title = {Agiles Requirements Engineering für Softwareprojekte mit einer großen
+	Anzahl verteilter Stakeholder},
+  publisher = {Leipziger Informatik Verbund {(LIV)}},
+  year = {2009},
+  editor = {Sören Auer and Kim Lauenroth and Steffen Lohmann and Thomas Riechert},
+  volume = {18},
+  pages = {206},
+  series = {Leipziger Beiträge zur Informatik},
+  address = {Leipzig, Germany},
+  month = sep,
+  abstract = {Requirements Engineering ist ein wesentlicher Bestandteil der Ent­wicklung
+	von Softwaresystemen, der maßgeblich über den Erfolg oder Misserfolg
+	eines Projekts entscheidet. Agiles Requirements Engineering zeichnet
+	sich durch eine hohe Flex­ibilität und leicht­ge­wichtige Verfahren
+	der Integration, Interaktion und Kollaboration von Stakeholdern aus.
+	Der {SoftWiki-Ansatz} zielt darauf ab, möglichst viele Stakeholder
+	möglichst unmittelbar in die Anforderungsdefinition einzubeziehen.
+	Potenziell sehr große und räumlich getrennte Nutzergruppen werden
+	befähigt, {Software-Anforderungen} zusammenzutragen, semantisch anzureichern,
+	zu klassifizieren und zu aggregieren. Im Rahmen des {SoftWiki-Projekts}
+	wurden hierfür neue methodische Unterstützungs­formen entwickelt
+	und unter Verwendung moderner Webtechnologien umgesetzt. Es wurden
+	aktuelle Entwicklungen in Bereichen wie Social Software, Semantic
+	Web und agiles Wissensmanagement aufgegriffen und auf das Requirements
+	Engineering angewandt. Evaluationen und Praxisberichte verdeutlichen
+	das Potenzial und zukünftige Entwicklungstendenzen von agilem Requirements
+	Engineering.},
+  isbn = {9783941608054},
+  keywords = {language_deutsch group_aksw sys:relevantFor:infai sys:relevantFor:bis
+	ontowiki_eu},
+  owner = {seebi},
+  timestamp = {2010.01.22},
+  url = {http://softwiki.de/buch}
+}
+
+@PROCEEDINGS{auer-?-2008--c,
+  title = {Proceedings of I-SEMANTICS 2008 International Conference on Semantic
+	Systems as part of Triple-I, 3-5 September},
+  year = {2008},
+  editor = {Sören Auer and Sebastian Schaffer and Tassilo Pellegrini},
+  address = {Graz, Austria},
+  publisher = {Journal of Universal Computer Science (J.UCS)},
+  month = {3-5 September},
+  keywords = {2008 event_i-semantics auer schaffer pellegrini group_aksw sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@BOOK{DBLP:conf/seco/2012,
+  title = {Search Computing - Broadening Web Search},
+  publisher = {Springer},
+  year = {2012},
+  editor = {Stefano Ceri and Marco Brambilla},
+  volume = {7538},
+  series = {Lecture Notes in Computer Science},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  booktitle = {SeCO Book},
+  ee = {http://dx.doi.org/10.1007/978-3-642-34213-4},
+  isbn = {978-3-642-34212-7}
+}
+
+@PROCEEDINGS{GIA+11,
+  title = {Proceedings the 7th International Conference on Semantic Systems},
+  year = {2011},
+  editor = {Chiara Ghidini, Axel-Cyrille Ngonga Ngomo, Stefanie N. Lindstaedt,
+	Tassilo Pellegrini},
+  publisher = {ACM},
+  keywords = {2011 group_aksw event_iswc ngonga SIMBA sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {ngonga},
+  timestamp = {2012.01.09}
+}
+
+@PROCEEDINGS{decker-?-2006--,
+  title = {Proceedings of the Semantic Desktop and Social Semantic Collaboration
+	Workshop (SemDesk 2006) located at 5th International Semantic Web
+	Conference ISWC 2005},
+  year = {2006},
+  editor = {Stefan Decker and Jack Park and Leo Sauermann and Sören Auer and
+	Siegfried Handschuh},
+  address = {Athens, GA, USA},
+  publisher = {CEUR Workshop Proceedings},
+  month = {6th November},
+  keywords = {2006 decker park sauermann auer handschuh group_aksw sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05},
+  url = {http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-202/}
+}
+
+@PROCEEDINGS{hellmann-2011-okcon,
+  title = {Proceedings of the 6th Open Knowledge Conference, OKCon 2011, Berlin,
+	Germany, June 30 {\&} July 1, 2011},
+  year = {2011},
+  editor = {Sebastian Hellmann and Philipp Frischmuth and S{\"o}ren Auer and
+	Daniel Dietrich},
+  volume = {739},
+  series = {CEUR Workshop Proceedings},
+  publisher = {CEUR-WS.org},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  booktitle = {OKCon},
+  keywords = {2011 event_i-semantics group_aksw sys:relevantFor:infai sys:relevantFor:bis
+	hellmann frischmuth auer dietrich},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@PROCEEDINGS{lohmann-?-2008--,
+  title = {Proceedings of Workshop Nutzerinteraktion im Social Semantic Web.
+	Collocated with “Mensch und Computer Conference”},
+  year = {2008},
+  editor = {Steffen Lohmann and Sören Auer and Jürgen Ziegler},
+  address = {Lübeck, Germany},
+  month = {7th September},
+  keywords = {2008 lohmann auer ziegler language_deutsch group_aksw sys:relevantFor:infai
+	sys:relevantFor:bis},
+  owner = {alex},
+  timestamp = {2010.07.05}
+}
+
+@PROCEEDINGS{auer-s-2008--a,
+  title = {Proceedings of the International Workshop on Interacting with Multimedia
+	Content in the Social Semantic Web (IMC-SSW 2008)},
+  year = {2008},
+  editor = {Steffen Lohmann and Sebastian Dietzold and Sören Auer and Jürgen
+	Ziegler},
+  volume = {417},
+  series = {CEUR Workshop Proceedings},
+  month = {December},
+  biburl = {http://www.bibsonomy.org/bibtex/224db8cdc66afe55126550f5279ab1f06/aksw},
+  file = {auer-s-2008--a.pdf:auer-s-2008--a.pdf:PDF},
+  keywords = {2008 group_aksw auer tramp sys:relevantFor:infai sys:relevantFor:bis},
+  owner = {seebi},
+  timestamp = {2008.12.04},
+  url = {http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-417/}
+}
+
+@BOOK{CLP-2010,
+  title = {Catalogus Professorum Lipsiensis -- Konzeption, technische Umsetzung
+	und Anwendungen für Professorenkataloge im Semantic Web},
+  publisher = {Leipziger Informatik-Verbund (LIV)},
+  year = {2010},
+  editor = {Ulf Morgenstern and Thomas Riechert},
+  volume = {21},
+  pages = {186},
+  series = {Leipziger Beiträge zur Informatik},
+  address = {Leipzig, Germany},
+  month = {Februar},
+  abstract = {Seit 2006 erarbeitet der Lehrstuhl für Neuere und Neueste Geschichte
+	am Historischen Seminar der Universität Leipzig einen Katalog der
+	Professoren, die im 19. und 20. Jahrhundert an der Universität Leipzig
+	lehrten. Anlässlich des 600-jährigen Bestehens der Universität Leipzig
+	wurde diese Datenbank über das Internet einem größeren Publikum zugänglich
+	gemacht werden. Dazu wurde in Kooperation mit der Arbeitsgruppe Agile
+	Knowledge Engineering and Semantic Web (AKSW) am Institut für Informatik
+	der Universität Leipzig eine Methode und ein Werkzeug zum browsergestützten
+	kollaborativen Sammeln und gezielten Recherchieren innerhalb des
+	Professorenkatalogs eingesetzt. Für die Realisierung des Projeketes
+	kommen aktuelle Technologien des Semantic Web, wie RDFS, OWL, SPARQL
+	und Linked Open Data zum Einsatz. Vorgestellt werden das Projekt
+	und die verwendeten Werkzeuge. Ziel des Buches ist es, Wissenschaftlern
+	ein Muster für die Anwendung einer kollaborativen und webbasierten
+	Methode zum Erstellen und Pflegen von Datenbanken im Internet in
+	die Hand zu geben. },
+  day = {24},
+  isbn = {978-3-941608-08-5},
+  keywords = {language_deutsch group_aksw sys:relevantFor:infai sys:relevantFor:bis
+	ontowiki_eu},
+  url = {http://catalogus-professorum.org/buch}
+}
+
+@PROCEEDINGS{hellmann-2012-wole,
+  title = {Proceedings of the Web of Linked Entities Workshop in conjuction
+	with the 11th International Semantic Web Conference (ISWC 2012) Boston,
+	USA, November 11, 2012.},
+  year = {2012},
+  editor = {Giuseppe Rizzo and Pablo Mendes and Eric Charton and Sebastian Hellmann
+	and Aditya Kalyanpur},
+  volume = {906},
+  series = {CEUR Workshop Proceedings},
+  publisher = {CEUR-WS.org},
+  booktitle = {Web of Linked Entities},
+  keywords = {2012 event_iswc group_aksw sys:relevantFor:infai sys:relevantFor:bis
+	hellmann mendes lod2page sys:relevantFor:lod2},
+  url = {http://ceur-ws.org/Vol-906/}
+}
+
+@comment{jabref-meta: groupsversion:3;}
+
+@comment{jabref-meta: groupstree:
+0 AllEntriesGroup:;
+1 ExplicitGroup:Automatisch erzeugte Gruppen\;2\;;
+2 KeywordGroup:2001\;0\;keywords\;2001\;0\;0\;;
+2 KeywordGroup:2002\;0\;keywords\;2002\;0\;0\;;
+2 KeywordGroup:2003\;0\;keywords\;2003\;0\;0\;;
+2 KeywordGroup:2004\;0\;keywords\;2004\;0\;0\;;
+2 KeywordGroup:2005\;0\;keywords\;2005\;0\;0\;;
+2 KeywordGroup:2006\;0\;keywords\;2006\;0\;0\;;
+2 KeywordGroup:2007\;0\;keywords\;2007\;0\;0\;;
+2 KeywordGroup:2008\;0\;keywords\;2008\;0\;0\;;
+2 KeywordGroup:2009\;0\;keywords\;2009\;0\;0\;;
+2 KeywordGroup:2010\;0\;keywords\;2010\;0\;0\;;
+2 KeywordGroup:aslam\;0\;keywords\;aslam\;0\;0\;;
+2 KeywordGroup:aslan\;0\;keywords\;aslan\;0\;0\;;
+2 KeywordGroup:auer\;0\;keywords\;auer\;0\;0\;;
+2 KeywordGroup:aumueller\;0\;keywords\;aumueller\;0\;0\;;
+2 KeywordGroup:beck\;0\;keywords\;beck\;0\;0\;;
+2 KeywordGroup:bizer\;0\;keywords\;bizer\;0\;0\;;
+2 KeywordGroup:bohring\;0\;keywords\;bohring\;0\;0\;;
+2 KeywordGroup:buehmann\;0\;keywords\;buehmann\;0\;0\;;
+2 KeywordGroup:Bug-tracking\;0\;keywords\;Bug-tracking\;0\;0\;;
+2 KeywordGroup:burek\;0\;keywords\;burek\;0\;0\;;
+2 KeywordGroup:cache\;0\;keywords\;cache\;0\;0\;;
+2 KeywordGroup:chen\;0\;keywords\;chen\;0\;0\;;
+2 KeywordGroup:CSSW\;0\;keywords\;CSSW\;0\;0\;;
+2 KeywordGroup:cyganiak\;0\;keywords\;cyganiak\;0\;0\;;
+2 KeywordGroup:dblp\;0\;keywords\;dblp\;0\;0\;;
+2 KeywordGroup:dbpedia\;0\;keywords\;dbpedia\;0\;0\;;
+2 KeywordGroup:decker\;0\;keywords\;decker\;0\;0\;;
+2 KeywordGroup:dietzhold\;0\;keywords\;dietzhold\;0\;0\;;
+2 KeywordGroup:dllearner\;0\;keywords\;dllearner\;0\;0\;;
+2 KeywordGroup:doehring\;0\;keywords\;doehring\;0\;0\;;
+2 KeywordGroup:elze\;0\;keywords\;elze\;0\;0\;;
+2 KeywordGroup:erfurt\;0\;keywords\;erfurt\;0\;0\;;
+2 KeywordGroup:ermilov\;0\;keywords\;ermilov\;0\;0\;;
+2 KeywordGroup:event_ekaw\;0\;keywords\;event_ekaw\;0\;0\;;
+2 KeywordGroup:event_eswc\;0\;keywords\;event_eswc\;0\;0\;;
+2 KeywordGroup:event_isemantics\;0\;keywords\;event_isemantics\;0\;0\;
+;
+2 KeywordGroup:event_iswc\;0\;keywords\;event_iswc\;0\;0\;;
+2 KeywordGroup:event_semapro\;0\;keywords\;event_semapro\;0\;0\;;
+2 KeywordGroup:event_www\;0\;keywords\;event_www\;0\;0\;;
+2 KeywordGroup:frischmuth\;0\;keywords\;frischmuth\;0\;0\;;
+2 KeywordGroup:frommhold\;0\;keywords\;frommhold\;0\;0\;;
+2 KeywordGroup:fähnrich\;0\;keywords\;fähnrich\;0\;0\;;
+2 KeywordGroup:gerber\;0\;keywords\;gerber\;0\;0\;;
+2 KeywordGroup:golden\;0\;keywords\;golden\;0\;0\;;
+2 KeywordGroup:grawe\;0\;keywords\;grawe\;0\;0\;;
+2 KeywordGroup:grimmnes\;0\;keywords\;grimmnes\;0\;0\;;
+2 KeywordGroup:group_aksw\;0\;keywords\;group_aksw\;0\;0\;;
+2 KeywordGroup:handschuh\;0\;keywords\;handschuh\;0\;0\;;
+2 KeywordGroup:heath\;0\;keywords\;heath\;0\;0\;;
+2 KeywordGroup:heino\;0\;keywords\;heino\;0\;0\;;
+2 KeywordGroup:hellmann\;0\;keywords\;hellmann\;0\;0\;;
+2 KeywordGroup:herre\;0\;keywords\;herre\;0\;0\;;
+2 KeywordGroup:herrmann\;0\;keywords\;herrmann\;0\;0\;;
+2 KeywordGroup:ives\;0\;keywords\;ives\;0\;0\;;
+2 KeywordGroup:jungmann\;0\;keywords\;jungmann\;0\;0\;;
+2 KeywordGroup:Knowledge-Management\;0\;keywords\;Knowledge-Management
+\;0\;0\;;
+2 KeywordGroup:kobilarov\;0\;keywords\;kobilarov\;0\;0\;;
+2 KeywordGroup:kunze\;0\;keywords\;kunze\;0\;0\;;
+2 KeywordGroup:language_deutsch\;0\;keywords\;language_deutsch\;0\;0\;
+;
+2 KeywordGroup:lehmann\;0\;keywords\;lehmann\;0\;0\;;
+2 KeywordGroup:linked-geo-data\;0\;keywords\;linked-geo-data\;0\;0\;;
+2 KeywordGroup:linkedgeodata\;0\;keywords\;linkedgeodata\;0\;0\;;
+2 KeywordGroup:lohmann\;0\;keywords\;lohmann\;0\;0\;;
+2 KeywordGroup:m.auer\;0\;keywords\;m.auer\;0\;0\;;
+2 KeywordGroup:martin\;0\;keywords\;martin\;0\;0\;;
+2 KeywordGroup:mole\;0\;keywords\;mole\;0\;0\;;
+2 KeywordGroup:obml\;0\;keywords\;obml\;0\;0\;;
+2 KeywordGroup:ontowiki\;0\;keywords\;ontowiki\;0\;0\;;
+2 KeywordGroup:park\;0\;keywords\;park\;0\;0\;;
+2 KeywordGroup:pasaru-bontas\;0\;keywords\;pasaru-bontas\;0\;0\;;
+2 KeywordGroup:pellegrini\;0\;keywords\;pellegrini\;0\;0\;;
+2 KeywordGroup:pieterse\;0\;keywords\;pieterse\;0\;0\;;
+2 KeywordGroup:pietrobon\;0\;keywords\;pietrobon\;0\;0\;;
+2 KeywordGroup:rdfauthor\;0\;keywords\;rdfauthor\;0\;0\;;
+2 KeywordGroup:requirements-engineering\;0\;keywords\;requirements-eng
+ineering\;0\;0\;;
+2 KeywordGroup:riechert\;0\;keywords\;riechert\;0\;0\;;
+2 KeywordGroup:s.auer\;0\;keywords\;s.auer\;0\;0\;;
+2 KeywordGroup:sameas_6b03b3c816df71266e2ecaeb608fe2d9\;0\;keywords\;s
+ameas_6b03b3c816df71266e2ecaeb608fe2d9\;0\;0\;;
+2 KeywordGroup:sauermann\;0\;keywords\;sauermann\;0\;0\;;
+2 KeywordGroup:schaffer\;0\;keywords\;schaffer\;0\;0\;;
+2 KeywordGroup:schaffert\;0\;keywords\;schaffert\;0\;0\;;
+2 KeywordGroup:schreiter\;0\;keywords\;schreiter\;0\;0\;;
+2 KeywordGroup:schönefeld\;0\;keywords\;schönefeld\;0\;0\;;
+2 KeywordGroup:schüppel\;0\;keywords\;schüppel\;0\;0\;;
+2 KeywordGroup:seebiproject_OntoWiki\;0\;keywords\;seebiproject_OntoWi
+ki\;0\;0\;;
+2 KeywordGroup:seebiproject_RDFauthor\;0\;keywords\;seebiproject_RDFau
+thor\;0\;0\;;
+2 KeywordGroup:seebiproject_SemanticLDAP\;0\;keywords\;seebiproject_Se
+manticLDAP\;0\;0\;;
+2 KeywordGroup:seebiproject_SemanticPingback\;0\;keywords\;seebiprojec
+t_SemanticPingback\;0\;0\;;
+2 KeywordGroup:seebiproject_SoftWiki\;0\;keywords\;seebiproject_SoftWi
+ki\;0\;0\;;
+2 KeywordGroup:seebiproject_Triplify\;0\;keywords\;seebiproject_Tripli
+fy\;0\;0\;;
+2 KeywordGroup:seebiproject_xOperator\;0\;keywords\;seebiproject_xOper
+ator\;0\;0\;;
+2 KeywordGroup:semanticldap\;0\;keywords\;semanticldap\;0\;0\;;
+2 KeywordGroup:shen\;0\;keywords\;shen\;0\;0\;;
+2 KeywordGroup:SIMBA\;0\;keywords\;SIMBA\;0\;0\;;
+2 KeywordGroup:softwiki\;0\;keywords\;softwiki\;0\;0\;;
+2 KeywordGroup:sparql\;0\;keywords\;sparql\;0\;0\;;
+2 KeywordGroup:stadler\;0\;keywords\;stadler\;0\;0\;;
+2 KeywordGroup:sys:relevantFor:bis\;0\;keywords\;sys:relevantFor:bis\;
+0\;0\;;
+2 KeywordGroup:sys:relevantFor:infai\;0\;keywords\;sys:relevantFor:inf
+ai\;0\;0\;;
+2 KeywordGroup:sys:relevantFor:lod2\;0\;keywords\;sys:relevantFor:lod2
+\;0\;0\;;
+2 KeywordGroup:thürmann\;0\;keywords\;thürmann\;0\;0\;;
+2 KeywordGroup:trainer\;0\;keywords\;trainer\;0\;0\;;
+2 KeywordGroup:tramp\;0\;keywords\;tramp\;0\;0\;;
+2 KeywordGroup:triplify\;0\;keywords\;triplify\;0\;0\;;
+2 KeywordGroup:unbehauen\;0\;keywords\;unbehauen\;0\;0\;;
+2 KeywordGroup:vakantieland\;0\;keywords\;vakantieland\;0\;0\;;
+2 KeywordGroup:völkel\;0\;keywords\;völkel\;0\;0\;;
+2 KeywordGroup:weiske\;0\;keywords\;weiske\;0\;0\;;
+2 KeywordGroup:xoperator\;0\;keywords\;xoperator\;0\;0\;;
+2 KeywordGroup:zaveri\;0\;keywords\;zaveri\;0\;0\;;
+2 KeywordGroup:zhang\;0\;keywords\;zhang\;0\;0\;;
+2 KeywordGroup:ziegler\;0\;keywords\;ziegler\;0\;0\;;
+1 ExplicitGroup:Automatisch erzeugte Gruppen\;2\;;
+2 KeywordGroup:2008\;0\;keywords\;2008\;0\;0\;;
+2 KeywordGroup:2009\;0\;keywords\;2009\;0\;0\;;
+2 KeywordGroup:event_jmlr\;0\;keywords\;event_jmlr\;0\;0\;;
+2 KeywordGroup:2006\;0\;keywords\;2006\;0\;0\;;
+2 KeywordGroup:2007\;0\;keywords\;2007\;0\;0\;;
+2 KeywordGroup:2004\;0\;keywords\;2004\;0\;0\;;
+2 KeywordGroup:2005\;0\;keywords\;2005\;0\;0\;;
+2 KeywordGroup:2002\;0\;keywords\;2002\;0\;0\;;
+2 KeywordGroup:2003\;0\;keywords\;2003\;0\;0\;;
+2 KeywordGroup:event_cssw\;0\;keywords\;event_cssw\;0\;0\;;
+2 KeywordGroup:pieterse\;0\;keywords\;pieterse\;0\;0\;;
+2 KeywordGroup:event_hcii\;0\;keywords\;event_hcii\;0\;0\;;
+2 KeywordGroup:seebiproject_xOperator\;0\;keywords\;seebiproject_xOper
+ator\;0\;0\;;
+2 KeywordGroup:triplify\;0\;keywords\;triplify\;0\;0\;;
+2 KeywordGroup:grimmnes\;0\;keywords\;grimmnes\;0\;0\;;
+2 KeywordGroup:seebiproject_SoftWiki\;0\;keywords\;seebiproject_SoftWi
+ki\;0\;0\;;
+2 KeywordGroup:unbehauen\;0\;keywords\;unbehauen\;0\;0\;;
+2 KeywordGroup:doehring\;0\;keywords\;doehring\;0\;0\;;
+2 KeywordGroup:riechert\;0\;keywords\;riechert\;0\;0\;;
+2 KeywordGroup:chen\;0\;keywords\;chen\;0\;0\;;
+2 KeywordGroup:schaffer\;0\;keywords\;schaffer\;0\;0\;;
+2 KeywordGroup:burek\;0\;keywords\;burek\;0\;0\;;
+2 KeywordGroup:zhang\;0\;keywords\;zhang\;0\;0\;;
+2 KeywordGroup:2010\;0\;keywords\;2010\;0\;0\;;
+2 KeywordGroup:linkedgeodata\;0\;keywords\;linkedgeodata\;0\;0\;;
+2 KeywordGroup:event_w3c\;0\;keywords\;event_w3c\;0\;0\;;
+2 KeywordGroup:schaffert\;0\;keywords\;schaffert\;0\;0\;;
+2 KeywordGroup:heath\;0\;keywords\;heath\;0\;0\;;
+2 KeywordGroup:tramp\;0\;keywords\;tramp\;0\;0\;;
+2 KeywordGroup:auer\;0\;keywords\;auer\;0\;0\;;
+2 KeywordGroup:bizer\;0\;keywords\;bizer\;0\;0\;;
+2 KeywordGroup:event_wetice\;0\;keywords\;event_wetice\;0\;0\;;
+2 KeywordGroup:rdfauthor\;0\;keywords\;rdfauthor\;0\;0\;;
+2 KeywordGroup:softwiki\;0\;keywords\;softwiki\;0\;0\;;
+2 KeywordGroup:aslan\;0\;keywords\;aslan\;0\;0\;;
+2 KeywordGroup:aslam\;0\;keywords\;aslam\;0\;0\;;
+2 KeywordGroup:frischmuth\;0\;keywords\;frischmuth\;0\;0\;;
+2 KeywordGroup:zaveri\;0\;keywords\;zaveri\;0\;0\;;
+2 KeywordGroup:pietrobon\;0\;keywords\;pietrobon\;0\;0\;;
+2 KeywordGroup:sys:relevantFor:infai\;0\;keywords\;sys:relevantFor:inf
+ai\;0\;0\;;
+2 KeywordGroup:requirements-engineering\;0\;keywords\;requirements-eng
+ineering\;0\;0\;;
+2 KeywordGroup:event_cicling\;0\;keywords\;event_cicling\;0\;0\;;
+2 KeywordGroup:cyganiak\;0\;keywords\;cyganiak\;0\;0\;;
+2 KeywordGroup:pasaru-bontas\;0\;keywords\;pasaru-bontas\;0\;0\;;
+2 KeywordGroup:CSSW\;0\;keywords\;CSSW\;0\;0\;;
+2 KeywordGroup:lehmann\;0\;keywords\;lehmann\;0\;0\;;
+2 KeywordGroup:Bug-tracking\;0\;keywords\;Bug-tracking\;0\;0\;;
+2 KeywordGroup:event_sac\;0\;keywords\;event_sac\;0\;0\;;
+2 KeywordGroup:schreiter\;0\;keywords\;schreiter\;0\;0\;;
+2 KeywordGroup:beck\;0\;keywords\;beck\;0\;0\;;
+2 KeywordGroup:elze\;0\;keywords\;elze\;0\;0\;;
+2 KeywordGroup:event_i-semantics\;0\;keywords\;event_i-semantics\;0\;0
+\;;
+2 KeywordGroup:mole\;0\;keywords\;mole\;0\;0\;;
+2 KeywordGroup:event_TriplificationChallenge\;0\;keywords\;event_Tripl
+ificationChallenge\;0\;0\;;
+2 KeywordGroup:erfurt\;0\;keywords\;erfurt\;0\;0\;;
+2 KeywordGroup:m.auer\;0\;keywords\;m.auer\;0\;0\;;
+2 KeywordGroup:event_lit\;0\;keywords\;event_lit\;0\;0\;;
+2 KeywordGroup:fähnrich\;0\;keywords\;fähnrich\;0\;0\;;
+2 KeywordGroup:sparql\;0\;keywords\;sparql\;0\;0\;;
+2 KeywordGroup:event_mldm\;0\;keywords\;event_mldm\;0\;0\;;
+2 KeywordGroup:event_geneme\;0\;keywords\;event_geneme\;0\;0\;;
+2 KeywordGroup:event_eswc\;0\;keywords\;event_eswc\;0\;0\;;
+2 KeywordGroup:W3C\;0\;keywords\;W3C\;0\;0\;;
+2 KeywordGroup:s.auer\;0\;keywords\;s.auer\;0\;0\;;
+2 KeywordGroup:group_aksw\;0\;keywords\;group_aksw\;0\;0\;;
+2 KeywordGroup:event_sfsw\;0\;keywords\;event_sfsw\;0\;0\;;
+2 KeywordGroup:seebiproject_OntoWiki\;0\;keywords\;seebiproject_OntoWi
+ki\;0\;0\;;
+2 KeywordGroup:völkel\;0\;keywords\;völkel\;0\;0\;;
+2 KeywordGroup:park\;0\;keywords\;park\;0\;0\;;
+2 KeywordGroup:cache\;0\;keywords\;cache\;0\;0\;;
+2 KeywordGroup:herrmann\;0\;keywords\;herrmann\;0\;0\;;
+2 KeywordGroup:event_TLT9\;0\;keywords\;event_TLT9\;0\;0\;;
+2 KeywordGroup:event_mlj\;0\;keywords\;event_mlj\;0\;0\;;
+2 KeywordGroup:seebiproject_SemanticLDAP\;0\;keywords\;seebiproject_Se
+manticLDAP\;0\;0\;;
+2 KeywordGroup:event_semapro\;0\;keywords\;event_semapro\;0\;0\;;
+2 KeywordGroup:sauermann\;0\;keywords\;sauermann\;0\;0\;;
+2 KeywordGroup:vakantieland\;0\;keywords\;vakantieland\;0\;0\;;
+2 KeywordGroup:kobilarov\;0\;keywords\;kobilarov\;0\;0\;;
+2 KeywordGroup:sys:relevantFor:bis\;0\;keywords\;sys:relevantFor:bis\;
+0\;0\;;
+2 KeywordGroup:semanticldap\;0\;keywords\;semanticldap\;0\;0\;;
+2 KeywordGroup:obml\;0\;keywords\;obml\;0\;0\;;
+2 KeywordGroup:frommhold\;0\;keywords\;frommhold\;0\;0\;;
+2 KeywordGroup:jungmann\;0\;keywords\;jungmann\;0\;0\;;
+2 KeywordGroup:dllearner\;0\;keywords\;dllearner\;0\;0\;;
+2 KeywordGroup:event_i-know\;0\;keywords\;event_i-know\;0\;0\;;
+2 KeywordGroup:event_ilp\;0\;keywords\;event_ilp\;0\;0\;;
+2 KeywordGroup:2001\;0\;keywords\;2001\;0\;0\;;
+2 KeywordGroup:chiarcos\;0\;keywords\;chiarcos\;0\;0\;;
+2 KeywordGroup:grawe\;0\;keywords\;grawe\;0\;0\;;
+2 KeywordGroup:dblp\;0\;keywords\;dblp\;0\;0\;;
+2 KeywordGroup:event_gi\;0\;keywords\;event_gi\;0\;0\;;
+2 KeywordGroup:event_iswc\;0\;keywords\;event_iswc\;0\;0\;;
+2 KeywordGroup:stadler\;0\;keywords\;stadler\;0\;0\;;
+2 KeywordGroup:heino\;0\;keywords\;heino\;0\;0\;;
+2 KeywordGroup:handschuh\;0\;keywords\;handschuh\;0\;0\;;
+2 KeywordGroup:thürmann\;0\;keywords\;thürmann\;0\;0\;;
+2 KeywordGroup:martin\;0\;keywords\;martin\;0\;0\;;
+2 KeywordGroup:event_ReasoningWeb\;0\;keywords\;event_ReasoningWeb\;0\
+;0\;;
+2 KeywordGroup:event_SAMT\;0\;keywords\;event_SAMT\;0\;0\;;
+2 KeywordGroup:ives\;0\;keywords\;ives\;0\;0\;;
+2 KeywordGroup:pellegrini\;0\;keywords\;pellegrini\;0\;0\;;
+2 KeywordGroup:event_IJSWIS\;0\;keywords\;event_IJSWIS\;0\;0\;;
+2 KeywordGroup:linked-geo-data\;0\;keywords\;linked-geo-data\;0\;0\;;
+2 KeywordGroup:event_eckm\;0\;keywords\;event_eckm\;0\;0\;;
+2 KeywordGroup:hoeffner\;0\;keywords\;hoeffner\;0\;0\;;
+2 KeywordGroup:hellmann\;0\;keywords\;hellmann\;0\;0\;;
+2 KeywordGroup:event_psi\;0\;keywords\;event_psi\;0\;0\;;
+2 KeywordGroup:ontowiki\;0\;keywords\;ontowiki\;0\;0\;;
+2 KeywordGroup:event_ekaw\;0\;keywords\;event_ekaw\;0\;0\;;
+2 KeywordGroup:xoperator\;0\;keywords\;xoperator\;0\;0\;;
+2 KeywordGroup:golden\;0\;keywords\;golden\;0\;0\;;
+2 KeywordGroup:gerber\;0\;keywords\;gerber\;0\;0\;;
+2 KeywordGroup:event_obml\;0\;keywords\;event_obml\;0\;0\;;
+2 KeywordGroup:kunze\;0\;keywords\;kunze\;0\;0\;;
+2 KeywordGroup:event_ESWC\;0\;keywords\;event_ESWC\;0\;0\;;
+2 KeywordGroup:seebiproject_Triplify\;0\;keywords\;seebiproject_Tripli
+fy\;0\;0\;;
+2 KeywordGroup:decker\;0\;keywords\;decker\;0\;0\;;
+2 KeywordGroup:lohmann\;0\;keywords\;lohmann\;0\;0\;;
+2 KeywordGroup:buehmann\;0\;keywords\;buehmann\;0\;0\;;
+2 KeywordGroup:trainer\;0\;keywords\;trainer\;0\;0\;;
+2 KeywordGroup:dietzhold\;0\;keywords\;dietzhold\;0\;0\;;
+2 KeywordGroup:seebiproject_SemanticPingback\;0\;keywords\;seebiprojec
+t_SemanticPingback\;0\;0\;;
+2 KeywordGroup:dbpedia\;0\;keywords\;dbpedia\;0\;0\;;
+2 KeywordGroup:schüppel\;0\;keywords\;schüppel\;0\;0\;;
+2 KeywordGroup:sameas_6b03b3c816df71266e2ecaeb608fe2d9\;0\;keywords\;s
+ameas_6b03b3c816df71266e2ecaeb608fe2d9\;0\;0\;;
+2 KeywordGroup:event_swj\;0\;keywords\;event_swj\;0\;0\;;
+2 KeywordGroup:event_odbase\;0\;keywords\;event_odbase\;0\;0\;;
+2 KeywordGroup:aumueller\;0\;keywords\;aumueller\;0\;0\;;
+2 KeywordGroup:weiske\;0\;keywords\;weiske\;0\;0\;;
+2 KeywordGroup:ziegler\;0\;keywords\;ziegler\;0\;0\;;
+2 KeywordGroup:bohring\;0\;keywords\;bohring\;0\;0\;;
+2 KeywordGroup:schönefeld\;0\;keywords\;schönefeld\;0\;0\;;
+2 KeywordGroup:herre\;0\;keywords\;herre\;0\;0\;;
+2 KeywordGroup:Knowledge-Management\;0\;keywords\;Knowledge-Management
+\;0\;0\;;
+2 KeywordGroup:ermilov\;0\;keywords\;ermilov\;0\;0\;;
+2 KeywordGroup:event_jws\;0\;keywords\;event_jws\;0\;0\;;
+2 KeywordGroup:shen\;0\;keywords\;shen\;0\;0\;;
+2 KeywordGroup:sys:relevantFor:lod2\;0\;keywords\;sys:relevantFor:lod2
+\;0\;0\;;
+2 KeywordGroup:seebiproject_RDFauthor\;0\;keywords\;seebiproject_RDFau
+thor\;0\;0\;;
+2 KeywordGroup:SIMBA\;0\;keywords\;SIMBA\;0\;0\;;
+2 KeywordGroup:language_deutsch\;0\;keywords\;language_deutsch\;0\;0\;
+;
+2 KeywordGroup:event_www\;0\;keywords\;event_www\;0\;0\;;
+}
+
+@comment{jabref-entrytype: Poster: req[author;title] opt[note]}
+
