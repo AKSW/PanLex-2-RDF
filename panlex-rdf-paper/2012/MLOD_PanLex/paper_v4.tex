@@ -96,7 +96,9 @@ At present, there are approximately 7,000 living languages in the world.
 However, some forecasters expect the world to lose most of this linguistic diversity.
 The mission of the PanLex project is to investigate whether it is feasible to make all languages intertranslatable and thus usable for world-wide communication, and, if so, whether that new situation will interfere with this expected language attrition.
 This mission entails, among other prerequisites, making the lexicons of the world's languages intertranslatable. To accomplish that, the project is systematically integrating and making publicly available all known lexical translations.
-Semantic Web technologies can enhance the power of PanLex by flexibly representing and reasoning with the content of its database and interlinking it with linguistic and other resources and annotations.
+Semantic Web technologies can enhance the power of PanLex by flexibly representing and reasoning with the content of its database and interlinking it with
+%linguistic and
+other resources and annotations.
 %Using Semantic Web technologies can support achieving this goal, especially due
 % to inference capabilities and the interlinking of the PanLex data with other data sources.
 Conversely, PanLex, with its unique collection of translation links between more than a billion pairs of lexemes from more than 9,000 language varieties, can improve the coverage of the Linguistic Web of Data.
@@ -113,8 +115,10 @@ Multilingual Linked Open Data, LLOD Cloud, PanLex, Lexical Resource, RDF, RDB2RD
 
 \section{Introduction}
 \label{sec:intro}
-At present, there are about 7,000 living languages in the world\footnote{\url{http://www-01.sil.org/iso639-3/iso-639-3.tab}. As of 25 January 2014, this list contained 6,975 living individual languages.}.
-Nonetheless, processes such as urbanization, nation-state consolidation, and globalization appear to be producing language attrition, with, for example, the extinction or near-extinction in the last 60 years of from 10\% to over 75\% (depending on the world's region) of all living languages\cite{lang_crisis}.
+At present, there are about 7,000 living languages in the world\footnote{\url{http://www-01.sil.org/iso639-3/iso-639-3.tab}}.
+%\footnote{\url{http://www-01.sil.org/iso639-3/iso-639-3.tab}. As of 25 January 2014, this list contained 6,975 living individual languages.}
+%Nonetheless, processes such as urbanization, nation-state consolidation, and globalization appear to be producing language attrition, with, %for example, the extinction or near-extinction in the last 60 years of from 10\% to over 75\% (depending on the world's region) of all living languages\cite{lang_crisis}.
+Nonetheless, processes such as urbanization, nation-state consolidation, and globalization appear to be producing language attrition: For example, in the last 60 years and depending on the world's region, from 10\% to over 75\% of all living languages have become extinct or near-extinct~\cite{lang_crisis}.
 Theorists of biolinguistic diversity argue that the loss of language diversity, the loss of human biological knowledge, and the loss of species diversity are mutually supportive and thus that language preservation and revitalization are essential to the preservation of biological diversity\cite{nettle}.
 
 The mission of the PanLex project is to investigate the possibility that language attrition would be decreased or halted if utterances in any language were efficiently translatable into all other languages and, as a result, the speakers of all languages could use their languages for world-wide communication. Among the prerequisites of the panlingual translatablity of discourses would be the panlingual translatability of lexicons. In fact, lexical translation is almost the entirety of translation in some contexts (such as personal profiles, bibliographic subject headings, content tagging, product price lists, and web navigation controls). PanLex is designed to support that component by systematically integrating millions of lexical translations, documented in thousands of sources, into a database accessible to the research community, application developers, and the public. The database content can be interpreted as a graph linking millions of lexemes with one another in billions of ``is-a-translation-of'' relations, and permitting intelligent automated inference to trillions more such relations that have not been attested.
@@ -166,6 +170,7 @@ The most important entities and relations of PanLex's conceptual model are depic
   \label{fig:db-schema}
 \end{figure}
 
+\todo{The combination of user + source document, which has approved any assertion, is the assertion’s source.}
 \begin{itemize}
   \item The starting point of data acquisition is the \emph{source} entity: An editor consults some mono- or multilingual source as mentioned above, interprets it as making assertions about lexical translations, and adds schema-compliant representations of these assertions to the PanLex dataset.
   \item \emph{Expressions} are lexical entities, each defined as a string of characters in some variety of some language. As a first approximation, expressions can be considered lemmas, i.e. dictionary-entry headwords. They differ from traditional headwords, however, in at least two ways. (1) Homographs, such as the verb ``hide'' (conceal) and the noun ``hide'' (animal skin) in English, are treated as a single expression in PanLex. (2) Multiword expressions, such as ``fall in love'', traditionally found in an entry headed by one of their words, such as ``fall'' or ``love'', are treated as independent expressions in PanLex. Expressions are strings of Unicode codepoints subjected to Normalization Form NFC, but this still makes it difficult to search precisely for expressions, so to assist in approximate searching PanLex also adds for each expression a degraded form permitting only lower-case letters and digits.
