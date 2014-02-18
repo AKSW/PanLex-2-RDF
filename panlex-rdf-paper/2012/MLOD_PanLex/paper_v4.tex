@@ -165,7 +165,7 @@ The most important entities and relations of PanLex's conceptual model are depic
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.4\textwidth]{images/schema-new.png}
+  \includegraphics[width=0.4\textwidth]{images/schema_new.png}
   \caption{The PanLex database schema}
   \label{fig:db-schema}
 \end{figure}
@@ -204,26 +204,44 @@ License          & Count \\
 \end{table}
 
 An overview of the number of instances per entity as of January 2014 is given in~\autoref{fig:plx-entity-counts}.
+%\begin{table}
+%  \centering\begin{scriptsize}
+%  \begin{tabular}{lrclr}
+%    Entity             & Instances  \\
+%    \cline{1-2}
+%    Denotations        & 54,278,860 \\  % SELECT COUNT(dn) FROM dn;
+%    Languages          &      7,843 \\ % SELECT COUNT(lc) FROM lc; -- all language codes (ISO 639-3, ISO 639-2, ISO 639-5) known in the PanLex db
+%    Language Varieties identified           &      9,310 \\  % SELECT COUNT(lv) FROM lv;
+%    Language Varieties with data           &      9,239 \\  % 
+%    Meanings           & 20,773,371 \\  % SELECT COUNT(mn) FROM mn;
+%    Sources being consulted         &      4,190 \\  % 
+%    Sources already consulted         &      1,453 \\  % 
+%    Expressions        & 19,790,453 \\ % SELECT COUNT(ex) FROM ex;
+%    Definitions        &  2,747,892 \\ % SELECT COUNT(df) FROM df;
+%    Users              &          23 \\ % SELECT COUNT(us) FROM us;
+%  \end{tabular}
+%  \end{scriptsize}
+%  \caption{Number of instances of main entities in the PanLex database}
+%  \label{fig:plx-entity-counts}
+%\end{table}
+
+%    Users              &         23 \\ % SELECT COUNT(us) FROM us;
 \begin{table}
   \centering\begin{scriptsize}
   \begin{tabular}{lrclr}
-    Entity             & Instances  \\
-    \cline{1-2}
-    Denotations        & 54,278,860 \\  % SELECT COUNT(dn) FROM dn;
-    Languages          &      7,843 \\ % SELECT COUNT(lc) FROM lc; -- all language codes (ISO 639-3, ISO 639-2, ISO 639-5) known in the PanLex db
-    Language Varieties identified           &      9,310 \\  % SELECT COUNT(lv) FROM lv;
-    Language Varieties with data           &      9,239 \\  % 
-    Meanings           & 20,773,371 \\  % SELECT COUNT(mn) FROM mn;
-    Sources being consulted         &      4,190 \\  % 
-    Sources already consulted         &      1,453 \\  % 
-    Expressions        & 19,790,453 \\ % SELECT COUNT(ex) FROM ex;
-    Definitions        &  2,747,892 \\ % SELECT COUNT(df) FROM df;
-    Users              &          23 \\ % SELECT COUNT(us) FROM us;
+    Entity             & Instances  & & Entity    & Instances \\
+    \cline{1-2}\cline{4-5}
+    Denotations        & 54,278,860 & & Languages & 7,843     \\
+    Meanings           & 20,773,371 & & Sources   & 4,190     \\
+    Expressions        & 19,790,453 & & Users     &    23     \\
+    Definitions        &  2,747,892 & & Licenses  &    11     \\
+    Language Varieties &      9,310 & & & \\
   \end{tabular}
   \end{scriptsize}
   \caption{Number of instances of main entities in the PanLex database}
   \label{fig:plx-entity-counts}
-\end{table}
+\end{table}\todo{new license `75 | pl | pup'; What does it mean?}
+
 
 \subsection{The PanLex vocabulary}
 \label{sec:vocabulary}
@@ -245,7 +263,7 @@ Unless otherwise noted, the URIs of instances of PanLex classes follow the patte
     These are entities of the \texttt{\small plx:Denotation} class pointing to meanings and expressions via the properties \texttt{\small plx:denotationMeaning} and \\ \texttt{\small plx:denotationExpression}.
     Denotations may also have a word class assigned to them.
     This can be achieved with the denotation's \texttt{\small plx:wordClass} property pointing to a \texttt{\small plx:WordClass} entity.
-  \item All sources share the \texttt{\small plx:Approver} class.
+  \item All sources share the \texttt{\small plx:Source} class.
     The characteristics of a source are described using mainly triples with literal objects.
     These are for example \texttt{\small dc:title} to assign the title of a source, \texttt{\small dc:creator} to give an \texttt{\small xsd:string} containing the author's name. At present, we support the different license categories recognized in the database by creating resources of the \texttt{\small plx:License} class.
 \end{itemize}
@@ -255,7 +273,7 @@ Unless otherwise noted, the URIs of instances of PanLex classes follow the patte
   \begin{tabular}{p{52px}p{140px}}
     Class                 & Properties \\
     \toprule
-    \texttt{plx:Approver} & \mbox{\texttt{plx:registrationDate}, \texttt{rdfs:label}, \texttt{dc:title},}
+    \texttt{plx:Source} & \mbox{\texttt{plx:registrationDate}, \texttt{rdfs:label}, \texttt{dc:title},}
                             \mbox{\texttt{dc:creator}, \texttt{plx:license}, \texttt{dc:date}, \texttt{plx:quality},}
                             \mbox{\texttt{foaf:homepage}, \texttt{dc:publisher}, \texttt{dbpedia-owl:isbn}} \\
     \midrule
@@ -272,7 +290,7 @@ Unless otherwise noted, the URIs of instances of PanLex classes follow the patte
                           & \mbox{\texttt{plx:languageVariety}, \texttt{plx:degradedText},} \texttt{rdfs:label} \\
     \midrule
     \texttt{plx:Meaning}
-                          & \mbox{\texttt{plx:approver}, \texttt{plx:identifier},} \texttt{plx:meaningDefinition} \\
+                          & \mbox{\texttt{plx:source}, \texttt{plx:identifier},} \texttt{plx:meaningDefinition} \\
     \midrule
     \texttt{plx:Definition}
                           & \texttt{plx:languageVariety}, \texttt{rdfs:label} \\

@@ -13,7 +13,7 @@
    height="297mm"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="ontology.svg">
   <defs
      id="defs4">
@@ -502,7 +502,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
      inkscape:cx="484.50723"
-     inkscape:cy="745.53355"
+     inkscape:cy="826.34575"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -551,14 +551,14 @@
          sodipodi:linespacing="125%"
          id="text3759"
          y="206.96172"
-         x="52.048042"
+         x="56.048042"
          style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
            style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
            y="206.96172"
-           x="52.048042"
+           x="56.048042"
            id="tspan3761"
-           sodipodi:role="line">plx:Approver</tspan></text>
+           sodipodi:role="line">plx:Source</tspan></text>
     </g>
     <g
        id="g4840"
@@ -603,14 +603,14 @@
          sodipodi:linespacing="125%"
          id="text3770-4"
          y="201.21927"
-         x="30.883091"
+         x="36.883091"
          style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
            style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono"
            y="201.21927"
-           x="30.883091"
+           x="36.883091"
            id="tspan3772-5"
-           sodipodi:role="line">plx:approver/4711</tspan></text>
+           sodipodi:role="line">plx:source/4711</tspan></text>
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
@@ -1396,7 +1396,7 @@
          id="tspan3772-3-37-8"
          x="374.2879"
          y="181.07713"
-         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono">plx:approver</tspan></text>
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:DejaVu Sans Mono;-inkscape-font-specification:DejaVu Sans Mono">plx:source</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
        d="m 412.87113,196.4583 -32.56127,-2.77794"
