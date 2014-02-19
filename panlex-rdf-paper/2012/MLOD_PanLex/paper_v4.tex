@@ -118,22 +118,42 @@ Multilingual Linked Open Data, LLOD Cloud, PanLex, Lexical Resource, RDF, RDB2RD
 At present, there are about 7,000 living languages in the world\footnote{\url{http://www-01.sil.org/iso639-3/iso-639-3.tab}}.
 %\footnote{\url{http://www-01.sil.org/iso639-3/iso-639-3.tab}. As of 25 January 2014, this list contained 6,975 living individual languages.}
 %Nonetheless, processes such as urbanization, nation-state consolidation, and globalization appear to be producing language attrition, with, %for example, the extinction or near-extinction in the last 60 years of from 10\% to over 75\% (depending on the world's region) of all living languages\cite{lang_crisis}.
-Nonetheless, processes such as urbanization, nation-state consolidation, and globalization appear to be producing language attrition: For example, in the last 60 years and depending on the world's region, from 10\% to over 75\% of all living languages have become extinct or near-extinct~\cite{lang_crisis}.
+Nonetheless, processes such as urbanization, nation-state consolidation, and globalization appear to be producing language attrition: For example, in the last 60 years and depending on the world's region, from 10\% to over 75\% of all living languages have become extinct or near-extinct~\cite{lang_crisis}.\todo{Jonathan: Please check statement}
 Theorists of biolinguistic diversity argue that the loss of language diversity, the loss of human biological knowledge, and the loss of species diversity are mutually supportive and thus that language preservation and revitalization are essential to the preservation of biological diversity\cite{nettle}.
 
-The mission of the PanLex project is to investigate the possibility that language attrition would be decreased or halted if utterances in any language were efficiently translatable into all other languages and, as a result, the speakers of all languages could use their languages for world-wide communication. Among the prerequisites of the panlingual translatablity of discourses would be the panlingual translatability of lexicons. In fact, lexical translation is almost the entirety of translation in some contexts (such as personal profiles, bibliographic subject headings, content tagging, product price lists, and web navigation controls). PanLex is designed to support that component by systematically integrating millions of lexical translations, documented in thousands of sources, into a database accessible to the research community, application developers, and the public. The database content can be interpreted as a graph linking millions of lexemes with one another in billions of ``is-a-translation-of'' relations, and permitting intelligent automated inference to trillions more such relations that have not been attested.
+The mission of the PanLex project is to investigate the possibility that language attrition would be decreased or halted if utterances in any language were efficiently translatable into all other languages, and, as a result, the speakers of all languages could use their languages for world-wide communication.
+One prerequisite for panlingual translatablity of discourses is the panlingual translatability of lexicons.
+%In fact, lexical translation is almost the entirety of translation in some contexts (such as personal profiles, bibliographic subject headings, content tagging, product price lists, and web navigation controls).
+PanLex is designed to support that component by systematically integrating millions of lexical translations, documented in thousands of sources, into a database accessible to the research community, application developers, and the public.
+%The database content can be interpreted as a graph linking millions of lexemes with one another in billions of ``is-a-translation-of'' relations, and permitting intelligent automated inference to trillions more such relations that have not been attested.
 %It documents the known lexical translations (translations of lexemes) among all
 %languages.
 
-Precisely because the citation forms of lexemes, which is what PanLex directly enables the translation of, are commonly used as labels in collections of data, it is reasonable to speculate that PanLex might facilitate cross-linguistic access to knowledge. The idea of a Semantic Web has led to a stack of technologies standardized by the
+%Precisely because the citation forms of lexemes, which is what PanLex directly enables the translation of, are commonly used as labels in collections of data, it is reasonable to speculate that PanLex might facilitate cross-linguistic access to knowledge.
+
+The Semantic Web technologies
+standardized by the
 \emph{World Wide Web Consortium}\footnote{\url{http://www.w3.org/standards/semanticweb/}}
-supporting a machine-readable and machine-interpretable Linked Data
-network. This has led to the concept and reality of a \emph{Web of Data}.
+lay the foundations for the \emph{Web of Data}: an infrastructure for
+%machine-readable and
+machine-interpretable data on the Web.
+
+% the basis for the \emph{Web of Data}: a
+%: an infrastructure for
+%machine-readable
+%machine-interpretable data on the Web.
+
+%supporting a machine-readable and machine-interpretable Linked Data
+%network.
+%This has led to the concept and reality of a \emph{Web of Data}.
 %Technologies that support this aim are already available and in use in the so
 %called \emph{Web of Data}.
-Currently there is a growing community working on leveraging these Semantic Web
-technologies for linguistic knowledge and thereby building a Web of Linguistic
-Data, also known as the \emph{Linguistic Linked Open Data (LLOD) cloud}.
+Currently there is a growing community leveraging
+%Semantic Web
+these
+technologies for linguistic knowledge which is giving rise to the \emph{Linguistic Linked Open Data (LLOD) cloud}.
+
+% and thereby building a Web of Linguistic Data, also known as the \emph{Linguistic Linked Open Data (LLOD) cloud}.
 
 Our steps to connect PanLex to this Linked Data network are as follows.
 In \autoref{sec:triplificate} we introduce the PanLex dataset, present our
@@ -141,7 +161,7 @@ PanLex RDF vocabulary, and explain how we transformed the one into the other and
 \autoref{sec:linking} is about how we linked to other datasets of the LLOD cloud,
 and \autoref{sec:publishing} is about the publication of the dataset.
 Usage scenarios are given in \autoref{sec:usage}.
-In \autoref{sec:related} we discuss related work, and finally, in \autoref{sec:conclusion}, we conclude our approach and give some hints about future work.
+In \autoref{sec:related} we discuss related work, and finally, in \autoref{sec:conclusion}, we conclude our approach and outline future work.
 
 \section{Triplification of the Raw Data}
 \label{sec:triplificate}
