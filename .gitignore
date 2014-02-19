@@ -23,6 +23,7 @@ paper.pdf
 *.lot
 *.lof
 *.eps
+*.swp
 
 config.ini
 
