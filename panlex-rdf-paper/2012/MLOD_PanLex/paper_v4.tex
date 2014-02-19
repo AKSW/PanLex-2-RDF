@@ -118,8 +118,8 @@ Multilingual Linked Open Data, LLOD Cloud, PanLex, Lexical Resource, RDF, RDB2RD
 At present, there are about 7,000 living languages in the world\footnote{\url{http://www-01.sil.org/iso639-3/iso-639-3.tab}}.
 %\footnote{\url{http://www-01.sil.org/iso639-3/iso-639-3.tab}. As of 25 January 2014, this list contained 6,975 living individual languages.}
 %Nonetheless, processes such as urbanization, nation-state consolidation, and globalization appear to be producing language attrition, with, %for example, the extinction or near-extinction in the last 60 years of from 10\% to over 75\% (depending on the world's region) of all living languages\cite{lang_crisis}.
-Nonetheless, processes such as urbanization, nation-state consolidation, and globalization appear to be producing language attrition: For example, in the last 60 years and depending on the world's region, from 10\% to over 75\% of all living languages have become extinct or near-extinct~\cite{lang_crisis}.\todo{Jonathan: Please check statement}
-Theorists of biolinguistic diversity argue that the loss of language diversity, the loss of human biological knowledge, and the loss of species diversity are mutually supportive and thus that language preservation and revitalization are essential to the preservation of biological diversity\cite{nettle}.
+Nonetheless, processes such as urbanization, nation-state consolidation, and globalization appear to be producing language attrition: For example, in the last 60 years and depending on the world's region, from 10\% to over 75\% of all living languages have become extinct or near-extinct~\cite{lang_crisis}.
+Theorists of biolinguistic diversity argue that the loss of language diversity, the loss of human biological knowledge, and the loss of species diversity are mutually supportive and thus that language preservation and revitalization are essential to the preservation of biological diversity~\cite{nettle}.
 
 The mission of the PanLex project is to investigate the possibility that language attrition would be decreased or halted if utterances in any language were efficiently translatable into all other languages, and, as a result, the speakers of all languages could use their languages for world-wide communication.
 One prerequisite for panlingual translatablity of discourses is the panlingual translatability of lexicons.
@@ -180,7 +180,8 @@ taken to transform the data to RDF.
 At the core of the PanLex \emph{project}, there is the PanLex \emph{database}, which is created by editors who consult thousands of lexical sources, such as mono- and multilingual dictionaries, glossaries, standards, and thesauri.
 The list of sources that have been and are being consulted is available online\footnote{\url{http://panlex.org/tech/plrefs.shtml}}.
 The data based on these sources include single- and multi-word expressions, meanings assigned to them, and related information. Far from being mere copies of the sources, which would not make PanLex data interoperable, the data constitute editors' \emph{interpretations} of various sources' \emph{assertions} that two or more \emph{expressions} share a \emph{meaning}\footnote{\url{http://panlex.org/tech/doc/design/panlex-db-design.pdf}}.
-As of January 2014, the database contained about 20 million meanings and 20 million expressions in about 9,200 language varieties based on the consultation of about 1,500 sources by about 20 editors.
+% PW: I commented the following sentence out since I removed the detailed number of instances table (language varieties identified/with data; source being consulted/already consulted. I used the bigger numbers and in this sentence the smaller numbers are used, which might confuse
+%As of January 2014, the database contained about 20 million meanings and 20 million expressions in about 9,200 language varieties based on the consultation of about 1,500 sources by about 20 editors.
 The most important entities and relations of PanLex's conceptual model are depicted in \autoref{fig:db-schema} and are explained in more detail below.
 
 \begin{figure}
@@ -260,72 +261,74 @@ An overview of the number of instances per entity as of January 2014 is given in
   \end{scriptsize}
   \caption{Number of instances of main entities in the PanLex database}
   \label{fig:plx-entity-counts}
-\end{table}\todo{new license `75 | pl | pup'; What does it mean?}
+\end{table}
 
 
 \subsection{The PanLex vocabulary}
 \label{sec:vocabulary}
 The entities and relations of the schema described in the previous section serve as the base for the development of the PanLex RDF vocabulary.
-In general, all PanLex RDF resources reside in the namespace \texttt{\small <http://ld.panlex.org/plx/>}, abbreviated with \texttt{\small plx}.
+In general, all PanLex RDF resources reside in the namespace \emph{<http://ld.panlex.org/plx/>}, abbreviated with \emph{plx}.
 An example of the resulting ontology is depicted in \autoref{fig:vocabulary} and summarized as follows.
 Unless otherwise noted, the URIs of instances of PanLex classes follow the pattern \emph{plx:\{className\}/\{id\}}, where \{className\} is spelled in lower camel case and the \{id\} is the primary key of the corresponding database table.
 
 \begin{itemize}
-  \item Expressions are modeled as instances of the class \texttt{\small plx:Expression}.
-    Their original and degraded textual representations become the values of the properties \texttt{\small rdfs:label} and \texttt{\small plx:degradedText}, respectively.
-    Their corresponding language variety is stated using \texttt{\small plx:languageVariety}.
-  \item For language and language varieties the classes \texttt{\small plx:Language} and \texttt{\small plx:LanguageVariety} are introduced.
-    \emph{ISO 639-1} and \emph{ISO 639-3 codes} become instances of the classes \texttt{\small plx:Iso639-1Code} and \texttt{\small plx:Iso639-3Code}.
-  \item The RDF analog of the PanLex \emph{meaning} is the \texttt{\small plx:Meaning}.
-    Entities of this class may have an identifier assigned with the \texttt{\small plx:identifier} property pointing to an \texttt{\small xsd:string} literal.
-    Meanings may also have \emph{definitions}, entities of the \texttt{\small plx:Definition} class, giving a textual representation (\texttt{\small rdfs:label}) in a certain language variety (\texttt{\small plx:languageVariety}).
+  \item Expressions are modeled as instances of the class \emph{plx:Expression}.
+    Their original and degraded textual representations become the values of the properties \emph{rdfs:label} and \emph{plx:degradedText}, respectively.
+    Their corresponding language variety is stated using \emph{plx:languageVariety}.
+  \item For language and language varieties the classes \emph{plx:Language} and \emph{plx:LanguageVariety} are introduced.
+    ISO 639-1 and ISO 639-3 codes become instances of the classes \emph{plx:Iso639-1Code} and \emph{plx:Iso639-3Code}.
+  \item The RDF analog of the PanLex \emph{meaning} is the \emph{plx:Meaning}.
+    Entities of this class may have an identifier assigned with the \emph{plx:identifier} property pointing to an \emph{xsd:string} literal.
+    Meanings may also have \emph{definitions}, entities of the \emph{plx:Definition} class, giving a textual representation (\emph{rdfs:label}) in a certain language variety (\emph{plx:languageVariety}).
   \item Following the semantics of the PanLex database, meanings and expressions are linked via \emph{denotations}.
-    These are entities of the \texttt{\small plx:Denotation} class pointing to meanings and expressions via the properties \texttt{\small plx:denotationMeaning} and \\ \texttt{\small plx:denotationExpression}.
+    These are entities of the \emph{plx:Denotation} class pointing to meanings and expressions via the properties \emph{plx:denotationMeaning} and \emph{plx:\-denotation\-Expression}.
     Denotations may also have a word class assigned to them.
-    This can be achieved with the denotation's \texttt{\small plx:wordClass} property pointing to a \texttt{\small plx:WordClass} entity.
-  \item All sources share the \texttt{\small plx:Source} class.
+    This can be achieved with the denotation's \emph{plx:wordClass} property pointing to a \emph{plx:WordClass} entity.
+  \item All sources share the \emph{plx:Source} class.
     The characteristics of a source are described using mainly triples with literal objects.
-    These are for example \texttt{\small dc:title} to assign the title of a source, \texttt{\small dc:creator} to give an \texttt{\small xsd:string} containing the author's name. At present, we support the different license categories recognized in the database by creating resources of the \texttt{\small plx:License} class.
+    These are for example \emph{dc:title} to assign the title of a source, \emph{dc:creator} to give an \emph{xsd:string} containing the author's name.
+    At present, we support the different license categories recognized in the database by creating resources of the \emph{plx:License} class.
 \end{itemize}
 
 \begin{table}
-  \begin{tiny}
-  \begin{tabular}{p{52px}p{140px}}
+  \centering
+  \begin{scriptsize}
+  \fontsize{5.8pt}{5pt}\selectfont
+  \begin{tabular}{p{41pt}p{150pt}}
     Class                 & Properties \\
     \toprule
-    \texttt{plx:Source} & \mbox{\texttt{plx:registrationDate}, \texttt{rdfs:label}, \texttt{dc:title},}
-                            \mbox{\texttt{dc:creator}, \texttt{plx:license}, \texttt{dc:date}, \texttt{plx:quality},}
-                            \mbox{\texttt{foaf:homepage}, \texttt{dc:publisher}, \texttt{dbpedia-owl:isbn}} \\
+%    \emph{plx:Source} & \emph{plx:registrationDate},\,\emph{rdfs:label},\,\emph{dc:title},\,\emph{dc:creator},\,\emph{dc:quality}, \emph{plx:license},\,\emph{dc:date},\,\emph{foaf:homepage},\,\emph{dc:publisher},\,\emph{dbpedia-owl:isbn} \\
+    \emph{plx:Source} & \emph{plx:registrationDate},\,\emph{rdfs:label},\,\emph{dc:title},\,\emph{dc:publisher},\,\emph{dc:quality}, \emph{plx:license},\,\emph{dc:date},\,\emph{foaf:homepage},\,\emph{dc:creator},\,\mbox{\emph{dbpedia-owl:isbn}} \\
     \midrule
-    \texttt{plx:Language} & \texttt{plx:iso639-3Code}, \texttt{plx:iso639-1Code} \\
+    \emph{plx:Language} & \emph{plx:iso639-3Code}, \emph{plx:iso639-1Code} \\
     \midrule
-    \texttt{plx:LanguageVariety}
-                          & \texttt{plx:languageVarietyOf}, \texttt{rdfs:label} \\
+    \emph{plx:LanguageVariety}
+                          & \emph{plx:languageVarietyOf}, \emph{rdfs:label} \\
     \midrule
-    \texttt{plx:Iso639-1Code} & \\
+    \mbox{\emph{plx:Iso639-1Code}} & \\
     \midrule
-    \texttt{plx:Iso639-3Code} & \\
+    \mbox{\emph{plx:Iso639-3Code}} & \\
     \midrule
-    \texttt{plx:Expression}
-                          & \mbox{\texttt{plx:languageVariety}, \texttt{plx:degradedText},} \texttt{rdfs:label} \\
+    \emph{plx:Expression}
+                          & \emph{plx:languageVariety}, \emph{plx:degradedText}, \emph{rdfs:label} \\
     \midrule
-    \texttt{plx:Meaning}
-                          & \mbox{\texttt{plx:source}, \texttt{plx:identifier},} \texttt{plx:meaningDefinition} \\
+    \emph{plx:Meaning}
+                          & \emph{plx:source}, \emph{plx:identifier}, \emph{plx:meaningDefinition} \\
     \midrule
-    \texttt{plx:Definition}
-                          & \texttt{plx:languageVariety}, \texttt{rdfs:label} \\
+    \emph{plx:Definition}
+                          & \emph{plx:languageVariety}, \emph{rdfs:label} \\
     \midrule
-    \texttt{plx:Denotation}
-                          & \texttt{plx:denotationMeaning}, \texttt{plx:denotationExpression}, \texttt{plx:wordClass} \\
+    \emph{plx:Denotation}
+                          & \emph{plx:denotationMeaning},\,\emph{plx:denotationExpression},\,\emph{plx:wordClass} \\
     \midrule
-    \texttt{plx:WordClass}  
-                          & \texttt{rdfs:label} \\
+    \emph{plx:WordClass}  
+                          & \emph{rdfs:label} \\
     \midrule
-    \texttt{plx:License}  & \texttt{rdfs:label} \\
-    \bottomrule
+    \emph{plx:License}    & \emph{rdfs:label} \\
+    \bottomrule\vspace{3pt}
   \end{tabular}
-  \end{tiny}
-  \caption{Classes and properties used in the PanLex RDF vocabulary. Note that all \texttt{rdf:type} properties are omitted for brevity.}
+  \end{scriptsize}
+  \caption{Classes and properties used in the PanLex RDF vocabulary. Note that all \emph{rdf:type} properties are omitted for brevity.}
   \label{tbl:vocabulary}
 \end{table}
 
@@ -337,12 +340,13 @@ Unless otherwise noted, the URIs of instances of PanLex classes follow the patte
 
 \begin{table}
   \centering\begin{scriptsize}
+  \fontsize{6.5pt}{6.4pt}\selectfont
   \begin{tabular}{p{48px}p{62px}p{70px}}
     Panlex                  & lemon                       & GOLD \\
     \midrule
-    \texttt{plx:Denotation} & --                          & \texttt{gold:LinguisticSign} \\
-    \texttt{plx:Meaning}    & \texttt{lemon:LexicalSense} & \texttt{gold:SemanticUnit} \\
-    \texttt{plx:Expression} & \texttt{lemon:LexicalEntry} & \texttt{gold:FormUnit} \\
+    \emph{plx:Denotation} & --                          & \emph{gold:LinguisticSign} \\
+    \emph{plx:Meaning}    & \emph{lemon:LexicalSense} & \emph{gold:SemanticUnit} \\
+    \emph{plx:Expression} & \emph{lemon:LexicalEntry} & \emph{gold:FormUnit} \\
   \end{tabular}
   \end{scriptsize}
   \caption{Classes considered to be similar across the re-used vocabulary}
@@ -354,7 +358,7 @@ Unless otherwise noted, the URIs of instances of PanLex classes follow the patte
 The PanLex vocabulary is based on PanLex's conceptual schema and
 enables all of PanLex's data to be directly exposed as RDF.
 %Apart from modeling a PanLex RDF vocabulary
-Additionally, we also re-use existing vocuabularies, namely
+Additionally, we also re-use existing vocabularies, namely
 the \emph{Lexicon Model for Ontologies} (lemon)~\cite{lemon2011} as well as the \emph{General Ontology for Linguistic Description} (GOLD)~\cite{farr2003}.
 Since these models differ from the PanLex one to some extent, we follow an
 incremental approach of aligning the PanLex data with them.
@@ -456,7 +460,7 @@ APIs\footnote{\url{http://panlex.org/try/}} with Linked Data, powered by
 Pubby\footnote{\tiny{\url{http://wifo5-03.informatik.uni-mannheim.de/pubby/}}},
 and two SPARQL
 endpoints\footnote{\url{http://ld.panlex.org/vsparql}}
-\footnote{\url{http://ld.panlex.org/sparql}}, powered by Sparqlify and Virtuoso,
+\footnote{\url{http://ld.panlex.org/sparql}}, ran by Sparqlify and Virtuoso,
 respectively.
 % and \url{http://ld.panlex.org/snorql}}.
 An overview is shown in ~\autoref{fig:panlex-architecture}.
@@ -528,7 +532,7 @@ The extraction of information from linguistic sources, and techniques for automa
 are relevant work discussed in \cite{panlex_probtrans}.
 %A similar approach of linking expressions to meanings is followed by the
 % \emph{Global Wordnet Association}.
-An important related initiative is the Global Wordnet Association\footnote{\url{http://www.globalwordnet.org/}\vspace{0.7em}},
+An important related initiative is the Global Wordnet Association (GWA)\footnote{\url{http://www.globalwordnet.org/}},
 which offers a platform for sharing wordnets and, among other goals, uniformly representing wordnets
 of different languages and establishing a universal index of meaning.
 Wordnets are usually focused on the
