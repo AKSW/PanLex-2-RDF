@@ -109,8 +109,8 @@ Multilingual Linked Open Data, LLOD Cloud, PanLex, Lexical Resource, RDF, RDB2RD
 
 \section{Introduction}
 \label{sec:intro}
-There are about 7,000 living languages\footnote{\url{http://www-01.sil.org/iso639-3/iso-639-3.tab}}, but language attrition has extinguished or threatened from 10\% to over 75\% of all languages in the last 60 years in various regions\cite{lang_crisis}.
-This attrition arguably imperils human biological knowledge and species diversity\cite{nettle}. Hypothetically, panlingual intertranslatability would make all languages more useful and incentivize their preservation and revitalization. 
+There are about 7,000 living languages\footnote{\url{http://www-01.sil.org/iso639-3/iso-639-3.tab}}, but language attrition has extinguished or threatened from 10\% to over 75\% of all languages in the last 60 years in various regions~\cite{lang_crisis}.
+This attrition arguably imperils human biological knowledge and species diversity~\cite{nettle}. Hypothetically, panlingual intertranslatability would make all languages more useful and incentivize their preservation and revitalization. 
 
 The PanLex project is making all languages' lexicons intertranslatable. In some contexts (e.g., profiles, catalogs, tags, search, and web navigation), lexical translation can be most of the translation load. PanLex systematically integrates lexical translations, found in diverse sources, into a database for research, applications, and public use. The content can be interpreted as a graph linking lexemes in ``is-a-translation-of'' relations, and permitting automated inference to additional, unattested relations.
 %It documents the known lexical translations (translations of lexemes) among all
@@ -148,7 +148,7 @@ The most important entities and relations of PanLex's conceptual model are depic
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.4\textwidth]{images/schema-new.png}
+  \includegraphics[width=0.42\textwidth]{images/schema_new.png}
   \caption{The PanLex database schema}
   \label{fig:db-schema}
 \end{figure}
@@ -157,7 +157,8 @@ The most important entities and relations of PanLex's conceptual model are depic
   \item The \emph{source} entity is the authority to which an editor attributes assertions about lexical translations.
   \item \emph{Expressions} are lexical entities, each uniquely identified with a text, i.e. a string of (Unicode) characters, and a variety of a language. Expressions resemble lemmas or dictionary-entry headwords, but differ from them in at least two ways. (1) Homographs, such as the verb ``hide'' (conceal) and the noun ``hide'' (animal skin) in English, are treated as a single expression in PanLex. (2) Multiword expressions, such as ``fall in love'', traditionally found in an entry headed by one of their words, such as ``fall'' or ``love'', are treated as independent expressions in PanLex. Expression texts are constrained to comply with Unicode Normalization Form NFC.
     \item \emph{Languages} in PanLex are identified using ISO 639-3\footnote{\url{http://www.sil.org/iso639-3/codes.asp}} individual and macrolanguage codes, ISO 639-2\footnote{\url{http://www.loc.gov/standards/iso639-2/}} collective codes, and ISO 639-5\footnote{\url{http://www.loc.gov/standards/iso639-5/}} codes.
-    \item \emph {Language varieties} are collections of expressions. Each has a unique identifier: a language code and a distinguishing integer. For example, six dialects of Ahtna are identified as ``aht-000'' through ``aht-005''. These labels are, themselves, treated as a (controlled) language variety, whose expressions (i.e. the labels) are translated into natural languages and other controlled languages (such as the IETF standard BCP 47\footnote{\url{http://tools.ietf.org/html/bcp47}}. The only properties of this entity are ambiguity and synonymy: Controlled language varieties are usually defined to prohibit both of these.
+    \item \emph {Language varieties} are collections of expressions. Each has a unique identifier: a language code and a distinguishing integer. For example, six dialects of Ahtna are identified as ``aht-000'' through ``aht-005''. These labels are, themselves, treated as a (controlled) language variety, whose expressions (i.e. the labels) are translated into natural languages and other controlled languages (such as the IETF standard BCP 47\footnote{\url{http://tools.ietf.org/html/bcp47}}).
+%The only properties of this entity are ambiguity and synonymy: Controlled language varieties are usually defined to prohibit both of these.
     \item \emph{Meanings} are the entities assigned to expressions, thereby identifying expressions as translations or synonyms. For example, a source's translation of the German expression ``klingen'' into English as ``ring, sound, seem'' can be interpreted as (1) the assignment of a single meaning to all four expressions or (2) the assignment of two or three meanings to ``klingen'' and of one of those to each of the English expressions. Meanings are source-specific. The identification and consolidation of equivalent meanings of distinct sources is a research topic, not a database feature. Meanings can have properties of three types. (1) \emph{Definitions} are descriptions of a meaning, consisting of text strings annotated as being in particular language varieties. (2) \emph{Domains} are expressions (e.g., ``medicine'') that characterize a meaning, but do not express it. (3) \emph{Meaning identifiers} are strings acting as references to identifiers in a source.
     \item \emph{Denotations} are assignments of meanings to expressions. A denotation may have one or more \emph{word classes} (a closed set based on OLIF, the Open Lexicon Interchange Format) and/or \emph{metadata} (arbitrary strings paired as keys and values).
     %For example, \emph{fall} can be a verb or a noun for autumn.
@@ -192,14 +193,14 @@ License          & Count \\
     Entity             & Instances  \\
     \cline{1-2}
     Denotations        & 54,278,860 \\  % SELECT COUNT(dn) FROM dn;
-    Languages          &      7,843 \\ % SELECT COUNT(lc) FROM lc; -- all language codes (ISO 639-3, ISO 639-2, ISO 639-5) known in the PanLex db
-    Language Varieties identified           &      9,310 \\  % SELECT COUNT(lv) FROM lv;
-    Language Varieties with data           &      9,239 \\  % 
     Meanings           & 20,773,371 \\  % SELECT COUNT(mn) FROM mn;
-    Sources being consulted         &      4,190 \\  % 
-    Sources already consulted         &      1,453 \\  % 
     Expressions        & 19,790,453 \\ % SELECT COUNT(ex) FROM ex;
     Definitions        &  2,747,892 \\ % SELECT COUNT(df) FROM df;
+    Language Varieties identified           &      9,310 \\  % SELECT COUNT(lv) FROM lv;
+    Language Varieties with data           &      9,239 \\  % 
+    Languages          &      7,843 \\ % SELECT COUNT(lc) FROM lc; -- all language codes (ISO 639-3, ISO 639-2, ISO 639-5) known in the PanLex db
+    Sources being consulted   &      4,190 \\  % 
+    Sources already consulted &      1,453 \\  % 
     Users              &          23 \\ % SELECT COUNT(us) FROM us;
   \end{tabular}
   \end{scriptsize}
@@ -227,7 +228,7 @@ Unless otherwise noted, the URIs of instances of PanLex classes follow the patte
     These are entities of the \texttt{\small plx:Denotation} class pointing to meanings and expressions via the properties \texttt{\small plx:denotationMeaning} and \\ \texttt{\small plx:denotationExpression}.
     Denotations may also have a word class assigned to them.
     This can be achieved with the denotation's \texttt{\small plx:wordClass} property pointing to a \texttt{\small plx:WordClass} entity.
-  \item All sources share the \texttt{\small plx:Approver} class.
+  \item All sources share the \texttt{\small plx:Source} class.
     The characteristics of a source are described using mainly triples with literal objects.
     These are for example \texttt{\small dc:title} to assign the title of a source, \texttt{\small dc:creator} to give an \texttt{\small xsd:string} containing the author's name. At present, we support the different license categories recognized in the database by creating resources of the \texttt{\small plx:License} class.
 \end{itemize}
@@ -237,7 +238,7 @@ Unless otherwise noted, the URIs of instances of PanLex classes follow the patte
   \begin{tabular}{p{52px}p{140px}}
     Class                 & Properties \\
     \toprule
-    \texttt{plx:Approver} & \mbox{\texttt{plx:registrationDate}, \texttt{rdfs:label}, \texttt{dc:title},}
+    \texttt{plx:Source} & \mbox{\texttt{plx:registrationDate}, \texttt{rdfs:label}, \texttt{dc:title},}
                             \mbox{\texttt{dc:creator}, \texttt{plx:license}, \texttt{dc:date}, \texttt{plx:quality},}
                             \mbox{\texttt{foaf:homepage}, \texttt{dc:publisher}, \texttt{dbpedia-owl:isbn}} \\
     \midrule
@@ -400,7 +401,7 @@ APIs\footnote{\url{http://panlex.org/try/}} with Linked Data, powered by
 Pubby\footnote{\tiny{\url{http://wifo5-03.informatik.uni-mannheim.de/pubby/}}},
 and two SPARQL
 endpoints\footnote{\url{http://ld.panlex.org/vsparql}}
-\footnote{\url{http://ld.panlex.org/sparql}}, powered by Sparqlify and Virtuoso,
+\footnote{\url{http://ld.panlex.org/sparql}}, ran by Sparqlify and Virtuoso,
 respectively.
 % and \url{http://ld.panlex.org/snorql}}.
 An overview is shown in ~\autoref{fig:panlex-architecture}.
@@ -472,7 +473,7 @@ The extraction of information from linguistic sources, and techniques for automa
 are relevant work discussed in \cite{panlex_probtrans}.
 %A similar approach of linking expressions to meanings is followed by the
 % \emph{Global Wordnet Association}.
-An important related initiative is the Global Wordnet Association\footnote{\url{http://www.globalwordnet.org/}\vspace{0.7em}},
+An important related initiative is the Global Wordnet Association (GWA)\footnote{\url{http://www.globalwordnet.org/}\vspace{0.7em}},
 which offers a platform for sharing wordnets and, among other goals, uniformly representing wordnets
 of different languages and establishing a universal index of meaning.
 Wordnets are usually focused on the
