@@ -116,16 +116,14 @@ The PanLex project is making all languages' lexicons intertranslatable. In some 
 %It documents the known lexical translations (translations of lexemes) among all
 %languages.
 
-The Semantic Web Initiative has led to a stack of technologies standardized by the
-\emph{World Wide Web Consortium}\footnote{\url{http://www.w3.org/standards/semanticweb/}}
+The Semantic Web Initiative has led to the development of standards and technologies
 supporting a machine-readable and \mbox{-i}nter\-pretable Linked Data
-network. This has led to a \emph{Web of Data}.
+network, known as the \emph{Web of Data}.\footnote{\url{http://www.w3.org/standards/semanticweb/}} From these efforts the \emph{Linked Open Data (LOD) cloud}\footnote{\url{http://lod-cloud.net/}} emerged.
 %Technologies that support this aim are already available and in use in the so
 %called \emph{Web of Data}.
-A growing community is leveraging Semantic Web technologies for linguistic knowledge, building a Web of Linguistic
-Data, or a \emph{Linguistic Linked Open Data (LLOD) cloud}.
+A growing community is leveraging Semantic Web technologies for linguistic knowledge, building a \emph{Linguistic LOD (LLOD) cloud}.
 
-When linked open data are labeled in any language with lexemes in citation form (lemmas), the data are potentially linkable to, and through, PanLex. Here we describe how we connected PanLex to the Linked Data network.
+Whenever there is Linked Data making use of descriptions, such as labels, in any language with lexemes in citation form (lemmas), the data are potentially linkable to, and through, PanLex. Here we describe how we connected PanLex to the Linked Data network.
 In \autoref{sec:triplificate} we introduce the dataset, present a
 PanLex RDF vocabulary, and explain how we transformed the one into the other and established conformance with additional data models.
 \autoref{sec:linking} is about how we linked to other datasets of the LLOD cloud,
@@ -135,7 +133,7 @@ In \autoref{sec:related} we discuss related work, and, finally, in \autoref{sec:
 
 \section{Triplification of the Raw Data}
 \label{sec:triplificate}
-Here we analyze the PanLex dataset; introduce our URI and vocabulary design, resembling PanLex's conceptual model;
+In this section, we analyze the PanLex dataset; introduce our URI and vocabulary design, which resemble PanLex's conceptual model;
 %, which was developed independently from other ontology engineering approaches.
 summarize how we classified PanLex's instance data with additional data models; and explain our transformation of the data to RDF.
 
@@ -143,7 +141,7 @@ summarize how we classified PanLex's instance data with additional data models; 
 
 \subsection{Analysis of the Original Dataset}
 \label{sec:analysis}
-The PanLex \emph{database} is created by editors who consult sources\footnote{\url{http://panlex.org/tech/plrefs.shtml}}, such as mono- and multilingual dictionaries, glossaries, standards, and thesauri. The data include single- and multi-word expressions, meanings assigned to them, and related information. While copies of the sources would not be interoperable, PanLex data constitute editors' \emph{interpretations} of sources' \emph{assertions} that two or more \emph{expressions} share a \emph{meaning}\footnote{\url{http://panlex.org/tech/doc/design/panlex-db-design.pdf}}.
+The PanLex \emph{database} is created by editors who consult \emph{information sources}\footnote{\url{http://panlex.org/tech/plrefs.shtml}}, such as mono- and multilingual dictionaries, glossaries, standards, and thesauri. The data include single- and multi-word expressions, corresponding meanings assigned to them, and related information. While copies of the sources would not be interoperable, PanLex data constitute editors' \emph{interpretations} of sources' \emph{assertions} that two or more \emph{expressions} share a \emph{meaning}\footnote{\url{http://panlex.org/tech/doc/design/panlex-db-design.pdf}}.
 The most important entities and relations of PanLex's conceptual model are depicted in \autoref{fig:db-schema}.
 
 \begin{figure}
@@ -301,7 +299,7 @@ enables all of PanLex's data to be directly exposed as RDF.
 %Apart from modeling a PanLex RDF vocabulary
 Additionally, we also re-use existing vocuabularies, namely
 the \emph{Lexicon Model for Ontologies} (lemon)~\cite{lemon2011} as well as the \emph{General Ontology for Linguistic Description} (GOLD)~\cite{farr2003}.
-Since these models differ from the PanLex one to some extent, we follow an
+Since these models differ from the PanLex one, we follow an
 incremental approach of aligning the PanLex data with them.
 %accordingly. 
 % one differ to some
@@ -336,9 +334,11 @@ languages in PanLex: From each row of the table \emph{i1} three resources are
 created based on the \emph{iso3} column and 
 bound to the variable names \emph{?lang}, \emph{?iso3} and \emph{?lexvo3}.
 Resources for \emph{?lang} become typed as a \emph{Language} in the PanLex and the \emph{schema.org} namespace.
-This view-based approach also demonstrates that changing the vocabulary or
-adding support for new ones does not require an extract transform load (ETL) process,
-and can therefore be done with little effort.
+This view-based approach makes it easy to perform future revisions of RDF mapping, such as
+adding support for new vocabularies.
+%, as this does not require an extract transform load (ETL) process.
+%and can therefore be done with little effort.
+%This view-based approach makes it easy to revise the RDF mapping, such as adding support for new vocabular
 
 \begin{figure}
 \centering
@@ -361,9 +361,8 @@ example also demonstrates how ``is-a'' relations to schema.org and links to Lexv
 
 \section{Linking}
 \label{sec:linking}
-The SML view in the previous section (\autoref{fig:ex:sparqlify-ml}) already established the interlinking of the PanLex languages with Lexvo.
-In this section we outline the interlinking with DBpedia.
-For DBpedia, we were interested in creating \emph{valid} and thus \emph{dereferenceable} links.
+The SML view in (\autoref{fig:ex:sparqlify-ml}) already establishes the interlinking of the PanLex languages with Lexvo.
+In this section, we outline the interlinking with DBpedia, where we were interested in creating \emph{valid} and \emph{dereferenceable} links.
 Therefore, we iterated the \emph{titles} datasets\footnote{\url{http://wiki.dbpedia.org/Downloads38}}, which map (non-localized) DBpedia URIs to their page titles in the respective language.
 For each language version we normalized the labels by applying Unicode NFKD\footnote{\url{http://unicode.org/reports/tr15/}} normalization and removal of punctuation characters.
 Each DBpedia resource was then mapped to the PanLex expression that was equal to the resource's normalized label in the respective language.
@@ -398,18 +397,17 @@ This relatively low coverage can be attributed to frequently appearing multi-wor
 \label{sec:publishing}
 With our RDF conversion work, we complement existing
 APIs\footnote{\url{http://panlex.org/try/}} with Linked Data, powered by
-Pubby\footnote{\tiny{\url{http://wifo5-03.informatik.uni-mannheim.de/pubby/}}},
+Pubby\footnote{\url{http://wifo5-03.informatik.uni-mannheim.de/pubby/}},
 and two SPARQL
 endpoints\footnote{\url{http://ld.panlex.org/vsparql}}
-\footnote{\url{http://ld.panlex.org/sparql}}, ran by Sparqlify and Virtuoso,
-respectively.
+\footnote{\url{http://ld.panlex.org/sparql}}, ran by Sparqlify and Virtuoso.
 % and \url{http://ld.panlex.org/snorql}}.
 An overview is shown in ~\autoref{fig:panlex-architecture}.
 The SPARQL browser
 \emph{SNORQL}\footnote{\url{https://github.com/kurtjx/SNORQL}} can be accessed
 by replacing \emph{sparql} with \emph{snorql} in the respective links. Our SML
 views and the interlinking code are hosted on GitHub\footnote{\url{https://github.com/AKSW/PanLex-2-RDF}}.
-The created linksets are hosted in the PanLex database and are published together with the other data using the Sparqlify RDB2RDF tool.
+The created linksets are hosted in the PanLex database and are published together with the other data using Sparqlify.
 Finally, we offer downloads tagged with timestamps of their creation\footnote{\url{http://ld.panlex.org/downloads/releases/}}.
 \begin{figure}
 \centering
@@ -494,8 +492,19 @@ transformation.
 Furthermore, we interlinked the languages in PanLex with Lexvo, and created about 2.5 million links to DBpedia for expressions in 16 languages.
 With the integration of lemon and GOLD we also support data access via external linguistic ontologies.
 
-We intend to address some limitations in the future. Attribution is currently limited to sources, obscuring the possible roles of multiple editors in iteratively interpreting sources and the subsidiary sources of data in sources that are themselves aggregations. Metadata attached to PanLex denotations are currently limited to arbitrary pairs of strings, but this sacrifices discovery possibilities when the metadata (as they often do) describe facts that can be expressed with PanLex expressions (e.g., that the expression is archaic). New collaborations between PanLex and related standards and technologies (e.g., language identification, language geolocation, lemmatization, transliteration, localization, etc.) are promising arenas for development. For example, the relations among PanLex's information sources, if treated as distinct datasets, could be modeled with the VoID vocabulary\footnote{\url{http://rdfs.org/ns/void}}.
+We intend to address some limitations in the future:
+The relations among PanLex's information sources, if treated as distinct datasets, could be modeled with the VoID vocabulary\footnote{\url{http://rdfs.org/ns/void}}.
+The (assertion) source entity should be refactored to model users and information sources as distinct entities.
+%Attribution is currently limited to (assertion) sources,
+% obscuring the possible roles of multiple editors in iteratively interpreting sources and the subsidiary sources of data in sources that are %themselves aggregations.
+Metadata attached to PanLex denotations are currently limited to arbitrary pairs of strings,
+but this sacrifices discovery possibilities when the metadata
+%(as they often do)
+describe facts that can again be expressed with PanLex expressions.
+% (e.g., that the expression is archaic).
+Finally, new collaborations between PanLex and related fields (e.g. as language identification, language geolocation, lemmatization, transliteration, localization, etc.) are promising arenas for development.
 
 \bibliographystyle{abbrv}
 \bibliography{bibliography,../../bib/aksw}
+
 \end{document}
