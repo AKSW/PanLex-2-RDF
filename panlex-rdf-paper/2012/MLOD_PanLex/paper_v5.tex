@@ -116,20 +116,24 @@ The PanLex project is making all languages' lexicons intertranslatable. In some 
 %It documents the known lexical translations (translations of lexemes) among all
 %languages.
 
-The Semantic Web Initiative has led to the development of standards and technologies
+The Semantic Web initiative has led to the development of standards and technologies
 supporting a machine-readable and \mbox{-i}nter\-pretable Linked Data
 network, known as the \emph{Web of Data}.\footnote{\url{http://www.w3.org/standards/semanticweb/}} From these efforts the \emph{Linked Open Data (LOD) cloud}\footnote{\url{http://lod-cloud.net/}} emerged.
 %Technologies that support this aim are already available and in use in the so
 %called \emph{Web of Data}.
 A growing community is leveraging Semantic Web technologies for linguistic knowledge, building a \emph{Linguistic LOD (LLOD) cloud}.
 
-Whenever there is Linked Data making use of descriptions, such as labels, in any language with lexemes in citation form (lemmas), the data are potentially linkable to, and through, PanLex. Here we describe how we connected PanLex to the Linked Data network.
+%Whenever there is Linked Data making use of descriptions, such as labels, in any language with lexemes in citation form (lemmas), the data are potentially linkable to, and through, PanLex.
+Here we describe how we connected PanLex to this Linked Data network.
 In \autoref{sec:triplificate} we introduce the dataset, present a
 PanLex RDF vocabulary, and explain how we transformed the one into the other and established conformance with additional data models.
-\autoref{sec:linking} is about how we linked to other datasets of the LLOD cloud,
+\autoref{sec:linking} shows how we linked to other datasets of the LLOD cloud,
 and \autoref{sec:publishing} is about the publication of the dataset.
-Usage scenarios are given in \autoref{sec:usage}.
-In \autoref{sec:related} we discuss related work, and, finally, in \autoref{sec:conclusion}, we summarize our recent and contemplated work.
+Usage scenarios are given in \autoref{sec:usage}, and related work is discussed in \autoref{sec:related}.
+Finally, \autoref{sec:conclusion} concludes paper.
+%In \autoref{sec:related} we discuss related work, and, finally, in \autoref{sec:conclusion}, we
+% summarize our recent and contemplated work.
+%conclude 
 
 \section{Triplification of the Raw Data}
 \label{sec:triplificate}
@@ -141,7 +145,9 @@ summarize how we classified PanLex's instance data with additional data models; 
 
 \subsection{Analysis of the Original Dataset}
 \label{sec:analysis}
-The PanLex \emph{database} is created by editors who consult \emph{information sources}\footnote{\url{http://panlex.org/tech/plrefs.shtml}}, such as mono- and multilingual dictionaries, glossaries, standards, and thesauri. The data include single- and multi-word expressions, corresponding meanings assigned to them, and related information. While copies of the sources would not be interoperable, PanLex data constitute editors' \emph{interpretations} of sources' \emph{assertions} that two or more \emph{expressions} share a \emph{meaning}\footnote{\url{http://panlex.org/tech/doc/design/panlex-db-design.pdf}}.
+The PanLex \emph{database} is created by editors who consult \emph{information sources}\footnote{\url{http://panlex.org/tech/plrefs.shtml}}, such as mono- and multilingual dictionaries, glossaries, standards, and thesauri. The data include single- and multi-word expressions, corresponding meanings assigned to them, and related information.
+%While copies of the sources would not be interoperable,
+PanLex data constitute editors' \emph{interpretations} of sources' \emph{assertions} that two or more \emph{expressions} share a \emph{meaning}\footnote{\url{http://panlex.org/tech/doc/design/panlex-db-design.pdf}}.
 The most important entities and relations of PanLex's conceptual model are depicted in \autoref{fig:db-schema}.
 
 \begin{figure}
@@ -153,17 +159,27 @@ The most important entities and relations of PanLex's conceptual model are depic
 
 \begin{itemize}
   \item The \emph{source} entity is the authority to which an editor attributes assertions about lexical translations.
-  \item \emph{Expressions} are lexical entities, each uniquely identified with a text, i.e. a string of (Unicode) characters, and a variety of a language. Expressions resemble lemmas or dictionary-entry headwords, but differ from them in at least two ways. (1) Homographs, such as the verb ``hide'' (conceal) and the noun ``hide'' (animal skin) in English, are treated as a single expression in PanLex. (2) Multiword expressions, such as ``fall in love'', traditionally found in an entry headed by one of their words, such as ``fall'' or ``love'', are treated as independent expressions in PanLex. Expression texts are constrained to comply with Unicode Normalization Form NFC.
+  \item \emph{Expressions} are lexical entities, each uniquely identified with a text, i.e. a string of (Unicode) characters, and a variety of a language. Expressions resemble lemmas or dictionary-entry headwords, but differ from them in at least two ways. (1) Homographs, such as the verb ``hide'' (conceal) and the noun ``hide'' (animal skin) in English, are treated as a single expression in PanLex. (2) Multiword expressions, such as ``fall in love'', traditionally found in an entry headed by one of their words, such as ``fall'' or ``love'', are treated as independent expressions in PanLex.
+%Expression texts are constrained to comply with Unicode Normalization Form NFC.
+% ~Claus: If we state this, we also have to cite NFC, which requires again more space
     \item \emph{Languages} in PanLex are identified using ISO 639-3\footnote{\url{http://www.sil.org/iso639-3/codes.asp}} individual and macrolanguage codes, ISO 639-2\footnote{\url{http://www.loc.gov/standards/iso639-2/}} collective codes, and ISO 639-5\footnote{\url{http://www.loc.gov/standards/iso639-5/}} codes.
     \item \emph {Language varieties} are collections of expressions. Each has a unique identifier: a language code and a distinguishing integer. For example, six dialects of Ahtna are identified as ``aht-000'' through ``aht-005''. These labels are, themselves, treated as a (controlled) language variety, whose expressions (i.e. the labels) are translated into natural languages and other controlled languages (such as the IETF standard BCP 47\footnote{\url{http://tools.ietf.org/html/bcp47}}).
 %The only properties of this entity are ambiguity and synonymy: Controlled language varieties are usually defined to prohibit both of these.
-    \item \emph{Meanings} are the entities assigned to expressions, thereby identifying expressions as translations or synonyms. For example, a source's translation of the German expression ``klingen'' into English as ``ring, sound, seem'' can be interpreted as (1) the assignment of a single meaning to all four expressions or (2) the assignment of two or three meanings to ``klingen'' and of one of those to each of the English expressions. Meanings are source-specific. The identification and consolidation of equivalent meanings of distinct sources is a research topic, not a database feature. Meanings can have properties of three types. (1) \emph{Definitions} are descriptions of a meaning, consisting of text strings annotated as being in particular language varieties. (2) \emph{Domains} are expressions (e.g., ``medicine'') that characterize a meaning, but do not express it. (3) \emph{Meaning identifiers} are strings acting as references to identifiers in a source.
+    \item \emph{Meanings} are entities assigned to expressions, thereby identifying expressions as translations or synonyms. For example, a source's translation of the German expression ``klingen'' into English as ``ring, sound, seem'' can be interpreted as (1) the assignment of a single meaning to all four expressions or (2) the assignment of two or three meanings to ``klingen'' and of one of those to each of the English expressions. Meanings are source-specific. The identification and consolidation of equivalent meanings of distinct sources is a research topic, not a database feature. Meanings can have properties of three types. (1) \emph{Definitions} are descriptions of a meaning, consisting of text strings annotated as being in particular language varieties. (2) \emph{Domains} are expressions (e.g., ``medicine'') that characterize a meaning, but do not express it. (3) \emph{Meaning identifiers} are strings acting as references to identifiers in a source.
     \item \emph{Denotations} are assignments of meanings to expressions. A denotation may have one or more \emph{word classes} (a closed set based on OLIF, the Open Lexicon Interchange Format) and/or \emph{metadata} (arbitrary strings paired as keys and values).
     %For example, \emph{fall} can be a verb or a noun for autumn.
     %Homonyms are those expressions that are connected to multiple meanings.
   \item \emph{Users} may define sources, attribute data to them, and define language varieties.
-  \item Among the properties of sources are \emph{licenses}. Some of the license categories are \emph{public domain}, \emph{Creative Commons (CC)}, \emph{request} (author invites inquiries), \emph{GNU General Public License (GPL)}, \emph{GNU Lesser General Public License (LGPL)}, \emph{GNU Free Documentation License (FDL)}, \emph{MIT License}, \emph{copyright} (without a more liberal license), and \emph{PanLex Use Permission} (specific permission for use in PanLex).
-    The distribution of licenses as of January 2014 is shown in \autoref{tbl:plx-license-counts}.
+  \item Among the properties of sources are \emph{licenses}. Some of the license categories are \emph{public domain},
+%\emph{Creative Commons (CC)},
+\emph{request} (author invites inquiries),
+%\emph{GNU General Public License (GPL)},
+%\emph{GNU Lesser General Public License (LGPL)},
+\emph{GNU Free Documentation License (FDL)},
+%\emph{MIT License}, \emph{copyright} (without a more liberal license),
+and \emph{PanLex Use Permission} (specific permission for use in PanLex).
+    The distribution of licenses is shown in \autoref{tbl:plx-license-counts}.
+%as of January 2014
 \end{itemize}
 
 \begin{table}
@@ -206,10 +222,10 @@ License          & Count \\
   \label{fig:plx-entity-counts}
 \end{table}
 
-\subsection{The PanLex vocabulary}
+\subsection{The PanLex Vocabulary}
 \label{sec:vocabulary}
 The entities and relations described above are the base for the PanLex RDF vocabulary.
-In general, all PanLex RDF resources reside in the namespace \texttt{\small <http://ld.panlex.org/plx/>}, abbreviated with \texttt{\small plx}.
+In general, all PanLex RDF resources reside in the namespace \texttt{\small{http://ld.panlex.org/plx/}}, abbreviated with \texttt{\small{plx}}.
 An example of the resulting ontology is depicted in \autoref{fig:vocabulary} and summarized as follows.
 Unless otherwise noted, the URIs of instances of PanLex classes follow the pattern \emph{plx:\{className\}/\{id\}}, where \{className\} is spelled in lower camel case and the \{id\} is the primary key of the corresponding database table.
 
@@ -222,7 +238,8 @@ Unless otherwise noted, the URIs of instances of PanLex classes follow the patte
   \item The RDF analog of the PanLex \emph{meaning} is the \texttt{\small plx:Meaning}.
     Entities of this class may have an identifier assigned with the \texttt{\small plx:identifier} property pointing to an \texttt{\small xsd:string} literal.
     Meanings may also have \emph{definitions}, entities of the \texttt{\small plx:Definition} class, giving a textual representation (\texttt{\small rdfs:label}) in a certain language variety (\texttt{\small plx:languageVariety}).
-  \item Following the semantics of the PanLex database, meanings and expressions are linked via \emph{denotations}.
+  \item Meanings and expressions are linked via \emph{denotations}.
+%Following the semantics of the PanLex database,
     These are entities of the \texttt{\small plx:Denotation} class pointing to meanings and expressions via the properties \texttt{\small plx:denotationMeaning} and \\ \texttt{\small plx:denotationExpression}.
     Denotations may also have a word class assigned to them.
     This can be achieved with the denotation's \texttt{\small plx:wordClass} property pointing to a \texttt{\small plx:WordClass} entity.
@@ -274,7 +291,7 @@ Unless otherwise noted, the URIs of instances of PanLex classes follow the patte
 
 \begin{figure}
 \includegraphics[width=0.46\textwidth]{images/pdf/ontology.pdf}
-\caption{Overview of the PanLex RDF vocabulary}
+\caption{Overview of the PanLex RDF Vocabulary}
 \label{fig:vocabulary}
 \end{figure}
 
@@ -314,7 +331,7 @@ The parts implemented in our RDF conversion are displayed in \autoref{fig:goldle
   \label{fig:goldlemonimplemented}
 \end{figure}
 
-\subsection{Transformation workflow}
+\subsection{RDF Transformation Workflow}
 \label{sec:conversion}
 Since new sources are added to the PanLex database on almost a daily basis and because of its current size (\textasciitilde18 GB), the recurrent conversion of the database to capture changes in it is impractical.
 %Using conventional hardware, a full conversion takes infeasibly long.
@@ -494,7 +511,7 @@ With the integration of lemon and GOLD we also support data access via external 
 
 We intend to address some limitations in the future:
 The relations among PanLex's information sources, if treated as distinct datasets, could be modeled with the VoID vocabulary\footnote{\url{http://rdfs.org/ns/void}}.
-The (assertion) source entity should be refactored to model users and information sources as distinct entities.
+The source entity should be refactored to reference users and information sources as distinct entities.
 %Attribution is currently limited to (assertion) sources,
 % obscuring the possible roles of multiple editors in iteratively interpreting sources and the subsidiary sources of data in sources that are %themselves aggregations.
 Metadata attached to PanLex denotations are currently limited to arbitrary pairs of strings,
