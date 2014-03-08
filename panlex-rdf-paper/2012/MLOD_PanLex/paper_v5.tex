@@ -378,8 +378,8 @@ example also demonstrates how ``is-a'' relations to schema.org and links to Lexv
 
 \section{Linking}
 \label{sec:linking}
-The SML view in (\autoref{fig:ex:sparqlify-ml}) already establishes the interlinking of the PanLex languages with Lexvo.
-In this section, we outline the interlinking with DBpedia, where we were interested in creating \emph{valid} and \emph{dereferenceable} links.
+The SML view in (\autoref{fig:ex:sparqlify-ml}) establishes the interlinking of languages in PanLex with Lexvo.
+Here we outline the interlinking with DBpedia, where we were interested in creating \emph{valid} and \emph{dereferenceable} links.
 Therefore, we iterated the \emph{titles} datasets\footnote{\url{http://wiki.dbpedia.org/Downloads38}}, which map (non-localized) DBpedia URIs to their page titles in the respective language.
 For each language version we normalized the labels by applying Unicode NFKD\footnote{\url{http://unicode.org/reports/tr15/}} normalization and removal of punctuation characters.
 Each DBpedia resource was then mapped to the PanLex expression that was equal to the resource's normalized label in the respective language.
@@ -416,8 +416,7 @@ With our RDF conversion work, we complement existing
 APIs\footnote{\url{http://panlex.org/try/}} with Linked Data, powered by
 Pubby\footnote{\url{http://wifo5-03.informatik.uni-mannheim.de/pubby/}},
 and two SPARQL
-endpoints\footnote{\url{http://ld.panlex.org/vsparql}}
-\footnote{\url{http://ld.panlex.org/sparql}}, ran by Sparqlify and Virtuoso.
+endpoints\footnote{\url{http://ld.panlex.org/vsparql}}\textsuperscript{,}\footnote{\url{http://ld.panlex.org/sparql}}, ran by Sparqlify and Virtuoso.
 % and \url{http://ld.panlex.org/snorql}}.
 An overview is shown in ~\autoref{fig:panlex-architecture}.
 The SPARQL browser
@@ -488,14 +487,14 @@ The extraction of information from linguistic sources, and techniques for automa
 are relevant work discussed in \cite{panlex_probtrans}.
 %A similar approach of linking expressions to meanings is followed by the
 % \emph{Global Wordnet Association}.
-An important related initiative is the Global Wordnet Association (GWA)\footnote{\url{http://www.globalwordnet.org/}\vspace{0.7em}},
+An important related initiative is the Global Wordnet Association (GWA)\footnote{\url{http://www.globalwordnet.org/}},
 which offers a platform for sharing wordnets and, among other goals, uniformly representing wordnets
 of different languages and establishing a universal index of meaning.
 Wordnets are usually focused on the
 definition of \emph{synsets} and relations between them in a single language; GWA is helping to transform these single-language synonym silos into a virtual multilingual translation resource. PanLex is approximating that, in a different way, by integrating data from numerous wordnets along with translingual sources into a single graph.
 %As already mentioned in PanLex there can be several meaning entities
 % representing the same unique sense.
-In the Semantic Web context, several standard or quasi-standard vocabularies and ontologies have been developed with the rise of the \emph{Linguistic Linked Open Data} movement.
+In the Semantic Web context, several standard or quasi-standard vocabularies and ontologies have been developed with the rise of the Linguistic LOD movement.
 Examples include the
 \emph{Ontologies of Linguistic Annotation} (OLiA)~\cite{olia2010} for modeling
 lexicon and machine-readable dictionaries, \emph{POWLA} for modeling linguistic corpora\cite{powla2012} and the \emph{Natural Language Processing Interchange Format} (NIF)\footnote{\url{http://nlp2rdf.org/nif-1-0}}.
@@ -509,6 +508,9 @@ transformation.
 Furthermore, we interlinked the languages in PanLex with Lexvo, and created about 2.5 million links to DBpedia for expressions in 16 languages.
 With the integration of lemon and GOLD we also support data access via external linguistic ontologies.
 
+\vfill
+%\columnbreak
+
 We intend to address some limitations in the future:
 The relations among PanLex's information sources, if treated as distinct datasets, could be modeled with the VoID vocabulary\footnote{\url{http://rdfs.org/ns/void}}.
 The source entity should be refactored to reference users and information sources as distinct entities.
@@ -519,7 +521,9 @@ but this sacrifices discovery possibilities when the metadata
 %(as they often do)
 describe facts that can again be expressed with PanLex expressions.
 % (e.g., that the expression is archaic).
-Finally, new collaborations between PanLex and related fields (e.g. as language identification, language geolocation, lemmatization, transliteration, localization, etc.) are promising arenas for development.
+Finally, new collaborations between PanLex and related fields (e.g. as language identification, language geolocation, lemmatization, transliteration, localization, etc.) are promising areas for development.
+
+\vspace{-10pt}
 
 \bibliographystyle{abbrv}
 \bibliography{bibliography,../../bib/aksw}
