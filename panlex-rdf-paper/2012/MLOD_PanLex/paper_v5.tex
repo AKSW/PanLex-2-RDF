@@ -290,8 +290,31 @@ Unless otherwise noted, the URIs of instances of PanLex classes follow the patte
 \end{table}
 
 \begin{figure}
-\includegraphics[width=0.46\textwidth]{images/pdf/ontology.pdf}
-\caption{Overview of the PanLex RDF Vocabulary}
+\includegraphics[width=0.46\textwidth]{images/pdf/ontology_new.pdf}
+% Query for ontology_new.pdf
+%SELECT * WHERE {
+%  ?den plx:denotationMeaning ?mea .
+%  ?den plx:denotationExpression ?expr .
+%  ?expr rdfs:label ?exprlbl .
+%  ?mea plx:meaningDefinition ?def .
+%  ?mea plx:approver ?app.
+%  ?def plx:languageVariety <http://ld.panlex.org/plx/languageVariety/187> .
+%  ?def rdfs:label ?dtx .
+%  ?den plx:denotationExpression <http://ld.panlex.org/plx/expression/355621> .
+%  ?app dc:title ?dctitle .
+%  ?app plx:quality ?plxquality .
+%  ?app dc:publisher ?dcpublisher .
+%  ?app dc:date ?dcdate .
+%  ?app rdfs:label ?rdfslabel .
+%  ?app foaf:homepage ?foafhomepage .
+%  ?app dc:creator ?dccreator .
+%  ?app plx:registrationDate ?regdate .
+%  ?app plx:license <http://ld.panlex.org/plx/license/mi> .
+%  <http://ld.panlex.org/plx/license/mi> rdfs:label ?liclbl .
+%  OPTIONAL { ?app dbpedia-owl:isbn ?dboisbn . }
+%  OPTIONAL { ?den plx:wordClass ?wordclass . }
+%}
+\caption{Example of the PanLex RDF vocabulary showing one meaning of the expression `between' and the corresponding source and definition}
 \label{fig:vocabulary}
 \end{figure}
 
