@@ -401,8 +401,8 @@ example also demonstrates how ``is-a'' relations to schema.org and links to Lexv
 
 \section{Linking}
 \label{sec:linking}
-The SML view in (\autoref{fig:ex:sparqlify-ml}) establishes the interlinking of languages in PanLex with Lexvo.
-Here we outline the interlinking with DBpedia, where we were interested in creating \emph{valid} and \emph{dereferenceable} links.
+The SML view in (\autoref{fig:ex:sparqlify-ml}) establishes the interlinking of languages in PanLex with Lexvo~\cite{deMeloWeikum2008c}.
+Here we outline the interlinking with DBpedia~\cite{dbpedia-swj}, where we were interested in creating \emph{valid} and \emph{dereferenceable} links.
 Therefore, we iterated the \emph{titles} datasets\footnote{\url{http://wiki.dbpedia.org/Downloads38}}, which map (non-localized) DBpedia URIs to their page titles in the respective language.
 For each language version we normalized the labels by applying Unicode NFKD\footnote{\url{http://unicode.org/reports/tr15/}} normalization and removal of punctuation characters.
 Each DBpedia resource was then mapped to the PanLex expression that was equal to the resource's normalized label in the respective language.
@@ -471,7 +471,9 @@ collection of SPARQL queries is maintained.
 Also, since PanLex covers a niche of providing linguistic data for
 non-mainstream languages, investigation of its fitness for use in cross
 language information retrieval, as well as annotation projects, like DBpedia
-Spotlight\footnote{\url{http://spotlight.dbpedia.org}}, seems worthwhile.
+%Spotlight\footnote{\url{http://spotlight.dbpedia.org}},
+Spotlight~\cite{isem2011mendesetal}
+ seems worthwhile.
 
 %exploiting data of projects like Wordnet, e.g. via the LemonWordNet
 % dataset\footnote{\url{http://datahub.io/de/dataset/lemonwordnet}} can help
@@ -507,7 +509,7 @@ Spotlight\footnote{\url{http://spotlight.dbpedia.org}}, seems worthwhile.
 \label{sec:related}
 PanLex is a project whose editors integrate information discovered from many lexical resources.
 The extraction of information from linguistic sources, and techniques for automatically inferring translations,
-are relevant work discussed in \cite{panlex_probtrans}.
+are relevant work discussed in~\cite{panlex_probtrans}.
 %A similar approach of linking expressions to meanings is followed by the
 % \emph{Global Wordnet Association}.
 An important related initiative is the Global Wordnet Association (GWA)\footnote{\url{http://www.globalwordnet.org/}},
@@ -520,7 +522,7 @@ definition of \emph{synsets} and relations between them in a single language; GW
 In the Semantic Web context, several standard or quasi-standard vocabularies and ontologies have been developed with the rise of the Linguistic LOD movement.
 Examples include the
 \emph{Ontologies of Linguistic Annotation} (OLiA)~\cite{olia2010} for modeling
-lexicon and machine-readable dictionaries, \emph{POWLA} for modeling linguistic corpora\cite{powla2012} and the \emph{Natural Language Processing Interchange Format} (NIF)\footnote{\url{http://nlp2rdf.org/nif-1-0}}.
+lexicon and machine-readable dictionaries, \emph{POWLA} for modeling linguistic corpora~\cite{powla2012} and the \emph{Natural Language Processing Interchange Format} (NIF)\footnote{\url{http://nlp2rdf.org/nif-1-0}}.
 
 \section{Conclusions and Future Work}
 \label{sec:conclusion}
