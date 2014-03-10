@@ -23,7 +23,7 @@ Prefix lemon: <http://www.lemon-model.net/lemon#>
 // the ap table
 Create View ap As
     Construct {
-        ?appr a plx:Approver.
+        ?appr a plx:Source.
         ?appr plx:registrationDate ?rgdt.
         ?appr rdfs:label ?labl.
         ?appr foaf:homepage ?uri.
@@ -36,7 +36,7 @@ Create View ap As
         ?appr plx:license ?lcns.
     }
     With
-        ?appr = uri(concat(plx:approver, '/', ?ap))
+        ?appr = uri(concat(plx:source, '/', ?ap))
         ?rgdt = typedLiteral(?dt, xsd:date)
         ?labl = plainLiteral(?tt)
         ?uri  = uri(?ur)
@@ -51,7 +51,7 @@ Create View ap As
         ap
 
 // (apli)
-// mappings concerning the licenses of approver sources
+// mappings concerning the licenses of sources
 Create View apli AS
     Construct {
         ?lcns a plx:License.
@@ -77,13 +77,13 @@ Create View apli AS
         SELECT apli.li, ll.lbl FROM apli JOIN license_labels ll ON (apli.id = ll.id)]]
 
 // (av)
-// mappings concerning approver varieties stored in the av table
+// mappings concerning source varieties stored in the av table
 Create View av As
     Construct {
         ?appr plx:languageVariety ?lvar.
     }
     With
-        ?appr = uri(concat(plx:approver, '/', ?ap))
+        ?appr = uri(concat(plx:source, '/', ?ap))
         ?lvar = uri(concat(plx:languageVariety, '/', ?lv))
     From
         av
@@ -220,11 +220,11 @@ Create View mi As
 Create View mn As
     Construct {
         ?mean a plx:Meaning.
-        ?mean plx:approver ?appr.
+        ?mean plx:source ?appr.
     }
     With
         ?mean = uri(concat(plx:meaning, '/', ?mn))
-        ?appr = uri(concat(plx:approver, '/', ?ap))
+        ?appr = uri(concat(plx:source, '/', ?ap))
     From
         mn
 
