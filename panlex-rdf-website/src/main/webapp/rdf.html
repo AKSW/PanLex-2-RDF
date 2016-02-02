@@ -70,7 +70,7 @@ On this page we collect our efforts of making PanLex part of the Linked Open Dat
 the following advantages:
 </p>
 <ul>
-<li>Data can be looked up via URLs, e.g. <a href="http://ld.panlex.org/plx/approver/1">http://ld.panlex.org/plx/approver/1</a></li>
+<li>Data can be looked up via URLs, e.g. <a href="http://ld.panlex.org/plx/source/1">http://ld.panlex.org/plx/source/1</a></li>
 <li>Additional information is available via links to other knowledge bases. Currently this is <a href="http://dbpedia.org">DBpedia</a> only, but others (e.g. <a href="http://wortschatz.uni-leipzig.de/">Wortschatz</a>) will follow soon.</li>
 <li>The SPARQL endpoint enables powerful queries over the data via the Web.</li>
 <li>RDF downloads enable one to load their own RDF store.</li>
@@ -137,7 +137,7 @@ the following advantages:
 Linked Data resources reside in the namespace &lt;http://ld.panlex.org/plx/&gt; and are powered by the vsparql endpoint.<br />
 Example resources:
 <ul>
-    <li><a href="http://ld.panlex.org/plx/approver/1">The first approver</a></li>
+    <li><a href="http://ld.panlex.org/plx/source/1">The first source</a></li>
     <li><a href="http://ld.panlex.org/plx/definition/4711">Definition 4711</a></li>
     <li><a href="http://ld.panlex.org/plx/license/nr">Public Domain License</a></li>
 </ul>
@@ -218,7 +218,7 @@ These two images provide an overview of how classes and properties in the RDF ve
 <table>
 <tr>
 <td>
-<img src="images/ontology.svg" style="width:500px;" alt="PanLex Ontology Instance Example" />
+<img src="images/ontology_new3.svg" style="width:500px;" alt="PanLex Ontology Instance Example" />
 </td>
 <td style="width: 100px;">
 </td>
@@ -323,15 +323,15 @@ This table lists the number of instances per class:
 <table>
 <thead><tr><th>Class</th><th>Instances</th></tr></thead>
 <tbody>
-<tr><td>Approvers</td><td>3,905</td></tr>
-<tr><td>Expressions</td><td>18,580,594</td></tr>
-<tr><td>Languages</td><td>7,839</td></tr>
-<tr><td>Language Varieties</td><td>7,248</td></tr>
-<tr><td>Meanings</td><td>20,023,427</td></tr>
-<tr><td>Definitions</td><td>2,522,605</td></tr>
-<tr><td>Denotations</td><td>50,803,243</td></tr>
-<tr><td>Users</td><td>7</td></tr>
-<tr><td>Licenses</td><td>10</td></tr>
+<tr><td>Sources           </td><td style="text-align: right">5,643</td></tr>
+<tr><td>Expressions       </td><td style="text-align: right">19,790,453</td></tr>
+<tr><td>Languages         </td><td style="text-align: right">7,843</td></tr>
+<tr><td>Language Varieties</td><td style="text-align: right">9,310</td></tr>
+<tr><td>Meanings          </td><td style="text-align: right">20,773,371</td></tr>
+<tr><td>Definitions       </td><td style="text-align: right">2,747,892</td></tr>
+<tr><td>Denotations       </td><td style="text-align: right">54,278,860</td></tr>
+<tr><td>Users             </td><td style="text-align: right">23</td></tr>
+<tr><td>Licenses          </td><td style="text-align: right">11</td></tr>
 </tbody>
 </table>
 
@@ -349,15 +349,15 @@ This table lists the number of instances per class:
 <p><br /></p>
 <h3 class="left">Licenses</h3>
 <p>
-As PanLex is comprised of thousands of data sources, license information is included in the dataset for each approver.
+As PanLex is comprised of thousands of data sources, license information is included in the dataset for each source.
 The following table shows some examples on this subject.
 </p>
 
 <table style="width: 100%;">
 <tr>
 <td>List all available licenses and their usage count</td>
-<td>List approvers and their license</td>
-<td>List approvers under public domain license</td>
+<td>List source and their license</td>
+<td>List source under public domain license</td>
 </tr>
 <tr>
 <td>
@@ -374,7 +374,7 @@ Group By ?l
 Prefix plx: &lt;http://ld.panlex.org/plx/&gt;
 Select * {
   ?s
-    a plx:Approver ;
+    a plx:Source ;
     plx:license ?l
 }
 Limit 100
@@ -385,7 +385,7 @@ Limit 100
 Prefix plx: &lt;http://ld.panlex.org/plx/&gt;
 Select * {
   ?s
-    a plx:Approver ;
+    a plx:Source ;
     plx:license &lt;http://ld.panlex.org/plx/license/nr&gt;
 }
 Limit 100
@@ -397,11 +397,11 @@ Limit 100
 Run query: <a href="http://ld.panlex.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+%3Fl+%28Count%28*%29+As+%3Fc%29+{%0D%0A++%3Fs+plx%3Alicense+%3Fl%0D%0A}%0D%0AGroup+By+%3Fl%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Virtuoso</a> | <a href="http://ld.panlex.org/vsnorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+%3Fl+%28Count%28*%29+As+%3Fc%29+{%0D%0A++%3Fs+plx%3Alicense+%3Fl%0D%0A}%0D%0AGroup+By+%3Fl%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Sparqlify</a>
 </td>
 <td>
-Run query: <a href="http://ld.panlex.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Fl%0D%0A}%0D%0ALimit+100%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Virtuoso</a> | <a href="http://ld.panlex.org/vsnorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Fl%0D%0A}%0D%0ALimit+100%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Sparqlify</a>
+Run query: <a href="http://ld.panlex.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Fl%0D%0A}%0D%0ALimit+100%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Virtuoso</a> | <a href="http://ld.panlex.org/vsnorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3ASource+%3B%0D%0A++++plx%3Alicense+%3Fl%0D%0A}%0D%0ALimit+100%0D%0A&format=text%2Fhtml&timeout=0&debug=on">Sparqlify</a>
 </td>
 <td>
 Run query: <a href="http://ld.panlex.org/snorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2Flicense%2Fnr%3E%0D%0A}%0D%0ALimit+100&format=text%2Fhtml&timeout=0&debug=on">Virtuoso</a> |
-<a href="http://ld.panlex.org/vsnorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3AApprover+%3B%0D%0A++++plx%3Alicense+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2Flicense%2Fnr%3E%0D%0A}%0D%0ALimit+100&format=text%2Fhtml&timeout=0&debug=on">Sparqlify</a>
+<a href="http://ld.panlex.org/vsnorql?default-graph-uri=http%3A%2F%2Fld.panlex.org%2F&query=Prefix+plx%3A+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2F%3E%0D%0ASelect+*+{%0D%0A++%3Fs%0D%0A++++a+plx%3ASource+%3B%0D%0A++++plx%3Alicense+%3Chttp%3A%2F%2Fld.panlex.org%2Fplx%2Flicense%2Fnr%3E%0D%0A}%0D%0ALimit+100&format=text%2Fhtml&timeout=0&debug=on">Sparqlify</a>
 </td>
 </tr>
 </table>
